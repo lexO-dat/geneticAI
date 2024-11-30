@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277136/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136"/>
+    <sbol:displayId>BBa_K277136</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277136"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277136</dcterms:title>
+    <dcterms:description>3L.3_23.B1</dcterms:description>
+    <dcterms:created>2009-10-20T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:47Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns,repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1 is comprised of and must be constructed from the parts 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, 3L.3_23.B1.13, and 3L.3_23.B1.14.
+
+This part wholly contains the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	reverse_primer YCL054W_tagr3v1	(4762..4789)	
+	gene YCL050C	(8947..9912)	Diadenosine 5&apos;%2C5&apos;&apos;-P1%2CP4-tetraphosphate phosphorylase I (AP4A phosphorylase)%2C involved in catabolism of bis(5&apos;-nucleosidyl) tetraphosphates%3B has similarity to Apa2p
+	mutation_affecting_coding_sequence YCL054W_re_remove_Bpu10I	(4706..4714)	removal of Bpu10I
+	loxP_site loxPsym_YCL051W	(8663..8696)	
+	reverse_primer YCL054W_tagr1v1	(4321..4348)	
+	forward_primer YCL051W_tagf1v1	(8263..8290)	
+	reverse_primer YCL050C_tagr1v1	(9442..9469)	
+	mutation_affecting_coding_sequence YCL054W_re_remove_MmeI	(3008..3019)	removal of MmeI
+	mutation_affecting_coding_sequence YCL054W_re_remove_BlpI	(3947..3955)	removal of BlpI
+	mutation_affecting_coding_sequence YCL051W_re_remove_MmeI	(7637..7648)	removal of MmeI
+	ARS ARS304	(1243..1700)	Autonomously Replicating Sequence on Chromosome III
+	gene YCL051W	(6908..8659)	Protein involved in control of cell wall structure and stress response%3B inhibits Cbk1p protein kinase activity%3B overproduction confers resistance to cell-wall degrading enzymes
+	reverse_primer YCL054W_tagr2v1	(3100..3127)	
+	reverse_primer YCL052C_tagr1v1	(6161..6188)	
+	forward_primer YCL051W_tagf2v1	(7321..7348)	
+	forward_primer YCL052C_tagf1v1	(5771..5798)	
+	mutation_affecting_coding_sequence YCL050C_re_remove_MmeI	(9502..9513)	removal of MmeI
+	forward_primer YCL054W_tagf2v1	(2680..2707)	
+	forward_primer YCL054W_tagf1v1	(3916..3943)	
+	forward_primer YCL054W_tagf3v1	(4486..4513)	
+	forward_primer YCL050C_tagf1v1	(9115..9142)	
+	reverse_primer YCL051W_tagr2v1	(7789..7816)	
+	gene YCL052C	(5186..6436)	Essential component of glycosylphosphatidylinositol-mannosyltransferase I%2C required for the autocatalytic post-translational processing of the protease B precursor Prb1p%2C localizes to ER in lumenal orientation%3B homolog of mammalian PIG-X
+	reverse_primer YCL051W_tagr1v1	(8518..8545)	
+	loxP_site loxPsym_YCL050C	(8910..8943)	
+	gene YCL054W	(2492..5017)	AdoMet-dependent methyltransferase involved in rRNA processing and 60S ribosomal subunit maturation%3B methylates G2922 in the tRNA docking site of the large subunit rRNA and in the absence of snR52%2C U2921%3B suppressor of PAB1 mutants
+
+Sequence (corresponding to coordinates 19161..29646 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using USER assembly method described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Composite"/>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062016/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062016"/>
+        <sbol:displayId>component2062016</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277038</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277038/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062015/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062015"/>
+        <sbol:displayId>component2062015</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277037</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277037/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062018/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062018"/>
+        <sbol:displayId>component2062018</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277040</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277040/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062017/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062017"/>
+        <sbol:displayId>component2062017</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277039</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277039/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062012/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062012"/>
+        <sbol:displayId>component2062012</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277034</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277034/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062011/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062011"/>
+        <sbol:displayId>component2062011</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277033</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277033/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062014/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062014"/>
+        <sbol:displayId>component2062014</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277036</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277036/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062013/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062013"/>
+        <sbol:displayId>component2062013</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277035</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277035/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062008/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062008"/>
+        <sbol:displayId>component2062008</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277030</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277030/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062007/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062007"/>
+        <sbol:displayId>component2062007</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277029</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277029/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062010/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062010"/>
+        <sbol:displayId>component2062010</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277032</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277032/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062009/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062009"/>
+        <sbol:displayId>component2062009</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277031</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277031/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062006/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062006"/>
+        <sbol:displayId>component2062006</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277028</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277028/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K277136/component2062005/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062005"/>
+        <sbol:displayId>component2062005</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277027</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K277027/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062005/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062005"/>
+        <sbol:displayId>annotation2062005</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277027</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062005/range2062005/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062005/range2062005"/>
+            <sbol:displayId>range2062005</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>744</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062005/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062006/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062006"/>
+        <sbol:displayId>annotation2062006</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277028</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062006/range2062006/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062006/range2062006"/>
+            <sbol:displayId>range2062006</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>745</sbol:start>
+            <sbol:end>1507</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062006/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062007/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062007"/>
+        <sbol:displayId>annotation2062007</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277029</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062007/range2062007/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062007/range2062007"/>
+            <sbol:displayId>range2062007</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>1508</sbol:start>
+            <sbol:end>2263</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062007/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062008/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062008"/>
+        <sbol:displayId>annotation2062008</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277030</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062008/range2062008/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062008/range2062008"/>
+            <sbol:displayId>range2062008</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>2264</sbol:start>
+            <sbol:end>3016</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062008/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062009/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062009"/>
+        <sbol:displayId>annotation2062009</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277031</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062009/range2062009/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062009/range2062009"/>
+            <sbol:displayId>range2062009</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>3017</sbol:start>
+            <sbol:end>3722</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062009/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062010/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062010"/>
+        <sbol:displayId>annotation2062010</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277032</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062010/range2062010/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062010/range2062010"/>
+            <sbol:displayId>range2062010</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>3723</sbol:start>
+            <sbol:end>4472</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062010/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062011/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062011"/>
+        <sbol:displayId>annotation2062011</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277033</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062011/range2062011/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062011/range2062011"/>
+            <sbol:displayId>range2062011</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>4473</sbol:start>
+            <sbol:end>5222</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062011/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062012/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062012"/>
+        <sbol:displayId>annotation2062012</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277034</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062012/range2062012/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062012/range2062012"/>
+            <sbol:displayId>range2062012</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>5223</sbol:start>
+            <sbol:end>6026</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062012/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062013/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062013"/>
+        <sbol:displayId>annotation2062013</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277035</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062013/range2062013/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062013/range2062013"/>
+            <sbol:displayId>range2062013</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>6027</sbol:start>
+            <sbol:end>6780</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062013/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062014/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062014"/>
+        <sbol:displayId>annotation2062014</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277036</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062014/range2062014/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062014/range2062014"/>
+            <sbol:displayId>range2062014</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>6781</sbol:start>
+            <sbol:end>7458</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062014/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062015/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062015"/>
+        <sbol:displayId>annotation2062015</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277037</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062015/range2062015/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062015/range2062015"/>
+            <sbol:displayId>range2062015</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>7459</sbol:start>
+            <sbol:end>8203</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062015/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062016/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062016"/>
+        <sbol:displayId>annotation2062016</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277038</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062016/range2062016/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062016/range2062016"/>
+            <sbol:displayId>range2062016</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>8204</sbol:start>
+            <sbol:end>8942</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062016/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062017/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062017"/>
+        <sbol:displayId>annotation2062017</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277039</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062017/range2062017/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062017/range2062017"/>
+            <sbol:displayId>range2062017</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>8943</sbol:start>
+            <sbol:end>9811</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062017/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062018/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062018"/>
+        <sbol:displayId>annotation2062018</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K277040</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K277136/annotation2062018/range2062018/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/annotation2062018/range2062018"/>
+            <sbol:displayId>range2062018</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>9812</sbol:start>
+            <sbol:end>10615</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K277136/component2062018/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277136_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277027/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277027"/>
+    <sbol:displayId>BBa_K277027</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277027"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277027</dcterms:title>
+    <dcterms:description>3L.3_23.B1.01</dcterms:description>
+    <dcterms:created>2009-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277027/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.01 is 744 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.01 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.01 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, 3L.3_23.B1.13, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+
+Sequence (the first 744 bases correspond to coordinates 19161..19904 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277027_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277028/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277028"/>
+    <sbol:displayId>BBa_K277028</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277028"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277028</dcterms:title>
+    <dcterms:description>3L.3_23.B1.02</dcterms:description>
+    <dcterms:created>2009-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277028/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.02 is 763 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.02 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.02 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, 3L.3_23.B1.13, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	ARS ARS304	(508..+965)	Autonomously Replicating Sequence on Chromosome III
+
+Sequence (the first 763 bases correspond to coordinates 19896..20658 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277028_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277029/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277029"/>
+    <sbol:displayId>BBa_K277029</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277029"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277029</dcterms:title>
+    <dcterms:description>3L.3_23.B1.03</dcterms:description>
+    <dcterms:created>2009-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277029/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.03 is 756 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.03 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.03 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, 3L.3_23.B1.13, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	ARS ARS304	(-246..211)	Autonomously Replicating Sequence on Chromosome III
+
+Sequence (the first 756 bases correspond to coordinates 20650..21405 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277029_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277030/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277030"/>
+    <sbol:displayId>BBa_K277030</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277030"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277030</dcterms:title>
+    <dcterms:description>3L.3_23.B1.04</dcterms:description>
+    <dcterms:created>2009-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277030/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.04 is 753 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.04 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.04 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, 3L.3_23.B1.13, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	forward_primer YCL054W_tagf2v1	(446..473)	
+	gene YCL054W	(258..+2783)	AdoMet-dependent methyltransferase involved in rRNA processing and 60S ribosomal subunit maturation%3B methylates G2922 in the tRNA docking site of the large subunit rRNA and in the absence of snR52%2C U2921%3B suppressor of PAB1 mutants
+
+Sequence (the first 753 bases correspond to coordinates 21395..22147 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277030_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277031/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277031"/>
+    <sbol:displayId>BBa_K277031</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277031"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277031</dcterms:title>
+    <dcterms:description>3L.3_23.B1.05</dcterms:description>
+    <dcterms:created>2009-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277031/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.05 is 706 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.05 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.05 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, 3L.3_23.B1.13, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	mutation_affecting_coding_sequence YCL054W_re_remove_MmeI	(32..43)	removal of MmeI
+	reverse_primer YCL054W_tagr2v1	(124..151)	
+	gene YCL054W	(-484..+2041)	AdoMet-dependent methyltransferase involved in rRNA processing and 60S ribosomal subunit maturation%3B methylates G2922 in the tRNA docking site of the large subunit rRNA and in the absence of snR52%2C U2921%3B suppressor of PAB1 mutants
+
+Sequence (the first 706 bases correspond to coordinates 22137..22842 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277031_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277032/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277032"/>
+    <sbol:displayId>BBa_K277032</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277032"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277032</dcterms:title>
+    <dcterms:description>3L.3_23.B1.06</dcterms:description>
+    <dcterms:created>2009-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277032/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.06 is 750 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.06 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.06 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, 3L.3_23.B1.13, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	reverse_primer YCL054W_tagr1v1	(648..675)	
+	mutation_affecting_coding_sequence YCL054W_re_remove_BlpI	(274..282)	removal of BlpI
+	forward_primer YCL054W_tagf1v1	(243..270)	
+	gene YCL054W	(-1181..+1344)	AdoMet-dependent methyltransferase involved in rRNA processing and 60S ribosomal subunit maturation%3B methylates G2922 in the tRNA docking site of the large subunit rRNA and in the absence of snR52%2C U2921%3B suppressor of PAB1 mutants
+
+Sequence (the first 750 bases correspond to coordinates 22834..23583 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277032_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277033/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277033"/>
+    <sbol:displayId>BBa_K277033</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277033"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277033</dcterms:title>
+    <dcterms:description>3L.3_23.B1.07</dcterms:description>
+    <dcterms:created>2009-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277033/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.07 is 750 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.07 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.07 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, 3L.3_23.B1.13, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	reverse_primer YCL054W_tagr3v1	(350..377)	
+	mutation_affecting_coding_sequence YCL054W_re_remove_Bpu10I	(294..302)	removal of Bpu10I
+	forward_primer YCL054W_tagf3v1	(74..101)	
+	gene YCL054W	(-1920..605)	AdoMet-dependent methyltransferase involved in rRNA processing and 60S ribosomal subunit maturation%3B methylates G2922 in the tRNA docking site of the large subunit rRNA and in the absence of snR52%2C U2921%3B suppressor of PAB1 mutants
+
+Sequence (the first 750 bases correspond to coordinates 23573..24322 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277033_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277034/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277034"/>
+    <sbol:displayId>BBa_K277034</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277034"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277034</dcterms:title>
+    <dcterms:description>3L.3_23.B1.08</dcterms:description>
+    <dcterms:created>2009-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277034/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.08 is 804 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.08 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.08 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, 3L.3_23.B1.13, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	forward_primer YCL052C_tagf1v1	(620..647)	
+	gene YCL052C	(35..+1285)	Essential component of glycosylphosphatidylinositol-mannosyltransferase I%2C required for the autocatalytic post-translational processing of the protease B precursor Prb1p%2C localizes to ER in lumenal orientation%3B homolog of mammalian PIG-X
+
+Sequence (the first 804 bases correspond to coordinates 24312..25115 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277034_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277035/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277035"/>
+    <sbol:displayId>BBa_K277035</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277035"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277035</dcterms:title>
+    <dcterms:description>3L.3_23.B1.09</dcterms:description>
+    <dcterms:created>2009-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277035/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.09 is 754 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.09 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.09 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, 3L.3_23.B1.13, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	reverse_primer YCL052C_tagr1v1	(213..240)	
+	gene YCL052C	(-762..488)	Essential component of glycosylphosphatidylinositol-mannosyltransferase I%2C required for the autocatalytic post-translational processing of the protease B precursor Prb1p%2C localizes to ER in lumenal orientation%3B homolog of mammalian PIG-X
+
+Sequence (the first 754 bases correspond to coordinates 25109..25862 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277035_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277036/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277036"/>
+    <sbol:displayId>BBa_K277036</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277036"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277036</dcterms:title>
+    <dcterms:description>3L.3_23.B1.10</dcterms:description>
+    <dcterms:created>2009-10-20T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277036/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.10 is 678 bases long and is cloned into the 
+
+pGem-T vector.
+
+3L.3_23.B1.10 was designed as a piece of 
+
+synthetic chromosome 3 with the goal of minimizing and 
+
+stabilizing that chromosome and to that end has had any 
+
+tRNAs, introns, repeat regions, and transposons that were 
+
+present in the wildtype chromosome removed. In addition a 
+
+very few gene sequences were slightly recoded to add or 
+
+remove restriction enzyme recognition sites to facilitate 
+
+assembly; most gene sequences were slightly recoded to 
+
+introduce unique primers for diagnostic PCR 
+
+amplification, and some gene sequences were slightly 
+
+recoded to address the distribution of stop codon usage. 
+
+3L.3_23.B1.10 is a constituent of 3L.3_23.B1 (along with 
+
+3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 
+
+3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 
+
+3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 
+
+3L.3_23.B1.11, 3L.3_23.B1.12, 3L.3_23.B1.13, and 
+
+3L.3_23.B1.14.)
+
+This part contains at least part of the 
+
+following features (positions offset from first base of 
+
+sequence): 
+	kind and name	offset	notes
+	gene 
+
+YCL051W	(217..+1968)	Protein involved in control of 
+
+cell wall structure and stress response%3B inhibits Cbk1p 
+
+protein kinase activity%3B overproduction confers 
+
+resistance to cell-wall degrading enzymes
+	
+
+forward_primer YCL051W_tagf2v1	(630..657)	
+
+Sequence 
+
+(the first 678 bases correspond to coordinates 
+
+25852..26529 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277036_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277037/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277037"/>
+    <sbol:displayId>BBa_K277037</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277037"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277037</dcterms:title>
+    <dcterms:description>3L.3_23.B1.11</dcterms:description>
+    <dcterms:created>2009-10-20T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277037/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.11 is 745 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.11 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.11 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.12, 3L.3_23.B1.13, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	mutation_affecting_coding_sequence YCL051W_re_remove_MmeI	(277..288)	removal of MmeI
+	gene YCL051W	(-452..+1299)	Protein involved in control of cell wall structure and stress response%3B inhibits Cbk1p protein kinase activity%3B overproduction confers resistance to cell-wall degrading enzymes
+	reverse_primer YCL051W_tagr2v1	(429..456)	
+
+Sequence (the first 745 bases correspond to coordinates 26521..27265 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277037_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277038/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277038"/>
+    <sbol:displayId>BBa_K277038</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277038"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277038</dcterms:title>
+    <dcterms:description>3L.3_23.B1.12</dcterms:description>
+    <dcterms:created>2009-10-20T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277038/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.12 is 739 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.12 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.12 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.13, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	loxP_site loxPsym_YCL051W	(569..602)	
+	forward_primer YCL051W_tagf1v1	(169..196)	
+	gene YCL051W	(-1186..565)	Protein involved in control of cell wall structure and stress response%3B inhibits Cbk1p protein kinase activity%3B overproduction confers resistance to cell-wall degrading enzymes
+	reverse_primer YCL051W_tagr1v1	(424..451)	
+
+Sequence (the first 739 bases correspond to coordinates 27255..27993 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277038_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277039/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277039"/>
+    <sbol:displayId>BBa_K277039</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277039"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277039</dcterms:title>
+    <dcterms:description>3L.3_23.B1.13</dcterms:description>
+    <dcterms:created>2009-10-20T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277039/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.13 is 869 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.13 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.13 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, and 3L.3_23.B1.14.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	gene YCL050C	(125..+1090)	Diadenosine 5&apos;%2C5&apos;&apos;-P1%2CP4-tetraphosphate phosphorylase I (AP4A phosphorylase)%2C involved in catabolism of bis(5&apos;-nucleosidyl) tetraphosphates%3B has similarity to Apa2p
+	reverse_primer YCL050C_tagr1v1	(620..647)	
+	mutation_affecting_coding_sequence YCL050C_re_remove_MmeI	(680..691)	removal of MmeI
+	forward_primer YCL050C_tagf1v1	(293..320)	
+	loxP_site loxPsym_YCL050C	(88..121)	
+
+Sequence (the first 869 bases correspond to coordinates 27983..28851 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277039_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K277040/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277040"/>
+    <sbol:displayId>BBa_K277040</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277040"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K277040</dcterms:title>
+    <dcterms:description>3L.3_23.B1.14</dcterms:description>
+    <dcterms:created>2009-10-20T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:46Z</dcterms:modified>
+    <sbh:mutableProvenance>Synthetic Yeast</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277040/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>3L.3_23.B1.14 is 804 bases long and is cloned into the pGem-T vector.
+
+3L.3_23.B1.14 was designed as a piece of synthetic chromosome 3 with the goal of minimizing and stabilizing that chromosome and to that end has had any tRNAs, introns, repeat regions, and transposons that were present in the wildtype chromosome removed. In addition a very few gene sequences were slightly recoded to add or remove restriction enzyme recognition sites to facilitate assembly; most gene sequences were slightly recoded to introduce unique primers for diagnostic PCR amplification, and some gene sequences were slightly recoded to address the distribution of stop codon usage. 3L.3_23.B1.14 is a constituent of 3L.3_23.B1 (along with 3L.3_23.B1.01, 3L.3_23.B1.02, 3L.3_23.B1.03, 3L.3_23.B1.04, 3L.3_23.B1.05, 3L.3_23.B1.06, 3L.3_23.B1.07, 3L.3_23.B1.08, 3L.3_23.B1.09, 3L.3_23.B1.10, 3L.3_23.B1.11, 3L.3_23.B1.12, and 3L.3_23.B1.13.)
+
+This part contains at least part of the following features (positions offset from first base of sequence): 
+	kind and name	offset	notes
+	gene YCL050C	(-735..230)	Diadenosine 5&apos;%2C5&apos;&apos;-P1%2CP4-tetraphosphate phosphorylase I (AP4A phosphorylase)%2C involved in catabolism of bis(5&apos;-nucleosidyl) tetraphosphates%3B has similarity to Apa2p
+
+Sequence (the first 804 bases correspond to coordinates 28843..29646 in synthetic chromosome yeast_chr3_3_23)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_385_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2669</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Constructed using overlap extension PCR protocol described in RFC38</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>James DiCarlo</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K277040_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277136_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277136_sequence"/>
+    <sbol:displayId>BBa_K277136_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277136"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277136_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>gcttagctcaattaaatatactagtaaataagtatataaacaataattttgcattttattttactggaaactcttctcaaaaccaaattgcgcaaggattgattcagtacaattatgcaaactcgaaaagtaaataaacaaaaagatacagttgagtgaaaggtaaataaacattattctacttgattttcctctgttttttccatttttcttttttgtcttttcgtgttctagcgtgttcactttttcagccatgtaattacttaaataggaagtttacacgatgttctcgcataaaaagctggaagtgcagaacaaagaggaagaaaataggaacagagaatttgtttgtttatttgtttgtttgcttgtttgtttgtttgttttgatttgaagtcgaggtacttattcgaaataattattttgcccagggttttggatagttttttgttttccaattagatttttagaaatattttatcatagttttttgtttatttatttgtttatttatttgttgatttgtttatttatttgttggtttgtttatttaagtttgtaaatgtttaataaacaaaacaatatttgcaagccattgaaaactttgtaaatttgtttgagaatttacgaaacaatgaaaattaaggactctttgatggtgaacgaattactactttgcagcaggtaattctctaaaactcagaaacaaggcatgtatttttcactaggaaaaagaaggaaaataaggaaaatgggactacagtattagggaaacaggattaaaattcgtaggtaataataacccatactttcattgtagcagtactttcgttaataaaatggatattgttgtacttcggtagatgttatattctaaagagttaaattatccaattccaaattctagggacggtttccaaagatttgtattgtccagtgacataattttcactaaaacattgatctgtttaataggtttgctataaatgcacaataatttttcacccatgatacccaatttcaagagaagcaattgctacatataattatttaggctttactatctactactcattgactgtgcccttttacacaattataacaaatatgtcaaagcagatgccatgaactttgtatctgaatttttgatttccttttaattctaattgcagacgacgtaaatatagttctgaatttcaaagtcactgttaattaattgttctaattgtttggtttttttaatataaatcactagtgcttaagttctgttgacgcacacagtacctatctttgattccttcgtgcaaacagtattccggcacgttaattgataccaaaaagatttcaaaatcagatgcttcaagactaattgtatactttatgtgacttctggagtttaatttgttgtattgatgagataatattgtctattatattgccaataacaaccagcgccaggtgtactaagtcgagatgacagaaaatttataataagtgtaaatacaataaatacaataaattttgtaaataaataactacttcaatagaaatctcaaagtcgaagaaacacagaacacagaatgaaactggactaaatgattttcaataaaggaaaagcacgaaaaattttttgaacttttttgggacagcgtggatcgtgtaattactgtattgggaaatttacacgattctcgacaaataaagaaaaaggcgcgtttaaagacttacaagcacacctttgaattatttttgttctctatgattatcaaatgtgctagtgtttgcaagatggtgcttttttttctttagattgccacgtttctgctcctctttgtggttttctttttttttttcaatcttacttataaaatgaatatttcaattgatgaatagctatatattggatacaaaaattagcatttaatcgaaaactgcagcatgtatttaatcgaaaactacagcatgtagctatgatacgacagaagatttttgtttttatagttaagtcaagaagaaattctatttgtccagcaatccggcgcaaagaagactactaaagggtattgaaaaatttctagaaccagaaataatcgaaagcattactttttttggctctataaaggagttctggacagcttgaacttccgaagtctgtctgtttagctcgttaagataaatctcaaaagagtagcaagcaggtgggagggataatttggattaaagtgtatatattgcgtatatatagccacgtaaacctcacactaacctcacactattgagtttaaacatttttcaccttacgttattattcttttgtctaattttaatctcctccagtatactaaaaccgcaaaagcgggttacccagcttgtttctttttgtctgaaaaattttttgcgatgcccattatgaaaaattggcaataatagtatagtagttagtttaagtttagattctttcaatactcattctgcttcagtttgtagttagatttaactcaatagaggtgattggcaaaaatgggtaagacacaaaagaagaatagtaagggacgtttagatagatactattatctagcaaaggagaaaggttatcgtgctcgttcatcctttaagattattcagattaatgaaaagtatggccacttcttagaaaaatcgaaggttgttattgatctgtgtgctgctcctggttcatggtgtcaagtcgctagcaagttgtgcccagttaatagcttaattattggtgttgatattgttccaatgaagccgatgcccaatgttataacttttcaaagtgatattacaacagaagattgtagatcaaaattgaggggttatatgaagacttggaaagctgatacagtgttgcatgatggtgctcctaatgttggtttgggttgggttcaggatgctttcacccaatctcaattaaccttacaagctttgaagttggccgtcgaaaatttggtggtgaacggtacttttgttactaaaattttcagatccaaggattatccaaggattataataaattgatttgggtttttcaacaattgtttgagaaagttgaagccacaaaaccacccgcatcaagaaatgtttctgcagaaatttttgtagtgtgtaaaggtttcaaagctcctaaacgattggatcctcgattgctggatccaaaagaagtttttgaagaattgccagatgggcaacagaatatggagtccaagatttataatcccgaaaaaaaagttagaaaaagacaaggttatgaggaaggtgataatttactgtatcatgaaacctcaattttggattttgtcaggacggaagacccaataagcatgcttggagaaatgaataagtttacaattgatgagaatgaccatgaatggaagatcttgaagaaattgaaacaaaccacagacgagttccgttcctgtattgaagatttaaaagtcttgggtaaaaaggattttaaaatgatcctaagatggagaaagattgcaagggaaatcttgggcatcgaagttaaggacgacgctaaaacagaaattgaagtagtaccgttaacagaagaggagcaaattgaaaaagatttgcaaggtttacaggagaagcagcgtctaaatgtcaagcgcgaaagaagaaggaagaacgaaatgaagcaaaaggaactacagagaatgcaaatgaacatgataacccccactgatattggtattattggtattgaagccgcaagtttgggtaaagaatcgttgtttaatttgaaaactgcagaaaagactggtatcttgaacgacttggcgaagggtaagaaaagaatgatttttacagacgatgaattagccaaagataatgatatttacattgatgaaaacatcatgatcaaagataaggattctgccgctgatgcggacgatttagaaagcgagttgaatgccatgtatagtgattataaaacccgacgaagcgaacgagacgctaaattcagagctaaacaagcacgtggtggcgataatgaggaagaatggaccggttttaatgagggaagtctagaaaagaaagaagaggaaggtaaagattatatcgaagacaatgacgatgaaggtgtcgaaggagactccgatgatgatgaagccatcaccaatttgattagcaaattgaagggacaagaaggtgatcacaaattgagtagtaaggcacgtatgattttcaatgatccgatatttaataacgttgaacctgatttgccagtaaataccgtcaatgatggcataatgagttccgagtctgttggtgatatttctaaattaaataagaaaagaaaacatgaagaaatgcaccagaaacaagatgaagcagattccagcgacgaatctagctctgacgatagcgatttcgaaattgtggccaacgataatgcatcagaagaattcgattctgattatgattcagaggaagaaaaaaataagaaaaaaatcaaacaaagaaagaaaagcattccagagacattgatattgctactgttgaagccatgactttagctcaccaattggctctaggccaaaagaacaagcatgatcttgttgatgaaggtttcaatagatacaccttccgtgacaccgaaaatttgccagattggtttttagaagatgaaaaggaacattcaaagataaataagccgattactaaggaggcagcgatggcaattaaagaaaaaataaaggcaatgaacgcccgtcctattaagaaggttgctgaagctaaagcaagaaagaggatgcgtgccgtagctcggttagaaaagatcaagaagaaagctggtctaatcaatgacgacagcgataagacagagaaggacaaggctgaagaaatttctagattgatgcgtaaggttaccaaaaaaccaaagaccaagccaaaggttactttggttgttgcctcaggtaggaacaaaggtttggcaggtagaccaaagggcgttaagggtaagtataagatggttgatggtgtcatgaagaatgaacaaagagccctaagacgtatcgcaaagaagcatcacaagaaaaagtaataacaaagagcattatttttccattcccttgtataatattgaaaataaaggaaaagaaagcaatagatatattatgtatacatagaattaatcaaattatcatcaaaaaacttataggaaacctatcgttttgaattcagaaaatattcagaaaatacgagtgcacagtagaacaatttttattcccgttttactgatcttttcttcttgttgttaccaaataccttggagaaaatgtatatgatggagatgagtaagcatagtaacgtaccatttttgatcttggaataatcctttgtgtcaggccttggaattggtactagaagagttgtcgagttcaaatggcggaatgtagtatcgtctgtaaagagagattcatatcctagaccttttttataaaatggattacgggaaactttattgtcacctgtgtcgcaggctaatataacttctggatcaaatgaaacttctaatttatcccctttattattagaaggctcaatatatctagtatgcaatgtcacttcattcattgtgccggctttcaattcaaagatactttcagaaccccatgccttatctcgaagagagtattctggtaattctaagtcgtcttctccaaaaagtagtaagggagaggattggaatttatcgataaataattctaacggcaattgcaggtgcattagatacatgcatttagggcgttcttcgaaatctgtgagatcaatcatgatttttggatgcaaaccgataggttcattcaagtacaagctggtggtggtggtgctatgattgtatgcgatatggccctgtttatacaataaggatgttttctgacatctttccattttaccatcgtccatcctccaattacaacgtattccaccaatatcgacatcactttcatcacttgcatccacaaagaatacacctacttcgagtttctagtttctcatctttcactcttgcaattgtaaattcttcaccctgtttcaacagacgatattcaacaatttggatttgtgtgggctccactgatatatcatatgtaaaatcttctggattccatgacagattcaaatctacttcgggaggcaagtactgctctatgtcaaacttctcactgtgaaatgaattgtagactgggttagtaataaatcgttctggaacgtcgctgctgttgctataaactgaaaagccagcactcagttcattttctataacgcttaaacttctagccaagtccgctctgggcctccaagtgattctcgtaaaggatttatccaagcttccagtcctctctaatagccacctttgttgtaaaaccacaccagaacctccacgaacagtcaaatgagtgtcattttggcgcatatgattaccgatatcctcaggggcattgtagagtacagtcactctatgtcttgtcaccattactcagctagaaacgcacacttcttgcgtttattctcctcccgatttgattatgattagcgtttccattatttgatcttttttatcagggggatcttcaaagaaaggaactttttttaggaaaaaaaaaataatcatcttttattacatgtgtaatacttcaagcaatcataaacaagagttaagaaggcaaagttctgctgttagtgtgtcctccaatactcttgcacgacaaagttttagttatccccttctacgtgtattgtacgtgtattgttcctccgtggtcgattgtgttcaaagattgggagctcttttcgtgttttgcactaagagcatactgttaatccgcaaaggccactaaaacttacctgcatttgtctacttaaagatacattccaactatttacattcatttttatttctaaaagagcattctgaaccctcggcaattatttcatactccttctcagaataggaaaatgcccaatacgcatactcaacatgtgcaaatatcagagccaaatcctgtaaatactttgtctacaccatccaaaagaggtcaccgccatcgcagatcgctagcaatatcaggagattttgattttttgaaacagcctgcagcaattgtgaatttaccacctccacaggcggctgaaaattgtccttcaactgccccaactgctgtatcaagtacattatcgccaatacgctacaatagatttccttgcaaaaccaatgaagacgctggaacgttagatttgcctgaaccaagattttatccgttatcaccaaagaacaatctgcaaacaccaagtccacgatttttcattagtgaagagccaagtttttcatcgccagttaaaggcgtcccagatgccattattaaccttgatgacgctctaaaaacccgaccacgaagctttaaatcacatagaagatctagaagatctgaatccgctcctcctgatttggaggttatggtagataagggcaattgtgcagccggttctaactctatgattaaagaagaagaggactccttaattgaaccagaatcgaaaaatgaatattatgagcaaaagctgccaacagcactattatccccactgcggccttccctttgtgtatctgaacaggccattgatgtagatgattcagctctcaatgggtcaccgacccatcacaaccatgggatgcaaaacgccaatgcacggaattctaacacattcaattcgttgaagatcaaaggccaaaagcaaagatattatcattatacgaagcagctacctttgaccgtaggctgtgactcgcaatctccaaaagaacaaaggtcggctgcttcaatgacaatcaatcaggcaatgacaccaagcagcttggcttacactccaagcaagctagcatctactcccgcaacaccagtatccttttatgacagcaatgcggacattaacttagaaagtgataattttccactaaaagataaccctagatatgccaaggatggttatcctaaaaagtgcggcaattcacagcttaatcgtgtgctggatagcgataaaagacaggattttagtggagaatcgagaagaagaagatcgggcagtcctatctcccacatgcaacaccgcaacctgattgataatatgaaaggtagacgaaacagtaacacgataaactcaatctaaactcaatcttcaactacaagagtcaacattatgaaatgccatatgatgatatgatgaaaaatgaaaacattaatgcacagtccatgcccttttcagtcaacggtgtcaacaatgaaaatagtatcggaggggttattacgagagcggacgatgcaccccttcaacatagcgttgttaagagctgcaccccagacggcaaggaagaaatgaataggcttaaaagtaatgacagtaatgaatattccaagtctgaagggcagatcagaaccaattcgcaactaagtaaggacattctcatgggtgaaccaggtgatatggttgatctgtcctcttttgtcaacgcgcagagaaaagcctcaaatgaaactggtgacttagtctttagtttatcccaggatgatgacgcactgaaaacgttccacgcttctaattctgctgctacctctaacgaaagctggtgtattagcgatgatgcgttaggaaagcaggcgcaggacagtgaagttaggaggaaaagaaaatccaaattaggactctttagacatattttttcaaggaagtaatacataacttcgtataatgtacattatacgaagttataacaatattaataataagtaataaaaaggtgaatcgtaaccttaacggcattgattgcatgtagttttaataataaagtgtagaataataaatataaaatttcaaagtcatcagaaataaaaattgaatagacatataatagacatatacatatagaaattacttctatcatttaaatacatatatatacatacatgtatacgtgtatacttgtacttgtgaagataacttcgtataatgtacattatacgaagttatgactcaatagttgtattcgtttggtttttgaccagaagtgtttgggaaaccacattccaataagatatcgttaatcaattcaggtttttcagtaatcttggagaaaacttcatcatttttggttaagatcataccacaataacctgtggagttgaaacctatcttcatttcgtcgctgaaagctttgcttcgagggacaacacagatccattccttggttaacataagattgtaggatttctttagttctggattttcgttcaaccagtcctggaaaaaggtcaaagctctttgcaatatggagatgtaacacatagctaataggtcttcatcaacagtttcttcagactccggcattggcaagacaaaatgagcgaacgagactttagcatcttgcaaaggttcagtattgaaagttggtaggaaatgttctttaccattacatagtctatcttggaaagtgacgaacttttcaggcatttgcagaatttgcaaatgcttatgatctaggctgctgccagaagcaggaccagaattgtaaaagaccatgtgtctcttatcggattcttcattgtccaaggcacacagcaacttataagcagtcaataaatcggttggggtcaaggcatcagtttgatgttggtattcgttagttaccaataaagtgtgttcagggattacagggaatttgtttaatagcaatttatacgctttgttatcggcaccaccaaattctgggataaccgttataaccgttaattcttcctcaggtttgcctagtggatcctctccttctggagtttggccacgctctggcttttcgatcagacttggcatgtgactaatcaagtatggcatgctggtttttgggtcctttgttttcgttgtttcagtctggataaattttaagttaccattatcgaaggcacttttgtacttgtcactaattaaagatgcaatgtcagcggggatactcatttttattttaatttttacttttctgtttgttctaaaatctatctaaactggctttcaagatcaatctattgtcttttaaggtaaactttaaattggaaataatagtaatgttagttccttcattttaaccttgtattgtatttcctttgcgtgatgaaaaaaaaactgaaaaagagaaaaataagaaaatcttctagaacgttccgaaacaggacacttagcacacaaatacagaataggaaagtaaaaggcaatatatgaatgcagtgcttgtaactggtgcttgtatccaagaatagcttcttgctgtaggttatgggaatatcgtgtaagctggggtgacttttgagctattcgcgacgcccgacgccgtaataactactttcgacagaccacttatgacagtatttcaggccgctcttataaaatgacatgttaacaaacagttctgattattcgccttttgacaggacgataatgtaaatagttgtggtagtatcattcaggtatgtaactgtttactttgtatcgcttgaaaaaaataagcatttcagagccttctttggagctcaag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277027_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277027_sequence"/>
+    <sbol:displayId>BBa_K277027_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277027"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277027_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>gcttagctcaattaaatatactagtaaataagtatataaacaataattttgcattttattttactggaaactcttctcaaaaccaaattgcgcaaggattgattcagtacaattatgcaaactcgaaaagtaaataaacaaaaagatacagttgagtgaaaggtaaataaacattattctacttgattttcctctgttttttccatttttcttttttgtcttttcgtgttctagcgtgttcactttttcagccatgtaattacttaaataggaagtttacacgatgttctcgcataaaaagctggaagtgcagaacaaagaggaagaaaataggaacagagaatttgtttgtttatttgtttgtttgcttgtttgtttgtttgttttgatttgaagtcgaggtacttattcgaaataattattttgcccagggttttggatagttttttgttttccaattagatttttagaaatattttatcatagttttttgtttatttatttgtttatttatttgttgatttgtttatttatttgttggtttgtttatttaagtttgtaaatgtttaataaacaaaacaatatttgcaagccattgaaaactttgtaaatttgtttgagaatttacgaaacaatgaaaattaaggactctttgatggtgaacgaattactactttgcagcaggtaattctctaaaactcagaaacaaggcatgtatttttcactaggaaaaagaaggaaaat</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277028_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277028_sequence"/>
+    <sbol:displayId>BBa_K277028_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277028"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277028_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aaggaaaatgggactacagtattagggaaacaggattaaaattcgtaggtaataataacccatactttcattgtagcagtactttcgttaataaaatggatattgttgtacttcggtagatgttatattctaaagagttaaattatccaattccaaattctagggacggtttccaaagatttgtattgtccagtgacataattttcactaaaacattgatctgtttaataggtttgctataaatgcacaataatttttcacccatgatacccaatttcaagagaagcaattgctacatataattatttaggctttactatctactactcattgactgtgcccttttacacaattataacaaatatgtcaaagcagatgccatgaactttgtatctgaatttttgatttccttttaattctaattgcagacgacgtaaatatagttctgaatttcaaagtcactgttaattaattgttctaattgtttggtttttttaatataaatcactagtgcttaagttctgttgacgcacacagtacctatctttgattccttcgtgcaaacagtattccggcacgttaattgataccaaaaagatttcaaaatcagatgcttcaagactaattgtatactttatgtgacttctggagtttaatttgttgtattgatgagataatattgtctattatattgccaataacaaccagcgccaggtgtactaagtcgagatgacagaaaatttataataagtgtaaatacaat</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277029_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277029_sequence"/>
+    <sbol:displayId>BBa_K277029_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277029"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277029_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aaatacaataaattttgtaaataaataactacttcaatagaaatctcaaagtcgaagaaacacagaacacagaatgaaactggactaaatgattttcaataaaggaaaagcacgaaaaattttttgaacttttttgggacagcgtggatcgtgtaattactgtattgggaaatttacacgattctcgacaaataaagaaaaaggcgcgtttaaagacttacaagcacacctttgaattatttttgttctctatgattatcaaatgtgctagtgtttgcaagatggtgcttttttttctttagattgccacgtttctgctcctctttgtggttttctttttttttttcaatcttacttataaaatgaatatttcaattgatgaatagctatatattggatacaaaaattagcatttaatcgaaaactgcagcatgtatttaatcgaaaactacagcatgtagctatgatacgacagaagatttttgtttttatagttaagtcaagaagaaattctatttgtccagcaatccggcgcaaagaagactactaaagggtattgaaaaatttctagaaccagaaataatcgaaagcattactttttttggctctataaaggagttctggacagcttgaacttccgaagtctgtctgtttagctcgttaagataaatctcaaaagagtagcaagcaggtgggagggataatttggattaaagtgtatatattgcgtatatatagccacgtaaacctcacact</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277030_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277030_sequence"/>
+    <sbol:displayId>BBa_K277030_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277030"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277030_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aacctcacactattgagtttaaacatttttcaccttacgttattattcttttgtctaattttaatctcctccagtatactaaaaccgcaaaagcgggttacccagcttgtttctttttgtctgaaaaattttttgcgatgcccattatgaaaaattggcaataatagtatagtagttagtttaagtttagattctttcaatactcattctgcttcagtttgtagttagatttaactcaatagaggtgattggcaaaaatgggtaagacacaaaagaagaatagtaagggacgtttagatagatactattatctagcaaaggagaaaggttatcgtgctcgttcatcctttaagattattcagattaatgaaaagtatggccacttcttagaaaaatcgaaggttgttattgatctgtgtgctgctcctggttcatggtgtcaagtcgctagcaagttgtgcccagttaatagcttaattattggtgttgatattgttccaatgaagccgatgcccaatgttataacttttcaaagtgatattacaacagaagattgtagatcaaaattgaggggttatatgaagacttggaaagctgatacagtgttgcatgatggtgctcctaatgttggtttgggttgggttcaggatgctttcacccaatctcaattaaccttacaagctttgaagttggccgtcgaaaatttggtggtgaacggtacttttgttactaaaattttcagatccaaggatt</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277031_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277031_sequence"/>
+    <sbol:displayId>BBa_K277031_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277031"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277031_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atccaaggattataataaattgatttgggtttttcaacaattgtttgagaaagttgaagccacaaaaccacccgcatcaagaaatgtttctgcagaaatttttgtagtgtgtaaaggtttcaaagctcctaaacgattggatcctcgattgctggatccaaaagaagtttttgaagaattgccagatgggcaacagaatatggagtccaagatttataatcccgaaaaaaaagttagaaaaagacaaggttatgaggaaggtgataatttactgtatcatgaaacctcaattttggattttgtcaggacggaagacccaataagcatgcttggagaaatgaataagtttacaattgatgagaatgaccatgaatggaagatcttgaagaaattgaaacaaaccacagacgagttccgttcctgtattgaagatttaaaagtcttgggtaaaaaggattttaaaatgatcctaagatggagaaagattgcaagggaaatcttgggcatcgaagttaaggacgacgctaaaacagaaattgaagtagtaccgttaacagaagaggagcaaattgaaaaagatttgcaaggtttacaggagaagcagcgtctaaatgtcaagcgcgaaagaagaaggaagaacgaaatgaagcaaaaggaactacagagaatgcaaatgaacatgataacccccactgatattggtatt</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277032_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277032_sequence"/>
+    <sbol:displayId>BBa_K277032_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277032"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277032_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>attggtattgaagccgcaagtttgggtaaagaatcgttgtttaatttgaaaactgcagaaaagactggtatcttgaacgacttggcgaagggtaagaaaagaatgatttttacagacgatgaattagccaaagataatgatatttacattgatgaaaacatcatgatcaaagataaggattctgccgctgatgcggacgatttagaaagcgagttgaatgccatgtatagtgattataaaacccgacgaagcgaacgagacgctaaattcagagctaaacaagcacgtggtggcgataatgaggaagaatggaccggttttaatgagggaagtctagaaaagaaagaagaggaaggtaaagattatatcgaagacaatgacgatgaaggtgtcgaaggagactccgatgatgatgaagccatcaccaatttgattagcaaattgaagggacaagaaggtgatcacaaattgagtagtaaggcacgtatgattttcaatgatccgatatttaataacgttgaacctgatttgccagtaaataccgtcaatgatggcataatgagttccgagtctgttggtgatatttctaaattaaataagaaaagaaaacatgaagaaatgcaccagaaacaagatgaagcagattccagcgacgaatctagctctgacgatagcgatttcgaaattgtggccaacgataatgcatcagaagaattcgattctgattatgattcagaggaagaaaaaaat</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277033_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277033_sequence"/>
+    <sbol:displayId>BBa_K277033_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277033"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277033_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aagaaaaaaatcaaacaaagaaagaaaagcattccagagacattgatattgctactgttgaagccatgactttagctcaccaattggctctaggccaaaagaacaagcatgatcttgttgatgaaggtttcaatagatacaccttccgtgacaccgaaaatttgccagattggtttttagaagatgaaaaggaacattcaaagataaataagccgattactaaggaggcagcgatggcaattaaagaaaaaataaaggcaatgaacgcccgtcctattaagaaggttgctgaagctaaagcaagaaagaggatgcgtgccgtagctcggttagaaaagatcaagaagaaagctggtctaatcaatgacgacagcgataagacagagaaggacaaggctgaagaaatttctagattgatgcgtaaggttaccaaaaaaccaaagaccaagccaaaggttactttggttgttgcctcaggtaggaacaaaggtttggcaggtagaccaaagggcgttaagggtaagtataagatggttgatggtgtcatgaagaatgaacaaagagccctaagacgtatcgcaaagaagcatcacaagaaaaagtaataacaaagagcattatttttccattcccttgtataatattgaaaataaaggaaaagaaagcaatagatatattatgtatacatagaattaatcaaattatcatcaaaaaacttataggaaacctatcgttttgaattcagaaaat</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277034_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277034_sequence"/>
+    <sbol:displayId>BBa_K277034_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277034"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277034_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>attcagaaaatacgagtgcacagtagaacaatttttattcccgttttactgatcttttcttcttgttgttaccaaataccttggagaaaatgtatatgatggagatgagtaagcatagtaacgtaccatttttgatcttggaataatcctttgtgtcaggccttggaattggtactagaagagttgtcgagttcaaatggcggaatgtagtatcgtctgtaaagagagattcatatcctagaccttttttataaaatggattacgggaaactttattgtcacctgtgtcgcaggctaatataacttctggatcaaatgaaacttctaatttatcccctttattattagaaggctcaatatatctagtatgcaatgtcacttcattcattgtgccggctttcaattcaaagatactttcagaaccccatgccttatctcgaagagagtattctggtaattctaagtcgtcttctccaaaaagtagtaagggagaggattggaatttatcgataaataattctaacggcaattgcaggtgcattagatacatgcatttagggcgttcttcgaaatctgtgagatcaatcatgatttttggatgcaaaccgataggttcattcaagtacaagctggtggtggtggtgctatgattgtatgcgatatggccctgtttatacaataaggatgttttctgacatctttccattttaccatcgtccatcctccaattacaacgtattccaccaatatcgacatcactttcatcacttgcatccacaaagaatacacctacttcgagtttct</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277035_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277035_sequence"/>
+    <sbol:displayId>BBa_K277035_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277035"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277035_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>agtttctcatctttcactcttgcaattgtaaattcttcaccctgtttcaacagacgatattcaacaatttggatttgtgtgggctccactgatatatcatatgtaaaatcttctggattccatgacagattcaaatctacttcgggaggcaagtactgctctatgtcaaacttctcactgtgaaatgaattgtagactgggttagtaataaatcgttctggaacgtcgctgctgttgctataaactgaaaagccagcactcagttcattttctataacgcttaaacttctagccaagtccgctctgggcctccaagtgattctcgtaaaggatttatccaagcttccagtcctctctaatagccacctttgttgtaaaaccacaccagaacctccacgaacagtcaaatgagtgtcattttggcgcatatgattaccgatatcctcaggggcattgtagagtacagtcactctatgtcttgtcaccattactcagctagaaacgcacacttcttgcgtttattctcctcccgatttgattatgattagcgtttccattatttgatcttttttatcagggggatcttcaaagaaaggaactttttttaggaaaaaaaaaataatcatcttttattacatgtgtaatacttcaagcaatcataaacaagagttaagaaggcaaagttctgctgttagtgtgtcctccaatactcttgcacgacaaagttttagttatccccttctacgtgtattgt</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277036_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277036_sequence"/>
+    <sbol:displayId>BBa_K277036_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277036"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277036_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>acgtgtattgttcctccgtggtcgattgtgttcaaagattgggagctcttttcgtgttttgcactaagagcatactgttaatccgcaaaggccactaaaacttacctgcatttgtctacttaaagatacattccaactatttacattcatttttatttctaaaagagcattctgaaccctcggcaattatttcatactccttctcagaataggaaaatgcccaatacgcatactcaacatgtgcaaatatcagagccaaatcctgtaaatactttgtctacaccatccaaaagaggtcaccgccatcgcagatcgctagcaatatcaggagattttgattttttgaaacagcctgcagcaattgtgaatttaccacctccacaggcggctgaaaattgtccttcaactgccccaactgctgtatcaagtacattatcgccaatacgctacaatagatttccttgcaaaaccaatgaagacgctggaacgttagatttgcctgaaccaagattttatccgttatcaccaaagaacaatctgcaaacaccaagtccacgatttttcattagtgaagagccaagtttttcatcgccagttaaaggcgtcccagatgccattattaaccttgatgacgctctaaaaacccgaccacgaagctttaaatcacatagaagatct</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277037_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277037_sequence"/>
+    <sbol:displayId>BBa_K277037_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277037"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277037_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>agaagatctgaatccgctcctcctgatttggaggttatggtagataagggcaattgtgcagccggttctaactctatgattaaagaagaagaggactccttaattgaaccagaatcgaaaaatgaatattatgagcaaaagctgccaacagcactattatccccactgcggccttccctttgtgtatctgaacaggccattgatgtagatgattcagctctcaatgggtcaccgacccatcacaaccatgggatgcaaaacgccaatgcacggaattctaacacattcaattcgttgaagatcaaaggccaaaagcaaagatattatcattatacgaagcagctacctttgaccgtaggctgtgactcgcaatctccaaaagaacaaaggtcggctgcttcaatgacaatcaatcaggcaatgacaccaagcagcttggcttacactccaagcaagctagcatctactcccgcaacaccagtatccttttatgacagcaatgcggacattaacttagaaagtgataattttccactaaaagataaccctagatatgccaaggatggttatcctaaaaagtgcggcaattcacagcttaatcgtgtgctggatagcgataaaagacaggattttagtggagaatcgagaagaagaagatcgggcagtcctatctcccacatgcaacaccgcaacctgattgataatatgaaaggtagacgaaacagtaacacgataaactcaatct</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277038_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277038_sequence"/>
+    <sbol:displayId>BBa_K277038_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277038"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277038_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aaactcaatcttcaactacaagagtcaacattatgaaatgccatatgatgatatgatgaaaaatgaaaacattaatgcacagtccatgcccttttcagtcaacggtgtcaacaatgaaaatagtatcggaggggttattacgagagcggacgatgcaccccttcaacatagcgttgttaagagctgcaccccagacggcaaggaagaaatgaataggcttaaaagtaatgacagtaatgaatattccaagtctgaagggcagatcagaaccaattcgcaactaagtaaggacattctcatgggtgaaccaggtgatatggttgatctgtcctcttttgtcaacgcgcagagaaaagcctcaaatgaaactggtgacttagtctttagtttatcccaggatgatgacgcactgaaaacgttccacgcttctaattctgctgctacctctaacgaaagctggtgtattagcgatgatgcgttaggaaagcaggcgcaggacagtgaagttaggaggaaaagaaaatccaaattaggactctttagacatattttttcaaggaagtaatacataacttcgtataatgtacattatacgaagttataacaatattaataataagtaataaaaaggtgaatcgtaaccttaacggcattgattgcatgtagttttaataataaagtgtagaataataaatataaaatttcaaagtcatcagaaataaaaattgaatagacatat</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277039_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277039_sequence"/>
+    <sbol:displayId>BBa_K277039_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277039"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277039_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aatagacatatacatatagaaattacttctatcatttaaatacatatatatacatacatgtatacgtgtatacttgtacttgtgaagataacttcgtataatgtacattatacgaagttatgactcaatagttgtattcgtttggtttttgaccagaagtgtttgggaaaccacattccaataagatatcgttaatcaattcaggtttttcagtaatcttggagaaaacttcatcatttttggttaagatcataccacaataacctgtggagttgaaacctatcttcatttcgtcgctgaaagctttgcttcgagggacaacacagatccattccttggttaacataagattgtaggatttctttagttctggattttcgttcaaccagtcctggaaaaaggtcaaagctctttgcaatatggagatgtaacacatagctaataggtcttcatcaacagtttcttcagactccggcattggcaagacaaaatgagcgaacgagactttagcatcttgcaaaggttcagtattgaaagttggtaggaaatgttctttaccattacatagtctatcttggaaagtgacgaacttttcaggcatttgcagaatttgcaaatgcttatgatctaggctgctgccagaagcaggaccagaattgtaaaagaccatgtgtctcttatcggattcttcattgtccaaggcacacagcaacttataagcagtcaataaatcggttggggtcaaggcatcagtttgatgttggtattcgttagttaccaataaagtgtgttcagggattacagggaatttgtttaatagcaatttatacgctttgttatcggcaccaccaaattctgggataaccgtt</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K277040_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K277040_sequence"/>
+    <sbol:displayId>BBa_K277040_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K277040"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K277040_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>ataaccgttaattcttcctcaggtttgcctagtggatcctctccttctggagtttggccacgctctggcttttcgatcagacttggcatgtgactaatcaagtatggcatgctggtttttgggtcctttgttttcgttgtttcagtctggataaattttaagttaccattatcgaaggcacttttgtacttgtcactaattaaagatgcaatgtcagcggggatactcatttttattttaatttttacttttctgtttgttctaaaatctatctaaactggctttcaagatcaatctattgtcttttaaggtaaactttaaattggaaataatagtaatgttagttccttcattttaaccttgtattgtatttcctttgcgtgatgaaaaaaaaactgaaaaagagaaaaataagaaaatcttctagaacgttccgaaacaggacacttagcacacaaatacagaataggaaagtaaaaggcaatatatgaatgcagtgcttgtaactggtgcttgtatccaagaatagcttcttgctgtaggttatgggaatatcgtgtaagctggggtgacttttgagctattcgcgacgcccgacgccgtaataactactttcgacagaccacttatgacagtatttcaggccgctcttataaaatgacatgttaacaaacagttctgattattcgccttttgacaggacgataatgtaaatagttgtggtagtatcattcaggtatgtaactgtttactttgtatcgcttgaaaaaaataagcatttcagagccttctttggagctcaag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

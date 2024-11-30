@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1484100/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1484100"/>
+    <sbol:displayId>BBa_K1484100</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1484100"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1484100</dcterms:title>
+    <dcterms:description>4-hydroxybenzalacetone generator</dcterms:description>
+    <dcterms:created>2014-10-03T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-06-10T02:14:31Z</dcterms:modified>
+    <sbh:mutableProvenance>Originally from the genome of chinese rhubarb, &lt;i&gt;rheum palmatum&lt;/i&gt;, cloned by the lab of Ikuro Abe at The School of Pharmaceutical Sciences, University of Shizuoka.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1484100/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>This part can be transformed into E. coli. When the transformants are incubated with p-coumaric acid and 50mM arabinose, they will metabolise the p-coumaric acid and secrete 4-hydroxybenzalacetone into the growth medium.
+
+4-hydroxybenzalacetone is often referred to simply as benzalacetone.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_1864_</igem:group_u_list>
+    <igem:m_user_id>4206</igem:m_user_id>
+    <igem:owner_id>21046</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Detectable amounts of 4-hydroxybenzalacetone were produced when 3mM p-coumaric acid was added to the transformants&apos; growth medium. 9mM p-coumaric acid was also assayed and produced a larger amount of 4-hydroxybenzalacetone. 
+
+Beware the registry part labelled &apos;benzalacetone reductase&apos;</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Guy Lewy</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Generator"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1484100/annotation2393737/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1484100/annotation2393737"/>
+        <sbol:displayId>annotation2393737</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>AraC</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1484100/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1484100/annotation2393737/range2393737/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1484100/annotation2393737/range2393737"/>
+            <sbol:displayId>range2393737</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1484100/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>1042</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/operator"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000057"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1484100_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1484100_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1484100_sequence"/>
+    <sbol:displayId>BBa_K1484100_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1484100"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1484100_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>ttatgacaacttgacggctacatcattcactttttcttcacaaccggcacggaactcgctcgggctggccccggtgcattttttaaatacccgcgagaaatagagttgatcgtcaaaaccaacattgcgaccgacggtggcgataggcatccgggtggtgctcaaaagcagcttcgcctggctgatacgttggtcctcgcgccagcttaagacgctaatccctaactgctggcggaaaagatgtgacagacgcgacggcgacaagcaaacatgctgtgcgacgctggcgatatcaaaattgctgtctgccaggtgatcgctgatgtactgacaagcctcgcgtacccgattatccatcggtggatggagcgactcgttaatcgcttccatgcgccgcagtaacaattgctcaagcagatttatcgccagcagctccgaatagcgcccttccccttgcccggcgttaatgatttgcccaaacaggtcgctgaaatgcggctggtgcgcttcatccgggcgaaagaaccccgtattggcaaatattgacggccagttaagccattcatgccagtaggcgcgcggacgaaagtaaacccactggtgataccattcgcgagcctccggatgacgaccgtagtgatgaatctctcctggcgggaacagcaaaatatcacccggtcggcaaacaaattctcgtccctgatttttcaccaccccctgaccgcgaatggtgagattgagaatataacctttcattcccagcggtcggtcgataaaaaaatcgagataaccgttggcctcaatcggcgttaaacccgccaccagatgggcattaaacgagtatcccggcagcaggggatcattttgcgcttcagccatacttttcatactcccgccattcagagaagaaaccaattgtccatattgcatcagacattgccgtcactgcgtcttttactggctcttctcgctaaccaaaccggtaaccccgcttattaaaagcattctgtaacaaagcgggaccaaagccatgacaaaaacgcgtaacaaaagtgtctataatcacggcagaaaagtccacattgattatttgcacggcgtcacactttgctatgccatagcatttttatccataagattagcggatcctacctgacgctttttatcgcaactctctactgtttctccatacccgtttttttgggctagcaggtagagaaagaggagaaatacgatggagaaagatacaaaacaggttgacataattttccgatcaaaactccctgatatttacatccctaaccatcttcctttacactcctactgtttcgaaaacatttccgagttcagttctcgtccttgtttaatcaatggcgccaacaaacaaatttatacgtatgctgatgttgaactcaattcaagaaaagttgctgctggtcttcacaaacaagggattcaaccaaaggatacaataatgatcctattgcctaactccccagaatttgtgtttgctttcattggtgcatcgtacctcggagctatttctacaatggccaatcctttgtttactcctgctgaggttgtgaagcaagccgaggcttctagtgctaagatcattgtcacacaagcgtgtcatgttaacaaagtgaaagattatgcatttgagaatgatgtgaagatcatatgcatcgactcggcgccggagggttgtctccacttctccgtgctaactcaggctaatgagcacgatattcctgaggttgaaattcaacctgacgatgtggtggcgttgccatactcctccgggacgacgggattacctaaaggagtgatgttgacgcacaagggacttgtgacaagcgtcgcacaacaagtcgacggtgaaaatccgaatttgtatatccatagcgaggacgtgatgctttgtgtcttgcccttgttccatatctattcactcaactccgttttgctttgtggattaagggtgggagcagcgattttgattatgcagaaatttgatattgtttctttcttggagttgatacaaagttacaaggtgacaatagggccgtttgtaccacctattgttttggtcattgctaagagtcctatggttgatgattatgatctttcatcagtaagaaccgtcatgtctggggctgcaccattaggaaaggagcttgaagatactgttcgagccaaatttcctaatgctaaacttggtcagggttatggtatgacagaagctggaccagtgttggctatgtgcttggcatttgcaaaagaaccctttgaaataaaatcaggggcatgtggaacagttgtgagaaatgctgaaatgaaaattgtggatcctaaaactggtaattctcttcccagaaatcaatctggagaaatttgcattagaggagaccagatcatgaaaggctacctgaatgatccagaggccacagcaagaacaatagacaaagaagggtggttatatactggtgacattggctacattgatgatgacgacgagcttttcattgttgatcgattaaaggaactgatcaaatacaaaggatttcaagtcgcacctgctgagctcgaagctctccttctcaaccatcccaacatttctgatgctgctgttgtccccatgaaggacgagcaagcaggagaagttccagtggcttttgttgttagatccaacggatccaccattactgaagatgaagtcaaagattttatttcaaagcaggtgatattttataagaggataaagcgggtatttttcgtggatgctattcctaaatctccatctggcaaaatccttcgaaaagatttgagagctaaactggctgctgggcttccaaattaagagatcatagacacgagaacactaggacctaaggaggatagatatggcaactgaggagatgaagaaattggccaccgtgatggccattggcacggccaaccctccgaactgctactaccaggccgactttcccgacttctacttccgcgtcaccaacagcgaccacctcatcaacctcaagcaaaagttcaagcgcctttgtgaaaactcaaggattgagaagcgttaccttcatgtgaccgaagagattctcaaggaaaacccaaacattgctgcctacgaggcaacctcgttgaatgtaagacacaaaatgcaagtgaaaggagttgcagagcttgggaaagaggctgccctcaaggccatcaaagaatggggccaacccaagtccaagatcacacatctcatcgtgtgttgcctagccggcgttgacatgcccggcgcggattatcaactcactaagcttcttgaccttgacccttccgtcaagcgttttatgttttaccacctaggatgctacgctggtggcactgtccttcgccttgcaaaggacatagcggagaacaacaagggagctcgtgttctcatcgtttgctcagagatgacaacaacttgttttcgtgggccatctgaaacccatctggactccatgataggccaagcaatattaggcgatggggctgccgctgtcatagttggcgcagatccagacctaaccgttgagaggcccatattcgagttggtttccacagcccagactattgtacccgaatcccatggtgcaattgagggccacttgcttgaatctggactcagtttccatttgtacaagaccgttcctacactaatctctaacaacattaaaacttgcctttctgatgctttcactcctctaaacattagcgattggaactctcttttctggatcgcacaccctggtggtcctgccatcctagaccaagttactgctaaggttggtcttgaaaaggagaaactcaaggtaactagacaagtgttgaaggactatggaaacatgtcgagtgctacggtgtttttcatcatggatgagatgaggaagaagtcactcgaaaacggtcaagcaaccactggagaagggctcgagtggggtgttttgtttgggttcgggcctggaatcaccgttgaaactgtagtgctacgcagtgtgcccgtaattagctag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

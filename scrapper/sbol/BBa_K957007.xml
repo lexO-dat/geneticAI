@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K957007/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957007"/>
+    <sbol:displayId>BBa_K957007</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K957007"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K957007</dcterms:title>
+    <dcterms:description>Arsenic inducible mtrB-polyHis</dcterms:description>
+    <dcterms:created>2012-10-27T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:13:49Z</dcterms:modified>
+    <sbh:mutableProvenance>Arsenic-sensitive component of this composite part was originally derived from the arsenic detoxification operon of E. coli strain JM109; BioBrick part BBa_J33201 was the source of DNA.
+
+mtrB is originally derived from the mtrCAB operon of Shewanella oneidensis MR-1; BioBrick part BBa_K098994 was used as DNA source.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957007/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>This part includes the mtrB coding sequence with a poly-His tag appended to the C-terminus.
+
+The purpose of this part is to upregulate mtrB expression in response to arsenic. When expressed in a Shewanella strain lacking mtrB on the chromosome, this composite part will function as a component of a biosensor. Specifically, when such a complemented strain is inoculated in a microbial electrochemical system, current output will increase in response to arsenic.
+
+Within the genetic circuit, arsR acts as a negative autoregulator, repressing not only the expression of downstream mtrB, but also its own expression. Upon association with arsenic salts, ArsR dissociates from the operator of the arsenic inducible promoter, upregulating expression of downstream protein. Because mtrB activity is requisite for functionality of the mtr electron pathway in Shewanella spp., arsenic thus induces electron shuttling through the mtr pathway. 
+
+
+Because of the His tag, this part may also be used for in vitro characterization of mtrB, and will also facilitate the purification of mtrB to obtain its crystal structure.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_1228_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>13504</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Primers were designed such that the wild-type Shine Dalgarno sequence was included upstream of the mtrB start codon, maintaining spacing. However, the appended BamHI cutsite downstream of the Shine Dalgarno sequence may alter translational efficiency.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Steven Tiwen Chen &amp; Dylan Patrick Webster</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K957007_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K957007_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957007_sequence"/>
+    <sbol:displayId>BBa_K957007_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K957007"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957007_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>ccaactcaaaattcacacctattaccttcctctgcacttacacattcgttaagtcatatatgtttttgacttatccgcttcgaagagagacactacctgcaacaatcaggagcgcaatatgtcatttctgttacccatccaattgttcaaaattcttgctgatgaaacccgtctgggcatcgttttactgctcagcgaactgggagagttatgcgtctgcgatctctgcactgctctcgaccagtcgcagcccaagatctcccgccacctggcattgctgcgtgaaagcgggctattgctggaccgcaagcaaggtaagtgggttcattaccgcttatcaccgcatattccagcatgggcggcgaaaattattgatgaggcctggcgatgtgaacaggaaaaggttcaggcgattgtccgcaacctggctcgacaaaactgttccggggacagtaagaacatttgcagttaacggcgcgcctaaggagacggatccatgaaatttaaactcaatttgatcactctagcgttattagccaacacaggcttggccgtcgctgctgatggttatggtctagcgaatgccaatactgaaaaagtgaaattatccgcatggagctgtaaaggctgcgtcgttgaaacgggcacatcaggcactgtgggtgtcggtgtcggttataacagcgaagaggatattcgctctgccaatgcctttggtacatccaatgaagtggcgggtaaatttgatgccgatttaaactttaaaggtgaaaagggttatcgtgccagtgttgatgcttatcaactcggtatggatggcggtcgcttagatgtcaatgcgggcaaacaaggccagtacaacgtcaatgtgaactatcgccaaattgctacctacgacagcaatagcgccctatcgccctacgcgggtattggtggcaataacctcacgttaccggataactggataacagcaggttcaagcaaccaaatgccactcttgatggacagcctcaatgccctcgaactctcacttaaacgtgagcgcacggggttgggatttgaatatcaaggtgaatccctgtggagcacctatgttaactacatgcgtgaagagaaaaccggcttaaaacaagcctctggtagcttcttcaaccaatcgatgatgttagcagagccggtggattacaccactgacaccattgaagcgggtgtcaaactcaagggtgatcgttggtttaccgcactcagttacaatgggtcaatattcaaaaacgaatacaaccaattggactttgaaaatgcttttaaccccacctttggtgctcaaacccaaggtacgatggcactcgatccggataaccagtcacacaccgtgtcgctgatgggacagtacaacgatggcagcaacgcactgtcgggtcgtattctgaccggacaaatgagccaagatcaggcgttagtgacggataactaccgttatgctaatcagctcaataccgatgccgtcgatgccaaagtcgatctactgggtatgaacctgaaagtcgttagcaaagtgagcaatgatcttcgcttaacaggtagttacgattattacgaccgtgacaataatacccaagtagaagaatggactcagatcagcatcaacaatgtcaacggtaaggtggcttataacaccccttacgataatcgtacgcaacgctttaaagttgccgcagattatcgcattacccgcgatatcaaactcgatggtggttatgacttcaaacgtgaccaacgtgattatcaagaccgtgaaaccacggatgaaaataccgtttgggcccgtttacgtgtaaacagcttcgatacttgggacatgtgggtaaaaggcagttacggtaaccgtgacggctcacaataccaagcgtctgaatggacctcttctgaaaccaacagcctgttacgtaagtacaatctggctgaccgtgacagaactcaagtcgaagcacggatcacccattcgccattagaaagcctgactatcgatgttggtgcccgttacgcgttagatgattataccgatactgtgattggattaactgagtcaaaagacaccagttatgatgccaacatcagttatatgatcaccgctgacttactggcaaccgccttctacaattaccaaaccattgagtctgaacaggcgggtagcagcaattacagcaccccaacgtggacaggctttatagaagatcaggtagatgtggtcggtgcaggtatcagctacaacaatctgctggagaacaagttacgcctaggactggactacacctattccaactccgacagtaacactcaagtcagacaaggtatcactggcgactatggtgattattttgccaaagtgcataacattaacttatacgctcaatatcaagccaccgagaaactcgcgctgcgcttcgattacaaaattgagaactataaggacaatgacgccgcaaatgatatcgccgttgatggcatttggaacgtcgtaggttttggtagtaacagccatgactacaccgcacaaatgctgatgctgagcatgagttacaaactcggaagtggacatcaccatcaccatcactaaggtacc</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K080001/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K080001"/>
+    <sbol:displayId>BBa_K080001</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K080001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K080001</dcterms:title>
+    <dcterms:description>A20/alpha cardiac actin miniPro-BMP4</dcterms:description>
+    <dcterms:created>2008-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:08:34Z</dcterms:modified>
+    <sbh:mutableProvenance>The A20/alpha-CA minimal promoter was created synthetically via oligonucleotide assembly.  
+
+BMP4
+Mus musculus full length cDNA clone from openbiosystems, clone ID# 4219098</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K080001/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Induction of BMP4 during early stages of cardiomyocyte differentiation results in inhibitory effects. From previous studies it is not clear whether BMP4 is necessary for cardiomyocyte differentiation. In our circuit, nkx2.5 and gata4 will be induced and initiate the pathways of cardiac differentiation. During normal cardiac muscle differentiation BMP4 is a downstream target of nkx-2.5 and gata4, the expression of which turns on at later stages of cardiac differentiation. To ensure that BMP4 has a delayed expression, we designed BMP4 under the control of minimal promoters of late markers of cardiac muscle differentiation, TCF and alpha cardiac actin.  
+
+Contractile proteins are expressed very late in the cardiomyocyte differentiation pathway making it an ideal choice as a timer for the induction of BMP4. One of these cardiac specific contractile proteins is alpha cardiac actin. We have designed delayed BMP4 expression under the control of an alpha cardiac actin minimal promoter. 
+
+A20+ linker 
+Triple repeat of A20, an nkx2.5 consensus binding sequence that nkx2.5 binds with high affinity to, plus linker sequence. A20 sequence was initially identified through random oligonucleotide selection as described in Chen, C.Y. and Schwartz, R.J. (1995) JBC 270(30) 15628-15633  
+
+alpha cardiac actin minpro
+Previous work by Schwartz and collegues revealed that the interactions of nkx2.5, serum response factor (SRF), gata4, and other transcription factors play an important role during cardiomyocyte differentiation. One of the downstream targets of these transcription factors in cardiogenic pathways was alpha cardiac actin, whose promoter they identified as being under direct control of nkx2.5 as reviwed in Chen, C. and R.J. Schwartz. (1997) Competition between negative acting YY1 versus positive acting serum response factor and tinman homologue nkx-2.5 regulates cardiac alpha-actin promoter activity 11(6) 812-822. 
+
+To create a late strong minimal promoter of cardiomyogenesis we designed 3 repeats of A20 fused to the promoter sequence of cardiac alpha-actin with known cardiac specific regulation (Sepulveda, J.L., et al. GATA-4 and Nkx-2.5 Coactivate Nkx-2 DNA Binding Targets: Role for Regulating Early Cardiac Gene Expression (1998) 18(6) 3405-3415).</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_182_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>3648</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>None</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Jennifer Lei</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Regulatory"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K080001_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K080001_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K080001_sequence"/>
+    <sbol:displayId>BBa_K080001_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K080001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K080001_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>agagagatcgattctagatcgagagttaattgcgtagttaattgcagcagttaattgcgcccgcggaccgcggccgccgggggctataaagcggcagcttcgcgccccgccggcacccaggcgctcctcggtaattaattaaacgcgtgccaccatgattcctggtaaccgaatgctgatggtcgttttattatgccaagtcctgctaggaggcgcgagccatgctagtttgatacctgagaccgggaagaaaaaagtcgccgagattcagggccacgcgggaggacgccgctcagggcagagccatgagctcctgcgggacttcgaggcgacacttctacagatgtttgggctgcgccgccgtccgcagcctagcaagagcgccgtcattccggattacatgagggatctttaccggctccagtctggggaggaggaggaggaagagcagagccagggaaccgggcttgagtacccggagcgtcccgccagccgagccaacactgtgaggagtttccatcacgaagaacatctggagaacatcccagggaccagtgagagctctgcttttcgtttcctcttcaacctcagcagcatcccagaaaatgaggtgatctcctcggcagagctccggctctttcgggagcaggtggaccagggccctgactgggaacagggcttccaccgtataaacatttatgaggttatgaagcccccagcagaaatggttcctggacacctcatcacacgactactggacaccagactagtccatcacaatgtgacacggtgggaaactttcgatgtgagccctgcagtccttcgctggacccgggaaaagcaacccaattatgggctggccattgaggtgactcacctccaccagacacggacccaccagggccagcatgtcagaatcagccgatcgttacctcaagggagtggagattgggcccaactccggcccctcctggtcacttttggccatgatggccggggccataccttgacccgcaggagggccaaacgtagtcccaagcatcacccacagcggtccaggaagaagaataagaactgccgtcgccattcactatacgtggacttcagtgacgtgggctggaatgattggattgtggccccacccggctaccaggccttctactgccatggggactgtccctttccactggctgatcacctcaactcaaccaaccatgccattgtgcagaccctagtcaactctgttaattctagtatccctaaggcctgttgtgtccccactgaactgagtgccatttccatgttgtacctggatgagtatgacaaggtggtgttgaaaaattatcaggagatggtggtagaggggtgtggatgccgctgataggctagcgtcgacctctct</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

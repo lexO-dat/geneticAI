@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_J133575/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_J133575"/>
+    <sbol:displayId>BBa_J133575</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_J133575"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_J133575</dcterms:title>
+    <dcterms:description>Protein Linker SSGSSG Library</dcterms:description>
+    <dcterms:created>2011-12-03T12:00:00Z</dcterms:created>
+    <dcterms:modified>2015-08-31T04:08:30Z</dcterms:modified>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_J133575/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Variant library of 6-amino-acid fusion protein linker sequences, encoded with different codon permutations while maintaining the same SSGSSG protein sequence, and the same codon usage count.
+
+Sequences from this library can be picked from when designing a construct containing multiple fusion proteins (e.g. fusing GFP to protein A, RFP to protein B, YFP to protein C, BFP to for protein D, all in the same plasmid).  Select a different linker for each fusion rather than reuse multiple copies of the same linker to reduce the chance of homologous recombination/misprimining event/gibson assembly overlap similarity.
+
+&lt;strong&gt;Permutations of the codons are generated while following the rules:&lt;/strong&gt;&lt;br\&gt;
+1. encoding only SSGSSG&lt;br\&gt;
+2. using only codons below, where codon frequency in E. coli is represented between [], and its symbolic representation between ()&lt;br\&gt;
+Serine: AGT(S)[8.7%], AGC(s)[16.1%], TCC($)[8.6%]&lt;br\&gt;
+Glycine: GGC(G)[29.8%], GGT(g)[24.9%]&lt;br\&gt;
+3. all above codons can be only used once except for (s), which is used twice&lt;br\&gt;
+4. no two of the same codon can be next to each other, in this case no (s)(s) should occur&lt;br\&gt;
+
+&lt;strong&gt;Library of all possible 32 permutations of protein linker sequences:&lt;/strong&gt;&lt;br\&gt;
+Part_Number: symbolic_representation, sequence_gapped, sequence_ungapped&lt;br\&gt;
+BBa_J133550: s$gsSG, AGC TCC GGT AGC AGT GGC, AGCTCCGGTAGCAGTGGC&lt;br\&gt;
+BBa_J133551: s$gSsG, AGC TCC GGT AGT AGC GGC, AGCTCCGGTAGTAGCGGC&lt;br\&gt;
+BBa_J133552: s$GsSg, AGC TCC GGC AGC AGT GGT, AGCTCCGGCAGCAGTGGT&lt;br\&gt;
+BBa_J133553: s$GSsg, AGC TCC GGC AGT AGC GGT, AGCTCCGGCAGTAGCGGT&lt;br\&gt;
+BBa_J133554: sSg$sG, AGC AGT GGT TCC AGC GGC, AGCAGTGGTTCCAGCGGC&lt;br\&gt;
+BBa_J133555: sSgs$G, AGC AGT GGT AGC TCC GGC, AGCAGTGGTAGCTCCGGC&lt;br\&gt;
+BBa_J133556: sSG$sg, AGC AGT GGC TCC AGC GGT, AGCAGTGGCTCCAGCGGT&lt;br\&gt;
+BBa_J133557: sSGs$g, AGC AGT GGC AGC TCC GGT, AGCAGTGGCAGCTCCGGT&lt;br\&gt;
+BBa_J133558: $sGsSg, TCC AGC GGC AGC AGT GGT, TCCAGCGGCAGCAGTGGT&lt;br\&gt;
+BBa_J133559: $sGSsg, TCC AGC GGC AGT AGC GGT, TCCAGCGGCAGTAGCGGT&lt;br\&gt;
+BBa_J133560: $sgsSG, TCC AGC GGT AGC AGT GGC, TCCAGCGGTAGCAGTGGC&lt;br\&gt;
+BBa_J133561: $sgSsG, TCC AGC GGT AGT AGC GGC, TCCAGCGGTAGTAGCGGC&lt;br\&gt;
+BBa_J133562: $sGSsg, TCC AGC GGC AGT AGC GGT, TCCAGCGGCAGTAGCGGT&lt;br\&gt;
+BBa_J133563: $sGsSg, TCC AGC GGC AGC AGT GGT, TCCAGCGGCAGCAGTGGT&lt;br\&gt;
+BBa_J133564: $sgSsG, TCC AGC GGT AGT AGC GGC, TCCAGCGGTAGTAGCGGC&lt;br\&gt;
+BBa_J133565: $sgsSG, TCC AGC GGT AGC AGT GGC, TCCAGCGGTAGCAGTGGC&lt;br\&gt;
+BBa_J133566: s$gsSG, AGC TCC GGT AGC AGT GGC, AGCTCCGGTAGCAGTGGC&lt;br\&gt;
+BBa_J133567: s$gSsG, AGC TCC GGT AGT AGC GGC, AGCTCCGGTAGTAGCGGC&lt;br\&gt;
+BBa_J133568: s$GsSg, AGC TCC GGC AGC AGT GGT, AGCTCCGGCAGCAGTGGT&lt;br\&gt;
+BBa_J133569: s$GSsg, AGC TCC GGC AGT AGC GGT, AGCTCCGGCAGTAGCGGT&lt;br\&gt;
+BBa_J133570: sSg$sG, AGC AGT GGT TCC AGC GGC, AGCAGTGGTTCCAGCGGC&lt;br\&gt;
+BBa_J133571: sSgs$G, AGC AGT GGT AGC TCC GGC, AGCAGTGGTAGCTCCGGC&lt;br\&gt;
+BBa_J133572: sSG$sg, AGC AGT GGC TCC AGC GGT, AGCAGTGGCTCCAGCGGT&lt;br\&gt;
+BBa_J133573: sSGs$g, AGC AGT GGC AGC TCC GGT, AGCAGTGGCAGCTCCGGT&lt;br\&gt;
+BBa_J133574: Ssgs$G, AGT AGC GGT AGC TCC GGC, AGTAGCGGTAGCTCCGGC&lt;br\&gt;
+BBa_J133575: Ssg$sG, AGT AGC GGT TCC AGC GGC, AGTAGCGGTTCCAGCGGC&lt;br\&gt;
+BBa_J133576: SsGs$g, AGT AGC GGC AGC TCC GGT, AGTAGCGGCAGCTCCGGT&lt;br\&gt;
+BBa_J133577: SsG$sg, AGT AGC GGC TCC AGC GGT, AGTAGCGGCTCCAGCGGT&lt;br\&gt;
+BBa_J133578: Ssg$sG, AGT AGC GGT TCC AGC GGC, AGTAGCGGTTCCAGCGGC&lt;br\&gt;
+BBa_J133579: Ssgs$G, AGT AGC GGT AGC TCC GGC, AGTAGCGGTAGCTCCGGC&lt;br\&gt;
+BBa_J133580: SsG$sg, AGT AGC GGC TCC AGC GGT, AGTAGCGGCTCCAGCGGT&lt;br\&gt;
+BBa_J133581: SsGs$g, AGT AGC GGC AGC TCC GGT, AGTAGCGGCAGCTCCGGT&lt;br\&gt;</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>true</igem:dominant>
+    <igem:group_u_list>_634_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2680</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Norman Wang</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Tag"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000324"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_J133575_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_J133575_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_J133575_sequence"/>
+    <sbol:displayId>BBa_J133575_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_J133575"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_J133575_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>agtagcggttccagcggc</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

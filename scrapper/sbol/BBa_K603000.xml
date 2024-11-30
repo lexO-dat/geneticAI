@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K603000/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K603000"/>
+    <sbol:displayId>BBa_K603000</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K603000"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K603000</dcterms:title>
+    <dcterms:description>mitochondrial proteorhodopsin</dcterms:description>
+    <dcterms:created>2011-09-09T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:12:50Z</dcterms:modified>
+    <sbh:mutableProvenance>The amino acid sequence is extracted from the following two natural proteins:
+
+(1)RecName: Full=Green-light absorbing proteorhodopsin; Short=GPR; Flags: Precursor
+Swiss-Prot: Q9F7P4.1
+      
+        1 mklllilgsv ialptfaagg gdldasdytg vsfwlvtaal lastvfffve rdrvsakwkt
+       61 sltvsglvtg iafwhymymr gvwietgdsp tvfryidwll tvpllicefy lilaaatnva
+      121 gslfkkllvg slvmlvfgym geagimaawp afiigclawv ymiyelwage gksacntasp
+      181 avqsayntmm yiiifgwaiy pvgyftgylm gdggsalnln liynladfvn kilfgliiwn
+      241 vavkessna
+
+ (2) cytochrome c oxidase subunit 4 isoform 1, mitochondrial precursor [Homo sapiens]
+NCBI Reference Sequence: NP_001852.1
+      
+        1 mlatrvfslv gkraistsvc vrahesvvks edfslpaymd rrdhplpeva hvkhlsasqk
+       61 alkekekasw sslsmdekve lyrikfkesf aemnrgsnew ktvvggamff igftalvimw
+      121 qkhyvygplp qsfdkewvak qtkrmldmkv npiqglaskw dyeknewkk
+
+
+The final mitochondrial proteorhodopsin:
+
+hCOX4isoform1 (1-23):
+mlatrvfslv gkraistsvc vra
+fused to
+GPR (19-249):
+       19  gg gdldasdytg vsfwlvtaal lastvfffve rdrvsakwkt
+       61  sltvsglvtg iafwhymymr gvwietgdsp tvfryidwll tvpllicefy lilaaatnva
+      121 gslfkkllvg slvmlvfgym geagimaawp afiigclawv ymiyelwage gksacntasp
+      181 avqsayntmm yiiifgwaiy pvgyftgylm gdggsalnln liynladfvn kilfgliiwn
+      241 vavkessna</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K603000/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Mitochondrial proteorhodopsin is a synthetic protein designed based on the naturally occuring proteorhodopsin from proteobacteria. Its leader sequence is replaced with a mammalian signal peptide which will direct the matured peptide to locate to the mitochondrial inner membrane.  In theory, mitochondrial proteorhodopsin will act as a light-driven proton pump.  Since it is a new synthetic protein, precaution should be made not to construct it into infectious vectors.  It is for research use only. The function of mitochondrial proteorhodopsin will be described here as research data is collected and organized.
+
+Reference
+1. Song, C et al, China Patent Application Number 2011082300410140
+2. B??j??, O et al Bacterial rhodopsin: evidence for a new type of phototrophy in the sea. Science 2000, 289(5486):1902-1906. 
+3. Steindler L, et al Energy starved Candidatus Pelagibacter ubique substitutes light-mediated ATP production for endogenous carbon respiration.PLoS One. 2011, 6(5):e19725.
+4. DeLong EF, B??j?? O, The light-driven proton pump proteorhodopsin enhances bacterial survival during tough times. PLoS Biol. 2010, 8(4):e1000359. 
+5. G??mez-Consarnau L,et al Proteorhodopsin phototrophy promotes survival of marine bacteria during starvation.PLoS Biol. 2010, 8(4):e1000358.
+6. Martinez A, et al Proteorhodopsin photosystem gene expression enables photophosphorylation in a heterologous host.Proc Natl Acad Sci U S A. 2007,104(13):5590-5. 
+7. Walter JM, et al Light-powering Escherichia coli with proteorhodopsin.Proc Natl Acad Sci U S A. 2007 Feb 13;104(7):2408-12.
+8. Slamovits, CH, et al A bacterial proteorhodopsin proton pump in marine eukaryotes. Nature Comminications 2011, 2:183(DOI:10.1038/ncomms1188).
+9. Walter, JM et al Potential of light-harvesting proton pumps for bioenergy applications. Current Opinion in Biotechnology 2010, 21:265-270.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_775_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>7544</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>The leader sequence of the original proteorhodopsin protein is replaced with a mammalian signal peptide which will anchor the final protein to the inner membrane of mitochondria.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>ching song</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K603000/annotation2126901/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K603000/annotation2126901"/>
+        <sbol:displayId>annotation2126901</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>mitochondrial proteorhodopsin</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K603000/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K603000/annotation2126901/range2126901/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K603000/annotation2126901/range2126901"/>
+            <sbol:displayId>range2126901</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K603000/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>10</sbol:start>
+            <sbol:end>774</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K603000_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K603000_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K603000_sequence"/>
+    <sbol:displayId>BBa_K603000_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K603000"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K603000_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>taaaccaccatgcttgccactagggtgttcagtctggtcgggaaacgggcaatttctaccagcgtctgtgtgagagccggcggaggcgatttggacgcttctgattatacaggagtgagtttttggttggtcaccgcagctcttttggcgtcgacagtgtttttctttgtggagagggaccgcgtatcagcaaaatggaagacctccttgactgttagtggcctcgtcacaggaatagctttttggcactatatgtacatgaggggcgtttggatcgaaacgggagattcccccacagtttttaggtatatcgactggctccttactgtccccttgctgatttgtgagttctatttgatcttagccgctgcaaccaatgtggctggatcactgttcaagaaattgttggtggggtccttagtgatgttggtgttcggttacatgggcgaagctggaatcatggcagcctggccagcctttattatcggctgcctcgcctgggtatatatgatatacgagctctgggcaggcgaaggaaagagtgcttgcaacacagctagccctgcggtccagtcggcctacaacacaatgatgtatattatcatcttcggctgggcgatatatcctgtgggctacttcaccggttacttgatgggcgacgggggaagtgcgcttaatttaaaccttatttataacctcgccgatttcgtgaacaaaattttatttggcctgattatctggaacgtcgctgtcaaagaatcaagcaacgcctaatagtgaggatccactagt</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

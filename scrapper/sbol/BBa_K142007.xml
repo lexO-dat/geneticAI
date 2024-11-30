@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K142007/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K142007"/>
+    <sbol:displayId>BBa_K142007</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K142007"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K142007</dcterms:title>
+    <dcterms:description>lacI IS mutant (IPTG unresponsive) R197F T276F</dcterms:description>
+    <dcterms:created>2008-10-24T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:10:22Z</dcterms:modified>
+    <sbh:mutableProvenance>The lacI IS mutants presented derive from the BioBrick holding lacI by itself (C0012). Site-directed mutagenesis was performed by PCR, subsequent DpnI digest and transformation. The following primers were used:
+
+R197F forward 
+
+CGGCGCGTCTGTTTCTGGCTGGCTG 
+
+R197A forward 
+
+CGGCGCGTCTGGCGCTGGCTGGCTG 
+
+R197F reverse 
+
+CAGCCAGCCAGAAACAGACGCGCCG 
+
+R197A reverse 
+
+CAGCCAGCCAGCGCCAGACGCGCCG 
+
+
+
+T276F forward 
+
+GGATACGACGATTTTGAAGACAGCTC 
+
+T276A forward 
+
+GGATACGACGATGCGGAAGACAGCTC 
+
+T276F reverse 
+
+GAGCTGTCTTCAAAATCGTCGTATCC 
+
+T276A reverse 
+
+GAGCTGTCTTCCGCATCGTCGTATCC 
+
+All lacI IS holding BioBricks were verified by sequencing.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K142007/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>lacI IS mutant (IPTG unresponsive)
+
+Short description: The lacI IS mutant is almost identical to the lacI transcriptional regulator except for the difference that it is not able to bind IPTG or allolactose due to a mutation; it therefore can not be activated by induction with these substances. Since it recognizes the same motif in the lac promotor region, it strongly represses transcription of all genes regulated by promotors with lacI binding site even if IPTG or allolactose are present. It can be used to terminate the expression of proteins under lac control if IPTG can not be removed from the cell rapidly. 
+
+Detailed description: Expression of the lac operon in E. coli is tightly controlled by lacI, a protein, which binds to a repressor binding site within the promotor and disables transcription by obscuring the promotor region. When bound to DNA, lacI is in the tetrameric form, which consists of two dimers interacting at the end distal from the DNA binding site. Upon binding of allolactose or IPTG, the tetramer breaks down into two dimers and the affinity for the repressor binding site is greatly reduced; the lacI IPTG complex will diffuse away from the repressor binding site, leaving the promotor accessible. As a result of decades of genetic and structural studies, the function of lacI is now understood on the molecular level (1, 2). Mutational experiments have identified residues, which abolish IPTG response upon mutation (3). Furthermore, the x-ray crystal structure of lacI with bound IPTG has allowed the identification of residues that interact with IPTG and which are promising targets for mutagenesis (1). We decided to mutate residues R197 and T276, which are located in the IPTG binding groove, contact IPTG and have been shown to produce the lacI IS mutation in previous genetic experiments. Since a quantitative study of the strength of inhibition by different lacI IS mutants has to our knowledge not been published so far, we decided to generate a set of eight mutated lacIs, in which we replaced either R197 with alanine or phenylalanine or T276 with alanine or phenylalanine or both in all possible combinations.
+
+lacIIS-1: R197A 
+
+lacIIS-2: R197F 
+
+lacIIS-3: T276A 
+
+lacIIS-4: T276F 
+
+lacIIS-5: R197A T276A 
+
+lacIIS-6: R197A T276F 
+
+lacIIS-7: R197F T276A 
+
+lacIIS-8: R197F T276F
+
+
+References:
+
+(1)	Lewis, M., Chang, G., Horton, N. C., Kercher, M. A., Pace, H. C., Schumacher, M. A., Brennan, R. G., and Lu, P. (1996) Crystal structure of the lactose operon repressor and its complexes with DNA and inducer. Science 271, 1247-54.
+
+(2)	Friedman, A. M., Fischmann, T. O., and Steitz, T. A. (1995) Crystal structure of lac repressor core tetramer and its implications for DNA looping. Science 268, 1721-7.
+
+(3)	Suckow, J., Markiewicz, P., Kleina, L. G., Miller, J., Kisters-Woike, B., and Muller-Hill, B. (1996) Genetic studies of the Lac repressor. XV: 4000 single amino acid substitutions and analysis of the resulting phenotypes on the basis of the protein structure. J Mol Biol 261, 509-23.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_194_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>3254</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>During site-directed mutagenesis, the codons to be mutated were replaced with the most highly utilized codons in E. coli to prevent complications from the use of rare codons. The lacI IS sequences were analyzed for BioBrick restriction sites within the coding sequence to ensure their compatibility.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Julius Rabl</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K142007/annotation1987412/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K142007/annotation1987412"/>
+        <sbol:displayId>annotation1987412</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>lacI IS</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K142007/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K142007/annotation1987412/range1987412/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K142007/annotation1987412/range1987412"/>
+            <sbol:displayId>range1987412</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K142007/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>1128</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K142007_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K142007_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K142007_sequence"/>
+    <sbol:displayId>BBa_K142007_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K142007"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K142007_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atggtgaatgtgaaaccagtaacgttatacgatgtcgcagagtatgccggtgtctcttatcagaccgtttcccgcgtggtgaaccaggccagccacgtttctgcgaaaacgcgggaaaaagtggaagcggcgatggcggagctgaattacattcccaaccgcgtggcacaacaactggcgggcaaacagtcgttgctgattggcgttgccacctccagtctggccctgcacgcgccgtcgcaaattgtcgcggcgattaaatctcgcgccgatcaactgggtgccagcgtggtggtgtcgatggtagaacgaagcggcgtcgaagcctgtaaagcggcggtgcacaatcttctcgcgcaacgcgtcagtgggctgatcattaactatccgctggatgaccaggatgccattgctgtggaagctgcctgcactaatgttccggcgttatttcttgatgtctctgaccagacacccatcaacagtattattttctcccatgaagacggtacgcgactgggcgtggagcatctggtcgcattgggtcaccagcaaatcgcgctgttagcgggcccattaagttctgtctcggcgcgtctgtttctggctggctggcataaatatctcactcgcaatcaaattcagccgatagcggaacgggaaggcgactggagtgccatgtccggttttcaacaaaccatgcaaatgctgaatgagggcatcgttcccactgcgatgctggttgccaacgatcagatggcgctgggcgcaatgcgcgccattaccgagtccgggctgcgcgttggtgcggatatctcggtagtgggatacgacgattttgaagacagctcatgttatatcccgccgttaaccaccatcaaacaggattttcgcctgctggggcaaaccagcgtggaccgcttgctgcaactctctcagggccaggcggtgaagggcaatcagctgttgcccgtctcactggtgaaaagaaaaaccaccctggcgcccaatacgcaaaccgcctctccccgcgcgttggccgattcattaatgcagctggcacgacaggtttcccgactggaaagcgggcaggctgcaaacgacgaaaactacgctttagtagcttaataa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

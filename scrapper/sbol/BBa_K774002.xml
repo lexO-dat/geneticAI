@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K774002/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K774002"/>
+    <sbol:displayId>BBa_K774002</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K774002"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K774002</dcterms:title>
+    <dcterms:description>Comparator Circuit Part 1</dcterms:description>
+    <dcterms:created>2012-09-18T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:13:15Z</dcterms:modified>
+    <sbh:mutableProvenance>N/A Synthetic Origin</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K774002/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>This system relies on two interacting mRNA transcripts, both of which would ordinary be translated into a reporter (a fluorescent protein in our case) in the presence of a particular substrate. The idea being that these transcripts will only be made in the presence of certain substrates due to differing promoter activity. Two promoters with overlapping specificity would be used and, crucially, if both promoters detect the same substrates but differ in that one extra substrate is detected by one of the promoters, it is this substrate and this substrate only that our system will be able to detect in a simple and quantitative way.
+
+Our system relies on two constructs that interact via complimentary base pair sequences both before and after the ribosome binding site of the reporter protein. The idea being that, when both transcripts are present in the chassis, they would bind together, inhibiting the translation of the reporter proteins. Any imbalance of transcription due to the presence of the substrate of interest results in free mRNA of the gene system that detects that substrate.
+
+Our team have constructed a countercurrent comparator circuit in which the reporter proteins are at the same end of the complimentary region, although a contracurrent system has been theorised. Both systems share a crucial subtractive nature comparable to an analogue computer. We envisage that, should the system be fine-tuned and expanded on, a variety of different business sectors from agriculture to spinoff pharmaceutical companies (such as the fictious QuantiCare) could capitalise on this novel genetic technology.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_1026_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>12400</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableNotes>Assembling the various gene constructs was not without its challenges. The construction of complimentary ???zips??? within the sequence that surrounded and, in the case of the contracurrent comparator circuit, included the ribosome binding site it was often the case that the DNA sequence would form unwanted secondary structures. When designing the DNA we took care to avoid these structures obstructing sequences required for translation of the mRNA and, at the same time, only using codons that we know are not rare in E. coli and that code for an amino acid that is unlikely to change the function of the protein produced. This is required since the zip sequences extend past the translational start codon, thus our construct will add a small N-terminal tag to the reporter protein.
+
+Due to the stop codon present in the scars of Assembly Standard 10 BioBricks, we decided that our constructs would have to be an Assembly Standard 23 BioBrick. Although the use of Bioscaffolds produced by previous iGEM teams was considered, time constraints meant that changing the Assembly Standard we put our BioBricks in would be the most convenient solution.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>NRP-UEA-Norwich</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Regulatory"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K774002_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K774002_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K774002_sequence"/>
+    <sbol:displayId>BBa_K774002_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K774002"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K774002_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>accggccgcgctatcattgtcactgttgttctcggctcaaagctcacgtttacgcgttccacgggatgatccgcgcattaaagaggagaaagatgtgatgtcgatctcggcggttacttcggccggcgcg</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

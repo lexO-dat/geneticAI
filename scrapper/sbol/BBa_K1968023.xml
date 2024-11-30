@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1968023/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023"/>
+    <sbol:displayId>BBa_K1968023</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1968023"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1968023</dcterms:title>
+    <dcterms:description>weLOV2 Fluorescent protein Phytobrick</dcterms:description>
+    <dcterms:created>2016-10-13T11:00:00Z</dcterms:created>
+    <dcterms:modified>2016-10-17T11:23:24Z</dcterms:modified>
+    <sbh:mutableProvenance>Based ont he ilov sequence from BBa_K660004.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>weLOV1 codes for the same protein sequence as iLOV (BBa_K660004) but holds a different codon optimization than its predecesor. iLOV is a modified LOV2 domain from a blue light receptor phototropin (Briggs et al. 2007) with a reported  excitation peak around 476nm and a measurable emission range between 510 and 550 nm.
+
+Coding sequences can sometimes be troublesome to work with, especially if these are not codon optimized for the selected organism. Since the team was going to work with four different organisms (E. coli, Rhodococcus justt, Penicillium roqueforti, Synechocystis sp. PCC6803) as an alternative to synthesizing the optimized version for each organism a different approach was discussed and implemented. 
+
+By trying to design a sequence based on all four codon preference tables, one could hypothetically generate a sequence able to express well in all four hosts. Perhaps this might not be the most ideal sequence, but, one that could potentially help avoid some DNA synthesis costs.  
+
+Two sequences were predicted under different algorithms: weLOV1 (BBa_K1968022) and weLOV2 (BBa_K1968023).
+The algorithm for the second one was designed as follows:
+
+
+Parting from the first aminoacid, the ideal codon was decided by 1) Obtaining the abundances for the respective coding codons in all four organisms. 2) Evaluating all respective codons and select two with the highest abundance. 3) Calculating the Euclidean distance between those abundances. 4) The codon with the minimum distance between abundance would then be selected as the appropriate triplet. This was done for all the aminoacids in the iLOV sequence. 
+
+
+iLOV was selected because of its many advantages that could make it a better option than the most widely used green fluorescent protein. Its gene size is only 336 base pairs; most of the other fluorescent proteins available are at least twice as big. Its size, its reported superior photostability as well as its ability to fluoresce under anaerobic conditions make it an interesting reporter to be used across multiple organisms (Christie et al. 2012). 
+
+Briggs, W.R. et al., 2007. Phototropins and Their LOV Domains: Versatile Plant Blue-Light Receptors. Journal of Integrative Plant Biology, 49(1), pp.4???10. 
+Christie, J.M. et al., 2012. Structural Tuning of the Fluorescent Protein iLOV for Improved Photostability. Journal of Biological Chemistry, 287(26)</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_2435_</igem:group_u_list>
+    <igem:m_user_id>9146</igem:m_user_id>
+    <igem:owner_id>9146</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Coding sequences can sometimes be troublesome to work with, especially if these are not codon optimized for the selected organism. Since the team was going to work with four different organisms (E. coli, Rhodococcus justt, Penicillium roqueforti, Synechocystis sp. PCC6803) as an alternative to synthesizing the optimized version for each organism a different approach was discussed and implemented.
+
+Designed under the Phytobrick standard.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Ricardo Camilo Ch??vez Mart??nez</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Reporter"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506019/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506019"/>
+        <sbol:displayId>annotation2506019</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Phytobrick Adapter Site  C</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506019/range2506019/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506019/range2506019"/>
+            <sbol:displayId>range2506019</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>4</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506026/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506026"/>
+        <sbol:displayId>annotation2506026</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>weLOV2</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506026/range2506026/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506026/range2506026"/>
+            <sbol:displayId>range2506026</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>2</sbol:start>
+            <sbol:end>337</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506024/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506024"/>
+        <sbol:displayId>annotation2506024</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Phytobrick Adapter Site  D</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506024/range2506024/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/annotation2506024/range2506024"/>
+            <sbol:displayId>range2506024</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>338</sbol:start>
+            <sbol:end>341</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1968023_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023_sequence"/>
+    <sbol:displayId>BBa_K1968023_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1968023"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1968023_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aatgatcgaaaaaaacttcgtcatcaccgacccgcgcctgccggacaacccgatcatcttcgcctccgacggcttcctggaactgaccgaatactcccgcgaagaaatcctgggccgcaacgcccgcttcctccagggcccggaaaccgaccaggccaccgtccagaaaatccgcgacgccatccgcgaccagcgcgaaaccaccgtccagctgatcaactacaccaaatccggcaaaaaattctggaacctgctgcacctccagccggtccgcgaccagaaaggcgaactccagtacttcatcggcgtccagctggacggctccgaccacgtctaaaggt</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1761002/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002"/>
+    <sbol:displayId>BBa_K1761002</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1761002"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1761002</dcterms:title>
+    <dcterms:description>Outer Membrane Protein X (OmpX) with BsoBI-linker and NanoLuc</dcterms:description>
+    <dcterms:created>2015-09-02T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-09-18T05:40:03Z</dcterms:modified>
+    <sbh:mutableProvenance>OmpX is a outer membrane protein naturally occuring in wildtype E.coli.
+The BsoBI linker is inspired by the article &quot;Quantitative Understanding of the Energy Transfer between Fluorescent Proteins Connected via Flexible Peptide Liners&quot; by Toon H. Evers et all from 29 August 2006.
+NanoLuc naturally occurs in the organism Oplophorus gracilirostris and was optimalized by the company Promega.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>OmpX is an outer membrane protein with the C- and N-termini in the intracellulair domain. To be able to use OmpX as a scaffold, a non-natural amino acid needs to be introduced. This can be done by implementing the amber stop codon TAG in one of the loops of OmpX via a mutation. With a specific tRNA an azide-functionalized amino acid can be built in, which can be used for the SPAAC click chemistry reaction with DBCO functionalized groups.
+The BsoBI linker is a 213 bp long flexible GGSGGS linker. Using the restriction enzyme BsoBI, the linker can become 45 bp shorter.
+NanoLuc is a small sized and bright luciferase. Under the addition of furimazine, the NanoLuc luciferase generates a  bioluminescece emmission spectrum with a maximum around 460 nm.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/Works"/>
+    <igem:group_u_list>_2183_</igem:group_u_list>
+    <igem:m_user_id>25572</igem:m_user_id>
+    <igem:owner_id>25572</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>The sequence is redesigned considering codon optimalization. Also restriction sites for biobricking and classical cloning are deleted. From the BsoBI linker, the coding sequecne for GGSGGS is redesigned causing that only two BsoBI restriction sites remain.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Laura van Smeden</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443222/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443222"/>
+        <sbol:displayId>annotation2443222</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K1761000</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443222/range2443222/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443222/range2443222"/>
+            <sbol:displayId>range2443222</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>513</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/BioBrick"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443223/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443223"/>
+        <sbol:displayId>annotation2443223</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BsoBI linker</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443223/range2443223/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443223/range2443223"/>
+            <sbol:displayId>range2443223</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>514</sbol:start>
+            <sbol:end>726</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/dna"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443224/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443224"/>
+        <sbol:displayId>annotation2443224</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>NanoLuc</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443224/range2443224/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/annotation2443224/range2443224"/>
+            <sbol:displayId>range2443224</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>727</sbol:start>
+            <sbol:end>1239</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/protein"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1761002_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002_sequence"/>
+    <sbol:displayId>BBa_K1761002_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1761002"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1761002_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atgaaaaaaattgcatgtctttcagcactggccgcagttcttgctttcaccgcaggtacttccgtagcagcgacttctactgtaactggcggttacgcacagagcgacgctcagggccaaatgaacaaaatgggcggtttcaacctgaaataccgctatgaagaagacaacagcccgctgggtgtgatcggttctttcacttacaccgagaaaagccgtactgcaagctctggtgactacaacaaaaaccagtactacggcatcactgctggtccggcttaccgcattaacgactgggcaagcatctacggtgtagtgggtgtgggttatggtaaattccagaccactgaatacccgacctacaaacacgacaccagcgactacggtttctcctacggtgcgggtttgcaattcaacccgatggaaaacgttgctctggacttctcttatgagcagagccgtattcgtagcgttgacgtaggtacgtggattgctggtgttggttatcgcttcactctcggcatggatgagctgtacaaaagcggcattcgtggcggctcgggtggaagcggtgggagtggtggaagcggtgggagtggcggctcgggtgggtcgggcggatcggggggttctggtggcagtggcggctcaggcggctccggtggatcaggtggttcgggtggttctgggggaagcggcgggtcaggtggctctactatggttagcgtatttactcttgaagattttgtcggtgattggcgccagaccgccggctataacctggaccaagtgcttgaacagggcggggttagcagcctgtttcaaaacctgggggtgagtgtcacgccaattcagcgcatcgttctgtcgggagagaatggtctgaaaatcgatatccacgtcattatcccgtacgaaggtctttctggtgatcagatggggcagatagaaaaaatattcaaagtggtgtacccagtagacgatcatcacttcaaggttatactgcactatggcaccctcgttatcgatggcgttactccgaatatgatcgattactttgggcgtccttatgaaggtattgcggtgttcgacggtaaaaaaattacggttaccgggacgctctggaatggtaataaaatcattgatgagcgcttgataaacccagatggcagccttctgttcagagttacgataaacggggttacgggttggcgactgtgcgaaagaatattagcttaaaa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

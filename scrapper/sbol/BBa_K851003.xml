@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K851003/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851003"/>
+    <sbol:displayId>BBa_K851003</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K851003"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K851003</dcterms:title>
+    <dcterms:description>XylR</dcterms:description>
+    <dcterms:created>2012-09-23T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:13:34Z</dcterms:modified>
+    <sbh:mutableProvenance>[1] http://partsregistry.org/Part:BBa_K143036
+[2] http://partsregistry.org/Part:BBa_K174017
+ [3] http://www.ncbi.nlm.nih.gov/pubmed/2544559?dopt=Abstract
+ [4] http://partsregistry.org/wiki/index.php/Part:BBa_K143014
+[5] http://2012.igem.org/Team:UNAM_Genomics_Mexico
+[6] http://2012.igem.org/Team:UNAM_Genomics_Mexico/Project/Description
+[7] Dubey GP, Ben-Yehuda S. (2011) Intercellular nanotubes mediate bacterial communication. Cell.;144(4):590-600
+[L3]http://partsregistry.org/Part:BBa_K143036#bibkey_1</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851003/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>XylR
+
+Since DNA of Part:BBa_K143036[1] from group: iGEM08_Imperial_College[2]  wasn???t available in Registry distributions, we synthetized this DNA part, making it available.
+
+BIOLOGY
+Transcription is regulated by proteins which bind operator sequences around the transcription start site. These proteins can affect transcription positively (activators) or negatively (repressors). Many repressor proteins can be inactivated by addition of an inducer, such as xylose.
+XylR is the regulatory protein of the Xylose operon in B. subtilis[3] and is responsible for ensuring the xylose metabolism proteins are not expressed in the absence of xylose . Though XylR is endogenous to B. subtilis, XylR should be over-expressed to minimize the leakage of xylose inducible promoters. In the presence of xylose, the XylR multimer is unable to bind DNA and repression of transcription is released.
+It must be noted that in all B. subtilis strains with a functional endogenous xylose operon the xylose inducer will gradually be metabolized by the host.
+XylR can be used in conjunction with the Xylose operon promoter (BBa_K143014)[4], where the XylR will act as a receiver for an xylose input to result in an Polymerases per second (PoPS) output. 
+
+For iGEM UNAM Genomics M??xico 2012 project [5], XylR together with pBAD/pXyl was used in the design of an AND logic gate[6] using a recently described new type of communication system between Bacillus Subtilis cells called Nanotubes[7].</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_1111_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>12295</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>XylR from synthesis</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Abiel Trevi??o Garza</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K851003/annotation2196328/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851003/annotation2196328"/>
+        <sbol:displayId>annotation2196328</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>XylR</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851003/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K851003/annotation2196328/range2196328/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851003/annotation2196328/range2196328"/>
+            <sbol:displayId>range2196328</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851003/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>1056</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/protein"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K851003_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K851003_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851003_sequence"/>
+    <sbol:displayId>BBa_K851003_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K851003"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851003_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atgactggattaaataaatcaactgtctcatcacaggtaaacacgttaatgaaagaaagtatggtatttgaaataggtcaaggacaatcaagtggcggaagaagacctgtcatgcttgtttttaataaaaaggcaggatactccgttggaatagatgttggtgtggattatattaatggcattttaacagaccttgaaggaacaatcgttcttgatcaataccgccatttggaatccaattctccagaaataacgaaagacattttgattgatatgattcatcactttattacgcaaatgccccaatctccgtacgggtttattggtataggtatttgcgtgcctggactcattgataaagatcaaaaaattgttttcactccgaactccaactggagagatattgacttaaaatcttcgatacaagagaagtacaatgtgtctgtttttattgaaaatgaggcaaatgctggcgcatatggagaaaaactatttggagctgcaaaaaatcacgataacattatttacgtaagtatcagcacaggaatagggatcggtgttattatcaacaatcatttatatagaggagtaagcggcttctctggagaaatgggacatatgacaatagactttaatggtcctaaatgcagttgcggaaaccgaggatgctgggaattgtatgcttcagagaaggctttattaaaatctcttcagaccaaagagaaaaaactgtcctatcaagatatcataaacctcgcccatctgaatgatatcggaaccttaaatgcattacaaaattttggattctatttaggaataggccttaccaatattctaaatactttcaacccacaagccgtaattttaagaaatagcataattgaatcgcatcctatggttttaaattcaatgagaagtgaagtatcatcaagggtttattcccaattaggcaatagctatgaattattgccatcttccttaggacagaatgcaccggcattaggaatgtcctccattgtgattgatcattttctggacatgattacaatgtaataa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

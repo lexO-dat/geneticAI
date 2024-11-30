@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K748001/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K748001"/>
+    <sbol:displayId>BBa_K748001</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K748001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K748001</dcterms:title>
+    <dcterms:description>AgrC protein coding sequence. AgrC is main component of S.aureus agr quorum sensing system.</dcterms:description>
+    <dcterms:created>2012-09-14T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:13:12Z</dcterms:modified>
+    <sbh:mutableProvenance>Staphylococcus aureus genomic sequence</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K748001/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>AgrC is a transmembrane protein, which is the sensor molecule of a typical two-component signal system in S.aureus. AgrC possesses several key amino acid motifs typical of histidine protein kinase sensor. The AgrC sensor kinase can specifically binds to corresponding AIP, which secreted only from specific S.aureus, and the composite of AgrC and AIP then leads to phosphorylation of AgrA. AgrA in its phosphorylated sate activates transcription from both P2 and P3, leading to the production of GFP and 3OC6HSL. Thus we can detect the presence of S.aureus expediently by observing the expression of GFP.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_999_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>8564</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>we employed site-specific mutagenesis(AgrC-I A101T) to replace a amino acid residue in AgrC-I so that the mutated AgrC can bound to both AIP-I and AIP-IV.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Lei Qiao</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K748001/annotation2183341/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K748001/annotation2183341"/>
+        <sbol:displayId>annotation2183341</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>AgrC-I A101T</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K748001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K748001/annotation2183341/range2183341/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K748001/annotation2183341/range2183341"/>
+            <sbol:displayId>range2183341</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K748001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>301</sbol:start>
+            <sbol:end>303</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0001059"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/mutation"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K748001_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K748001_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K748001_sequence"/>
+    <sbol:displayId>BBa_K748001_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K748001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K748001_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atggaattattaaatagttataattttgttttattcgtattaactcaaatgatattaatgtttacaataccagctataattagtggtattaagtacagtaaacttgattattttttcatcatagtaatttcgacattatcgttatttctatttaaaatgtttgatagcgcgtccttaatcatattaacttcatttattattataatgtattttgtcaaaatcaaatggtattctattttgttgattatgacttcgcagattattctatactgtgctaattacatgtatatagttatatatacctatatcaccaaaatttctgatagtatatttgtaatattccctagcttttttgtagtttatgtgactattagtatactattctcatatataataaatagagttctcaaaaaaattagcacaccatatctaatactaaacaaaggatttttaatagttatttcgactatcttactgcttactttttcattatttttcttttattcacaaataaactcggatgaagctaaagtaataaggcagtattcttttatttttattggtatcactatatttttaagtatattaacatttgttatttctcaatttctccttaaagagatgaaatataaacgtaatcaagaagaaattgaaacctattatgaatatacattgaagattgaagctatcaacaacgaaatgcgcaagttccgtcatgattatgtcaatatcttaacgacactttcagaatacattcgagaagatgacatgcctggcctacgtgattatttcaataaaaatattgtacctatgaaagacaatttacaaatgaatgctataaaattaaatggtatcgagaatcttaaagtacgtgaaattaaaggcttaattactgcgaaaattttacgtgcacaagaaatgaatattccgattagtatcgaaatacccgatgaagtaagtagcattaacttgaatatgatcgatttaagtcgcagtattggtattattcttgataatgcaattgaggcatcaactgaaattgatgaccctatcattcgcgttgcatttattgaaagtgaaaattcagtaacgtttattgttatgaataaatgcgctgatgatataccacgcattcatgaattgttccaagaaagtttttctactaaaggtgaaggtcgtggtttaggtctatcaactttaaaagaaattgctgataatgcagacaatgtcttattagatacaattatcgaaaatggtttctttattcaaaaagttgaaattattaacaactaataa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

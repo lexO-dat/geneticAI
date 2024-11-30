@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1321014/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014"/>
+    <sbol:displayId>BBa_K1321014</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1321014"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1321014</dcterms:title>
+    <dcterms:description>CBDCipA with N and C-terminal linker</dcterms:description>
+    <dcterms:created>2014-10-14T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-06-17T12:14:33Z</dcterms:modified>
+    <sbh:mutableProvenance>The designed construct was ordered from as a GeneArt?? String (Invitrogen??? Life Technologies).</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>This CBD is from the Cellulosomal -scaffolding protein A (cipA) of Clostridium thermocellum including the endogenous linker sequences at the N and C-terminus (UniProt ID Q06851 link http://www.uniprot.org/uniprot/Q06851). It is in RFC25 format to allow for easy use in protein fusions.
+
+The CBD is part of the CBM3 family (link to cazy http://www.cazy.org/CBM3.html). This CBD has been used in many application: in fusions with cell adhesion peptides to enhance the properties of cellulose as a cell-growth matrix (Andrade &lt;i&gt;et al &lt;/i&gt; 2010a, Andrade &lt;i&gt;et al &lt;/i&gt; 2010b), fused to enzymes to remove contaminants from water (Kauffmann &lt;i&gt; et al &lt;/i&gt; 2000) and fused to an antimicrobial peptide (Ramos, Domingues &amp; Gama 2010).
+
+At present the cloning for these constructs is still in progress to correct an illegal EcoRI site which was identified in the parts with this CBD. This can be achieved with a silent mutation via site-directed mutagenesis and we aim to send these parts to the registry once this is complete.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_1696_</igem:group_u_list>
+    <igem:m_user_id>4206</igem:m_user_id>
+    <igem:owner_id>20780</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableNotes>The DNA sequence from the relevant portion of http://www.ncbi.nlm.nih.gov/nuccore/144777 was codon optimised for &apos;&apos;E.coli&apos;&apos;. RFC[25] prefix and suffix were appended to the sequence with an additional 4 basepairs (gatc) at the beginning and end to allow space for the restriction enzymes to bind to the EcoRI and PstI sites at the ends of the sequence for cloning purposes.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Xenia Spencer-Milnes</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420141/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420141"/>
+        <sbol:displayId>annotation2420141</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Endogenous Linker (N-term)</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420141/range2420141/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420141/range2420141"/>
+            <sbol:displayId>range2420141</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>126</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420186/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420186"/>
+        <sbol:displayId>annotation2420186</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>CBDcipA</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420186/range2420186/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420186/range2420186"/>
+            <sbol:displayId>range2420186</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>127</sbol:start>
+            <sbol:end>603</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420187/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420187"/>
+        <sbol:displayId>annotation2420187</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Endogenous Linker (C-term)</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420187/range2420187/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/annotation2420187/range2420187"/>
+            <sbol:displayId>range2420187</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>604</sbol:start>
+            <sbol:end>711</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1321014_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014_sequence"/>
+    <sbol:displayId>BBa_K1321014_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1321014"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1321014_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aatgctacgccaactaagggtgcaaccccgaccaacacagcaacgcctacaaaaagcgctacagcaacacctacaagaccgtcagttcctacaaacacaccgactaacacaccggcaaatacacctgtttcaggcaacttgaaggtcgaattctataactcaaatccgagtgatacaactaacagtattaatccgcagtttaaagtaacaaatacaggatcaagtgcaattgatctttcaaagcttacattgagatactattacaccgttgatggccagaaggaccagactttctggtgtgaccatgcagctatcataggtagcaacggctcatacaacggcatcacatcaaatgtaaaaggaacattcgtaaagatgagctcaagcacaaataacgcagacacatacctcgaaataagtttcacaggtggcactttggaacctggtgctcatgtacagatacagggtaggtttgcgaaaaatgactggagtaattatacacagtcaaatgattactcatttaagtcagcatcacagttcgtagaatgggatcaggttacagcatatttgaatggagtacttgtatggggtaaagaaccaggaggatcagtagttccgtcaacacagccggtaacaaccccaccggcaacaaccaagccgccagcaacaaccaaaccaccggctaccacgattcctccatcagacgatccg</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

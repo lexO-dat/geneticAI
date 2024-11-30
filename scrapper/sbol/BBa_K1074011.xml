@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1074011/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011"/>
+    <sbol:displayId>BBa_K1074011</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1074011"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1074011</dcterms:title>
+    <dcterms:description>PsdpRI+RBS+SDP</dcterms:description>
+    <dcterms:created>2013-09-24T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:09:02Z</dcterms:modified>
+    <sbh:mutableProvenance>Promoter PsdpRI and RBS are synthesized via PCR, SDP operon is from genome of Bacillus subtilis</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>We construct this gene circuit as our kill switch to kill the engineered Bacillus subtilis for the safety purpose.Killing is mediated by the exported toxic protein SdpC. Extracellular SdpC induces the synthesis of an immunity protein, SdpI, which protects toxin-producing cells from being killed. SdpI, a polytopic membrane protein, is encoded by a two-gene operon under sporulation control that contains the gene for an autorepressor, SdpR. The autorepressor binds to and blocks the promoter for the operon. Evidence indicates that SdpI is also a signal-transduction protein that responds to the SdpC toxin by sequestering the SdpR autorepressor at the membrane. Sequestration relieves repression and stimulates synthesis of immunity protein.
+The kill switch is based on a high-copy vector fused with promoter for operon sdpIR and coding sequence for protein SdpC. When SdpC toxins are sensed, they will be captured by Immunity Protein SdpI at the membrane, enabling SdpI to sequester SdpR. As a result, repression on promoter SdpIR is released and more SdpC will be produced. Trapped in this endless loop, the SdpC producing cells fails to cope with enormous toxin SdpC and doomed after eliminating their siblings. Eventually, the group of engineered Bacillus subtilis is destroyed instead of sporulating.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_1383_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>16001</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>no</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Changlong Zhao</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Composite"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K1074011/component2362518/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/component2362518"/>
+        <sbol:displayId>component2362518</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K1074013</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K1074013/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K1074011/component2362520/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/component2362520"/>
+        <sbol:displayId>component2362520</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K1074009</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K1074009/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K1074011/component2362519/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/component2362519"/>
+        <sbol:displayId>component2362519</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K1074016</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K1074016/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362518/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362518"/>
+        <sbol:displayId>annotation2362518</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K1074013</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362518/range2362518/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362518/range2362518"/>
+            <sbol:displayId>range2362518</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>76</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/component2362518/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362519/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362519"/>
+        <sbol:displayId>annotation2362519</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K1074016</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362519/range2362519/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362519/range2362519"/>
+            <sbol:displayId>range2362519</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>85</sbol:start>
+            <sbol:end>102</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/component2362519/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362520/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362520"/>
+        <sbol:displayId>annotation2362520</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K1074009</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362520/range2362520/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/annotation2362520/range2362520"/>
+            <sbol:displayId>range2362520</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>109</sbol:start>
+            <sbol:end>2207</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011/component2362520/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1074016/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074016"/>
+    <sbol:displayId>BBa_K1074016</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1074016"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1074016</dcterms:title>
+    <dcterms:description>RBS for Pctc</dcterms:description>
+    <dcterms:created>2013-09-24T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:09:02Z</dcterms:modified>
+    <sbh:mutableProvenance>From the genome of Bacillus subtilis. synthesized by Sangon Biotech.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074016/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>This is an efficient RBS for promoter Pctc(BBa_K143010) in Bacillus subtilis. It&apos;s also an universal RBS for promoters in  Bacillus subtilis. We also used it with the promoter PsdpRI(BBa_K1074013) in our project.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_1383_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>16001</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>synthetise with promoter Pgrac as a whole!</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Changlong Zhao</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/RBS"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1074016_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1074009/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074009"/>
+    <sbol:displayId>BBa_K1074009</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1074009"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1074009</dcterms:title>
+    <dcterms:description>SdpA,SdpB,SpbC</dcterms:description>
+    <dcterms:created>2013-09-15T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:09:02Z</dcterms:modified>
+    <sbh:mutableProvenance>From the genome of Bacillus subtilis (strain 168)</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074009/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Killing factor of Bacillus subtilis ,SpbC Induces the lysis of other B.subtilis cells that have not entered the sporulation pathway, providing a source of nutrients to support sporulation. Its maturation is dependent on SdpA and SdpB. Also functions as a ligand, being able to bind to SdpI thereby triggering a signal transduction cascade that protects the cell against the toxic effects of its own SdpC. 
+We use this killing factor to build a kill switch for Bacillus subtilis.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_1383_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>16001</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>With restriction sites of Spe I and Pst I in the sequence.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Changlong Zhao</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1074009_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1074013/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074013"/>
+    <sbol:displayId>BBa_K1074013</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1074013"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1074013</dcterms:title>
+    <dcterms:description>promoter sdpR/I</dcterms:description>
+    <dcterms:created>2013-09-15T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-06-08T02:58:23Z</dcterms:modified>
+    <sbh:mutableProvenance>from the genome of Bacillus subtilis WB800N</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074013/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>This part is a sigma factor A-dependent  promotor of the gene sdpR derived from the B.subtilis ,and it contains an operon for the signaling pathway of sdpc,a bacterial toxin of B.subtilis. It&apos;s activated as the toxin sdpC existed,while the natural pructrue of the promotor, sdpR/I ,confers immunity to the SdpC toxin. Cells of B. subtilis enter the pathway to
+sporulate under conditions of nutrient limitation could generate sdpC, then this promotor would be activated. We use this part to overexpress sdpC toxin in spore-forming cells,to build a self-killing system in B.subtilis for safety thinking.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_1383_</igem:group_u_list>
+    <igem:m_user_id>4206</igem:m_user_id>
+    <igem:owner_id>16001</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>In stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Available"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>NO</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Changlong Zhao</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Regulatory"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1074013_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1074011_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011_sequence"/>
+    <sbol:displayId>BBa_K1074011_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1074011"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074011_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>gggttgtttttaaaaaaattcaagttataatgaaaataatacatttatacaaatatctaaatgtctaaatgttttttactagagaaaggtggtgaatactagtactagatgactatatgttttctattattttcttcttattactttagcaatatttcacctcagaatccactgttcaaaaaaaattttttgcaacaattgtctccccaaggctttggcttttatagtaaaagccctacagaagaaaacatttcatttcacacaaaagaaaatttaaagttacctaatgcacttcccaataatttttttgggataaaaagagaaggaagagttcaggcaatagaattaggcaaaattgtagagaatatcgatccaaagaattggaaaacttgtgaaaacaacaactcctgcacaaatttagagaaacaaataaagcctattaaggttataaaaaatgaagattatatacatcttagcaaaggagaatacctaatatatcgccaaaaaccactctcatggtattggatagactttaagcaaactacctcttttgaaagaaaggtgctaaaaataaaaatagtatgaagatattaaatagtttagaaggttatattgacacctataatccatggaaaaatacatatgcactttttagaagtttacttggtttctcaacattactagtactattattcaatagtactgatattttatttagttatagtgcaaataatgtcacatgtgaaaatgtctatatccctaccgctttttgttttgctaaagaatatagtatcaattttgagattataagatacttaatgatttttatattaaccttagtggttatagggtggagacctagatttaccggtttatttcactggtatatttgctatagtattcaaacttcagctttaactatcgatggtggagagcaaattgcaactgttctttcttttcttatattacctgttacattattagattcaaggcgaaatcattggaatataaagaaaaacaataatgaatctttcacaaagaagacagtattgttttatataatgacaataattaaaattcaagtttttatcatttatttaaacgcagctttagagcgattgaaaaataaagagtgggcagaaggaacagcaatttactatttcttttctgatccggtgtttggattacctgaatatcaacttaacttaatgaatccactacttgaaagcaattttattgttgtcatcacttggttagtaactatttttgagttgttcttagcagcaagcataatttcaaatatcagaataaagagaattgcccttgttttgggaatattatttcatattgggataatattcagcattggtattgtaagttttggcttgatcatgatatcagcattaattatatatctgcatcctgtacaacaaaatatcactatgaattggtgttctcctttatttaaatatatatatgtaaaaggaaagagaaatttcaaaagaataggaggtgaatcagtcaagtttcttacaaaattgtttcatagctaacatttagataatggagaaataacttaatggaggtataataatttgaaaagtaaattacttaggctattgattgtttccatggtaacgatattggttttttcattagtaggactctctaaggagtcaagtacatctgctaaagaaaaccatacattttctggagaagattactttagaggacttttatttggacaaggggaagttggtaaattaatttcaaacgatttggaccctaaactcgtaaaagaggcaaatagtacagaaggtaaaaagttagtaaatgatgtagtcaaatttataaaaaaagatcaaccacaatatatggatgaattgaaacaatcgattgacagcaaagaccctaaaaaactcattgaaaatatgaccaaagcagaccaacttatccaaaaatatgctaagaaaaatgaaaacgtaaaatactcttctaataaagttactccatcttgtgggctttatgccgtctgtgtagcagctggatatttatatgttgtgggcgttaacgcagttgcattacaaacggctgccgcagtaacaactgcagtgtggaaatacgttgccaaatattcctcttcagcttctaataattctgatttagaagcggctgctgcaaaaaccctaaaattgattcatcaataa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1074016_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074016_sequence"/>
+    <sbol:displayId>BBa_K1074016_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1074016"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074016_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aaaggtggtgaatactag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1074009_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074009_sequence"/>
+    <sbol:displayId>BBa_K1074009_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1074009"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074009_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atgactatatgttttctattattttcttcttattactttagcaatatttcacctcagaatccactgttcaaaaaaaattttttgcaacaattgtctccccaaggctttggcttttatagtaaaagccctacagaagaaaacatttcatttcacacaaaagaaaatttaaagttacctaatgcacttcccaataatttttttgggataaaaagagaaggaagagttcaggcaatagaattaggcaaaattgtagagaatatcgatccaaagaattggaaaacttgtgaaaacaacaactcctgcacaaatttagagaaacaaataaagcctattaaggttataaaaaatgaagattatatacatcttagcaaaggagaatacctaatatatcgccaaaaaccactctcatggtattggatagactttaagcaaactacctcttttgaaagaaaggtgctaaaaataaaaatagtatgaagatattaaatagtttagaaggttatattgacacctataatccatggaaaaatacatatgcactttttagaagtttacttggtttctcaacattactagtactattattcaatagtactgatattttatttagttatagtgcaaataatgtcacatgtgaaaatgtctatatccctaccgctttttgttttgctaaagaatatagtatcaattttgagattataagatacttaatgatttttatattaaccttagtggttatagggtggagacctagatttaccggtttatttcactggtatatttgctatagtattcaaacttcagctttaactatcgatggtggagagcaaattgcaactgttctttcttttcttatattacctgttacattattagattcaaggcgaaatcattggaatataaagaaaaacaataatgaatctttcacaaagaagacagtattgttttatataatgacaataattaaaattcaagtttttatcatttatttaaacgcagctttagagcgattgaaaaataaagagtgggcagaaggaacagcaatttactatttcttttctgatccggtgtttggattacctgaatatcaacttaacttaatgaatccactacttgaaagcaattttattgttgtcatcacttggttagtaactatttttgagttgttcttagcagcaagcataatttcaaatatcagaataaagagaattgcccttgttttgggaatattatttcatattgggataatattcagcattggtattgtaagttttggcttgatcatgatatcagcattaattatatatctgcatcctgtacaacaaaatatcactatgaattggtgttctcctttatttaaatatatatatgtaaaaggaaagagaaatttcaaaagaataggaggtgaatcagtcaagtttcttacaaaattgtttcatagctaacatttagataatggagaaataacttaatggaggtataataatttgaaaagtaaattacttaggctattgattgtttccatggtaacgatattggttttttcattagtaggactctctaaggagtcaagtacatctgctaaagaaaaccatacattttctggagaagattactttagaggacttttatttggacaaggggaagttggtaaattaatttcaaacgatttggaccctaaactcgtaaaagaggcaaatagtacagaaggtaaaaagttagtaaatgatgtagtcaaatttataaaaaaagatcaaccacaatatatggatgaattgaaacaatcgattgacagcaaagaccctaaaaaactcattgaaaatatgaccaaagcagaccaacttatccaaaaatatgctaagaaaaatgaaaacgtaaaatactcttctaataaagttactccatcttgtgggctttatgccgtctgtgtagcagctggatatttatatgttgtgggcgttaacgcagttgcattacaaacggctgccgcagtaacaactgcagtgtggaaatacgttgccaaatattcctcttcagcttctaataattctgatttagaagcggctgctgcaaaaaccctaaaattgattcatcaataa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1074013_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1074013_sequence"/>
+    <sbol:displayId>BBa_K1074013_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1074013"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1074013_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>gggttgtttttaaaaaaattcaagttataatgaaaataatacatttatacaaatatctaaatgtctaaatgttttt</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

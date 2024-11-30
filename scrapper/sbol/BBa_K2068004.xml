@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K2068004/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K2068004"/>
+    <sbol:displayId>BBa_K2068004</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K2068004"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K2068004</dcterms:title>
+    <dcterms:description>PCQuad Mutant 13</dcterms:description>
+    <dcterms:created>2016-09-12T11:00:00Z</dcterms:created>
+    <dcterms:modified>2016-09-13T12:24:23Z</dcterms:modified>
+    <sbh:mutableProvenance>This is an mutated version of our wildtype protein cage that was initially designed by Dr. Todd Yeates from UCLA.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K2068004/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>In this gene we have introduced a Thrombin cleavage site(LVPRGS) to our Wild Type PCQuad 3.0 gene(BBa_K2068000). This gene will function exactly like the PCQuad 3.0 as it will code for a single subunit of a self assembling 12 subunit protein cage. But, the subunits that form will include a Thrombin cleavage site and the resulting cage will be susceptible to controlled disassembly using a Thrombin protease.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_2536_</igem:group_u_list>
+    <igem:m_user_id>27134</igem:m_user_id>
+    <igem:owner_id>27134</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Due to the unpredictable nature of protein folding especially of a self assembling protein cage a few criterion had to be met for mutant insertion into gene.
+1. Avoid regions with secondary structure. 
+This would theoretically lessen the chance of the mutation disrupting cage formation and allow the cage to retain wild type structure.Using the PDB file of our mutant wild type cage we were able to identify areas of the genome that had minimal to no secondary structure. 
+2. Make sure the mutation is on the outside of the cage.
+Using Pymol modeling we were able to see what regions of the genome coded for the residues on the surface of the cage and what regions coded for residues on the interior of the cage. Because we are introducing a protease to cleave our cage, we needed the cleavage site to be as sterically unhindered as possible.
+3. Mutate near the linker.
+Each subunit is a fusion between a trimeric protein and a dimeric protein linked by a alpha helix linker. By mutating a region close to this assembly, we hoped for complete disassembly of cage.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Nithin Dharmaraj</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Generator"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K2068004_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K2068004_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K2068004_sequence"/>
+    <sbol:displayId>BBa_K2068004_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K2068004"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K2068004_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>taatacgactcactatagggaaagaggagaaatactagatgccgttcattaccgtaggacaagaaaattctacgtctattgatttgtattatgaggaccatggtaccggtacgccggtggttctcatccacggctttccgctatcaggacattcttgggagcgtcagagcgctgcgcttttagatgccggtgctcgtgtaataacgtacgatagacgcggttttggccagagctctcagccaacgactggatacgattatgacaccttcgccgccgatttaaatactgttctggaaaccctggatcttcaggatgcggtcttagttggttttagtatgggcacaggtgaagttgcccgctacgtcagttcttatggcactgctcgtattgcagcggtagcttttctggctagcttagaaccctttctattaaaaaccgatgataatccggatggggcggctccacaggagtttttcgacggaattgtggccgctgtgaaagccgatagatatgctttctatactgggtttttcaatgacttctataatttagatgaaaacctgggaacacgcatctcggaagaggctgtacggaactcatggaatactgcggcatctggcggattctttgctgccgcagccgcgccgaccacttggtatacagattttcgtgcggacattcctagaattgatgtacctgccctgattctgcacggtacgggcgaccgtaccttaccgattgagaacactgcccgcgtctttcataaagctcttccgtccgctgagtacgtagaggttgaaggggcacctcatggtctgttatggactcatgctgaagaagtcaacacagccctgcttgctttccttgcgaaggctcaagaagcccaaaagcagaaattactgaccgaagtggaaacttatgtactatccatcataccgtctggtccccttaaagcagaaatcgcacaacgtctggaggatgtcttcgcgggcaaaaatacagacctggaggtgctgatggaatggcttaagacccgaccgattctgtcaccgttaacgaagggtatcctaggattcgtttttaccctgacgggcctggtgccccgcggtagtggcgagcgcggactgcaacgaagaagattcgtccaaaacgcattaaacgggaatggtgacccaaacaatatggacaaagcggtgaagctgtatcgaaaacttaagcgcgaaataacattccatggggccaaagaaattagcctgagctattccgctggggcgcttgcttcttgtatgggtttaatatataaccgaatgggtgcggtcaccacggaagtcgcgttcggattagtatgcgcgacatgcgagcagattgcagactctcagcatagaagccatcgtcagcatcaccaccatcaccattaataa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

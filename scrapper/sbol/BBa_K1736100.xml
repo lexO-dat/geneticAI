@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1736100/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1736100"/>
+    <sbol:displayId>BBa_K1736100</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1736100"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1736100</dcterms:title>
+    <dcterms:description>Harmonised B. subtilis Falvin Binding Fluorescent Protein (BsFP)</dcterms:description>
+    <dcterms:created>2015-09-16T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-09-18T06:57:20Z</dcterms:modified>
+    <sbh:mutableProvenance>Modified sequence from Bacillus Subtilis</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1736100/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>The Bacillus subtilis flavin-binding fluorescent protein (BsFbFP, or BsFP) is native to the B. subtilis bacteria, and homologs are also found in several other bacterial genera. This flavin-binding fluoroprotein has a different chromophore to the more widely used GFP family of fluoroproteins, and BsFP has several advantages over the more-traditional fluoroproteins such as GFP (BBa_E0040). The BsFP gene is smaller than GFP, and it is capable of folding and fluorescing under anaerobic conditions, unlike GFP and its homologs. The BsFP folds into a fluorescent form faster and more efficiently 1. In this project, we used the BsFP protein to experimentally validate our novel codon harmonisation algorithm, TransOpt. We were inspired to choose this protein as our model system based on the work of previous iGEM teams, who developed related parts BBa_K376004, BBa_K1094000 and BBa_K660000. We tried to improve the function of BsFP by utilising three different codon-optimisation / harmonisation approaches; these were our novel &apos;in-house&apos; algorithm TransOpt, the standard harmonisation methods proposed by Spencer et al. 2 and a ???fast-folding??? method. More information on the difference between these can be found here. Our model hypothesised based on the previous literature that the ribosome translation kinetics profile was influenced by both the copy number of each specific tRNA gene in the host organism, and by the codon redundancy, and that these two factors were paramount in controlling protein folding, which in turn yields protein activity 2. In this experimental validation, we performed fluorescence assays to detect the correctly- folded proteins, with the assumption being that higher fluorescence is characteristic of a better folded protein. We generated the following four sequences:
+BsFP-WT: native sequence from the native host B. subtilis
+BsFP-fast: all codons were replaced with the E.coli versions that possessed the fastest translation rate, as quantised using the approach of Spencer et al 2
+BsFP-standard: harmonised BsFP generated via standard harmonisation using the rate quantisation approach of Spencer et al 2
+BsFP-TransOpt: optimised BsFP sequence generated using our new TransOpt algorithm
+Each variant of BsFP was cloned into a tetracycline-inducible expression vector (pUS212), transformed into E.coli, and clones confirmed to carry the correct constructs were induced with tetracycline, and then both fluorescence (520 nm) and optical density (600 nm) were measured in triplicate samples of each culture. The fluorescence data were normalised by dividing by the optical density. After performing the fluorescence assay, we found that the BsFP subjected to standard harmonisation (BBa_K1736000) possessed the highest fluorescence, which was 2 folds higher than the wild-type sequence. The fast-folding and Trans-Opt versions of the gene were less fluorescent than wild type. These data was also qualitatively confirmed by exposing tet-induced patches on plates to a long-wave UV lamp; only the standard-harmonisation clones yielded fluorescence visible with the naked eye.
+
+Graphs showing the fluorescence and relative fold change in fluorescence (compared to BsFP WT) at 520 nm and 500 nm emission after 460 nm excitation.
+
+Plate containing induced E. coli JM109 cells containing expressed BsFP protein as well as non-BsFP as control.
+Although we failed to demonstrate that the TransOpt algorithm facilitated greater fluorescence in the case of BsFP, we predict that this approach may still be useful for other proteins. Due to its poor fluorescence, we did not submit the TransOpt-harmonised BsFP as a Part. Instead, we submitted the standard-harmonisation BsFP gene to the Registry. This Part is a versatile and widely-applicable alternative to GFP type fluoroproteins, due to its high fluorescence, small size, fast maturation, ad oxygen-independence.
+This new BsFP Part has the potential to enhance reporter gene assays, improve biomarker tracking in cell tissues, create fluorescent fusion proteins, and many other applications. It is also appropriate to note that the gene encoding the protein is substantially different to the previously submitted parts BBa_K376004, BBa_K1094000 and BBa_K660000; while these cannot be directly compared in terms of fluorescence intensity, we note that our part is the most rigorously characterised of these. In particular, the ability to easily detect its fluorescence on agar plates is especially convenient.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_2158_</igem:group_u_list>
+    <igem:m_user_id>16376</igem:m_user_id>
+    <igem:owner_id>16376</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Note that this part contains a bacterial RBS.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Nick Coleman</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/DNA"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+  </sbol:ComponentDefinition>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>
