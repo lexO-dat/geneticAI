@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sbol="http://sbols.org/v2#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:ns0="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sbol:Collection rdf:about="https://synbiohub.org/public/iGEMDistributions/iGEM_2018_Plate6_Well3O/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/iGEMDistributions/iGEM_2018_Plate6_Well3O"/>
+    <sbol:displayId>iGEM_2018_Plate6_Well3O</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM 2018 Distribution Plate 6 Well 3O</dcterms:title>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/iGEMDistributions/iGEM_2018_Plate6_Well3O/1"/>
+    <sbol:member rdf:resource="https://synbiohub.org/public/igem/BBa_K222000/1"/>
+  </sbol:Collection>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K222000/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K222000"/>
+    <sbol:displayId>BBa_K222000</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K222000"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K222000</dcterms:title>
+    <dcterms:description>Aequorin</dcterms:description>
+    <dc:creator>Cristina Vilanova</dc:creator>
+    <dcterms:created>2009-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:31Z</dcterms:modified>
+    <ns0:discontinued>false</ns0:discontinued>
+    <ns0:dominant>false</ns0:dominant>
+    <ns0:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/Works"/>
+    <ns0:group_u_list>_327_</ns0:group_u_list>
+    <ns0:m_user_id>0</ns0:m_user_id>
+    <ns0:owner_id>4909</ns0:owner_id>
+    <ns0:owning_group_id>9</ns0:owning_group_id>
+    <ns0:sampleStatus>It's complicated</ns0:sampleStatus>
+    <ns0:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableDescription>The aequorin-coelenterazine complex needs calcium to produce light. In the process this calcium enters through a special type of calcium channels present in the cell???s plasma membrane which open or close in response to a change in the transmembrane potential, that is why they are called voltage-dependent calcium channels (VDCC). The equation which describes calcium current through these channels is the following:
+ 
+Where g is the conductance associated with the channel, V is the transmembrane potential and ECa is the Nernst potential, related to the different ionic concentration inside and outside the cell. 
+Considering that these channels are only permeable to calcium and have two states -open or closed-, the total conductance associated with the population of VDCCs can be expressed as the maximal conductance (   ) times the fraction of all channels that are open. This fraction is determined by hypothetical activation and inactivation variables m and h, which depend on voltage and time: 
+ 
+
+VDCCs are well characterized in excitable cells such as neurons, where the value of   is known:
+
+
+
+Budding yeast, Saccharomyces cerevisiae has homologous voltage-dependent channels in its  plasma membrane. However, there is a lack of study of the properties of these channels. That is why we have determined their conductance according to our experimental results:
+
+
+
+
+Having characterized calcium entry to the cell, we studied the aequorin production of light through a calcium-mediated response after two types of stimulation:
+
+???	Chemical stimulation
+Alkali shock (performed by the addition of KOH) induced a calcium entry to cytoplasm (where aequorin is located) through voltage-dependent calcium channels. These calcium ions bind the aequorin-coelenterazine complex and photons ???light- are emitted during a short period of time. This graph shows yeasts??? response to the addition of 30 ??L of KOH:
+ 
+
+Furthermore, we made experiments with increasing KOH volumes (in microliters) and realized that light emission was higher: the more KOH arrives to cells, the more calcium ions get into the cytoplasm and more photons are emitted by aequorin.
+ 
+
+It has to be noted that, in presence of suitable amounts of coelenterazine, the aequorin production of light can be repeated with several stimulations of 30 microliters each (where arrows show):
+ 
+
+Finally, we have proved that calcium enters through VDCCs, as yeast strains lacking this calcium channels (cch1 and mid1) emit less amount of light. Two negative controls (addition of EDTA, a quelant of calcium ions, and KCl, which do not perform alkali shock) are also included in this graph:
+ 
+
+???	Electrical stimulation
+Calcium entrance to cytosol ???and the consequent aequorin light emission- can also be perfomed by applying electricity to the yeast culture. This response was characterized at different voltage values and times of application. Again, the stimulation was repeatable (stimulus applied where arrows):
+*The following graph show data obtained with an ELISA plates reader which made discontinuous measures, one each 30 s. Therefore, we had not information about light production between dots.
+ 
+ 
+The time of exposure to the electrical stimulus was crucial, even more that the aplied voltage. That means, if we increased the voltage at very short times, cells could produce a more abrupt peak of light. But if we increased the time of exposure to the electricity, we observe a less defined response, with more flattened peaks. 
+ 
+That???s probably because a big exposure time of electrical input damages and kills the yeasts, making them to release their components to the medium, including the aequorin-coelenterazine-Ca2+ complex, so the emission of light is more uniform in time, instead of the production of the flash produced by the Calcium entering in the cell. 
+In the case of very little voltages (like 1,5V) this observation is not carried out by our yeasts. The reason must be that the electrical input is too low, so yeasts don???t die so easily as with more elevated voltage, and a better response is produce with a more prolongated electrical shock. 
+
+
+
+Although the previous graphs show that the second stimulation induces a lower amount of light, varying the time of stimulus application, higher peaks could be obtained:
+ 
+
+Similarly to chemical stimulation, yeast mutant strains lacking calcium channels had less light emission. Several negative controls (water, SD medium, SD with coelenterazine without yeasts, yeasts without coelenterazine, and addition of EDTA) were made to prove that light came from aequorin-transformed yeasts:
+ 
+
+*The following graphs show data obtained with a continuous luminometer. It has to be noted the sharp peak of light produced when stimulation is applied (we were not able to detect it with the discontinuous measurements)
+
+
+
+
+
+
+
+
+
+
+In the following graphic WT aequorin-transformed yeasts and mutant strains (lacking cch1 and mid1) are compared again. SD medium with coelenterazine and yeasts without coelenterazine are included as negative controls:
+ 
+
+Again, light production is lower in mutant cells, also in the first peak of light -that we were not able to see with the discontinuous luminometer-, as calcium ions enter through VDCCs. A sharp peak of light is produced when the stimulus is applied, but our controls discard the idea of an artifact. For example, light could be made by a spark produced during the discharge. It is not very probable, because the peak observed was produced during near 400 seconds after the stimulus. Another time, when cells without coelenterazine or mutants were used, we saw no light.</sbh:mutableDescription>
+    <sbh:mutableNotes>-</sbh:mutableNotes>
+    <sbh:mutableProvenance>It comes from the genomic sequence of the luminiscent jellyfish Aequorea victoria.</sbh:mutableProvenance>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:star>false</sbh:star>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K222000/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Reporter"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K222000_sequence/1"/>
+  </sbol:ComponentDefinition>
+</rdf:RDF>

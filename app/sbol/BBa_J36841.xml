@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_J36841/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_J36841"/>
+    <sbol:displayId>BBa_J36841</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_J36841"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_J36841</dcterms:title>
+    <dcterms:description>Streptavidin, wild-type core + His6 tag (no start codon)</dcterms:description>
+    <dcterms:created>2006-10-28T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-08-31T04:08:47Z</dcterms:modified>
+    <sbh:mutableProvenance>PCR off a plasmid obtained from Alice Ting&apos;s lab at MIT.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_J36841/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>This part codes for the core part of wild-type streptavidin protein, without the start codon. Streptavidin protein binds strongly to the biotin molecule, and can be used to bind biotinylated nucleic acids or peptides.
+
+There is a histidine tag added at the end of the coding sequence right before the stop codons. You can probe for this protein with an anti-his(C-term) antibody.
+
+It was used as part of a fusion protein with lipoprotein signal peptide and outer membrane protein A transmembrane domains, to express streptavidin on the outer surface of E. coli.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_65_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>1229</igem:owner_id>
+    <igem:owning_group_id>65</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableNotes>There was originally a XbaI site TCTAGA at nucleotides 118-123 of the part, which was mutated to AGCCGC. It is missing its start codon at the beginning, as the intention was to fuse this with surface display domains upstream.
+
+There are no spacer nucleotides between the part and the XbaI restriction site, or between the part and the SpeI restriction site, so that the mixed site would be 6bp long, and reading frame would be maintained between protein domains.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Perry Tsai</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_J36841_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_J36841_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_J36841_sequence"/>
+    <sbol:displayId>BBa_J36841_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_J36841"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_J36841_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>gctgaagctggtatcaccggcacctggtacaaccagctgggatccaccttcatcgttaccgctggtgctgacggtgctctgaccggtacctacgaatccgctgttggtaacgctgaaagccgctacgttctgaccggtcgttacgactccgctccggctaccgacggttccggaaccgctctgggttggaccgttgcttggaaaaacaactaccgtaacgctcactccgctaccacctggtctggccagtacgttggtggtgctgaagctcgtatcaacacccagtggttgttgacctccggcaccaccgaagccaacgcgtggaaatccaccctggttggtcacgacaccttcaccaaagttaaaccgtccgctgcttcccatcaccatcaccaccattaataa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

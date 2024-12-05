@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_I1011/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011"/>
+    <sbol:displayId>BBa_I1011</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_I1011"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_I1011</dcterms:title>
+    <dcterms:description>CI(1) &amp;quot;KISS&amp;quot; asRNA without promoter</dcterms:description>
+    <dcterms:created>2003-01-31T12:00:00Z</dcterms:created>
+    <dcterms:modified>2015-08-31T04:07:29Z</dcterms:modified>
+    <sbh:mutableProvenance>Custom design.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Region which serves as basis for transcription of asRNA that binds to and inhibits &lt;bb_part&gt;BBa_I1010&lt;/bb_part&gt;&apos;s mRNA transcript. Has tetR promoter &lt;bb_part&gt;BBa_R0040&lt;/bb_part&gt;. Part of the XOR gate comprised of &lt;bb_part&gt;BBa_I1010&lt;/bb_part&gt; and &lt;bb_part&gt;BBa_I1020&lt;/bb_part&gt;, their corresponding asRNA coding sequences (&lt;bb_part&gt;BBa_I1011&lt;/bb_part&gt; and &lt;bb_part&gt;BBa_I1021&lt;/bb_part&gt;), and the LacO-1 and TetR &lt;bb_part&gt;BBa_R0040&lt;/bb_part&gt; promoters.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_1_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>24</igem:owner_id>
+    <igem:owning_group_id>7</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>References (unparsed) here: &lt;p&gt;Coleman, J., et al. &lt;em&gt;Nature&lt;/em&gt;. (1985) 315, 601-3.&lt;P&gt;  Pestka, S., et al. &lt;em&gt;Proc. Natl. Acad. Sci. USA&lt;/em&gt; (1984) 81, 7525-28.&lt;P&gt; References (unparsed) here: &lt;p&gt;Coleman, J., et al. &lt;em&gt;Nature&lt;/em&gt;. (1985) 315, 601-3.&lt;P&gt;  Pestka, S., et al. &lt;em&gt;Proc. Natl. Acad. Sci. USA&lt;/em&gt; (1984) 81, 7525-28.&lt;P&gt;Complementary to beginning of &lt;bb_part&gt;BBa_I1010&lt;/bb_part&gt; transcript covering RBS, start codon, and 73 bp into coding sequence.     No designed secondary structure.  &lt;blockquote&gt;        &lt;B&gt;Anti-sense&lt;/B&gt;&lt;/P&gt;           &lt;P&gt;The success of this system clearly rests on the ability to effectively              and specifically target mRNA transcripts for degradation using anti-sense              RNA. While many papers, articles, and books have been written on the              subject, there are no consensus anti-sense building strategies presented.              We thus chose to implement three different types of antisense inhibition:              KISS, micRNA, and IS10. In the description that follows, the following              nomenclature will be used:&lt;/P&gt;           &lt;P&gt;&lt;em&gt;target&lt;/em&gt;- the mRNA transcript that we wish to inhibit.&lt;/P&gt;                 &lt;P&gt;&lt;em&gt;anti-sense&lt;/em&gt;- the anti-sense molecule which will bind and                    inhibit &lt;em&gt;target&lt;/em&gt;. &lt;/P&gt;           &lt;blockquote&gt;     &lt;P&gt;&lt;em&gt;&lt;strong&gt;KISS (Keep it SImple, Silly)&lt;/strong&gt;&lt;/em&gt;&lt;/P&gt;                   &lt;img src=&quot;http://biobricks.ai.mit.edu/IAP_Projects/YoungPower/as_KISS.gif&quot;&gt;       &lt;P&gt;The simplest of the three methods, this type relies on a                      single-stranded linear 103 bp anti-sense that is specific                      to the target of interest. In addition, the first 76 base                      pairs of the cI region of BBa_I1010 have been codon-modified                      to give a different sequence that codes for the same cI protein                      (See BBa_I1030 and I1040). &lt;/P&gt;                   &lt;P&gt;BBa_I1011 contains the reverse complement of the RBS, start                      codon, and 76 bp region for BBa_I1010. Thus, if both BBa_I1010                      and BBa_I1011 are transcribed, the transcripts will bind to                      each other and BBa_I1010 will not be translated. &lt;/P&gt;                   &lt;P&gt;Note that BBa_I1010 already contains a regulatory region,                      RBS, and coding region (a terminator must be added), while                      BBa_I1011 does not - thus, when using this component, the                      appropriate regulatory region, RBS, and terminator must be                      added to this part.&lt;/P&gt;     &lt;/blockquote&gt;&lt;/blockquote&gt;&lt;P&gt; Incompatible with systems containing &lt;bb_part&gt;BBa_I1012&lt;/bb_part&gt;, &lt;bb_part&gt;BBa_I1013&lt;/bb_part&gt;. &lt;br&gt;Compatible with &lt;bb_part&gt;BBa_I1020&lt;/bb_part&gt;, &lt;bb_part&gt;BBa_I1021&lt;/bb_part&gt;, &lt;bb_part&gt;BBa_I1022&lt;/bb_part&gt;, &lt;bb_part&gt;BBa_I1023&lt;/bb_part&gt;.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>June Rhee, Connie Tao, Ty Thomson, Louis Waldman</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000834"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/RNA"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation1797/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation1797"/>
+        <sbol:displayId>annotation1797</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Reverse Complement to cI mRNA</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation1797/range1797/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation1797/range1797"/>
+            <sbol:displayId>range1797</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>103</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation7043/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation7043"/>
+        <sbol:displayId>annotation7043</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_I1011</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation7043/range7043/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation7043/range7043"/>
+            <sbol:displayId>range7043</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>103</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/BioBrick"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation1799/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation1799"/>
+        <sbol:displayId>annotation1799</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>reverse complement to cI cds</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation1799/range1799/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation1799/range1799"/>
+            <sbol:displayId>range1799</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>73</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation1801/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation1801"/>
+        <sbol:displayId>annotation1801</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>added codon (Cys)</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation1801/range1801/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation1801/range1801"/>
+            <sbol:displayId>range1801</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>71</sbol:start>
+            <sbol:end>73</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/mutation"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0001059"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation1800/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation1800"/>
+        <sbol:displayId>annotation1800</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>start</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation1800/range1800/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation1800/range1800"/>
+            <sbol:displayId>range1800</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>74</sbol:start>
+            <sbol:end>76</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/start"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000318"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation1798/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation1798"/>
+        <sbol:displayId>annotation1798</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Reverse Complement RBS</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_I1011/annotation1798/range1798/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/annotation1798/range1798"/>
+            <sbol:displayId>range1798</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>81</sbol:start>
+            <sbol:end>86</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_I1011_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_I1011_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_I1011_sequence"/>
+    <sbol:displayId>BBa_I1011_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_I1011"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_I1011_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>tttcataaattgctttaaggcgacgtgcgtcctcaagctgctcttgtgttaatggtttcttttttgtcgagcacatcttgttgtctgattattgatttttcgc</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

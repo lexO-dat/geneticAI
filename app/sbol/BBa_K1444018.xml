@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1444018/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018"/>
+    <sbol:displayId>BBa_K1444018</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1444018"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1444018</dcterms:title>
+    <dcterms:description>Xylose -&gt; comK</dcterms:description>
+    <dcterms:created>2014-10-14T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:10:27Z</dcterms:modified>
+    <sbh:mutableProvenance>This part was amplified from the chromosome of a strain of B. subtilis derived from that described by Zhang &amp; Zhang (2010). The strain was generously given to us by Dr. S.L. Wong, who routinely uses it in his synthetic biology research on B. subtilis at the University of Calgary.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Bacillus subtilis is a gram-positive bacterial species widely used in molecular biology labs around the world. It is capable of natural transformation under conditions of nutrient deprivation (energy starvation), and unlike many gram-negative species B. subtilis does not appear to require a specific uptake sequence. However, transformation through starvation may not be the most ideal process to implement in the lab as the protocols are very time-consuming, very sensitive to precise timings, and can be unreliable. Fortunately, all of the DNA uptake genes are under the control of a single transcription factor, so we can bypass the need for energy starvation by using cells derived from a specific strain of B. subtilis (SCK6) with the pAX01-comK plasmid constructed by Zhang &amp; Zhang (2010).
+
+This part contains a xylose-inducible promoter (pxylA), a ribosome binding site, and the comK coding sequence. This part is meant to be inserted into the genome of B. subtilis using an appropriate integration vector (unfortunately likely requiring the traditional transformation procedure). Once complete, you have a strain that can be transformed quickly and easily. 
+
+It must be noted that this sequence still contains 1 SpeI and 2 EcoRI sites. As such, cloning with this part would necessitate using either XbaI and PstI, or NotI (it is a self-contained generator, so the directionality in the genome is not important).
+
+Reference: Zhang, X-Z., &amp; Zhang Y-H. (2010). Simple, fast and high-efficiency transformation system for directed evolution of cellulase in Bacillus subtilis. Microbial Biotechnology, 4(1):98-105</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/Works"/>
+    <igem:group_u_list>_1822_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>1972</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableNotes>None.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Dave Curran</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Generator"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420122/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420122"/>
+        <sbol:displayId>annotation2420122</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>PxylA</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420122/range2420122/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420122/range2420122"/>
+            <sbol:displayId>range2420122</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>155</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/promoter"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420123/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420123"/>
+        <sbol:displayId>annotation2420123</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>RBS</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420123/range2420123/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420123/range2420123"/>
+            <sbol:displayId>range2420123</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>209</sbol:start>
+            <sbol:end>220</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/rbs"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420124/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420124"/>
+        <sbol:displayId>annotation2420124</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>comK</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420124/range2420124/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/annotation2420124/range2420124"/>
+            <sbol:displayId>range2420124</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>224</sbol:start>
+            <sbol:end>802</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1444018_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018_sequence"/>
+    <sbol:displayId>BBa_K1444018_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1444018"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1444018_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>catatctaatattataactaaattttctaaaaaaaacattgaaataaacatttattttgtatatgatgagataaagttagtttattggataaacaaactaactcaattaagatagttgatggataaacttgttcacttaaatcaaagggggaaatgacaaatggtccaaactagtgatatctaaaaatcaaagggggaaatgggatccaaaggaggccataatatgagtcagaaaacagacgcacctttagaatcgtatgaagtgaacggcgcaacaattgccgtgctgccagaagaaatagacggcaaaatctgttccaaaattattgaaaaagattgcgtgttttatgtaaacatgaagccgctgcaaattgtcgacagaagctgccgattttttggatcaagctatgcgggaagaaaagcaggaacttatgaagtgacaaaaatttcacacaagccgccgatcatggtggacccttcgaaccaaatctttttattccctacactttcttcgacaagaccccaatgcggctggatttcccatgtgcatgtaaaagaattcaaagcgactgaattcgacgatacggaagtgacgttttccaatgggaaaacgatggagctgccgatctcttataattcgttcgagaaccaggtataccgaacagcgtggctcagaaccaaattccaagacagaatcgaccaccgcgtgccgaaaagacaggaatttatgctgtacccgaaagaagagcggacgaagatgatttatgattttattttgcgtgagctcggggaacggtattag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

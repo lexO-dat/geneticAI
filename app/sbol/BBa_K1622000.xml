@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1622000/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000"/>
+    <sbol:displayId>BBa_K1622000</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1622000"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1622000</dcterms:title>
+    <dcterms:description>Glycoaldehyde reductase and dehydrogenase</dcterms:description>
+    <dcterms:created>2015-09-17T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-09-20T08:41:50Z</dcterms:modified>
+    <sbh:mutableProvenance>This part is the result of the Gibson Assembly of BBa_K936011 and BBa_K936023. We used the sequence provided in the iGEM registry of standard parts, optimized them for E.coli. We ordered the parts to be synthesized.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Our part is the combination of two genes coding for enzymes that belong to the degradation pathway of Ethylene Glycol:
+- the Glycoaldehyde Reductase (BBa_K936023): this enzyme catalyzes the transformation of Ethylene Glycol into Glycoaldehyde.
+- the Glycoaldehyde Dehydrogenase (BBa_K936011): this enzyme catalyzes the reaction from Glycoaldehyde to Glycolate.
+
+We used it as one of our clusters in the PET degradation operon.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_2039_</igem:group_u_list>
+    <igem:m_user_id>24707</igem:m_user_id>
+    <igem:owner_id>24708</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>We designed our BioBrick using the sequences provided by the Registry of Standard Biological Parts and optimized these sequences for E.coli.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Lucas Krauss</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476159/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476159"/>
+        <sbol:displayId>annotation2476159</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>RBS</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476159/range2476159/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476159/range2476159"/>
+            <sbol:displayId>range2476159</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>3</sbol:start>
+            <sbol:end>16</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/rbs"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476160/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476160"/>
+        <sbol:displayId>annotation2476160</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Glycoaldehyde dehydrogenase</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476160/range2476160/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476160/range2476160"/>
+            <sbol:displayId>range2476160</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>24</sbol:start>
+            <sbol:end>1466</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/BioBrick"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476158/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476158"/>
+        <sbol:displayId>annotation2476158</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>RBS</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476158/range2476158/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476158/range2476158"/>
+            <sbol:displayId>range2476158</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1469</sbol:start>
+            <sbol:end>1482</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/rbs"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476161/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476161"/>
+        <sbol:displayId>annotation2476161</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Glycoaldehyde reductase</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476161/range2476161/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/annotation2476161/range2476161"/>
+            <sbol:displayId>range2476161</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1490</sbol:start>
+            <sbol:end>2641</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/BioBrick"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1622000_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000_sequence"/>
+    <sbol:displayId>BBa_K1622000_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1622000"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1622000_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>acattaaagaggagaatactaggatgtcagtacccgttcaacatcctatgtatatcgatggacagtttgttacctggcgtggagacgcatggattgatgtggtaaaccctgctacagaggctgtcatttcccgcatacccgatggtcaggccgaggatgcccgtaaggcaatcgatgcagcagaacgtgcacaaccagaatgggaagcgttgcctgctattgaacgcgccagttggttgcgcaaaatctccgccgggatccgcgaacgcgccagtgaaatcagtgcgctgattgttgaagaagggggcaagatccagcagctggctgaagtcgaagtggcttttactgccgactatatcgattacatggcggagtgggcacggcgttacgagggcgagattattcaaagcgatcgtccaggagaaaatattcttttgtttaaacgtgcgcttggtgtgactaccggcattctgccgtggaacttcccgttcttcctcattgcccgcaaaatggctcccgctcttttgaccggtaatatcatcgtcattaaacctagtgaatttacgccaaacaatgcgattgcattcgccaaaatcgtcgatgaaataggccttccgcgcggcgtgtttaaccttgtactggggcgtggtgaaaccgttgggcaagaactggcgggtaacccaaaggtcgcaatggtcagtatgacaggcagcgtctccgctggtgagaagatcatggcgactgcggcgaaaaacatcaccaaagtgtgtctggaattggggggtaaagcaccagctatcgtaatggacgatgccgatcttgaactggcagtcaaagccatcgttgattcacgcgtcattaatagtgggcaagtgtgtaactgtgcagaacgtgtttatgtacagaaaggcatttatgatcagttcgtcaatcggctgggtgaagcgatgcaggcggttcaatttggtaaccccgctgaacgcaacgacattgcgatggggccgttgattaacgccgcggcgctggaaagggtcgagcaaaaagtggcgcgcgcagtagaagaaggggcgagagtggcgttcggtggcaaagcggtggaggggaaaggatattattatccgccgacattgctgctggatgttcgccaggaaatgtcgattatgcatgaggaaacctttggcccggtgctgccagttgtcgcatttgacacgctggaagatgctatctcaatggctaatgacagtgattacggcctgacctcatcaatctatacccaaaatctgaacgtcgcgatgaaagccattaaagggctgaagtttggtgaaacttacatcaaccgtgaaaacttcgaagctatgcaaggcttccacgccggatggcgtaaatccggtattggcggcgcagatggtaaacatggcttgcatgaatatctccaaacccaggtggtttatttacagtcttaatagacattaaagaggagaatactaggatggctaacagaatgcttgtgaacgaaacggcatggtttggtcggggtgctgttggggctttaaccgatgaggtgaaacgccgtggttatcagaaggcgctgatcgtcaccgataaaacgctggtgcaatgcggcgtggtggcgaaagtgaccgataagatggatgccgctgggctggcatgggcgatttacgacggcgtagtgcccaacccaacaattactgtcgtcaaagaagggctcggtgtattccagaatagcggcgcggattacctgatcgctattggtggtggttctccacaggatacttgtaaagcgattggcattatcagcaacaacccggagtttgccgatgtgcgtagcctggaagggctttccccgaccaataaacccagtgtaccgattctggcaattcctaccacagcaggtactgcggcagaagtgaccattaactacgtgatcactgacgaagagaaacggcgcaagtttgtttgcgttgatccgcatgatatcccgcaggtggcgtttattgacgctgacatgatggatggtatgcctccagcgctgaaagctgcgacgggtgtcgatgcgctcactcatgctattgaggggtatattacccgtggcgcgtgggcgctagccgatgcactgcacattaaagcgattgaaatcattgctggggcgctgcgaggatcggttgctggtgataaggatgccggagaagaaatggcgctcgggcagtatgttgcgggtatgggcttctcgaatgttgggttagggttggtgcatggtatggcgcatccactgggcgcgttttataacactccacacggtgttgcgaacgccatcctgttaccgcatgtcatgcgttataacgctgactttaccggtgagaagtaccgcgatatcgcgcgcgttatgggcgtgaaagtggaaggtatgagcctggaagaggcgcgtaatgccgctgttgaagcggtgtttgctctcaaccgtgatgtcggtattccgccacatttgcgtgatgttggtgtacgcaaggaagacattccggcactggcgcaggcggcactggatgatgtttgtaccggtggcaacccgcgtgaagcaacgcttgaggatattgtagagctttaccataccgcctggtaatag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

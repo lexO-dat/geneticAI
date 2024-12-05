@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_J100090/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_J100090"/>
+    <sbol:displayId>BBa_J100090</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_J100090"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_J100090</dcterms:title>
+    <dcterms:description>CRISPR sequence with GFP and AmpR targets</dcterms:description>
+    <dcterms:created>2012-07-17T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-08-31T04:08:22Z</dcterms:modified>
+    <sbh:mutableProvenance>Ampicillin Resistance spacer came from the pSB1A2 plasmid (part J119043)
+GFP target spacer came from part E0040.
+Leader sequence came from the 2011 USC iGEM team.
+The sequence for the CRISPR repeats comes from Touchon M, Rocha EPC (2010) The Small, Slow and Specialized CRISPR and Anti-CRISPR of Escherichia and Salmonella. PLoS ONE 5(6): e11126. doi:10.1371/journal.pone.0011126 and 
+
+Mojica FJ et. al.Short motif sequences determine the targets of the prokaryotic CRISPR defence system. Microbiology. 2009 Mar;155(Pt 3):733-40.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_J100090/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>The CRISPR system (Clustered Regularly Interspaced Short Palindromic Repeats) has been shown to act as a bacterial immune system. This system is characterized by short repeats, called CRISPR repeats, and in between these repeats are short, unique segments of DNA that have been acquired from foreign DNA that particular bacteria or archaea has encountered. E.coli, as well as other bacteria and archaea can use these &quot;target spacer&quot; segments to attack and destroy the foreign objects that contain that DNA, thereby functioning as an immune system. This part is an engineered synthetic CRISPR system to be used in E.coli. There is a leader sequence at the beginning of this sequence that acts as a promoter for transcription. The target spacers are short, 30 bp sequence that targets the GFP gene (part E0040) in 2 places (near the beginning and end of the gene), as well as spacers that target the Ampicillin resistance gene (part J119043) near the beginning and end of the gene.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_578_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>10644</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>None</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Caroline Vrana</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Regulatory"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_J100090_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_J100090_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_J100090_sequence"/>
+    <sbol:displayId>BBa_J100090_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_J100090"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_J100090_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>gaattcgcggccgcttctagagaaacaaagaattagctgatctttaataataaggaaatgttacattaaggttggtgggttgtttttatgggaaaaaatgctttaagaacaaatgtatacttttagacggtttatccccgctggcgcggggaactcaatactccaattggcgatggccctgccttcggtttatccccgctggcgcggggaactctaaaagtgctcatcattggaaaacgttcttcggtttatccccgctggcgcggggaactcggtgaaggtgatgcaacatacggaaaacttcggtttatccccgctggcgcggggaactccgtgtagataactacgatacgggagggcttcggtttatccccgctggcgcggggaactctactagtagcggccgctgcag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

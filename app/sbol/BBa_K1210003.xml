@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1210003/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1210003"/>
+    <sbol:displayId>BBa_K1210003</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1210003"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1210003</dcterms:title>
+    <dcterms:description>PK401 tagged dual coding test construct</dcterms:description>
+    <dcterms:created>2013-10-14T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:09:40Z</dcterms:modified>
+    <sbh:mutableProvenance>This part was synthesized by Genewiz. It contains genomic sequence from IBV virus (PK401 pseudoknot; non-infectious sequence), and from IAPV virusb(IAPV overlapping ORFs; only 7 aa used of the overlapping genes to avoid producing anything harmful).</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1210003/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Reporter construct for measuring the frameshifting efficiency of the PK401 pseudoknot. Includes a His-tagged CFP before the PK401 pseudoknot, and two different polypeptides in the 0 and -1 reading frames with different protein tags. 
+
+If translation is halted at the pseudoknot due to the inability to melt the mRNA secondary structure, a 27.7 kDa protein is produced of just CFP-His. 
+In the 0 frame if read-through of the pseudoknot occurs, a fragment of the IAPV dual coded gene along with a strep-tag II will be translated creating a 33.3 kDa protein of CFP-His-PK401-IAPV-StrepII.
+In the -1 frame if read-through of the pseudoknot occurs, a fragment containing the second dual coded IAPV gene along with a GST tag is produced. This contains CFP-His-PK401-IAPV2-GST, a 60.9 kDa protein.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_1524_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>6050</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>This construct was designed to verify the applicability of frameshift inducing elements in the programming of protein expression ratios.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Harland Brandon</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Device"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1210003_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1210003_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1210003_sequence"/>
+    <sbol:displayId>BBa_K1210003_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1210003"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1210003_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>taatacgactcactataggggaattgtgagcggataacaattccccactagaaataattttgtttaactttaagaaggagatataccatggtctcaaaaggggaagaactgttcaccggcgtcgttcctatcctggttgagctggacggtgatgtgaatggccataaattctccgtatctggagaaggcgaaggtgatgctacctacggtaaattgaccctgaagttcatctgtaccactggcaaacttcctgtcccgtggcctactctggtaaccacgttaacgtggggagtacagtgtttttcacgctatccggatcatatgaaacagcacgatttttttaaatctgctatgcccgaaggttatgtccaggagcggaccattttttttaaagacgatggaaactacaaaacccgggctgaggtcaaatttgagggcgacacattagtcaatcgtattgagctgaaagggatcgattttaaggaggatggtaacatcctgggtcacaagctggagtataattacatttctcataatgtttacattaccgccgacaagcaaaaaaatggcattaaggccaatttcaaaatccgtcataacattgaggatggtagcgtgcagcttgccgaccactatcaacagaatacgccgattggtgatggcccggtattgttaccggataaccactatctgagcactcagtctgcattgtccaaagatccgaatgaaaaacgcgaccatatggtgctgctggagtttgtgacggcggcgggtatcactctgggcatggatgaactgtataagcaccaccaccaccaccacagctttttaaagcagaaagcgcgcgcacggagcgtggcgtgcgcgcgcaagcaagtggatgtgatcctgatgttgaaaagccacgcttgggccatgatgtggaaactccaaatctggagccatccgcagttcgaaaaatgatgtcgccaattttggggtactggaaaatcaagggtcttgtccaaccgacccgtctcttactggaatacctggaagagaaatacgaagaacatctgtacgaacgcgacgaaggggataaatggcgcaacaagaaatttgagctgggcttagagtttcctaacctcccgtattatattgacggtgatgttaaactcacacaaagtatggcaatcatccgttacatcgcagacaaacataacatgttaggtggttgcccgaaagagcgtgctgaaatcagtatgctggagggggctgtgcttgatatccgctatggcgtctcacgcattgcatacagtaaagacttcgagacgctgaaggtcgactttttatcaaaattaccggaaatgcttaaaatgtttgaagatcgcctttgccacaaaacctatctgaatggtgatcacgtcacgcatcctgattttatgctgtatgatgctttggatgtggtgttatatatggatcctatgtgtctcgatgccttccccaaactggtgtgtttcaaaaaacgcattgaagcaattccgcaaattgataagtacttaaaatctagtaaatacatcgcatggccgctgcaagggtggcaagcaacgtttggtgggggagaccacccgccgaagtctgacttagtccctcgtggtagcccggaatttccgggtcgccttgagcggcctcaccgtgattaaccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctc</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

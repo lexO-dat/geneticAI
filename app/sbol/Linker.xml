@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1088051/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051"/>
+    <sbol:displayId>BBa_K1088051</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1088051"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>Linker</dcterms:title>
+    <dcterms:description>10 aa linker with BamHI restriction site and TEV recognition site</dcterms:description>
+    <dcterms:created>2015-03-16T12:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:09:06Z</dcterms:modified>
+    <sbh:mutableProvenance>BBa_K105012</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>A flexible 10 amino acid linker that enables for functional protein/domain fusions. 
+
+A BamHI site is included in order to prevent creation of a scarsite (in-frame scarsites encode stop-codons). Assembly of parts therefore has to be done with PCR amplification of inserts using appropriate primers instead of standard RFC[10] assembly of parts (see design page for further details). 
+
+The encoded peptide (GSENLYFQSG) includes a recognition site for the TEV protease (ENLYFQS) that enables for seperation of the fused proteins/domains.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_1398_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>17057</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Using standard RFC[10] assembly of two parts creates scarsites (tactag). Transcription of the scarsite encodes: &quot;uac uag&quot; of which uag is a stop codon that would render the linker useless. Thus, standard assembly can not be employed for fusing proteins/domains.
+
+Instead we propose the following for implementing the linker:
+
+1) Design primers for amplification of the C-terminal protein/domain that includes the linker DNA sequence in the primer 
+
+a) Forward primer: 5&apos;-cgctTCTAGaGGGATCCgaaaatttgtattttcaatctggtNNN...NNN-3&apos; - includes XbaI-site, linker, and sequence complementary to DNA sequence of C-terminal protein/domain
+b) Reverse primer: 5&apos;-atatCTGCAGCggccgctACTAGTaNNN...NNN-3&apos; - includes PstI-site, SpeI-site and sequence complementary to DNA sequence of C-terminal protein/domain
+
+2) PCR amplify BioBrick with the designed primers
+
+3) digest pSB1C3 (or any other standard backbone) and amplified PCR product with XbaI and PstI
+
+4) ligate digested pSB1C3 and PCR product to create brick with linker at the N-terminus (pSB1C3-Linker:C-terminal_protein/domain).
+
+5) Design primers for amplification of the N-terminal protein/domain that includes BamHI-site
+
+a) Forward primer: 5&apos;-cgctTCTAGAgNNN...NNN-3&apos; - includes XbaI-site and sequence complementary to DNA sequence of N-terminal protein/domain
+b) Reverse primer: 5&apos;-atatGGATCCNNN...NNN-3&apos; - includes BamHI-site and sequence complementary to DNA sequence of N-terminal protein/domain (OBS! do NOT include stop-codons of coding sequences)
+
+6) PCR amplify BioBrick with designed primer
+
+7) digest pSB1C3-Linker:C-terminal_protein/domain and PCR product with XbaI and BamHI
+
+8) ligate the digested pSB1C3-Linker:C-terminal_protein/domain and PCR product to create brick with protein/domain fused with the linker</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Patrick Rosendahl Andreassen</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Protein_Domain"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000417"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1088051/annotation2430563/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051/annotation2430563"/>
+        <sbol:displayId>annotation2430563</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BamHI-site</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1088051/annotation2430563/range2430563/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051/annotation2430563/range2430563"/>
+            <sbol:displayId>range2430563</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>6</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1088051/annotation2430564/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051/annotation2430564"/>
+        <sbol:displayId>annotation2430564</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>TEV recognition-site</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1088051/annotation2430564/range2430564/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051/annotation2430564/range2430564"/>
+            <sbol:displayId>range2430564</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>6</sbol:start>
+            <sbol:end>24</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/protein"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1088051_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051_sequence"/>
+    <sbol:displayId>BBa_K1088051_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1088051"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1088051_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>ggatccgaaaatttgtattttcaatctggt</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

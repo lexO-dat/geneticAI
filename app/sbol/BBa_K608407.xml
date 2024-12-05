@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K608407/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407"/>
+    <sbol:displayId>BBa_K608407</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K608407"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K608407</dcterms:title>
+    <dcterms:description>Precipitator fused with GST tag</dcterms:description>
+    <dcterms:created>2011-09-13T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:12:53Z</dcterms:modified>
+    <sbh:mutableProvenance>The part is constructed from the following protein sequences 
+(PDB: 3FXI) TLR-4
+(PDB: 2z66) N-Terminal Hagfish
+(PDB: 2z62) C-Terminal Hagfish
+(PDB: 3cvr) bacterial ligase
+
+http://en.wikipedia.org/wiki/Glutathione_S-transferase#GST-tags_and_the_GST_pull-down_assay</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Protein domain of Precipitator N-terminally fused to a GST tag domain. 
+The GST-tag has the size of 220 amino acids (roughly 26 KDa). It is fused to the N-terminus of the precipitator protein BBa_K608406 and includes a PreScission Protease domain for cleavage of the GST tag during protein purification. 
+
+http://www.gelifesciences.com/aptrix/upp01077.nsf/content/Products?OpenDocument&amp;parentid=976040&amp;moduleid=38868&amp;zone=Proteomics
+
+Artificial Leucine Rich Repeat(LRR) with C and N-terminal hagfish domain fragments capping the artifical middle part. This part is one version of three different, designed to bind nickel by histidines which are grouped together pointing away from the horseshoe shaped protein. 
+Bacterial LRR Consensus of the central LRR fragment: 
+LxxLxLxxNxLxxLPxxLPxx 
+Protein code: 
+CPSRCSCSGTEIRCNSKGLTSVPTGIPSS 
+ATRLELESNKLQSLPHGVFDK 
+LTQLTKSNNHLHSLPDNLPAS 
+LEVLDVSNNHLHSLPDNLPAS 
+LEVLDVSNNHLHSLPDNLPAS 
+LEVLDVSNNHLHSLPDNLPAS 
+LEVLDVSNNHLHSLPDNLPAS 
+LEVLDVSNNHLHSLPDNLPAS 
+LKELALDTNQLKSVPDGIFDR 
+LTSLQKIWLHTNPWDCSCPRIDY 
+LSRWLNKNSQKEQGSAKCSGSGKPVRSIICP 
+
+This protein can be used to complex Nickel or Cobalt. The principal mechanism is comparable to Ni-NTA columns, as chelates the ions. Free binding sites of the ions are then exposed, so that a His-tagged protein can attach to them. The design of the protein is of a particular interest, too. LRR are highly conserved motifs throughout evolution. They appear in all kingdoms of life in almost every thinkable role (Ligases, Receptors, Toxins etc.). Their core is highly conserved and provides a very stable backbone, while the intermediate, non-conserved aminoacids are almost freely interchangeable. 
+
+This protein can be used to complex up to 4 Nickel or Cobalt. However the principal design oft he protein is of a particular interest, too. LRR are highly conserved motifs throughout evolution. They appear in all kingdoms of life in almost every thinkable role (Ligases, Receptors, Toxins etc.). Their core is highly conserved and provides a very stable backbone, while the intermediate, non-conserved aminoacids are almost freely interchangeable. 
+We only submitted one of the three versions, to reduce redundancy in the registry. Please contact us for any questions.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_780_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>4456</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>In stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Available"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Here we investigated an optimal set of non-conserved aminoacids by analysing large sets of similar proteins and databases. You can use this piece of work as a template to design your own protein and give it any function you like, by simply interchanging aminoacids and fusing other domains on the N or C termini.
+To guarantee proper folding and to shield off the hydrophobic core, a well studied fragment of an LRR protein coming from hagfish was used. This technique was investigated before</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>R??diger Trojok</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Protein_Domain"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000417"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K608407/annotation2128438/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/annotation2128438"/>
+        <sbol:displayId>annotation2128438</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>GST</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K608407/annotation2128438/range2128438/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/annotation2128438/range2128438"/>
+            <sbol:displayId>range2128438</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>660</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/tag"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000324"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K608407/annotation2128439/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/annotation2128439"/>
+        <sbol:displayId>annotation2128439</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>PreScission Protease cleavage site</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K608407/annotation2128439/range2128439/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/annotation2128439/range2128439"/>
+            <sbol:displayId>range2128439</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>661</sbol:start>
+            <sbol:end>687</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K608407/annotation2128441/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/annotation2128441"/>
+        <sbol:displayId>annotation2128441</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>N-Terminal Hagfish PDB:2z66</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K608407/annotation2128441/range2128441/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/annotation2128441/range2128441"/>
+            <sbol:displayId>range2128441</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>688</sbol:start>
+            <sbol:end>745</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000330"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/conserved"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K608407/annotation2128440/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/annotation2128440"/>
+        <sbol:displayId>annotation2128440</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Precipitator</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K608407/annotation2128440/range2128440/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/annotation2128440/range2128440"/>
+            <sbol:displayId>range2128440</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>688</sbol:start>
+            <sbol:end>1447</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/protein"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K608407/annotation2128442/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/annotation2128442"/>
+        <sbol:displayId>annotation2128442</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>C-Terminal Hagfish PDB:2z62</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K608407/annotation2128442/range2128442/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/annotation2128442/range2128442"/>
+            <sbol:displayId>range2128442</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1371</sbol:start>
+            <sbol:end>1447</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/conserved"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000330"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K608407_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K608407_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K608407_sequence"/>
+    <sbol:displayId>BBa_K608407_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K608407"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K608407_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atgtcccctatactaggttattggaaaattaagggccttgtgcaacccactcgacttcttttggaatatcttgaagaaaaatatgaagagcatttgtatgagcgcgatgaaggtgataaatggcgaaacaaaaagtttgaattgggtttggagtttcccaatcttccttattatattgatggtgatgttaaattaacacagtctatggccatcatacgttatatagctgacaagcacaacatgttgggtggttgtccaaaagagcgtgcagagatttcaatgcttgaaggagcggttttggatattagatacggtgtttcgagaattgcatatagtaaagactttgaaactctcaaagttgattttcttagcaagctacctgaaatgctgaaaatgttcgaagatcgtttatgtcataaaacatatttaaatggtgatcatgtaacccatcctgacttcatgttgtatgacgctcttgatgttgttttatacatggacccaatgtgcctggatgcgttcccaaaattagtttgttttaaaaaacgtattgaagctatcccacaaattgataagtacttgaaatccagcaagtatatagcatggcctttgcagggctggcaagccacgtttggtggtggcgaccatcctccaaaatcggatctggaagttctgttccaggggcccatgtgtccttctcgttgtagctgttccggaactgaaattcgctgcaattcaaaaggtttgacctcagtcccgacgggtattccgtcaagcgcgacccgtctcgagcttgagagcaataaattgcagagcctccccgacggcgtattcgataagctgacccagctcacgaaatcaaacaaccacttgcattcgctgccggacaatctgccagcgtctcttgaagtattagatgtgtcgaacaaccacctccacagtttgccggacaacttaccggctagcttagaagttctggatgtctctaataaccatctgcactccctgccagacaacttgcctgcatcactggaagtgctcgatgtgagtaacaatcatttacacagtttacctgataacctgcctgccagccttgaagtgcttgacgtaagcaataaccatttacattcgttacctgataatttgcccgcgagcttagaagtgttagacgttagtaacaatcacctgcatagcctgccagataatcttccggcaagtttaaaggaattagcccttgatacgaatcatctgcattcggttcccgacgggatctttgatcgcctgacatcgttacagaaaatttggcttcagactaacccatgggattgctcctgcccccgtatcgattatctcagtcgttggttgaataaaaattctcaaaaggaacaaggttcagccaaatgttcgggctctggcaaaccggtccgctccatcatttgcccgtaataat</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

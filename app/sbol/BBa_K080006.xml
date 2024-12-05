@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K080006/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K080006"/>
+    <sbol:displayId>BBa_K080006</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K080006"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K080006</dcterms:title>
+    <dcterms:description>TetO (TRE)-gata4-fmdv2A-dsRed</dcterms:description>
+    <dcterms:created>2008-10-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:08:34Z</dcterms:modified>
+    <sbh:mutableProvenance>TetO(TRE) was isolated from pTRIPZ plasmid.
+
+dsRed2 was obtained from the lentiviral plasmids plv-trkKRAB-dsRed plasmid. A kind gift of Dider Trono from the Swiss Institute of Technology Lausanne. 
+
+Nkx2.5
+Homo sapiens cDNA clone from openbiosystems clone ID#
+
+Gata4
+Homo sapiens cDNA clone from openbiosystems clone ID#8144111 
+
+fmdv2a was synthetically made via oligonucleotide assembly.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K080006/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>For real world therapeutic applications of our technology, a tightly controlled inducible system for cardiac muscle differentiation is needed. Differentiation of the cardiac progenitor cells must be regulated so that targeting and differentiation can occur in a controlled manner. Therefore, we designed both nkx-2.5 and gata4, early initiators of cardiomyogenesis,  to be under the control of an inducible tetracycline expression system adapted from the pTRIPZ shRNAmir vector (openbiosystems).  There are two main components that comprise the pTRIPZ???s Tet-On inducible system enabling induction: the tetracycline response element (TRE) and the transactivator, rtTA. Both nkx-2.5 and gata4 will be under the control of the TRE promoter, a string of tetracycline operators fused to the CMV minimal promoter. The TRE exhibits reduced basal expression and tighter binding to its transactivator, rtTA, which eliminates the high background, leaky expression associated with most inducible expression systems. In the Tet-On system, expression of genes downstream of the TRE are off until exogenous doxycycline is added, thus nkx-2.5 and gata4 will be off until doxyxcycline is added. As a visualization marker to observe the induction of gene expression we fused the dsRed2, to the nkx-2.5 and gata4 constructs via the foot and mouth disease 2A sequence (fmdv2a) which allows for the expression of polycistronic messages as we described previously in the alpha MHC-NeoR-2A-GFP-SV40PA construct. 
+
+Nkx-2.5 and Gata4 expression are needed for the initiation of precursor cardiac cells (  
+To construct  inducible versions of nkx-2.5 and/or gata4 we used the tetracycline response element (TRE) from the pTRIPZ vector. In the presence of doxycycline, nkx-2.5 and gata4 expression will be induced and in turn will activate other transcription factors necessary for cardiomyocyte differentiation. In addition, nkx-2.5 and gata4 will induce a positive feedback loop and activate endogenous expression of themselves so that even in the absence of doxycycline nkx-2.5 and gata4 expression will continue. 
+
+TetO(TRE) ???The pTRIPZ vector is engineered to be Tet-On. The Tet-On technology equips the pTRIPZ vector to provide for induced expression of a gene in the presence of doxycycline (www.clonetech.com). There are two main components on the pTRIPZ vector enabling induction: the tetracycline response element (TRE) and the transactivator. The TRE, modified from its natural state to consist of a string of operators fused to the CMV minimal promoter, exhibits reduced basal expression and tighter binding to the second component, the transactivator. 
+pTRIPZ transactivator, known as the reverse tetracycline transactivator 3 (rtTA3) binds to and activates expression from TRE promoters in the presence of doxycycline. The rtTA3 transactivator is a modified version of the wildtype in two ways. First, unlike the original tetracycline transactivator the rtTA3 is modified to bind to the TRE in the presence of doxycycline rather than in its absence. Secondly, there are three mutations within the transactivator that increase its sensitivity to doxycycline by 25 fold over the initial rtTA without increasing background activity (Das, et al. 2004).
+Das, et al. (2004) &quot;Viral evolution as a tool to improve the tetracycline-regulated gene expression system&quot; JBC Vol 279: 18, 18776-18782.  
+
+Doxycycline also binds to the TRE and is a more potent antibiotic with greater stability and therefore in used in lieu of tetracycline in most cases.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_182_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>3648</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>TetO (TRE)-gata4-fmdv2A-dsRed  &amp;#61664; Inducible early Marker, Transcription factor of Cardiomyocyte differentiation
+
+Cla1(6bp) -Xba1(6bp) -TetO (288bp) ??? pac1 (8bp) ??? mlu1 (6bp) ??? kozak (6bp) ???gata4 (1326bp) ??? fmdv2a (72bp)- dsRed2 (705bp) - Nhe1 (6bp) ??? sal1 (6bp) =2441bp</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Jennifer Lei</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Regulatory"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K080006_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K080006_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K080006_sequence"/>
+    <sbol:displayId>BBa_K080006_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K080006"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K080006_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>agagagatcgattgcaggtccgagtttactccctatcagtgatagagaacgatgtcgagtttactccctatcagtgatagagaacgtatgtcgagtttactccctatcagtgatagagaacgtatgtcgagtttactccctatcagtgatagagaacgtatgtcgagtttatccctatcagtgatagagaacgtatgtcgagtttactccctatcagtgatagagaacgtatgtcgaggtaggcgtgtacggtgggaggcctatataagcagagctcgtttagtgaaccgtcagatcgcattaattaaacgcgtgccaccatgtatcagagcttggccatggccgccaaccacgggccgccccccggtgcctacgaggcgggcggccccggcgccttcatgcacggcgcgggcgccgcgtcctcgccagtctacgtgcccacaccgcgggtgccctcctccgtgctgggcctgtcctacctccagggcggaggcgcgggctctgcgtccggaggcgcctcgggcggcagctccggtggggccgcgtctggtgcggggcccgggacccagcagggcagcccgggatggagccaggcgggagccgacggagccgcttacaccccgccgccggtgtcgccgcgcttctccttcccggggaccaccgggtccctggcggccgccgccgccgctgccgcggcccgggaagctgcggcctacagcagtggcggcggagcggcgggtgcgggcctggcgggccgcgagcagtacgggcgcgccggcttcgcgggctcctactccagcccctacccggcttacatggccgacgtgggcgcgtcctgggccgcagccgccgccgcctccgccggccccttcgacagcccggtcctgcacagcctgcccggccgggccaacccggccgcccgacaccccaatctcgatatgtttgacgacttctcagaaggcagagagtgtgtcaactgtggggctatgtccaccccgctctggaggcgagatgggacgggtcactatctgtgcaacgcctgcggcctctaccacaagatgaacggcatcaaccggccgctcatcaagcctcagcgccggctgtccgcctcccgccgagtgggcctctcctgtgccaactgccagaccaccaccaccacgctgtggcgccgcaatgcggagggcgagcctgtgtgcaatgcctgcggcctctacatgaagctccacggggtccccaggcctcttgcaatgcggaaagaggggatccaaaccagaaaacggaagcccaagaacctgaataaatctaagacaccagcagctccttcaggcagtgagagccttcctcccgccagcggtgcttccagcaactccagcaacgccaccaccagcagcagcgaggagatgcgtcccatcaagacggagcctggcctgtcatctcactacgggcacagcagctccgtgtcccagacgttctcagtcagtgcgatgtctggccatgggccctccatccaccctgtcctctcggccctgaagctctccccacaaggctatgcgtctcccgtcagccagtctccacagaccagctccaagcaggactcttggaacagcctggtcttggccgacagtcacggggacataatcactgcggcaccggtgaaacagactttgaattttgaccttctcaagttggcaggagacgttgagtccaaccctgggcccgcaggagacgttgagtccaaccctgggcccatggcctcctccgagaacgtcatcaccgagttcatgcgcttcaaggtgcgcatggagggcaccgtgaacggccacgagttcgagatcgagggcgagggcgagggccgcccctacgagggccacaacaccgtgaagctgaaggtgaccaagggcggccccctgcccttcgcctgggacatcctgtccccccagttccagtacggctccaaggtgtacgtgaagcaccccgccgacatccccgactacaagaagctgtccttccccgagggcttcaagtgggagcgcgtgatgaacttcgaggacggcggcgtggcgaccgtgacccaggactcctccctgcaggacggctgcttcatctacaaggtgaagttcatcggcgtgaacttcccctccgacggccccgtgatgcagaagaagaccatgggctgggaggcctccaccgagcgcctgtacccccgcgacggcgtgctgaagggcgagacccacaaggccctgaagctgaaggacggcggccactacctggtggagttcaagtccatctacatggccaagaagcccgtgcagctgcccggctactactacgtggacgccaagctggacatcacctcccacaacgaggactacaccatcgtggagcagtacgagcgcaccgagggccgccaccacctgttcctgtagtgagctagcgtcgacatatat</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

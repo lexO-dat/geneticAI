@@ -1,0 +1,204 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sbol="http://sbols.org/v2#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:ns0="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sbol:Collection rdf:about="https://synbiohub.org/public/iGEMDistributions/iGEM_2019_Plate1_Well21D/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/iGEMDistributions/iGEM_2019_Plate1_Well21D"/>
+    <sbol:displayId>iGEM_2019_Plate1_Well21D</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM 2019 Distribution Plate 1 Well 21D</dcterms:title>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/iGEMDistributions/iGEM_2019_Plate1_Well21D/1"/>
+    <sbol:member rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+  </sbol:Collection>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K851002/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002"/>
+    <sbol:displayId>BBa_K851002</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K851002"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K851002</dcterms:title>
+    <dcterms:description>pBAD-pXyl AND Gate</dcterms:description>
+    <dc:creator>Abiel Trevi??o Garza</dc:creator>
+    <dcterms:created>2012-09-23T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:13:34Z</dcterms:modified>
+    <ns0:discontinued>false</ns0:discontinued>
+    <ns0:dominant>false</ns0:dominant>
+    <ns0:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/Works"/>
+    <ns0:group_u_list>_1111_</ns0:group_u_list>
+    <ns0:m_user_id>0</ns0:m_user_id>
+    <ns0:owner_id>12295</ns0:owner_id>
+    <ns0:owning_group_id>9</ns0:owning_group_id>
+    <ns0:partStatus>Released HQ 2013</ns0:partStatus>
+    <ns0:sampleStatus>In stock</ns0:sampleStatus>
+    <ns0:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Available"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableDescription>pBAD-pXyl is a combined promoter of D-Xylose and L-arabinose sugar sensor systems which is designed to be activated only in the presence of both sugars in the medium therefore functioning as an AND logic gate.
+
+BIOLOGY
+pXyl is an inducible promoter regulated by the transcriptional regulator XylR which, in Bacillus subtilis, regulates the expression of xyl operon[1]. Gene expression under pXyl can be induced by the addition of D-Xylose to the medium [1, 2]. The nucleotide sequence was obtained from Wilhelm, M &amp;C. P. Hollenberg, 1985[3].
+
+In the presence of L-arabinose, expression from pBAD is turned on while the absence of L-arabinose produces very low levels of transcription from pBAD [4, 5]. More precisely, in the absence of arabinose, the repressor protein AraC (BBa_I13458[6]) binds to the AraI1 operator site of pBAD and the upstream operator site AraO2, blocking transcription[7], but in the presence of arabinose, AraC binds to it and changes its conformation such that it interacts with the AraI1 and AraI2 operator sites, permitting transcription[7]. The nucleotide sequence was similar of that in Part:BBa_K206000[8].
+
+For iGEM UNAM Genomics M??xico 2012 project [9], pBAD/pXyl was used in the design of an AND logic gate[10] using a recently described new type of communication system between Bacillus Subtilis cells called Nanotubes[11].</sbh:mutableDescription>
+    <sbh:mutableNotes>chimeric promotor</sbh:mutableNotes>
+    <sbh:mutableProvenance>REFERENCES
+[1] D Gartner, M Geissendorfer, &amp; W Hillen(1988). Expression of the Bacillus subtilis xyl Operon Is Repressed at the Level of Transcription and Is Induced by Xylose J Bacteriol 170:7,3102-3109.
+[2] Shamanna, D. K., and K. E. Sanderson. 1979. Genetics and regulation of D-xylose utilization in Salmonella typhimurium LT2. J. Bacteriol. 139:71-79.
+[3] Wilhelm, M., and C. P. Hollenberg. 1985. Nucleotide sequence of the Bacillus subtilis xylose isomerase gene: extensive homology between the Bacillus and E. coli enzyme. Nucleic Acids Res. 13:5717-5722.
+[4] Lee, N. (1980) Molecular Aspects of ara Regulation. In The Operon, J. H. Miller and W. S. Reznikoff, eds. (Cold Spring Harbor, N.Y.: Cold Spring Harbor Laboratory), pp. 389-410.
+[5] Lee, N., Francklyn, C., and Hamilton, E. P. (1987). Arabinose-Induced Binding of AraC Protein to araI2 Activates the araBAD Operon Promoter. Proc. Natl. Acad. Sci. USA 84, 8814-8818.
+[6] http://partsregistry.org/wiki/index.php/Part:BBa_I13458
+[8] http://partsregistry.org/Part:BBa_K206000
+[7]  Schlief, R. (2000). Regulation of the L-arabinose operon of Escherichia coli. Trends in Genetics. 16(12):559-565. 
+[9] http://2012.igem.org/Team:UNAM_Genomics_Mexico
+[10] http://2012.igem.org/Team:UNAM_Genomics_Mexico/Project/Description
+[11] Dubey GP, Ben-Yehuda S. (2011) Intercellular nanotubes mediate bacterial communication. Cell.;144(4):590-600
+[12] Guzman, L.-M., Belin, D., Carson, M. J., and Beckwith, J. (1995). Tight Regulation, Modulation, and High-Level Expression by Vectors Containing the Arabinose PBAD Promoter. J. Bacteriol. 177, 4121-4130. 
+ [13] David, J. D., and H. Weismeyer. 1970. Control of xylose metabolism in Escherichia coli. Biochim. Biophys. Acta 201: 497-499.</sbh:mutableProvenance>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:star>false</sbh:star>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Regulatory"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196288/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196288"/>
+        <sbol:displayId>annotation2196288</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>-10</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/binding"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0001091"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196288/range2196288/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196288/range2196288"/>
+            <sbol:displayId>range2196288</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <ns0:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+            <sbol:start>271</sbol:start>
+            <sbol:end>276</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196301/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196301"/>
+        <sbol:displayId>annotation2196301</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>XylR Binding Sites</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/binding"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0001091"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196301/range2196301/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196301/range2196301"/>
+            <sbol:displayId>range2196301</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <ns0:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+            <sbol:start>288</sbol:start>
+            <sbol:end>299</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196287/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196287"/>
+        <sbol:displayId>annotation2196287</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>-35</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/binding"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0001091"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196287/range2196287/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196287/range2196287"/>
+            <sbol:displayId>range2196287</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <ns0:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+            <sbol:start>247</sbol:start>
+            <sbol:end>253</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196277/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196277"/>
+        <sbol:displayId>annotation2196277</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>pBad recognition region 1</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/binding"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0001091"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196277/range2196277/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196277/range2196277"/>
+            <sbol:displayId>range2196277</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <ns0:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+            <sbol:start>3</sbol:start>
+            <sbol:end>19</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196302/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196302"/>
+        <sbol:displayId>annotation2196302</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>XylR Binding Site 2</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/binding"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0001091"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196302/range2196302/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196302/range2196302"/>
+            <sbol:displayId>range2196302</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <ns0:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+            <sbol:start>305</sbol:start>
+            <sbol:end>313</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196278/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196278"/>
+        <sbol:displayId>annotation2196278</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Pbad recognition region 2</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/binding"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0001091"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K851002/annotation2196278/range2196278/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/annotation2196278/range2196278"/>
+            <sbol:displayId>range2196278</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <ns0:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K851002/1"/>
+            <sbol:start>161</sbol:start>
+            <sbol:end>174</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K851002_sequence/1"/>
+  </sbol:ComponentDefinition>
+</rdf:RDF>

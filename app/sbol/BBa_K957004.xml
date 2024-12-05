@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K957004/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004"/>
+    <sbol:displayId>BBa_K957004</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K957004"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K957004</dcterms:title>
+    <dcterms:description>nah Operon for degradation of naphthalene to salicylate</dcterms:description>
+    <dcterms:created>2012-09-24T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:13:49Z</dcterms:modified>
+    <sbh:mutableProvenance>From NAH7 plasmid of Pseudomonas putida G7 (provided by Dr. Gene Madsen, Cornell University Department of Microbiology).</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>One of two positively regulated operons of the NAH7 plasmid from Pseudomonas putida which encode the enzymes for metabolism of naphthalene via salicylate. When used with a BioBrick generator responsive to salicylate via the NahR activator (e.g. BBa_K957002 and BBa_K957003), this operon can function as part of a whole-cell biosensor for naphthalene.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_1228_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>13504</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableNotes>Three internal BioBrick cut sites (one NotI, two PstI) remain in this version of the part. However, the utility of the part is not restricted, since digestion with EcoRI and SpeI facilitates standard molecular cloning.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Dylan Patrick Webster</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199002/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199002"/>
+        <sbol:displayId>annotation2199002</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>nahAa</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199002/range2199002/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199002/range2199002"/>
+            <sbol:displayId>range2199002</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>13</sbol:start>
+            <sbol:end>999</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199003/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199003"/>
+        <sbol:displayId>annotation2199003</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>nahAb</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199003/range2199003/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199003/range2199003"/>
+            <sbol:displayId>range2199003</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1143</sbol:start>
+            <sbol:end>1466</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199004/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199004"/>
+        <sbol:displayId>annotation2199004</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>nahAc</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199004/range2199004/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199004/range2199004"/>
+            <sbol:displayId>range2199004</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1528</sbol:start>
+            <sbol:end>2877</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199012/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199012"/>
+        <sbol:displayId>annotation2199012</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>PstI cut site</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199012/range2199012/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199012/range2199012"/>
+            <sbol:displayId>range2199012</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1867</sbol:start>
+            <sbol:end>1872</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199005/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199005"/>
+        <sbol:displayId>annotation2199005</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>nahAd</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199005/range2199005/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199005/range2199005"/>
+            <sbol:displayId>range2199005</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>2892</sbol:start>
+            <sbol:end>3476</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199006/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199006"/>
+        <sbol:displayId>annotation2199006</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>nahB</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199006/range2199006/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199006/range2199006"/>
+            <sbol:displayId>range2199006</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>3546</sbol:start>
+            <sbol:end>4325</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199007/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199007"/>
+        <sbol:displayId>annotation2199007</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>nahF</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199007/range2199007/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199007/range2199007"/>
+            <sbol:displayId>range2199007</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>4371</sbol:start>
+            <sbol:end>5822</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199008/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199008"/>
+        <sbol:displayId>annotation2199008</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>nahC</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199008/range2199008/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199008/range2199008"/>
+            <sbol:displayId>range2199008</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>5849</sbol:start>
+            <sbol:end>6757</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199013/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199013"/>
+        <sbol:displayId>annotation2199013</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>PstI cut site</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199013/range2199013/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199013/range2199013"/>
+            <sbol:displayId>range2199013</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>5862</sbol:start>
+            <sbol:end>5867</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199009/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199009"/>
+        <sbol:displayId>annotation2199009</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>nahQ</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199009/range2199009/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199009/range2199009"/>
+            <sbol:displayId>range2199009</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>6854</sbol:start>
+            <sbol:end>7486</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199010/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199010"/>
+        <sbol:displayId>annotation2199010</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>nahE</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199010/range2199010/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199010/range2199010"/>
+            <sbol:displayId>range2199010</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>7535</sbol:start>
+            <sbol:end>8530</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199014/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199014"/>
+        <sbol:displayId>annotation2199014</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>NotI cut site</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199014/range2199014/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199014/range2199014"/>
+            <sbol:displayId>range2199014</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>8165</sbol:start>
+            <sbol:end>8172</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199011/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199011"/>
+        <sbol:displayId>annotation2199011</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>nahD</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K957004/annotation2199011/range2199011/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/annotation2199011/range2199011"/>
+            <sbol:displayId>range2199011</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>8795</sbol:start>
+            <sbol:end>9406</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K957004_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K957004_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K957004_sequence"/>
+    <sbol:displayId>BBa_K957004_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K957004"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K957004_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>taagccggatttatggaacttctcatacagccaaacaatcgcctcattagctttagtcccggcgccaaccttctggaagtgcttcgcgaaaacggtgtcgctatttcctacagttgtatgtctgggcgttgcggaacctgccgctgtcgggttacagatggcagtgtaattgattcgggggcgggaagcgggttaccaaacctcgtggacgagcattatgtgctcgcctgtcagtcagtacttactcacaattgcgcgatcgaaatcccagaaaccgacgaaatcgtcacccacccggcgagaatcatcaagggcactgtggtcgccgtcgagtcgcccactcacgatatccgtcgcctacgcgtacgcctcgctaagcccttcgagttctcacccggacagtacgcgacattgcagttcagtcctgagcatgcgcgtccgtattcaatggcaggtctgccagatgaccaagaaatggagttccacatacgcaaggtgccgggtgggcgcgtaacggagtatgttttcgagcacgtccgcgaaggtacaagcatcaagttgagcgggccacttggtacggcttatttgcgtcagaaccacaccgggccgatgctctgtgtgggcggtgggaccggactagcaccggtgctgtcgattgttcgcggcgcgctgaagttgggtatgacaaaccccatcctcctttatttcggagtgcgcagtcagcaagacctctacgacgcagagcgattgcacaaactcgccgctgatcaccctcaactgaccgtacacacggtaatcgcaatgggcccgattaatgagagtcagcgagccggtctagttaccgatgtgatcgaaaaagacatcatttcgctggctgggtggagggcctacctgtgcggcgcaccagcgatggttgaagcgctttgcaccgttaccaagcatcttggaatatcacccgaacatatttatgccgatgccttctatcccggtggaatctgaatagtccctttccctgcacctctgtccatcgaggactcatcaggaggatactcaaataagcgcaaataataacagtcgcgtcagtatttgcggcagcgaaatggtttccctctccctcatttaccccatctgaggatagttttatgacagaaaaatggattgaagcagtcgccctttctgacatcccagaaggtgatgtcctcggcgtgactgtcgagggcaaggagctggcgttgtacgaagtggaaggcgaaatctacgctaccgacaacctgtgcacgcatggtgccgcccgcatgagcgatggttatctcgaggggcgagaaatcgaatgccccttgcatcaaggtcggtttgacgtttgtacaggcagagccctctgcgcccccgtgacagagaacatcaaaacatatgcagtcaagattgagaacctgcgcgtaatgattgatttgagcggagagttttaataggaggtaccccggaccctagcgcgtaactaccccaattccatcttttttaggtgaaaacatgaattacaaaaacaaaatattggtgagtgaatctgggctgacccaaaagcacctgattcatggcgatgaagaacttttccagcacgaactgagaaccatttttgcgcggaactggctttttctcactcatgacagcctgattccatcccccggcgactatgttaccgcaaaaatgggtattgacgaggtcatcgtctctcggcagagcgacggttcgattcgtgccttcctgaacgtttgtcggcaccgtggcaagacgctggttaacgcggaagccggcaatgccaaaggtttcgtttgcagctatcacggctggggcttcggctccaacggtgaactgcagagcgttccattcgaaaaagagctgtacggcgagtcgctcaacaaaaaatgtctggggttgaaagaagtcgctcgcgtggagagcttccatggcttcatctatggttgcttcgatcaggaggcccctcctcttatggactatctgggtgacgctgcttggtacctagagcccatcttcaaacattcaggcggtttagaactggtcggtcctccaggcaaggttgtgatcaaggccaactggaaggcacccgcggaaaactttgtgggggatgcataccacgtgggttggacgcacgcgtcttcgcttcgctcgggagagtctatcttcgcgtcgctcgctggcaacgcagtgctgccccctgaaggtgcaggcttgcaaatgacctccaaatacggcagcggcatgggtgtgttgtgggacggatattcaggcgtgcatagcgcagacttggttccggagttgatggcattcggcggctctaagcaggaaaggctgaacaaagaaattggcgatgttcgcgcccggatttatcgcagccacctcaactgcaccgttttcccgaacaacagcatgctgacctgctcgggtgttttcaaagtatggaacccgatcgacgcaaacaccaccgaggtctggacctacgccattgtcgaaaaagacatgcccgaggatctcaagcgccgcttggccgactcggttcagcgtacgtttgggcctgctggcttctgggaaagcgacgacaatgacaatatggaaacagcgtcgcaaaacggcaagaaatatcaatccagagatagtgatctgctttcaaaccttggtttcggtaaggacgtatacggcgacgcggtctatcctggcgtcgtcggcaaatcggcgatcggcgagaccagttatcgtggtttctaccgggcttaccaggcacacgtcagcagctccaactgggctgagttcgaggatgcctctagtacttggcataccgaactgacgaagactactgatcgctaacagacgagtcgaccatgatgatcaatattcaagaagacaagctggtctccgcccacgacgcccaagagtttcttcgtttcttcaattgccacgacgcggctttgcaacaagaagccaccacgctgctgaaccgggaagcgcatctgttggacattcaggcttaccgggcttggttagagcactgcgtggggtcagaggttcaatatcaggtcatttcacgcgaactgcgcgccgcttccgagcgccgttataagctcaatgaagccatgaacgtttacaacgaaaattttcagcaactgaaagttcgaatcgagcatcaactggatccgcaaaactggagcaacagcccgaagctgcgctttactcgcttcatcaccaatgtccaggccgcaagggacgtagatgacgaagagctacttcacatccgctccaacgtcattctgcaccgggcacgacgtggcaatcaggtcgatgtcttctacgccgcccgggaagacaaatggaaacgtggcgaaggtggagtgcgaaaattggtccagcgattcgtggattacccagagcgcatacttcagacgcacaatctgatggtctttctgtgatccagtgaccacttttacaaatggtgactgctaccgcggtcaccattaatcaaaagggaatgtaagtgtatgggcaatcaacaagtcgtttcgataaccggtgccggctcaggaatcggtctcgaactggttcgatcctttaagttggccggttattgcgtatccgctctcgtgcgaaacgaggagcaagaggcgcttctttgcaatgagttcaaggacgcactcgagatcgtagtgggcgatgtccgggaccacgcgacaaatgagaagctgataaagcagacaattgatagattcggtcatctcgattgtttcatcgcaaatgccggtatttgggattacatgctgaatatcgaagagccttgggagaaaatctcgagcagttttgacgaaatattcgacatcaatgtcaagagctatttcagtggcatcagtgccgccctgcccgagctgaaaaagactaacggatcagtggtgatgaccgcttcggtgtcgtcccatgcggtcggtggtggtggttcttgctacatcgccagcaagcatgcggtgctgggtatggtcaaggctttggcctacgaattggcccccgaaattcgcgtgaacgctgtttcgcctggcggcaccgtgacgtctctgtgcggtcccgctagcgccggtttcgacaaaatgcacatgaaagacatgcccggcatcgacgatatgatcaaaggtctcacacctcttgggtttgcagccaagcccgaagacgtggtggcaccctatctgttgctggcttcgcgaaagcaaggaaaattcatcactggcaccgtgattagcattgatggcggtatggcgctcggtcgcaagtgagcttgtagccgatcagaagttagacacattttcaggtgacgccccatgaagacaaaactgtttatcaacaacgcctggatcgattccagtgaccagcagaccttcgagcgcaagcaccccgtcagcagcgaggtgatgactgagagcgcaaacgccacggtgacggacgcgataaaggcggcgcaagcggccgaggaggcattcaagacctggaaggacgtcggaccttcggagcgtcgccgccttctcctgaaggtcgccgatgtcatggaaagtaaaacaccgaagttcatcgaagtgatggccatggaggtgggagcttccgccctttgggccggattcaacgtccatgcgtctgccaatgtgttccgggaggctgcctcgctggccacccaaattcagggtgaaaccatcccaacggacaaagccgaaacgctctcaatgaccctacgtcagccggtcggtccgatcctaagcatcgttccatggaacggcaccgcagtgctggcggcacgagccatcgcttatccgctggtctgtggcaacacggtagtgttcaaaggctctgaatttagtcccgcgacgcatgccctgatcacccagtgcgtgcaggaagccgggctgcccgctggcgtgctcaactacctcaactcttcgcctgaccgttcgcccgagatcgccgacgcactgatctccgccaaggagatccgccgcatcaacttcacgggttccacccgcgtgggcagcattatcgcgcagaaggccgcgcaacacctcaagcgctgcctactggagctcggcggcaagtccccgcttattgttttagatgacgcagacatcaacgcggcggtaaaggcagcggtgttcggtagctttctattccaaggtcagatctgcatgtccactgagcgcttggtggttgatgagaagatcgccgacgaatttgtcgctaggtttgtcgaaaaaactgagcgcttgagcgtgggcgacccgtgcctaactggcgactgcatcatcggcccgatggtctcgccaaattcgggcgagcggatcaatggtttgttcaaggacgcgatagataaaggggccaaagttgtttgcggcggcatggcccagggtgcggtcatgccggccacgatcctggatcacgtcaaatctgacatgcggatctacgatgaggagacctttggtcccatcaccgtggtgatccgttgcaaaggcgaagcagaggccatccgcattgccaacgacagcgtttatggtctgtcgtcgggcgtgtttggccgcgacatcaaccgtgctctgcgagtgggtatgtccatcgaatatggttgcgtacacatcaacggctcgaccgtccagaacgaggcgcaggctccttacggaggtaccaagaacaccggctacgggcgcttcgacggccgtgccgtgatcgacgagttcacagagctcaagtggctgaccattgaaccattcgagcagcaatatcccttctgaaagcactaactccaaggaatcaaactatgagtaagcaagctgcagttatcgagctcggatacatgggcatctcggtcaaggatcctgatgcgtggaaatcgtttgccatgaatatgctgggtctgcaagttctggatgagggtgagaaggaccgtttctatctgcggatggattactggcaccatcggatcgtagttcatcacagcgcagaggacgacttggaatacctaggctggcgtgtagccggcaagccggagttcgaagctctggggcaaaagctcattgatgccggttacaagatccgtgtctgcgacaaagttgaggctcaggagcgtatggtgttgggcctgatgaagacagaagatccaggcggcaacccgaccgagatattctgggggccccggatcgacatgagcaatccgttccatcccggccgccctctgcacggcaagtttgtgaccggtgaccagggcttgggccattgcatcgttcgccaaaccgacgtcgctgcggcccataagttctacagcctgctgggcttccgtggggacgtcgaataccgcattccattgcccaatggcatgactgccgaactgtcgttcatgcattgcaacgcccgtgatcactccattgcgtttggtgccatgcccgctgccaagcgcctcaatcacttgatgcttgagtacacccatatggaagacttgggatatacgcatcaacagttcgtgaagaacgaaattgacattgccttgcagcttggcattcacgccaacgacaaggcgctgacgttctacggcgcaacgccttcgggctggcttattgagcccggctggcgaggtgctacggccatagacgaagcggagtattacgtcggcgacatcttcggccatggcgtcgaggcacctggatatggcctggatgtaaaactgagttaaaagcgcttatgcgcacattgggtttctgacgttttctgcttcctatacagcacaataacaataacaataacaataacaactaagtggaatataataatgataaaaaaactgttccttacgtgctttgtttactgttcactcagcaccgcatgggccgaagaatcaccttggacataccgcatcggcatgagtaatattgcttttgatacaagcgccaaagtgtacttggatggccaccgtgtgccgggaggaagcgctgacgcgagcaataacaacgcgctcacattcgacttcggctacgccatcaacgaccagtggaatgcacgtttgattgtcggtattccgcctacaactaaagttaagggcgcaggcacacttccgggcattcagctggggaaaataacttatgctccaacaatattaacgttaaactataacctcccagcttttgggcccgttcgtcctcacatcggtgcgggagtcaattacacgcggattttggaaagcaaggacgctaatctaaaatcattcgatgccgaccacgcttggtcccccgcgctgcatgttggtgccgatattgacgtgagtcgcaactggttcgtcagcattgatatccggaagttatacctgaaaaccgacgcatcaggttacttagggccacaggaggctaaagcaaaggtaactcttgacccattgataacatcgatcgcgatcggacgccaattctgatgaccccttttaaggctctctatctatctaactgcaaagggtatttttatgttgaataaagttattaaaaccacgcgtcttaccgctgaagatatcaacggtgcctggactataatgcccacaccgtcgacgcctgatgcttctgattggcgcagcactaacactgtggacttagacgagactgcccgcatagttgaagagctgattgcagctggtgtcaacggtattttaagtatgggtacttttggtgagtgcgccacgttgacctgggaggagaaacgtgattatgtttcgacggttgtcgagaccattcgtggtcgtgtgccttatttctgtggcacgacggccctgaatacccgagaagtcatccgccagacccgagagcttatcgatattggcgctaacggcaccatgctaggcgtgccgatgtgggtgaagatggacctgcccacagcggtccagttctatcgtgatgttgcaggcgcggtaccggaggctgccattgcgatttacgccaaccccgaagcattcaaattcgacttccctcgcccattttgggcagagatgtccaaaattcctcaggtagtgactgccaagtatctaggcatcggaatgcttgacttggacctgaaattggcgcctaacatccgcttccttccacacgaggacgactattacgcggccgcacgcatcaatcccgagcgcataaccgcgttctggtcaagcggggccatgtgcggcccggctaccgctatcatgttgcgtgatgaagtggagcgggccaagagtaccggtgactggatcaaggccaaagccatctccgatgatatgcgtgcagccgattcgacattgtttccgcgtggcgacttttcggagttctcgaagtataacatcgggcttgaaaaggcacggatggacgcggctggttggctcaaggctggtccctgccgtcctccctacaatcttgttccagaagattacctcgttggtgcacagaaatcaggcaaggcgtgggccgcgctgcacgctaaatacagtaaataattaaagtagttcacctccgcaggcctgagcgcgagggttacgaacacgctgagcggtgcgggaagtaagtgagttaaagctcatctcttgcgccaggcactgctagatcagcaaagttagctgatctggcagtctcgaaaattttggcgaaagctgatcttaggaatgcgggataaaggcagtacaccgtaacgatgggggtgtgccgttcatgttgaacgacgccgctattgcgccgacttctcttcttcggagtgtttgattgtgattgtcgatttttatttcgattttttgagtccgttctcttacttggccaatcagcgcttgtcaaagcttgcgcaagattatggccttaccattcgttataacgcgatcgatttggcgcgggtcaaaatagccattggaaacgttggtccatccaatcgcgacttgaaagtcaaattggactatttgaaagtagatttgcaacggtgggcccagctttacggaataccgctggtattcccagctaactacaacagccgacggatgaatattgggttttattactcgggggccgaggcgcaggccgctgcctatgtgaatgtagtatttaatgcggtttggggagaaggcatagctccagatttggaaagcttgcctgccctggtatctgaaaagctaggctgggatcgtagtgctttcgagcactttctcagcagcaatgccgcaacagagaggtatgacgagcagacacatgccgccatcgagcgcaaggtgttcggtgtgccaacgatgtttttgggcgatgaaatgtggtgggggaacgaccgtctattcatgctcgagagcgcaatggggcgcttgtgccggcaaaatgccgatttaagtagttgatga</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

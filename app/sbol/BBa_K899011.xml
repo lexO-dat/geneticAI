@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K899011/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899011"/>
+    <sbol:displayId>BBa_K899011</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K899011"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K899011</dcterms:title>
+    <dcterms:description>FFT (BBa_K899001) with double RBS (BBa_K899009)</dcterms:description>
+    <dcterms:created>2012-09-25T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:13:42Z</dcterms:modified>
+    <sbh:mutableProvenance>The FFT gene derives from the jerusalem artichoke (Helianthus Tuberosus)</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>This is a composite part containing our fructan:fructan fructosyltransferase (FFT) gene with a &quot;double&quot; RBS containing both the shine-dalgarno and kozak sequence. This is the main part of our project, and also what we submitted to iGEM.
+The part was characterized in a pJET vector (http://www.bioinfo.pte.hu/f2/pict_f2/pJETmap.pdf) and we found a weird looking substance that resembled sugar structure in the growth medium. When we expressed FFT in E. coli top 10 strains they grew as fast as regular top 10 bacteria, probably because the sucrose:sucrose fructosyltransferase (SST) enzyme wasnt present (this enzyme produces the base that FFT polymerizes).
+When staining for inulin we observed a slight increase in inulin even though the SST enzyme wasn&apos;t present. This is probably because there was something in the substrate that enabled FFT to polymerize the sugar.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_1164_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>12807</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableNotes>none</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Andreas Kj??r</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Composite"/>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K899011/component2202166/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/component2202166"/>
+        <sbol:displayId>component2202166</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K899009</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K899009/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://synbiohub.org/public/igem/BBa_K899011/component2202169/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/component2202169"/>
+        <sbol:displayId>component2202169</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K899001</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/1"/>
+        <sbol:definition rdf:resource="https://synbiohub.org/public/igem/BBa_K899001/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K899011/annotation2202166/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/annotation2202166"/>
+        <sbol:displayId>annotation2202166</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K899009</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K899011/annotation2202166/range2202166/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/annotation2202166/range2202166"/>
+            <sbol:displayId>range2202166</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>13</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/component2202166/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K899011/annotation2202169/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/annotation2202169"/>
+        <sbol:displayId>annotation2202169</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_K899001</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K899011/annotation2202169/range2202169/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/annotation2202169/range2202169"/>
+            <sbol:displayId>range2202169</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse"/>
+            <sbol:start>20</sbol:start>
+            <sbol:end>1867</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://synbiohub.org/public/igem/BBa_K899011/component2202169/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K899011_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K899001/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899001"/>
+    <sbol:displayId>BBa_K899001</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K899001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K899001</dcterms:title>
+    <dcterms:description>Fructan fructan fructosyltransferase (FFT)</dcterms:description>
+    <dcterms:created>2012-09-21T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:13:42Z</dcterms:modified>
+    <sbh:mutableProvenance>Extracted from Jesrusalem Artichoke (helianthus tuberosus)</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899001/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Elongates a trisaccharide with the fructose unit of a sucrose substrate into an inulin polymer. Works together with part BBa_K899000 (SST).</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_1164_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>12807</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>7 BP from start codon we embedded an shine dalgarno sequence.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Andreas Kj??r</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K899001/annotation2193672/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899001/annotation2193672"/>
+        <sbol:displayId>annotation2193672</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Start codon</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K899001/annotation2193672/range2193672/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899001/annotation2193672/range2193672"/>
+            <sbol:displayId>range2193672</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>3</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/start"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000318"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K899001/annotation2193673/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899001/annotation2193673"/>
+        <sbol:displayId>annotation2193673</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Stop codon</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K899001/annotation2193673/range2193673/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899001/annotation2193673/range2193673"/>
+            <sbol:displayId>range2193673</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1846</sbol:start>
+            <sbol:end>1848</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000319"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/stop"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K899001_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K899009/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899009"/>
+    <sbol:displayId>BBa_K899009</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K899009"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K899009</dcterms:title>
+    <dcterms:description>Doubble ribosomal binding site (FFT) (shine-dalgarno and kozak sequence)</dcterms:description>
+    <dcterms:created>2012-09-25T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:13:42Z</dcterms:modified>
+    <sbh:mutableProvenance>jerusalem artichoke (Helianthus Tuberosus) and modified with bacterial shine-dalgarno sequence</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899009/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>This is the ribosomal binding site(s) we used in front of our fructan:fructan fructosyltransferase (FFT. It consists of the kozak sequence originally from the gene when we extracted it from the jerusalem artichoke (Helianthus Tuberosus), and the shine dalgarno sequence aggaggt.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_1164_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>12807</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>the shine dalgarno is placed 6 bp from the startcodon (optimal distance) and kozak is 4 of theese bp right before start codon.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Andreas Kj??r</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/RBS"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K899009/annotation2201693/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899009/annotation2201693"/>
+        <sbol:displayId>annotation2201693</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Shine-Dalgarno sequence</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899009/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K899009/annotation2201693/range2201693/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899009/annotation2201693/range2201693"/>
+            <sbol:displayId>range2201693</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899009/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>7</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K899009/annotation2201692/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899009/annotation2201692"/>
+        <sbol:displayId>annotation2201692</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Kozak sequence</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899009/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K899009/annotation2201692/range2201692/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899009/annotation2201692/range2201692"/>
+            <sbol:displayId>range2201692</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899009/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>10</sbol:start>
+            <sbol:end>13</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K899009_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K899011_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899011_sequence"/>
+    <sbol:displayId>BBa_K899011_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K899011"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899011_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aggaggtgtcacctactagatgcaaacccctgaaccctttacagaccttgaacatgaaccccacacacccctactggaccaccaccacaacccaccaccacaaaccaccacaaaacctttgttcaccagggttgtgtccggtgtcacctttgttttattcttctttggtttcgctatcgtattcattgttctcaaccaacagaactcttctgttcgtatcgtcaccaattcggagaaatcttttataaggtattcgcagaccgatcgcttgtcgtgggaacggaccgcttttcattttcagcctgccaagaattttatttacgatccagatggtcagttgtttcacatgggctggtaccatatgttctatcaatacaacccatacgcaccggtttggggcaatatgtcatggggtcactcagtgtccaaagacatgatcaactggtacgagctgccagtcgctatggtcccgaccgaatggtatgatatcgagggcgtcttatccgggtctaccacggtccttccaaacggtcagatctttgcattgtatactgggaacgctaatgatttttcccaattacaatgcaaagctgtacccgtaaacttatctgacccgcttcttattgagtgggtcaagtatgaggataacccaatcctgtacactccaccagggattgggttaaaggactatcgggacccgtcaacagtctggacaggtcccgatggaaagcataggatgatcatgggaactaaacgtggcaatacaggcatggtacttgtttactataccactgattacacgaactacgagttgttggatgagccgttgcactctgttcccaacaccgatatgtgggaatgcgtcgacttttacccggtttcgttaaccaatgatagtgcacttgatatggcggcctatgggtcgggtatcaaacacgttattaaagaaagttgggagggacatggaatggattggtattcaatcgggacatatgacgcgataaatgataaatggactcccgataacccggaactagatgtcggtatcgggttacggtgcgattacgggaggttttttgcatcaaagagtctttatgacccattgaagaaaaggaggatcacttggggttatgttggagaatcagatagtgctgatcaggacctctcaagaggatgggctactgtttataatgttggaagaacaattgtactagatagaaagaccgggacccatttacttcattggcccgttgaggaagtcgagagtttgagatacaacggtcaggagtttaaagagatcaagctagagcccggttcaatcattccactcgacataggcacggctacacagttggacatagttgcaacatttgaggtggatcaagcagcgttgaacgcgacaagtgaaaccgatgatatttatggttgcaccactagcttaggtgcagcccaaaggggaagtttgggaccatttggtcttgcggttctagccgatggaaccctttctgagttaactccggtttatttctatatagctaaaaaggcagatggaggtgtgtcgacacatttttgtaccgataagctaaggtcatcactagattatgatggggagagagtggtgtatgggggcactgttcctgtgttagatgatgaagaactcacaatgaggctattggtggatcattcgatagtggaggggtttgcgcaaggaggaaggacggttataacatcaagggcgtatccaacaaaagcgatatacgaacaagcgaagctgttcttgttcaacaacgccacaggtacgagtgtgaaagcatctctcaagatttggcaaatggcttctgcaccaattcatcaataccctttttaa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K899001_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899001_sequence"/>
+    <sbol:displayId>BBa_K899001_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K899001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899001_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atgcaaacccctgaaccctttacagaccttgaacatgaaccccacacacccctactggaccaccaccacaacccaccaccacaaaccaccacaaaacctttgttcaccagggttgtgtccggtgtcacctttgttttattcttctttggtttcgctatcgtattcattgttctcaaccaacagaactcttctgttcgtatcgtcaccaattcggagaaatcttttataaggtattcgcagaccgatcgcttgtcgtgggaacggaccgcttttcattttcagcctgccaagaattttatttacgatccagatggtcagttgtttcacatgggctggtaccatatgttctatcaatacaacccatacgcaccggtttggggcaatatgtcatggggtcactcagtgtccaaagacatgatcaactggtacgagctgccagtcgctatggtcccgaccgaatggtatgatatcgagggcgtcttatccgggtctaccacggtccttccaaacggtcagatctttgcattgtatactgggaacgctaatgatttttcccaattacaatgcaaagctgtacccgtaaacttatctgacccgcttcttattgagtgggtcaagtatgaggataacccaatcctgtacactccaccagggattgggttaaaggactatcgggacccgtcaacagtctggacaggtcccgatggaaagcataggatgatcatgggaactaaacgtggcaatacaggcatggtacttgtttactataccactgattacacgaactacgagttgttggatgagccgttgcactctgttcccaacaccgatatgtgggaatgcgtcgacttttacccggtttcgttaaccaatgatagtgcacttgatatggcggcctatgggtcgggtatcaaacacgttattaaagaaagttgggagggacatggaatggattggtattcaatcgggacatatgacgcgataaatgataaatggactcccgataacccggaactagatgtcggtatcgggttacggtgcgattacgggaggttttttgcatcaaagagtctttatgacccattgaagaaaaggaggatcacttggggttatgttggagaatcagatagtgctgatcaggacctctcaagaggatgggctactgtttataatgttggaagaacaattgtactagatagaaagaccgggacccatttacttcattggcccgttgaggaagtcgagagtttgagatacaacggtcaggagtttaaagagatcaagctagagcccggttcaatcattccactcgacataggcacggctacacagttggacatagttgcaacatttgaggtggatcaagcagcgttgaacgcgacaagtgaaaccgatgatatttatggttgcaccactagcttaggtgcagcccaaaggggaagtttgggaccatttggtcttgcggttctagccgatggaaccctttctgagttaactccggtttatttctatatagctaaaaaggcagatggaggtgtgtcgacacatttttgtaccgataagctaaggtcatcactagattatgatggggagagagtggtgtatgggggcactgttcctgtgttagatgatgaagaactcacaatgaggctattggtggatcattcgatagtggaggggtttgcgcaaggaggaaggacggttataacatcaagggcgtatccaacaaaagcgatatacgaacaagcgaagctgttcttgttcaacaacgccacaggtacgagtgtgaaagcatctctcaagatttggcaaatggcttctgcaccaattcatcaataccctttttaa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K899009_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K899009_sequence"/>
+    <sbol:displayId>BBa_K899009_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K899009"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K899009_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aggaggtgtcacc</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

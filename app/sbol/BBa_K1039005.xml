@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1039005/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005"/>
+    <sbol:displayId>BBa_K1039005</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1039005"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1039005</dcterms:title>
+    <dcterms:description>Bxb1 Invertible Promoter Switch (Promoter J23118) RL State</dcterms:description>
+    <dcterms:created>2013-09-09T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:08:50Z</dcterms:modified>
+    <sbh:mutableProvenance>The sequence was designed by Bonnet lab at the Department of Bioengineering, Stanford University, and was further modified by Waterloo team.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>The switch consists of a medium-strength constitutive promoter (BBa_J23118) flanked by Bxb1 attR and attL sites. Bxb1 integrase and Bxb1 recombination directionality factor (RDF) (BBa_K1039003 and Bba_K1039007) together recombine Bxb1 attL and attR to form Bxb1 attP and attB, flipping the orientation of the promoter and the promoter???s direction of transcription. ???Flipping??? of the switch by Bxb1 integrase and RDF (BBa_K1039003 and Bba_K1039007) forms the ???PB??? state of the switch (BBa_K1039002).
+
+Recombination of att sites affords the switch two potential states, with the promoter driving transcription of different genes depending on the state.  The two states are described as ???PB state??? and ???RL state???, in reference to the Bxb1 att sites flanking the promoter in each state. 
+
+There is a terminator (BBa_J61048) upstream of the promoter to prevent transcription of genes that correspond to the opposite state of the switch.
+
+In this state (RL state), genes on the suffix side of the switch are expressed. These genes are oriented in accordance with the BioBrick convention, i.e. they are transcribed from prefix to suffix.
+
+In the PB state (BBa_K1039002), genes on the prefix side of the switch are expressed. Note that these genes must be inverted relative to the BioBrick convention, i.e. they are transcribed from suffix to prefix, rather than prefix to suffix.
+
+This state (RL state) is recovered from PB state (BBa_K1039002) in the presence of Bxb1 integrase (BBa_K1039003) through recombination of Bxb1 attP and attB, which forms Bxb1 attR and attL.
+
+In summary, PB state is flipped to RL state in the presence of Bxb1 integrase, and RL state is flipped to PB state in the presence of Bxb1 integrase and RDF.
+
+In the absence of integrase or integrase and RDF, the switch will hold its state. In this way, it is a passive digital memory device.
+
+All aspects of this switch are directly inspired by the switch developed by Bonnet et al (REFERENCE).  Spacer sequences between genetic elements are also taken directly from the work of Bonnet et al.
+
+Note that there is an NheI site on the prefix side of the switch before the attR site. This was placed there as part of an early design of our switch, but does not contribute to functionality.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_1346_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>14649</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>The transcriptional terminator J61048 was included to ensure transcription only proceeds in the expected direction. Spacer regions were added adopted from Bonnet lab.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Urooj Kishor</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/DNA"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339254/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339254"/>
+        <sbol:displayId>annotation2339254</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Bxb1 att R</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339254/range2339254/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339254/range2339254"/>
+            <sbol:displayId>range2339254</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>9</sbol:start>
+            <sbol:end>61</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339252/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339252"/>
+        <sbol:displayId>annotation2339252</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>inverted BBa_J61048</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339252/range2339252/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339252/range2339252"/>
+            <sbol:displayId>range2339252</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>115</sbol:start>
+            <sbol:end>227</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339251/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339251"/>
+        <sbol:displayId>annotation2339251</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BBa_J23118</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339251/range2339251/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339251/range2339251"/>
+            <sbol:displayId>range2339251</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>320</sbol:start>
+            <sbol:end>354</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339253/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339253"/>
+        <sbol:displayId>annotation2339253</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Bxb1 att L</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339253/range2339253/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/annotation2339253/range2339253"/>
+            <sbol:displayId>range2339253</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>496</sbol:start>
+            <sbol:end>545</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1039005_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005_sequence"/>
+    <sbol:displayId>BBa_K1039005_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1039005"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1039005_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aggctagcagcaccaaacagaccagttggtggcgccagaggcagcagtcctagtaggcccggggaggactccacggtgggcacgccgtgcaacttcggctaatcatgttatctaaaagaaaacccatatcgcagcacctgtcagtaagtagaaagacggggaggttttcgtttttgggcggcttcgcccaaaaatgcatttagtccactttgactggctattcggccaataagttggggtttccagatgatggcacgattgcgagcgattccgggccaggccttcgtgcggcagcgagagcgcggatatgtcaacagtgaactgccgatcgagtcaggatccataacacgatcgtctaccaatcacacgcatagactatgaaaatacagacaggatgttgaggttcgcatgtcaagtccggttgtgggatcgaaactctttcagcgcagtcatttacagcaaagggatttcgaatgttaaatggaggagcgataacccaaacatggcatgtggtgactctggcggcagcagctgttcggccggct</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

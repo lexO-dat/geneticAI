@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K2005022/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K2005022"/>
+    <sbol:displayId>BBa_K2005022</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K2005022"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K2005022</dcterms:title>
+    <dcterms:description>Poly(3)Guanine-30</dcterms:description>
+    <dcterms:created>2016-10-11T11:00:00Z</dcterms:created>
+    <dcterms:modified>2016-10-12T01:27:36Z</dcterms:modified>
+    <sbh:mutableProvenance>DNA Synthesis</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K2005022/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Synthetic DNA construct designed to have a set number of poly-guanine motifs within a 175 bp region.  These motifs have been implicated in DNA oxidation as  elements which  at longer repeat lengths can increase the rate of local oxidative mutation (Senthikumar et al. 2003).  For making controlled comparisons between synthesized sequences, the total number of guanines are held at a constant value with only their motif-arrangement being manipulated. For this sequence, that would be 30 guanine triplets.
+
+
+===Sequence Design===
+To generate this artificial DNA sequence, we wrote an algorithm that generated a sequence with the desired number of motifs organized into evenly-spread regions. This initial sequence was then altered according to rules that preserved the motif structure until it met a set of constraints to make it compatible with current DNA synthesis restrictions . In addition, the sequence was designed to include sites for annealing by ActB qPCR primers to facilitate sequence-specific amplification and further analyses.
+
+===Assembly===
+This sequence was synthesized and ligated into pSB1C3. We confirmed that this construct was synthesized and integrated correctly by sequencing.
+
+===Mutagenicity===
+We analyzed the rates of oxidation-induced mutagenic DNA lesions using liquid-chromatography mass-spectrometry (LC-MS) and immunoblotting. Using parts K2005020, K2005021, and K2005022 which contain poly-G regions of length 1, 2, and 3 respectively,  we found that relative mutation frequency could be predicted  based on these controlled changes to the primary nucleotide sequence. Please see our 2016 wiki for more details.
+
+==References==
+Senthilkumar, K., Grozema, F.C., Guerra, C.F., Bickelhaupt, F.M., and Siebbeles, L.D.A. (2003). Mapping the sites for selective oxidation of guanines in DNA. J. Am. Chem. Soc. 125, 13658???13659.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_2472_</igem:group_u_list>
+    <igem:m_user_id>19415</igem:m_user_id>
+    <igem:owner_id>19415</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>To generate this artificial DNA sequence, we wrote an algorithm that generated a sequence with the desired number of motifs organized into evenly-spread regions. This initial sequence was then altered according to rules that preserved the motif structure until it met a set of constraints to make it compatible with current DNA synthesis restrictions . In addition, the sequence was designed to include sites for annealing by ActB qPCR primers to facilitate sequence-specific amplification and further analyses.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Jarrod Shilts</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/DNA"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K2005022_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K2005022_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K2005022_sequence"/>
+    <sbol:displayId>BBa_K2005022_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K2005022"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K2005022_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aaacccaccctaattgggtacccaaaatatttttgggatcccttcccaatcccagggatttaaccctgggtatttgggtcccatatcccttccctacccaaaaatgggatagggatataaccctccctaagggtaataaaaccctacccattaaatgggaaccctgggtaatttagggatttccctaatgggatgggatt</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

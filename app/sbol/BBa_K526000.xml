@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K526000/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K526000"/>
+    <sbol:displayId>BBa_K526000</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K526000"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K526000</dcterms:title>
+    <dcterms:description>Pompc promoter coding fimE</dcterms:description>
+    <dcterms:created>2011-09-25T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:12:35Z</dcterms:modified>
+    <sbh:mutableProvenance>Both fimE and Pompc was amplified from E. coli genomic DNA.
+
+Ham, T.S., Lee, S.K., Keasling, J.D. and Arkin, A.P. A tightly regulated inducible expression system utilizing the fim inversion recombination switch. Biotechnology and Bioengineering 94 (2006), pp. 1-4.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K526000/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Pompc is a promoter sequence that is regulated by the famous hybrid light receptor Cph8. 
+
+fimE is a invertase,by function,that is capable of inverting any DNA sequence that is flanked by fimE recognition site. 
+When fimE recognition sequences are flanked to a promoter element we can ensure that there is no leaky expression as the promoter is in a reverse orientation thus, fim inversion promoters ensures that there is no leaky expression.
+
+The hybrid light receeptor Cph8 mediated regulation of gene expression suffers from a high leaky expression. Hence, we made an attempt to reduce the leaky level of the light mediated gene expression systems by using a combination of light receptor and fimE processor. 
+
+ In this biobrick part, we have made an attempt to regulate the expression of fimE based on light so that we could precisely turn on a previously uninduced gene . This system would ensure more tight control of target gene expression. This combination would be potentially useful for toxic gene expression.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/Issues"/>
+    <igem:group_u_list>_692_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>8432</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>There is no special design consideration. We can amplify the Pompc and fimE from E. coli genomic DNA and assembly them usingon&apos;s Assembly.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Sung Kuk Lee</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Intermediate"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K526000/annotation2150055/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K526000/annotation2150055"/>
+        <sbol:displayId>annotation2150055</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Pompc</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K526000/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K526000/annotation2150055/range2150055/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K526000/annotation2150055/range2150055"/>
+            <sbol:displayId>range2150055</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K526000/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>117</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/promoter"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K526000/annotation2150037/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K526000/annotation2150037"/>
+        <sbol:displayId>annotation2150037</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>fimE</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K526000/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K526000/annotation2150037/range2150037/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K526000/annotation2150037/range2150037"/>
+            <sbol:displayId>range2150037</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K526000/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>118</sbol:start>
+            <sbol:end>757</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K526000_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K526000_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K526000_sequence"/>
+    <sbol:displayId>BBa_K526000_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K526000"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K526000_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>ggccatggtcccttgcatttacattttgaaacatctatagcgataaatgaaacatcttaaaagttttagtatcatattcgtgttggattattctgcatttttggggagaatggacttactagagtcacacaggacggccgatgaagaataaggctgataacaaaaaaaggaacttcctgacccatagtgaaatcgaatcactccttaaagcagcaaataccgggcctcatgcagcacgtaattattgtctgactttgctttgttttattcatggtttccgggcgagtgaaatttgtcgattgaggatttcggatattgatcttaaggcaaagtgtatatatatccatcgattaaaaaaaggcttttcaacaacgcacccgctattgaataaagaagttcaggctttaaaaaactggttgagtatccgtacttcgtacccgcatgctgagagcgagtgggtatttttatcacgtaaggggaatccgctttctcggcaacagttttaccatattatctcgacttccggtggtaatgccgggttgtcactggagattcatccgcacatgttacgccattcgtgtggttttgctttggcgaatatgggaatagatacgcgacttatccaggattatcttgggcatcgcaatattcgtcatactgtctggtataccgccagcaatgcagggcgtttttacggcatctgggatagagccagaggacgacagcgtcacgctgttttatagtgataagaattcag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

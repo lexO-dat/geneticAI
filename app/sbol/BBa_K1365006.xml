@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006"/>
+    <sbol:displayId>BBa_K1365006</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1365006"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1365006</dcterms:title>
+    <dcterms:description>NisR and NisK</dcterms:description>
+    <dcterms:created>2014-09-23T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:10:07Z</dcterms:modified>
+    <sbh:mutableProvenance>Obtained by PCR on the genome of Lactococcus lactis NZ9700, a nisin producing strain.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Coding part for the genes NisR and NisK.
+
+NisK is a membrane-associated protein kinase that phosphorylates NisR in response to enviromental signals. NisR is a regulatory protein, regulating PNisI and other promoters.
+
+Together with the genes NisA, NisB, NisC, NisP they are responsible for producing the lantibiotic nisin in Lactococcus lactis.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_1741_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>23000</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>In stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Available"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Used primers: 
+forward - 5&apos;-GTTTCTTCGAATTCGCGGCCGCTTCTAGATGTATAAAATTTTAATAGT-3&apos; 
+reverse - 5&apos;-GTTTCTTCCTGCAGCGGCCGCTACTAGTATTATTACTTTTTTATTTTTA-3&apos; 
+to PCR NisR and NisK from the genome and add the BioBrick prefix and suffix. 
+
+Changed the GTG start codon of NisR into a ATG.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Sandra Mous</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Composite"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390558/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390558"/>
+        <sbol:displayId>annotation2390558</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>start</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390558/range2390558/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390558/range2390558"/>
+            <sbol:displayId>range2390558</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>1</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000318"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/start"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390562/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390562"/>
+        <sbol:displayId>annotation2390562</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>NisR</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390562/range2390562/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390562/range2390562"/>
+            <sbol:displayId>range2390562</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>686</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390559/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390559"/>
+        <sbol:displayId>annotation2390559</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>start</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390559/range2390559/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390559/range2390559"/>
+            <sbol:displayId>range2390559</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>680</sbol:start>
+            <sbol:end>680</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000318"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/start"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390563/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390563"/>
+        <sbol:displayId>annotation2390563</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>NisK</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390563/range2390563/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390563/range2390563"/>
+            <sbol:displayId>range2390563</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>680</sbol:start>
+            <sbol:end>2023</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390560/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390560"/>
+        <sbol:displayId>annotation2390560</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>stop</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390560/range2390560/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390560/range2390560"/>
+            <sbol:displayId>range2390560</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>684</sbol:start>
+            <sbol:end>684</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000319"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/stop"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390561/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390561"/>
+        <sbol:displayId>annotation2390561</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>stop</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390561/range2390561/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/annotation2390561/range2390561"/>
+            <sbol:displayId>range2390561</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>2021</sbol:start>
+            <sbol:end>2021</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/stop"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000319"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1365006_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006_sequence"/>
+    <sbol:displayId>BBa_K1365006_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1365006"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1365006_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atgtataaaattttaatagttgatgatgatcaggaaattttaaaattaatgaagacagcattagaaatgagaaactatgaagttgcgacgcatcaaaacatttcacttcccttggatattactgattttcagggatttgatttgattttgttagatatcatgatgtcaaatattgaagggacagaaatttgtaaaaggattcgcagagaaatatcaactccaattatctttgttagtgcgaaagatacagaagaggatattataaacggcttaggtattggtggggatgactatattactaagccttttagccttaaacagttggttgcaaaagtggaagcaaatataaagcgagaggaacgcaataaacatgcagttcatgttttttcagagattcgtagagatttaggaccaattacattttatttagaagaaaggcgagtctgtgtcaatggtcaaacaattccactgacttgtcgtgaatacgatattcttgaattactatcacaacgaacttctaaagtttatacgagagaggatatttatgatgacgtatatgatgaatattctaatgcactttttcggtcaatctcggagtatatttatcagattaggagtaagtttgcaccatacgatattaatccgataaaaacggttcggggacttgggtatcagtggcatgggtaaaaaatattcaatgcgtcgacggatatggcaagctgtcattgaaattatcataggtacttgtctacttatcctgttgttactgggcttgactttctttctacgacaaattggacaaatcagtggttcagaaactattcgtttatctttagattcagataatttaactatttctgatatcgaacgtgatatgaaacactacccatatgattatattatttttgacaatgatacaagtaaaattttgggaggacattatgtcaagtcggatgtacctagttttgtagcttcaaaacagtcttcacataatattacagaaggagaaattacttatacttattcaagcaataagcatttttcagttgttttaagacaaaacagtatgcctgaatttacaaatcatacgcttcgttcaatttcttataatcaatttacttaccttttcttttttcttggtgaaataatactcattattttttctgtctatcatctcattagagaattttctaagaattttcaagccgttcaaaagattgcattgaagatgggggaaataactacttttcctgaacaagaggaatcaaaaattattgaatttgatcaggttctgaataacttatattcgaaaagtaaggagttagctttccttattgaagcggagcgtcatgaaaaacatgatttatccttccaggttgctgcactttcacatgatgttaagacacctttaacagtattaaaaggaaatattgaactgctagagatgactgaagtaaatgaacaacaagctgattttattgagtcaatgaaaaatagtttgactgtttttgacaagtattttaacacaatgattagttatacaaaacttttgaatgatgaaaatgattacaaagcgacaatctccctggaggattttttgatagatttatcagttgagttggaagagttgtcaacaacttatcaagtggattatcagctagttaaaaaaacagatttaaccactttttacggaaatacattagctttaagtcgagcacttatcaatatctttgttaatgcctgtcagtatgctaaagagggtgaaaaaatagtcagtttgagtatttatgatgatgaaaaatatctctattttgaaatctggaataatggtcatcctttttctgaacaagcaaaaaaaaatgctggaaaactatttttcacagaagatactggacgtagtgggaaacactatgggattggactatcttttgctcaaggtgtagctttaaaacatcaaggaaacttaattctcagtaatcctcaaaaaggtggggcagaagttatcctaaaaataaaaaagtaa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

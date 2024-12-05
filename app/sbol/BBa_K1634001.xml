@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1634001/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001"/>
+    <sbol:displayId>BBa_K1634001</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1634001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1634001</dcterms:title>
+    <dcterms:description>Pmyo2-dsRed (C.elegans)</dcterms:description>
+    <dcterms:created>2015-09-06T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-09-07T06:58:14Z</dcterms:modified>
+    <sbh:mutableProvenance>We get Pmyo2 from the C.elegans&apos; genomic DNA by PCR. DsRed is a commonly used reporter,so we get it from some plamids by PCR. Then we ligated the Pmyo2 into PPD95.75, a vector commonly used in C.elegans. Finally, we ligated the dsRed into PPD95.75_Pmyo2.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Pmyo2 is a promoter which can drive the expression in the muscle of C.elegans especially the muscle in the head and pharynx.DsRed is a commonly used fluorescent protein,a reporter.If we wanted to express some special protein such as channelrhodopsins in those muscle,we need to inject the mixtures containing the plasmid we constructed into the sexual gland of the C.elegans. Then we can get the transgenic descendants we want. However, this dosen&apos;t mean that we can get some successful transgenic descendants after every microinjection.So we need to pick up the several successful one from thousands of descendants .But sometimes the specific protein we express has not contained a reporter, and even though the ChR2 we express contains a YFP, the light is not strong enough for us to find the successful one from thousands of descendants. To solve this problem, we constructed this part, Pmyo2-dsRed ,which was called &quot;the comarker&quot;by us. We made mixture of Pmyo2-dsRed and Pmyo2-channelrhodopsin, then inject the mixture through microinjection. The possible red fluorescent in the descendants has 4 main functions. Firstly, it ensures that the microinjection process is successful. Secondly, it ensures that those plasmids has successfully passed to the descendants.Thirdly, since it has the same promoter as our target protein, we can assume that our target protein has also successfully expressed in the same position, and we can have a double-check if our protein\ has a reporter. Finally, it can also help us to learn the expression pattern and quantify the expression level roughly by observing the fluorescence intensity of dsRed.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_2051_</igem:group_u_list>
+    <igem:m_user_id>24399</igem:m_user_id>
+    <igem:owner_id>24399</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Since we use the restriction enzyme site to do the ligation, we should pay attention to the sequence of Pmyo2 and ChR2-YFP, avoiding using the restriction site exits in it.</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Xinhong Chen</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Reporter"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445588/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445588"/>
+        <sbol:displayId>annotation2445588</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Pmyo2</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445588/range2445588/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445588/range2445588"/>
+            <sbol:displayId>range2445588</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>694</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/promoter"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445591/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445591"/>
+        <sbol:displayId>annotation2445591</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BamHI</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445591/range2445591/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445591/range2445591"/>
+            <sbol:displayId>range2445591</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>695</sbol:start>
+            <sbol:end>700</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445593/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445593"/>
+        <sbol:displayId>annotation2445593</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>dsRed</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445593/range2445593/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/annotation2445593/range2445593"/>
+            <sbol:displayId>range2445593</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>701</sbol:start>
+            <sbol:end>1378</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/protein"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1634001_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001_sequence"/>
+    <sbol:displayId>BBa_K1634001_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1634001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1634001_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>tgctgaactttacaccccgaacagcaatgtgtgcttcagcctaaaaaaaagtaagtgtgttaatcagtgcccccgattcttcattttttgcccctctctcccgtttcgtcggcaaaagaagagaaaataaagataagtctcaagataggttggtaatcgctaaagtggttgtgtggataagagtagcaaaatggcaggaagagcactttgcgcgcacacactgtactcattgttctggataaaattctctcgttgtttgccgtcggatgtctgcctctctgcattgagccggcttcttcactatctttagttaacctaaaatgccgtttcttttctcgtatccccactatcccgttgaggttctctgctctcttcgctccctaccgccagcgagcaactatccgtgggggcgccttgctcggaagatgggggggaagaaagaagatttttgctatttgcacttgagaaagagacttttcctgcgtcgatggttagagaacagtgtgcagacacttttcagctacctagaattacaattggatatccccgcctcccaatccacccacccagggaaaaagaagggctcgccgaaaatcaaagttatctccaggctcgcgcatcccaccgagcggttgacttctctccaccacttttcattttaaccctcgatcgtcagacacagaaatggattacgggatccatggcctcctccgagaacgtcatcaccgagttcatgcgcttcaaggtgcgcatggagggcaccgtgaacggccacgagttcgagatcgagggcgagggcgagggccgcccctacgagggccacaacaccgtgaagctgaaggtgaccaagggcggccccctgcccttcgcctgggacatcctgtccccccagttccagtacggctccaaggtgtacgtgaagcaccccgccgacatccccgactacaagaagctgtccttccccgagggcttcaagtgggagcgcgtgatgaacttcgaggacggcggcgtggcgaccgtgacccaggactcctccctccaggacggctgcttcatctacaaggtgaagttcatcggcgtgaacttcccctccgacggccccgtgatgcagaagaagaccatgggctgggaggcctccaccgagcgcctgtacccccgcgacggcgtgctgaagggcgagacccacaaggccctgaagctgaaggacggcggccactacctggtggagttcaagtccatctacatggccaagaagcccgtgcagctgcccggctactactacgtggacgccaagctggacatcacctcccacaacgaggactacaccatcgtggagcagtacgagcgcaccgagggccgccaccacctgttcctgtag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1955001/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1955001"/>
+    <sbol:displayId>BBa_K1955001</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1955001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1955001</dcterms:title>
+    <dcterms:description>Leishmania-2.3intron</dcterms:description>
+    <dcterms:created>2016-10-13T11:00:00Z</dcterms:created>
+    <dcterms:modified>2016-10-17T07:51:52Z</dcterms:modified>
+    <sbh:mutableProvenance>The Leish-2.3intron sequence originally came from Leishmania genome and is acquired from GenBank.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1955001/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>The Leish-2.3intron is an intrinsic sequence between two highly expressed coding regions, p36 and NAGT, that contains stage-independent splicing sites in Leishmania. In Leishmania, the polycistronic RNA will be spliced into two transcripts and then be translated into two proteins. The proteins will thus be constitutively expressed. We designed this biobrick in order to enhance the expression of both the drug resistant gene and the target protein.
+This biobrick needs to be used with the Leish-5&apos;UTR-HYG and Leish-3&apos;UTR that we provide as a complete protein expression system for Leishamnia. Add the protein sequence in between the Leish-2.3 intron and Leish-3&apos;UTR, and then add Leish-5&apos;UTR-HYG before all the parts for Leishmania to expression your target protein stage-independently.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_2422_</igem:group_u_list>
+    <igem:m_user_id>30462</igem:m_user_id>
+    <igem:owner_id>30553</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>The Leish-2.3 intron is a 2313 bp DNA sequence acquired from GenBank (Accession# M96635 and L11705). In Leishmania genome, this 2.3 kb region is combined with the 3???UTR of p36 and the 5???UTR of NAGT, and contains several stage-independent splicing site for constitutive expression of p36 and NAGT proteins. According to its special feature, we choose this intrinsic sequence as a biobrick part to provide a new advantage for our expression vector compared to the ordinary one. However, this sequence is high CG content, which makes it unable to be synthesized, so we separated the 2.3 kb sequence into 3 parts and use point mutation to change its restriction site. Also, we add 2 additional restriction sites, KpnI and NdeI, to ligate these 3 parts together. Unfortunately, the final results of the ligation always lost the second part of the sequence no matter what kind of strategy we used. The Leish-2.3 intron is a unfinished part, which will be the future work of our project. The function of the 2.3 kb intergenic region was studied and published by Dr. Kwang-Poo Chang (Gene 196 (1997) 49???59).</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Justine Hsu</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Regulatory"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1955001_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1955001_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1955001_sequence"/>
+    <sbol:displayId>BBa_K1955001_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1955001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1955001_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>tgccaatggagagtgcaagcgctgcatcgcgtgcgctgggtttgtaggggaactcggctgcccgagaaatggcgggtggtggatggaaaaggaaactgactgttgtcatttctgtgtgggtgtgcgcgtgtccgtagaccaaccggcgagatgaaaaaagcggaataagtcagccacggcaagcgaaagcgcatagacaacctgcatccacgctctcgtcgcctccgcattcccctcgaccggcgtctctggcgttaacgcaagcacaccatggcactctagtctagcgttccacgtccctcctcttacgcctctcaccgcgtcgtctatgcgccctcccgtctccctttcgctcactttttggctcttttagacttacgctggtctgcgtgcgcgttttcgtgcatatctgtgtagcagttgtgccggtccctgagtgcttgcgtgcgcatgtgtgtgtgtatgtgtgaaccttttcttccttgcttcatgggcgcacgttcacaccgtgcagcacctcgtctcctctattgtcgtttctcctgttcgtgttttgagattacggtcgtttgatatctgcgccaccgccagaccaaaagagtaacaactaacgccccccccccgcggccccttcatgtcttcccacatcggcacaaggcacgctctctcttgtgaccgccttcttgctcgctgcggccctctttctctccctccccacgatctctgttaccgtggccatgagaggaccggcacgatacgggttgcaagcgaagcggcacaggtgtaccaagagtgacccctaggtgagatcggcacagcagacggcgagggtgcacagatgtcatgtgtcgttgcccgagagcggagaagtctcacgagggctgggtgaggctaacgatcggcacgggtgcctgaaaaagtacaagacaatgtcaatgcgcacgcgtgtggggaaaaaaacacacttagggtaggttgaacgggtgtggctcttctctttacagggtgaggtagcggtgtcaacaccgagcgcctgctcctagggtgagcgaaatgtgtcctttcgagcaccgcaggcagggagaagactgcaatgcgttcgcgcgatggtgccttttcggccgccgttttcgctttcgcctccttctctctccctcactgcctctctgacagcacctgagcacccatcgcacgaccatcagcgttactttaatgccttttttcggtgcactgcattgctatcctcttctggccttcctttttcgtcttccgtctcgccgcgctttcgcttccctgcacaggcagccctgtccacacaacgcatacacccaacggaagcaaaacgaataagtccccgttgcttcttccctgctgcggagtcagtgggttttctttttgccttttctttcattctctctctctatccccctctcagccctagccggaaataccacgccatcgttgtcgtaaaaaaaagaaaacacacacccacacgtagaagaagggagcgagtgggggaaggtgcactggaagaacgccacgcgtaccccctgcacaagctcgaagcattgtaaaagcaacagcaatagagaacacatagacagacacacacagacacacacacacacacacacacaccgtcgtcgtctccccacgtcgcttgtcattccccgtcgctcaagtatccataaaagagtgctggtgtcgacatcctcggtggaaacaggggtgggagaagcaaacaggtagacagagaacaaaggcaaaaggggaagtgaatcgagtcgttgaggactggatgatctgaacttgcacgtccgtggaaagggtagacagctatactggagagtgcgcgcccaggttaacgggaacatcattctcgacattcgccgatctttcgtttctcttcgcattcccttcgcctctttggagttttttccctttttctgtgctctggggtgcaccggtacgcagcacatactgcctctatcttgcagatgtatacgcacacgcgcacaccatacactcacccactcgctctttgtcccatcttcccttcctccgtccgctgcggacagtggttagggagggttttgtctgatttttttactgtttgtttgtttcgcgtcacatggtttgtgtgtgtgtgtgtccgtatgcgttgccgttgaactcactgtctcttaatagcacctatttcgtgtctctgcgcgccacagaagctcccccctgactcgcacgaaagaagaaaaggttgttgtttttggggggtggtggaggaggagggagaaggaggctccctttagaagcatc</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

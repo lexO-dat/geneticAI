@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K510023/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K510023"/>
+    <sbol:displayId>BBa_K510023</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K510023"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K510023</dcterms:title>
+    <dcterms:description>Improved Flip Flop (Module II: asRNA)</dcterms:description>
+    <dcterms:created>2011-09-19T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:12:30Z</dcterms:modified>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K510023/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Proteolysis is a very common system to regulate gene expression in all organisms. In bacteria, proteins can be targeted for proteolysis by adding a special degradation tag in their coding sequences. That???s how the Sspb-Clpx system works. In E.coli wild type, ClpX recognize specific degradation tags ??? ssrA tags -, unfolds the attached protein and translocates this denatured polypeptide into ClpP for its degradation, which is very fast. The action of this ClpXP protease is enhanced by the SspB adaptator protein. 
+
+The idea is to add the DAS+4 tag to the proteins of one of the states of the flip-flop and express the Sspb under the promoter of the opposed state. Specifically, it&apos;s added the DAS+4 tag to the GFP and the LacI proteins, expressed under the cI promoter, and under the Lac promoter it&apos;s expressed Sspb.
+
+Furthermore, asRNAs are short non-coding RNAs that can inhibit mRNA translation by binding to the 5??? untranslated region (UTR) of that mRNA. That is the case of the Salmonella ompN gene, whose translation is inhibited by the conserved RybB asRNA, which forms a short duplex with the ompN CDS.
+
+This device has a fusion of OmpN start sequence with those proteins whose translation we want to regulate. The RybB asRNA binds to nucleotides from 5th to 20th relative to AUG. Consequently, a shorter fusion in which it&apos;s fused the first 7 codons of the OmpN gene CDS upstream of the RFP and Sspb CDS. &apos;&apos;&apos;These fusions do include the OmpN RBS&apos;&apos;&apos;.
+
+http://2011.igem.org/wiki/images/1/1a/UPOSevilla_finalconstruction.png
+
+Here we show the final structure of our improved bistable. As well as the two operons with their protein fusions and the promoter with the asRNA, we show the different restriction sites we have introduced and the enzymes that target each site. Finally, the total length of our construction is indicated in the figure.
+
+&apos;&apos;&apos;[[IMPORTANT]]&apos;&apos;&apos;: This biobrick is &apos;&apos;&apos;incomplete&apos;&apos;&apos;, you will need the asRNA device. You can find it in ...
+
+&apos;&apos;&apos;For further information please vistit our [http://2011.igem.org/Team:UPO-Sevilla wiki] or contact with us at igem@upo.es&apos;&apos;&apos;</sbh:mutableDescription>
+    <igem:discontinued>true</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_673_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>6159</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Discontinued</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Deleted"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:star>false</sbh:star>
+    <dc:creator>F??lix Reyes Mart??n</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Device"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+  </sbol:ComponentDefinition>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

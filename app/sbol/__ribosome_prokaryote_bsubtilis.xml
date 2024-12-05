@@ -1,0 +1,314 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sbol="http://sbols.org/v2#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:ns0="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sbol:Collection rdf:about="https://synbiohub.org/public/igem/ribosome_prokaryote_bsubtilis/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/ribosome_prokaryote_bsubtilis"/>
+    <sbol:displayId>ribosome_prokaryote_bsubtilis</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>//ribosome/prokaryote/bsubtilis</dcterms:title>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/ribosome_prokaryote_bsubtilis/1"/>
+    <sbol:member rdf:resource="https://synbiohub.org/public/igem/BBa_K090505/1"/>
+    <sbol:member rdf:resource="https://synbiohub.org/public/igem/BBa_K090506/1"/>
+    <sbol:member rdf:resource="https://synbiohub.org/public/igem/BBa_K143020/1"/>
+    <sbol:member rdf:resource="https://synbiohub.org/public/igem/BBa_K143021/1"/>
+    <sbol:member rdf:resource="https://synbiohub.org/public/igem/BBa_K780001/1"/>
+    <sbol:member rdf:resource="https://synbiohub.org/public/igem/BBa_K780002/1"/>
+  </sbol:Collection>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K090506/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K090506"/>
+    <sbol:displayId>BBa_K090506</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K090506"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K090506</dcterms:title>
+    <dcterms:description>''Bacillus subtilis'' weak RBS</dcterms:description>
+    <dc:creator>Daniel Goodman</dc:creator>
+    <dcterms:created>2008-10-27T12:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:08:37Z</dcterms:modified>
+    <ns0:discontinued>false</ns0:discontinued>
+    <ns0:dominant>false</ns0:dominant>
+    <ns0:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <ns0:group_u_list>_188_</ns0:group_u_list>
+    <ns0:m_user_id>0</ns0:m_user_id>
+    <ns0:owner_id>3501</ns0:owner_id>
+    <ns0:owning_group_id>9</ns0:owning_group_id>
+    <ns0:sampleStatus>Not in stock</ns0:sampleStatus>
+    <ns0:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableDescription>This is the weak version of the consensus RBS for Bacillus subtilis. The sequence is present in front of some B. subtilis operons, but is expected to give weaker expression than the consensus sequence.
+
+The consensus sequence AAAGGAGG (BBa_K090505) was changed to AGAGGTGG for this part.</sbh:mutableDescription>
+    <sbh:mutableNotes>The part must be 8 nucleotides away from the first methionine of the coding sequence, and so we added 'TGT' downstream of the actual binding sequence: AGAGGTGG. This, combined with the truncated non-CDS BioBrick prefix scar, gives exactly 8 'spacer bases' between the 3' end of the RBS and the start of the coding sequence.</sbh:mutableNotes>
+    <sbh:mutableProvenance>This part was synthesized directly.</sbh:mutableProvenance>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:star>false</sbh:star>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K090506/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/RBS"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K090506/annotation1992815/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K090506/annotation1992815"/>
+        <sbol:displayId>annotation1992815</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>B. subtilis weak RBS</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K090506/1"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/rbs"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K090506/annotation1992815/range1992815/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K090506/annotation1992815/range1992815"/>
+            <sbol:displayId>range1992815</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <ns0:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K090506/1"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>8</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K090506_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K780001/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K780001"/>
+    <sbol:displayId>BBa_K780001</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K780001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>R38</dcterms:title>
+    <dcterms:description>Strong RBS for Bacillus Subtilis</dcterms:description>
+    <dc:creator>Krzysztof Szczepaniak</dc:creator>
+    <dcterms:created>2012-09-25T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:13:18Z</dcterms:modified>
+    <ns0:discontinued>false</ns0:discontinued>
+    <ns0:dominant>false</ns0:dominant>
+    <ns0:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <ns0:group_u_list>_1034_</ns0:group_u_list>
+    <ns0:m_user_id>0</ns0:m_user_id>
+    <ns0:owner_id>10271</ns0:owner_id>
+    <ns0:owning_group_id>9</ns0:owning_group_id>
+    <ns0:sampleStatus>It's complicated</ns0:sampleStatus>
+    <ns0:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableDescription>Natural RBS sequence for Bacillus Subtilis, described in the literature as a strong RBS for this bacteria.</sbh:mutableDescription>
+    <sbh:mutableNotes>-</sbh:mutableNotes>
+    <sbh:mutableProvenance>From genomic sequence Bacillus Subtilis.</sbh:mutableProvenance>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:star>false</sbh:star>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K780001/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/RBS"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K780001_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K090505/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K090505"/>
+    <sbol:displayId>BBa_K090505</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K090505"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K090505</dcterms:title>
+    <dcterms:description>''Bacillus subtilis'' consensus RBS</dcterms:description>
+    <dc:creator>Daniel Goodman</dc:creator>
+    <dcterms:created>2008-10-27T12:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:08:37Z</dcterms:modified>
+    <ns0:discontinued>false</ns0:discontinued>
+    <ns0:dominant>false</ns0:dominant>
+    <ns0:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <ns0:group_u_list>_188_</ns0:group_u_list>
+    <ns0:m_user_id>0</ns0:m_user_id>
+    <ns0:owner_id>3501</ns0:owner_id>
+    <ns0:owning_group_id>9</ns0:owning_group_id>
+    <ns0:sampleStatus>Not in stock</ns0:sampleStatus>
+    <ns0:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableDescription>This is the consensus RBS for Bacillus subtilis.</sbh:mutableDescription>
+    <sbh:mutableNotes>The part must be 8 nucleotides away from the first methionine of the coding sequence, and so we added 'TGT' downstream of the actual binding sequence: AAAGGAGG. This, combined with the truncated non-CDS BioBrick prefix scar, gives exactly 8 'spacer bases' between the 3' end of the RBS and the start of the coding sequence.</sbh:mutableNotes>
+    <sbh:mutableProvenance>This part was synthesized directly.</sbh:mutableProvenance>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:star>false</sbh:star>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K090505/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/RBS"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K090505/annotation1992802/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K090505/annotation1992802"/>
+        <sbol:displayId>annotation1992802</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>B. subtilis consensus RBS</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K090505/1"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/rbs"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K090505/annotation1992802/range1992802/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K090505/annotation1992802/range1992802"/>
+            <sbol:displayId>range1992802</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <ns0:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K090505/1"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>8</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K090505_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K780002/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K780002"/>
+    <sbol:displayId>BBa_K780002</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K780002"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>R37</dcterms:title>
+    <dcterms:description>Strong RBS for Bacillus Subtilis</dcterms:description>
+    <dc:creator>Krzysztof Szczepaniak</dc:creator>
+    <dcterms:created>2012-09-25T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:13:18Z</dcterms:modified>
+    <ns0:discontinued>false</ns0:discontinued>
+    <ns0:dominant>false</ns0:dominant>
+    <ns0:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <ns0:group_u_list>_1034_</ns0:group_u_list>
+    <ns0:m_user_id>0</ns0:m_user_id>
+    <ns0:owner_id>10113</ns0:owner_id>
+    <ns0:owning_group_id>9</ns0:owning_group_id>
+    <ns0:sampleStatus>It's complicated</ns0:sampleStatus>
+    <ns0:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableDescription>Strong RBS for Bacillus Subtilis</sbh:mutableDescription>
+    <sbh:mutableNotes>-</sbh:mutableNotes>
+    <sbh:mutableProvenance>'host-takover module' from B.subtilis Bacteriophage SPO1</sbh:mutableProvenance>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:star>false</sbh:star>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K780002/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/RBS"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K780002_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K143020/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K143020"/>
+    <sbol:displayId>BBa_K143020</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K143020"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>RBS-GsiB</dcterms:title>
+    <dcterms:description>GsiB ribosome binding site (RBS) for B. subtilis</dcterms:description>
+    <dc:creator>James Chappell</dc:creator>
+    <dcterms:created>2008-09-14T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:10:23Z</dcterms:modified>
+    <ns0:discontinued>false</ns0:discontinued>
+    <ns0:dominant>false</ns0:dominant>
+    <ns0:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <ns0:group_u_list>_199_</ns0:group_u_list>
+    <ns0:m_user_id>0</ns0:m_user_id>
+    <ns0:owner_id>2090</ns0:owner_id>
+    <ns0:owning_group_id>9</ns0:owning_group_id>
+    <ns0:sampleStatus>Not in stock</ns0:sampleStatus>
+    <ns0:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableDescription>GsiB is an endogenous ribosome binding site from ''B.subtilis''. The sequence of the  gsiB ribosome binding site is '''AAAGGAGG''' which is complementary to the sequence '''UUUCCUCC''' from the 3' region of the 16s rRNA from ''B.subtilis''. 
+GsiB is an endogenous ribosome binding site (RBS) from ''B.subtilis''. The sequence of the  gsiB ribosome binding site is '''AAAGGAGG''' which is complementary to the sequence '''UUUCCUCC''' from the 3' region of the 16s rRNA from ''B.subtilis''. Previous research showed that the predicted binding energy of the 16s rRNA to the RBS is -9.3kcal.</sbh:mutableDescription>
+    <sbh:mutableNotes>In order to ensure that the RBS is functional the actual ribosome binding site was maintained and the distance between the RBS and the start codon maintained. In order to conform to the biobrick standard the sequence flanking the RBS had to be changed but the distance between the promoter and RBS, and start codon and RBS was maintained.</sbh:mutableNotes>
+    <sbh:mutableProvenance>The sequence was taken from a previous research paper [1] and was constructed by Geneart</sbh:mutableProvenance>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:star>false</sbh:star>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K143020/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/RBS"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K143020/annotation1975872/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K143020/annotation1975872"/>
+        <sbol:displayId>annotation1975872</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>rbs</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K143020/1"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/rbs"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K143020/annotation1975872/range1975872/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K143020/annotation1975872/range1975872"/>
+            <sbol:displayId>range1975872</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <ns0:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K143020/1"/>
+            <sbol:start>2</sbol:start>
+            <sbol:end>8</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K143020_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K143021/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K143021"/>
+    <sbol:displayId>BBa_K143021</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K143021"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>RBS-spoVG</dcterms:title>
+    <dcterms:description>SpoVG ribosome binding site (RBS) for B. subtilis</dcterms:description>
+    <dc:creator>James Chappell</dc:creator>
+    <dcterms:created>2008-09-16T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:10:23Z</dcterms:modified>
+    <ns0:discontinued>false</ns0:discontinued>
+    <ns0:dominant>true</ns0:dominant>
+    <ns0:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/Works"/>
+    <ns0:group_u_list>_199_</ns0:group_u_list>
+    <ns0:m_user_id>0</ns0:m_user_id>
+    <ns0:owner_id>2090</ns0:owner_id>
+    <ns0:owning_group_id>9</ns0:owning_group_id>
+    <ns0:partStatus>Released HQ 2013</ns0:partStatus>
+    <ns0:sampleStatus>In stock</ns0:sampleStatus>
+    <ns0:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Available"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableDescription>Description: SpoVG is an endogenous ribosome binding site from B.subtilis. The sequence of the spoVG ribosome binding site is AAAGGUGGUGA which is complementary to the sequence UUUCCUCCACU from the 3' region of the 16s rRNA from B.subtilis. Previous research showed that the predicted binding energy of the 16s rRNA to the RBS is -19kcal &lt;cite&gt;1&lt;/cite&gt;</sbh:mutableDescription>
+    <sbh:mutableNotes>In order to ensure that the RBS is functional the actual ribosome binding site was maintained and the distance between the RBS and the start codon maintained. In order to conform to the biobrick standard the sequence flanking the RBS had to be changed but the distance between the promoter and RBS, and start codon and RBS was maintained.</sbh:mutableNotes>
+    <sbh:mutableProvenance>The sequence was taken from a previous research paper [1] and was constructed by Geneart.</sbh:mutableProvenance>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:star>false</sbh:star>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K143021/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/RBS"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K143021/annotation1975997/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K143021/annotation1975997"/>
+        <sbol:displayId>annotation1975997</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>rbs</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K143021/1"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/rbs"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K143021/annotation1975997/range1975997/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K143021/annotation1975997/range1975997"/>
+            <sbol:displayId>range1975997</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <ns0:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K143021/1"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>12</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K143021_sequence/1"/>
+  </sbol:ComponentDefinition>
+</rdf:RDF>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001"/>
+    <sbol:displayId>BBa_K1992001</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1992001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1992001</dcterms:title>
+    <dcterms:description>PctA-Tar  hybrid receptor</dcterms:description>
+    <dcterms:created>2016-10-13T11:00:00Z</dcterms:created>
+    <dcterms:modified>2016-10-18T03:07:56Z</dcterms:modified>
+    <sbh:mutableProvenance>The sequence for the desired segment of PctA was taken from the Pseudomonas genome database http://www.pseudomonas.com/feature/show?id=111456. Tar???s cytoplasmic region, was obtained from the iGEM parts catalog</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>PctA-Tar
+
+Introduction
+PctA is a chemoreceptor found in the bacterium Pseudomonas Aeruginosa which mediates chemotaxis toward amino acids and away from organic compounds. It is sensitive to all amino acids accept for Aspartate (1).
+A PctA-Tar chimera was formed by the replacement of the Tar LBD with the one of PctA. A procedure which previously was conducted in the literature was recovered (1), in order to proof the concept of the S. Tar platform.
+
+Usage and biology
+Integration of the new chemoreceptor with the chemotaxis system of E. coli is enabled thank our chimera design. Hence, a chemotactic attractant response to new amino acids and a repellent response to organic compounds, which weren&apos;t detected by E. coli before, are now mediated. 
+
+Design considerations
+When designing a gBlock for the PctA-Tar Chimera an incompatible part is obtained, this according to the IDT gBlock sequence online analyzer (2). As a result, a split part has to be designed.  Therefore it is recommended to use the part itself, since its synthesis is problematic. 
+
+ 
+Methods
+The sequence for the desired segment of PctA was taken from the Pseudomonas genome database (3). The second part of the chimera, Tar???s cytoplasmatic region, was obtained from the iGEM parts catalog. Amino acids sequence of the LBD and HAMP of PctA was determined to be from 1 to 134 and this of the signaling region of Tar was determined to be 296-553 (Figure 1a).
+
+
+Figure 1: (a) Amino acids sequence of PctA-Tar chimera (1) (b) PctA-Tar chimera crystalogaphy
+
+The plasmid carrying the chimera was transformed into receptorless bacteria- UU1250 (Parkinson J S, University of Utah) and the presents of the DNA sequence was verified by a colony PCR and sequencing.
+In order to test the motility of our strain, chemotaxis assays were performed. First, swarming assay was conducted using a poor BA medium. Note that with a TB medium the strain failed to show decisive results, provably due to high concentration of amino acid which resulted in no movement.
+Following the swarming assay, a GFP gene was fused to the chimera to verify the migration of the chemoreceptor to the poles of the bacterial membrane.
+In addition, a protocol for a chemotaxis assay on chip for repellent response was constructed by us and we are the first group to show this kind of assay. A receptorless strain containing a PctA-Tar chimera plasmid (pSB1A2 was served as vector) and a blue chromoprotein plasmid (pSB1C3 was served as a vector with J23100+K592009 biobricks). This clone resulted in blue bacteria expressing the PctA-Tar chimera. The strain was confined into a commercial ibidi microchannel while Tetrachloroethylene (PCE) served as a repellent. PCE in the concentration of 9??10-5M (0.015 g/lit) was inserted through the well and the bacterial movement was monitored throughout the entire experiment.
+ 
+Results
+The strain containing the PctA-Tar chimera showed a significant movement on the swarming assay with a BA medium. On figure 1 the swarming assay of our strain is shown compared to our negative control (UU1250) and our positive control (&amp;#8710;Z). Hence, the PctA-Tar chimera is expressed and bacterial movement is mediated by it.  
+
+ 
+Figur 2: Swarming assay for attractant response of the PctA-Tar chimera. From left to right: PctA chimera, UU1250, &amp;#8710;Z.
+
+As for the GFP fusion, the clone exhibited fluorescence on the polar parts of the bacterial membrane (Figure 3), indicating for a proper migration of the chimera to the poles of the membrane, as expected.
+
+Figure 3: GFP fused to the PctA-Chimera is located in the polar part of the bacterial membrane. From left to right: PctA-Tar strain, Cloned Tar strain.
+ 
+Moreover, a repellent response was shown while using our new chemotaxis assay for repellent response. The bacterial movement away from the PCE was distinguished to the naked eye and significant.
+ 
+conclution
+Using our strain containing the PctA-Tar chimera we showed a modified response of the Tar chemoreceptor to substances which are natural attractants and repellents  of PctA as it found originally in the bacterium Pseudomonas
+Aeruginosa. Therefore, this work serves as a decisive proof of concept for our S. Tar platform  and it has valuable scientific meanings for our project. 
+
+
+
+1)Reyes-Darias, J.A., Yang, Y., Sourjik, V., and Krell, T. (2015). Correlation between signal input and output in PctA
+  and PctB amino acid chemoreceptor of Pseudomonas aeruginosa. Mol. Microbiol. 96, 513???525.
+2) https://eu.idtdna.com/site/order/gblockentry
+3) http://www.pseudomonas.com/feature/show?id=111456</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/Works"/>
+    <igem:group_u_list>_2459_</igem:group_u_list>
+    <igem:m_user_id>30463</igem:m_user_id>
+    <igem:owner_id>30463</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableNotes>gBlocks were not compatible so we had to split them into two fragments</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Shilo Ohayon,Asif Gil</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2501346/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2501346"/>
+        <sbol:displayId>annotation2501346</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>PctA LBD + HAMP</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2501346/range2501346/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2501346/range2501346"/>
+            <sbol:displayId>range2501346</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>1062</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/protein"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521691/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521691"/>
+        <sbol:displayId>annotation2521691</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>c</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521691/range2521691/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521691/range2521691"/>
+            <sbol:displayId>range2521691</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>99</sbol:start>
+            <sbol:end>99</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:1000008"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/s_mutation"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521700/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521700"/>
+        <sbol:displayId>annotation2521700</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>a</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521700/range2521700/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521700/range2521700"/>
+            <sbol:displayId>range2521700</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>402</sbol:start>
+            <sbol:end>402</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:1000008"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/s_mutation"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521701/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521701"/>
+        <sbol:displayId>annotation2521701</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>a</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521701/range2521701/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521701/range2521701"/>
+            <sbol:displayId>range2521701</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>405</sbol:start>
+            <sbol:end>405</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:1000008"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/s_mutation"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2522553/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2522553"/>
+        <sbol:displayId>annotation2522553</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>g</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2522553/range2522553/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2522553/range2522553"/>
+            <sbol:displayId>range2522553</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>996</sbol:start>
+            <sbol:end>996</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:1000008"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/s_mutation"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521679/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521679"/>
+        <sbol:displayId>annotation2521679</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Tar signaling domain</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521679/range2521679/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/annotation2521679/range2521679"/>
+            <sbol:displayId>range2521679</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1063</sbol:start>
+            <sbol:end>1919</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/protein"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1992001_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001_sequence"/>
+    <sbol:displayId>BBa_K1992001_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1992001"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1992001_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atgatcaaaagtctgaagttcagccacaagatcctcctcgcggcctccctcgtggtgttcgccgctttcgcactgttcaccctctacaacgattacctccagcgcaacgcgatccgcgaggacctcgaaagctacctgcgggaaatgggtgacgtgacttccagcaacattcagaactggctcggcggccgtctgctgctggtcgagcagaccgcccagaccctggcccgcgaccacagcccggaaaccgtcagcgccctgctcgaacagccggccctgacctcgaccttcagcttcacctacctcggccagcaggacggcgtcttcaccatgcgtccggacagcccgatgccggccggctacgatccgcgcagccggccctggtacaaggacgccgtggcagcaggcggcctgaccctgaccgaaccctacgtcgacgccgccacccaggaattgatcatcaccgcggcgacaccggtgaaggccgctggcaacaccctcggcgtggtaggcggcgacctcagcctgaagaccctggtgcagatcatcaattcgctggacttcagcggcatgggctacgccttcctggtcagcggcgacggcaagatcctggtgcacccggacaaagagcaggtgatgaagaccctgagcgaggtctacccgcagaacacgccgaagatcgccaccggtttcagcgaggccgaattgcacgggcatacccgcatcctcgcctttacccctatcaagggcctgccttcggtgacctggtacctggcgctgtccatcgacaaggacaaggcctacgccatgctcagcaagttccgcgtctcggccatcgccgccgcgctgatctccatcgtcgccatcctggtcctgctcggcctgctgatccgcctgctgatgcagccgctgcacctgatgggccgtgccatgcaggacatcgcccagggcgagggcgacctgaccaagcgcctcgccgtgaccagccgcgatgagttcggagtgctcggcgatgccttcaaccagttcgtcgagcgtatccatcgctcgatccgggaagtccgcgaaggttcagatgccatctatgccggtacccgtgaaattgcggcgggcaacaccgatctttcctcccgtactgaacagcaggcatccgcgctggaagaaactgccgccagcatggagcagctcaccgcgacagtgaagcaaaacgccgataacgcccgccaggcctcgcaactggcgcaaagtgcctccgacaccgcccagcacggcggcaaagtggtggatggcgtagtgaaaacgatgcatgagatcgccgatagttcgaagaaaattgccgacattatcagcgttatcgacggtattgccttccagactaatatcctcgcgctgaatgccgcggttgaagccgcgcgtgcgggtgaacagggccgtggttttgccgtggtggcgggtgaagtgcgtaatcttgccagtcgcagcgcccaggcggcaaaagagatcaaagccctcattgaagactccgtctcacgcgttgataccggttcggtgctggtcgaaagcgccggggaaacaatgaacaatatcgtcaatgctgtcactcgcgtgactgacattatgggcgagattgcatcggcatcggatgaacagagccgtggcatcgatcaagtcgcattggcggtttcggaaatggatcgcgtcacgcaacagaacgcatcgctggtgcaggaatcagctgccgccgccgctgcgctggaagaacaggcgagtcgtttaacgcaagcagtttccgcgttccgtctggcagccagcccactcaccaataaaccgcaaacaccatcccgtcctgccagtgagcaaccaccggctcagccacgactgcgaattgctgaacaagatccaaactgggaaacattttga</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

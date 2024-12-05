@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1955000/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1955000"/>
+    <sbol:displayId>BBa_K1955000</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1955000"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1955000</dcterms:title>
+    <dcterms:description>pSB1C3-Hemagglutinin</dcterms:description>
+    <dcterms:created>2016-10-13T11:00:00Z</dcterms:created>
+    <dcterms:modified>2016-10-20T01:16:22Z</dcterms:modified>
+    <sbh:mutableProvenance>The Leish-5&apos;UTR sequence originally came from Leishmania genome and is acquired from GenBank. The Hygromycin resistant gene sequence is also acquired from GenBank.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1955000/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>The promoter and the ribosomal binding site of Leishmania genome has not been elucidated yet. We selected the 5&apos;- untranslated region of a highly expressed gene, P36, to be the promoter, RBS binding site and other extra function needed for Leishmania protein expression. We also added a Hygromycin resistant gene as drug selection marker. AS a dual functional biobrick of regulatory and selection marker, we provide the user the regulation of protein expression and also the drug selection system that is most commonly and effectively used in Leishmania experiments.
+This biobrick needs to use with the 3&apos;UTR that we provide as the terminator of the Leishmania to perform a complete protein expression system for Leishamnia. Add the protein sequence in between the Leish-5&apos;UTR-HYG and Leish-3&apos;UTR for leishmania to expression your target protein.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_2422_</igem:group_u_list>
+    <igem:m_user_id>30427</igem:m_user_id>
+    <igem:owner_id>30553</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableNotes>The Leish-5???UTR-HYG is a 1446 bp DNA sequence, which is directly synthesized by IDT. We acquired the original leishmania genome sequence of p36 coding region and intergenic region from NCBI (GenBank accession# M96635), replacing the p36 coding sequence into hygromycin resistant gene, and keep the flanks and intergenic sequence in order to provide a selection marker for our leishmania expression vector. Some nucleotides of Leish-5???UTR-HYG sequence had been changed to avoid the restriction sites. The function of the 5???UTR intergenic region was studied and published by Dr. Kwang-Poo Chang (Gene 196 (1997) 49???59).</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Justine Hsu</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1955000_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1955000_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1955000_sequence"/>
+    <sbol:displayId>BBa_K1955000_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1955000"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1955000_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>caaggatcccgatgaaggcttttgtactggtcctgttatatgcatttgtagctacagatgcagacacaatatgtataggctaccatgcgaacaactcaaccgacactgttgacacaatattcgagaagaatgtggcagtgacacattctgttaacctgctcgaagacagacacaacgggaaactatgtaaattaaaaggaatagccccactacaattggggaaatgtaacatcaccggatggctcttgggaaatccagaatgcgactcactgcttccagcgagatcatggtcctacattgtagaaacaccaaactctgagaatggagcatgttatccaggagatttcatcgactatgaggaactgagggagcaattgagctcagtatcatcattagaaagattcgaaatatttcccaaggaaagttcatggcccaaccacacattcaacggagtaacagtatcatgctcccataggggaaaaagcagtttttacagaaatttgctatggctgacgaagaagggggattcatacccaaagctgaccaattcctatgtgaacaataaagggaaagaagtccttgtactatggggtgttcatcacccgtctagcagtgatgagcaacagagtctctatagtaatggaaatgcttatgtctctgtagcgtcttcaaattataacaggagattcaccccggaaatagctgcaaggcccaaagtaaaagatcaacatgggaggatgaactattactggaccttgctagaacccggagacacaataatatttgaggcaactggtaatctaatagcaccatggtatgctttcgcactgagtagagggtttgagtccggcatcatcacctcaaacgcgtcaatgcatgagtgtaacacgaagtgtcaaacaccccagggatctataaacagcaatctccctttccagaatatacacccagtcacaataggagagtgcccaaaatatgtcaggagtaccaaattgaggatggttacaggactaagaaacatcccatccattcaatacagaggtctatttggagccattgctggttttattgaggggggatggactggaatgatagatggatggtatggttatcatcatcagaatgaacagggatcaggctatgcagcggatcaaaaaagcacacagaatgccattaacaggattacaaacaaggtgaactctgttatcgagaaaatgaacactcaattcaccgctgtgggtaaagagttcaacaacttagaaaaaaggatggaaaatttaaataaaaaagttgatgatgggtttctggacatttggacatataatgcagaattgttagttctactggaaaatgaaagaactttggatttccatgacttaaatgtgaagaatctgtacgagaaagtaaaaagccaattaaagaataatgccaaagaaatcggaaatgggtgttttgagttctaccacaagtgtgacaatgaatgcatggaaagtgtaagaaatgggacttatgattatccaaaatattcagaagaatcaaagttgaacagggaaaagatagatggagtgaaattggaatcaatgggggtgtatcagattctggcgatctactcaactgtcgccagttcactggtgcttttggtctccctgggggcaatcagtttctggatgtgttctaatgggtctttgcagtgcagaatatgcatctgaggatcc</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

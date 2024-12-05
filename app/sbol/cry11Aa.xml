@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K332011/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K332011"/>
+    <sbol:displayId>BBa_K332011</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K332011"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>cry11Aa</dcterms:title>
+    <dcterms:description>Crystal protein gene (cry11Aa) from Bacillus thuringiensis subsp. Israelensis.</dcterms:description>
+    <dcterms:created>2010-10-23T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:12:05Z</dcterms:modified>
+    <rdfs:seeAlso rdf:resource="http://www.uniprot.org/uniprot/P21256"/>
+    <sbh:mutableProvenance>Crystal protein gene (cry11Aa) from Bacillus thuringiensis subsp. Israelensis.
+
+BCRC Number: 15860   		
+Organism: Bacillus thuringiensis subsp. israelensis   de Barjac			
+History: &lt;&lt; ATCC &lt;&lt; USDA &lt;&lt; ONR 60 &lt;&lt; H. de Barjac &lt;&lt; L. J. Goldberg 60
+Other Collection No.: ATCC 35646
+Source: sewage, Israel 			
+Characterization: Production of delta-endotoxin against dipteran larvae --B3009
+Others: referred to as the type strain --B3008  
+Growth Conditions: 30??C ,  Medium ID: 3 	
+Oxygen Requirement: Aerobic
+Biosafety Level: 1 
+
+References:
+
+Temeyer, K. B. 1984. Larvicidal activity of Bacillus thuringiensis subsp. israelensis in the dipteran Haematobia irritans. Appl. Environ. Microbiol.47 : 952-955. 
+PMID: 6742837. 
+
+Demezas, D. H. and J. Bell. 1995. Evaluation of low molecular weight RNA profiles and ribotyping to differentiate some Bacillus species. Syst. Appl. Microbiol.18 : 582-589.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K332011/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>The cry weapon system produce crystal protein, targetting the wrigglers, larvae of mosquitoes. The cry11Aa gene is cloned from Bacillus thuringiensis subsp. Israelensis. The cry protein is controlled by the tetR-repressible promoter PtetR (BBa_R0040), which in turn is regulated by a temperature control system. When E.coli is released into environment (&lt;37&amp;#61616;C), tetR begins to degrade, resulting in the promoter PtetR (BBa_R0011) expressing downstream genes, cry11Aa (BBa_K332012) and Green Fluorescent Protein (GFP)(BBa_E0040).</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/Works"/>
+    <igem:group_u_list>_452_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>7487</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>It&apos;s complicated</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableNotes>Procedures
+
+(I)  Culture Bti.
+Bacillus thuringiensis subsp. Israelensis (BCRC15860)
+1. Prepare agar plate for Bti.
+Beef extract  3.0g
+Peptone     5.0g
+Agar        15.0g
+ddH2O       1 L
+
+
+
+*adjust PH to 7.0
+*No antibiotic
+*Be aware of contamination
+2. Plate Bti. on the medium and incubate the cultures at 30??C overnight.
+(II)  Clone cry11Aa from Bti. into TA vector
+1. Extract genomic DNA of Bti. by liquid nitrogen.
+2. Add some ddH2O to dilute the DNA.
+3. Design primers
+Vf2: ATTCAATAAAAGGTGGAATGAATTATGGA      Tm: 53??C
+VR: GTGCTAACATGACTTCTACTTTAGT            Tm: 52.8??C
+4. Find the best PCR condition by gradient PCR. 
+Anneling temperature: 51??C??10??C
+5. PCR by B-taq plus on the best condition	
+
+Template DNA&amp;#65288;10ng/&amp;#956;l&amp;#65289;		    2.0
+B-taq buffer			            5.0
+dNTP&amp;#65288;2mM&amp;#65289;			        5.0
+forward primer&amp;#65288;10&amp;#956;M&amp;#65289;		    1.5
+reverse primer&amp;#65288;10&amp;#956;M&amp;#65289;		    1.5
+B-taq plus DNA polymerase&amp;#65288;2Kb&amp;#65289;  1.0
+ddH2O		                    34.0  
+ Total				            50 &amp;#956;l
+
+6. Digestion to confirm the cry11Aa fragment and enzyme sites.
+7. TA clone
+8. DNA sequencing
+
+(III) PCR mutagenesis at two enzyme sites --- EcoR1 and Spe1
+1. Design primers by primerX.
+  EcoR1-Vf2: CGG GTA CAA TCT CAG AAC TCG GGA AAT AAT AGA A
+  EcoR1-VR: TTC TAT TAT TTC CCG AGT TCT GAG ATT GTA CCC G
+Spe1-Vf2: ATA ATG AAT GGG GAG GAC TGG TTT ATA AGT TAT TAA TGG G
+  Spe1-VR: CTT CCC CCA TTA ATA ACT TAT AAA CTA GTC CTC CCC ATT CAT
+2. Digestion to confirm the fragments
+
+(IV)  PCR construction of Biobrick parts
+1. Design primers by Assembly standard 10.
+  Vf2: GTTTCTTC GAATTC GCGGCCGC T TCTAG ATGGAAGATAGTTCTTTAGATACT
+  VR: GTTTCTTC CTGCAG CGGCCGC T ACTAGT A CTACTTTAGTAACGGATT
+2. PCR condition
+3. Ligation to backbones(Psb1C3).
+(V)  Transform into E.coli
+1.	Thaw competent cells and BBa_K332012 plasmid on ice.
+2.	Add 2ul plasmid to competent cell and place in ice for 5 minutes.
+3.	Put the transformed cells into 42&amp;#8451; water bath for 45 seconds.
+4.	Plate the cells on the appropriate media and antibiotic, such as agar plates with 25 ??g/ml kanamycin.
+5.	Incubate the cultures at 37??C overnight.
+(VI)  Culture with mosquito larvae and observe</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Chia-Le Meng</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K332011_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K332011_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K332011_sequence"/>
+    <sbol:displayId>BBa_K332011_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K332011"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K332011_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atggaagatagttctttagatactttaagtatagttaatgaaacagactttccattatataataattataccgaacctactattgcgccagcattaatagcagtagctcccatcgcacaatatcttgcaacagctatagggaaatgggcggcaaaggcagcattttcaaaagtactatcacttatattcccaggttctcaacctgctactatggaaaaagttcgtacagaagtggaaacacttataaatcaaaaattaagccaagatcgagtcaatatattaaacgcagaatatagggggattattgaggttagtgatgtatttgatgcgtatattaaacaaccaggttttacccctgcaacagccaagggttattttctaaatctaagtggtgctataatacaacgattacctcaatttgaggttcaaacatatgaaggagtatctatagcactttttactcaaatgtgtacacttcatttaactttattaaaagacggaatcctagctgggagtgcatggggatttactcaagctgatgtagattcatttataaaattatttaatcaaaaagtattagattacaggaccagattaatgagaatgtacacagaagagttcggaagattgtgtaaagtcagtcttaaagatggattgacgttccggaatatgtgtaatttatatgtgtttccatttgctgaagcctggtctttaatgagatatgaaggattaaaattacaaagctctctatcattatgggattatgttggtgtctcaattcctgtaaattataatgaatggggaggactggtttataagttattaatgggggaagttaatcaaagattaacaactgttaaatttaattattctttcactaatgaaccagctgatataccagcaagagaaaatattcgtggcgtccatcctatatacgatcctagttctgggcttacaggatggataggaaacggaagaacaaacaattttaattttgctgataacaatggcaatgaaattatggaagttagaacacaaactttttatcaaaatccaaataatgagcctatagcgcctagagatattataaatcaaattttaactgcgccagcaccagcagacctattttttaaaaatgcagatataaatgtaaagttcacacagtggtttcagtctactctatatgggtggaacattaaactcggtacacaaacggttttaagtagtagaaccggaacaataccaccaaattatttagcatatgatggatattatattcgtgctatttcagcttgcccaagaggagtctcacttgcatataatcacgatcttacaacactaacatataatagaatagagtatgattcacctactacagaaaatattattgtagggtttgcaccagataatactaaggacttttattctaaaaaatctcactatttaagtgaaacgaatgatagttatgtaattcctgctctgcaatttgctgaagtttcagatagatcatttttagaagatacgccagatcaagcaacagacggcagtattaaatttgcacgtactttcattagtaatgaagctaagtactctattagactaaacaccgggtttaatacggcaactagatataaattaattatcagggtaagagtaccttatcgcttacctgctggaatacgggtacaatctcagaactcgggaaataatagaatgctaggcagttttactgcaaatgctaatccagaatgggtggattttgtcacagatgcatttacatttaacgatttagggattacaacttcaagtacaaatgctttatttagtatttcttcagatagtttaaattctggagaagagtggtatttatcgcagttgtttttagtaaaagaatcggcctttacgacgcaaattaatccgttactaaagtag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

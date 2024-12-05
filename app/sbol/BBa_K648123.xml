@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K648123/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K648123"/>
+    <sbol:displayId>BBa_K648123</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K648123"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K648123</dcterms:title>
+    <dcterms:description>RecA with mutation of Lys 286 and Arg 243</dcterms:description>
+    <dcterms:created>2011-09-27T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:12:59Z</dcterms:modified>
+    <sbh:mutableProvenance>RecA 1 DH10B BBa_648100</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K648123/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>RecA is a protein used by E. coli to repair and maintain DNA. Many normal laboratory strains of E. coli, for example DH10B, are mutants capable of an inactivated form of RecA known as RecA1. RecA 1 is deficient in all known function of the RecA gene specifically in ATPase activity, binding with DNA in the presence of ATP, and changing conformation in the presence of ATP and repressor cleavage. In order to restore RecA1 to RecA and to reduce its recombination ability while maintaining its repressor cleavage activity a series of mutations was made. 
+
+One such mutation occurs at amino acid 160, this adenine residue needed to be mutated to guanine to change RecA1 to RecA and restore its functions. In order to use the standard bio-bricking techniques we also had to remove naturally occurring enzymatic restriction sites. The Pst1 site CTGCAG needed to be converted to CTGCAA. Then the EcoR1 site GAATTC needed to be converted to GAATTT.
+
+We also focused on how to mutate RecA so that it would detect damaged DNA without repairing the DNA. After literature research we identified two amino acids in the RecA sequence that were known to affect RecA???s ability to use recombination to repair the DNA. These sites were Arginine 243 and Lysine 286. Research suggested that changing Arginine 243 to Glutamine, and Lysine 286 to Asparagine would remove recombinase activity from RecA.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>true</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/Works"/>
+    <igem:group_u_list>_825_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>9870</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>true</sbh:bookmark>
+    <sbh:mutableNotes>Mutation of active RecA at two different amino acids to attempt to prevent RecA from repairing damaged DNA but not other functions</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Elyse Merkel</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Other"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K648123_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K648123_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K648123_sequence"/>
+    <sbol:displayId>BBa_K648123_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K648123"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K648123_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atggctatcgacgaaaacaaacagaaagcgttggcggcagcactgggccagattgagaaacaatttggtaaaggctccatcatgcgcctgggtgaagaccgttccatggatgtggaaaccatctctaccggttcgctttcactggatatcgcgcttggggcaggtggtctgccgatgggccgtatcgtcgaaatctacggaccggaatcttccggtaaaaccacgctgacgctgcaagtgatcgccgcagcgcagcgtgaaggtaaaacctgtgcgtttatcgatgctgaacacgcgctggacccaatctacgcacgtaaactgggcgtcgatatcgacaacctgctgtgctcccagccggacaccggcgagcaggcactggaaatctgtgacgccctggcgcgttctggcgcagtagacgttatcgtcgttgactccgtggcggcactgacgccgaaagcggaaatcgaaggcgaaatcgacgactctcacatgggccttgcggcacgtatgatgagccaggcgatgcataagctggcgggtaacctgaagcagtccaacacgctgctgatcttcatcaaccagatccgtatgaaaattggtgtgatgttcggtaacccggaaaccactaccggtggtaacgcgctgaaattctacgcctctgttcgtctcgacatccgtcgtatcggcgcggtgaaagagggcgaaaacgtggtgggtagcgaaacccacgtgaaagtggtgaagaacaaaatcgctgcgccgtttaaacaggctgaatttcagatcctctacggcgaaggtatcaacttctacggcgaactggttgacctgggcgtaaaagagaagctgatcgagaacgcaggcgcgtggtacagctacaaaggtgagaagatcggtcagggtaaagcgaatgcgactgcctggctgaaagataacccggaaaccgcgaaagagatcgagaagaaagtacgtgagttgctgctgagcaacccgaactcaacgccggatttctctgtagatgatagcgaaggcgtagcagaaactaacgaagatttttaa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

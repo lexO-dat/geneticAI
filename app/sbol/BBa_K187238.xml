@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K187238/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K187238"/>
+    <sbol:displayId>BBa_K187238</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K187238"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K187238</dcterms:title>
+    <dcterms:description>rpmD, ORF, reverse primer</dcterms:description>
+    <dcterms:created>2009-10-18T11:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:11:10Z</dcterms:modified>
+    <sbh:mutableProvenance>Oligonucleotides were synthesized. Primers were tested using MG1655 E.coli genomic DNA as template.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K187238/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>This primer is for a gene deemed to be essential for a minimal E.coli genome by Team Biobytes. This primer is designed to amplify only the open reading frame, and produce ends that can be digested by restriction enzymes for insertion into an XbaI/PstI digested plasmid. These restriction sites were designed to be complementary to the restrictions sites found in pAB and pBA (PstI and XbaI). Due to the use of restriction enzymes, it was important to check each gene sequence for those same restriction sites. Genes which contained at least one PstI site, used the NsiI enzyme to be cloned into our standard plasmids (it produces the same overhang as PstI). Similarly if NsiI and PstI were in the gene sequence, SbfI was used. If all three of these sites were present in a gene sequence, other enzymes which produce the same overhang could be used. Genes which contained XbaI could use AvrII, NheI, as well as a multitude of others.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/Works"/>
+    <igem:group_u_list>_286_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>4031</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Design considerations:
+
+This primer produced a product of the predicted size using the following reaction conditions:
+Water: 17.05uL
+10x pfu buffer: 2.5uL
+dNTPs (2mM): 2.5uL
+DMSO: 1.2uL
+MG1655 Genomic DNA: 0.5uL
+Forward primer (10uM): 0.5uL
+Reverse primer (10uM): 0.5uL
+Pfu polymerase: 0.25uL
+
+Total reaction volume: 25uL
+
+Thermocycling conditions:
+95oC, 3min
+95oC, 30s
+56oC, 30s
+72oC, 3min
+29 cycles to step 2
+72oC 2min
+All Biobytes essential gene primers were produced using Vector NTI.  Each primer&apos;s thermodynamic properties were examined using Vector NTI&apos;s hairpin and dimerzation programs. Primers were optimized to fit as many of the following criteria as possible:
+???	Find the shortest possible sequence, reducing the cost to produce the primer. 
+???	Produce the highest score value possible. 
+???	Produce the closest Tm&apos;s possible 
+???	Produce hairpins with dG values &gt;-5 
+???	Produce dimers with dG values &gt;-10 
+The following are Vector NTI statistics for this primer:
+dG Dimer (kcal/mol): (-2.3)
+dG Hairpin (kcal/mol): (-0.2)</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Eric Leung</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000112"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Primer"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K187238_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K187238_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K187238_sequence"/>
+    <sbol:displayId>BBa_K187238_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K187238"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K187238_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>aagactggtctagaatggcaaagactattaaaat</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

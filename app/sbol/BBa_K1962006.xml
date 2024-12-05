@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K1962006/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006"/>
+    <sbol:displayId>BBa_K1962006</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1962006"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K1962006</dcterms:title>
+    <dcterms:description>Truncated Colicin E9 Lacking Bacteriocin Active Domain</dcterms:description>
+    <dcterms:created>2016-10-10T11:00:00Z</dcterms:created>
+    <dcterms:modified>2016-10-11T07:02:58Z</dcterms:modified>
+    <sbh:mutableProvenance>We used the Chimera molecular modelling software to determine the position of the DNase domain of Colicin E9, we then designed a truncated Colicin E9, without this domain. The protein sequence was then back translated into DNA and codon optimised for E. coli K-12 before being synthesised by IDT as a gBlock gene fragment. Using oligonucleotide primers we then amplified the truncated colicin E9 with a multiple cloning site containing the following restriction sites: BamHI, KpnI, SalI, BglII and NheI at the 3&apos; end.</sbh:mutableProvenance>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Colicins are anti-bacterial proteins produced by some strains of E. coli that typically have three domains: a translocation domain; a receptor binding domain; and a cytotoxic domain. This biobrick encodes a truncated version of Colicin E9 which lacks the C-terminal bacterocin domain, which is this case is a DNase.   
+
+The part has an engineered multiple cloning site at the 3&apos; end, preceding the RFC[10] suffix and regulation double stop codons, containing the following in-frame restriction sites: BamHI, KpnI, SalI, BglII and NheI. The presence of this multiple cloning site will allow for different toxic domains, or other polypeptides, to be fused at the C-terminus of the truncated colicin and thereby generating a synthetic colicin or novel fusion protein in a rapid and facile manner.</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>false</igem:dominant>
+    <igem:group_u_list>_2429_</igem:group_u_list>
+    <igem:m_user_id>8083</igem:m_user_id>
+    <igem:owner_id>8083</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Planning"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>Compliant with RFC[10].</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Frank Sargent</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Coding"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1962006/annotation2491957/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006/annotation2491957"/>
+        <sbol:displayId>annotation2491957</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Truncated E9</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1962006/annotation2491957/range2491957/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006/annotation2491957/range2491957"/>
+            <sbol:displayId>range2491957</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1</sbol:start>
+            <sbol:end>1356</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/cds"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://synbiohub.org/public/igem/BBa_K1962006/annotation2491958/1">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006/annotation2491958"/>
+        <sbol:displayId>annotation2491958</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>MCS</dcterms:title>
+        <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="https://synbiohub.org/public/igem/BBa_K1962006/annotation2491958/range2491958/1">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006/annotation2491958/range2491958"/>
+            <sbol:displayId>range2491958</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006/1"/>
+            <igem:direction rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward"/>
+            <sbol:start>1357</sbol:start>
+            <sbol:end>1386</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#feature/misc"/>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K1962006_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006_sequence"/>
+    <sbol:displayId>BBa_K1962006_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K1962006"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K1962006_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>atgtctggcggcgacggacgcggccataacactggagcgcatagcacttccgggaacatcaatggggggcccactgggattggcgtctctggcggggcgagtgacggcagtgggtggagttcagaaaacaatccttggggcggcggatcgggatcggggattcattgggggggcggttctggtcgcggtaatggtggaggaaacggtaactccggcggtgggagtggcacagggggtaacttgtcggcagttgcggctcccgtggcgtttggttttcctgctttatcgacaccaggagcaggcgggttggcagttagtatcagcgcctcggaactttctgccgcgattgcaggcattatcgctaagctgaaaaaggttaatttaaagtttacgccgtttggagtggtattatccagcttgatccccagtgagatcgcaaaggatgacccgaatatgatgagcaagatcgtcacttcccttccggccgacgatatcacggaaagccctgtttctagtcttcccttggataaggccaccgtgaatgtcaatgttcgtgttgtagatgacgtcaaagacgaacgccaaaacattagtgtagtcagcggagtccctatgagcgtgcctgttgtagacgccaagcccaccgagcgtccgggtgtctttaccgcgtctattcccggagcacctgtgcttaacattagtgtgaacgactcgaccccagccgtccaaacactttctccgggcgtgacaaataacaccgataaagatgttcgtccagctggttttacccagggcggtaatacccgtgatgctgttattcgttttcccaaagattccggtcacaacgccgtttacgtctcggtgtcagatgtcctttccccagatcaagtcaagcaacgtcaagatgaggaaaaccgccgccaacaagaatgggatgctacacacccggtggaggcagcagaacgtaattacgaacgtgcacgcgccgagttaaaccaggccaatgaggacgtggcgcgcaaccaagaacgccaagccaaggcggtacaggtctacaactcgcgtaagagtgagcttgatgcagcaaacaaaacacttgcagacgccattgcggaaattaaacagtttaatcgcttcgctcatgatccaatggctggtggccatcgtatgtggcagatggctggattgaaagcgcagcgcgctcagactgacgtaaataacaagcaagcggcctttgatgctgccgcgaaagaaaaaagtgacgccgacgcagctctgtcagcggcacaagagcgccgcaagcagaaggagaacaaagaaaaagatgccaaggataaacttgataaggagagtaaaggatccggtaccgtcgacagatctgctagc</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>

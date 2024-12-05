@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" xmlns:synbiohub="http://synbiohub.org#" xmlns:sbh="http://wiki.synbiohub.org/wiki/Terms/synbiohub#" xmlns:sybio="http://www.sybio.ncl.ac.uk#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ncbi="http://www.ncbi.nlm.nih.gov#" xmlns:igem="http://wiki.synbiohub.org/wiki/Terms/igem#" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:gbconv="http://sbols.org/genBankConversion#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:obo="http://purl.obolibrary.org/obo/">
+  <sbol:ComponentDefinition rdf:about="https://synbiohub.org/public/igem/BBa_K125550/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K125550"/>
+    <sbol:displayId>BBa_K125550</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K125550"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <dcterms:title>BBa_K125550</dcterms:title>
+    <dcterms:description>Protein Linker SSGSSG Library</dcterms:description>
+    <dcterms:created>2011-12-03T12:00:00Z</dcterms:created>
+    <dcterms:modified>2015-05-08T01:09:45Z</dcterms:modified>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K125550/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbh:mutableDescription>Variant library of 6 amino acid fusion protein linker sequences, encoded with different codon permutations while maintaining the same SSGSSG protein sequence, and the same number of times each codon is used.
+
+Sequences from this library can be picked from when designing a construct containing multiple fusion proteins (e.g. fusing GFP to protein A, RFP to protein B, YFP to protein C, BFP to for protein D, all in the same plasmid).  Select a different linker for each fusion rather than reuse multiple of the same linker to reduce the chances of homologous recombination/misprimining event/gibson assembly overlap similarity.
+
+Permutations of the codons are generated while following the rules:
+1. encoding only SSGSSG
+2. using only codons below, where codon frequency in E. coli is represented between [], and its symbolic representation between ()
+Serine: AGT(S)[8.7%], AGC(s)[16.1%], TCC($)[8.6%]
+Glycine: GGC(G)[29.8%], GGT(g)[24.9%]
+3. all above codons can be only used once except for (s), which is used twice
+4. no two of the same codon can be next to each other, in this case no (s)(s) should occur
+
+Library of all possible 32 permutation protein linker sequences:
+
+Part_Number: symbolic_representation, sequence_gapped, sequence_ungapped
+BBa_J133550: s$gsSG, AGC TCC GGT AGC AGT GGC, AGCTCCGGTAGCAGTGGC
+BBa_J133551: s$gSsG, AGC TCC GGT AGT AGC GGC, AGCTCCGGTAGTAGCGGC
+BBa_J133552: s$GsSg, AGC TCC GGC AGC AGT GGT, AGCTCCGGCAGCAGTGGT
+BBa_J133553: s$GSsg, AGC TCC GGC AGT AGC GGT, AGCTCCGGCAGTAGCGGT
+BBa_J133554: sSg$sG, AGC AGT GGT TCC AGC GGC, AGCAGTGGTTCCAGCGGC
+BBa_J133555: sSgs$G, AGC AGT GGT AGC TCC GGC, AGCAGTGGTAGCTCCGGC
+BBa_J133556: sSG$sg, AGC AGT GGC TCC AGC GGT, AGCAGTGGCTCCAGCGGT
+BBa_J133557: sSGs$g, AGC AGT GGC AGC TCC GGT, AGCAGTGGCAGCTCCGGT
+BBa_J133558: $sGsSg, TCC AGC GGC AGC AGT GGT, TCCAGCGGCAGCAGTGGT
+BBa_J133559: $sGSsg, TCC AGC GGC AGT AGC GGT, TCCAGCGGCAGTAGCGGT
+BBa_J133560: $sgsSG, TCC AGC GGT AGC AGT GGC, TCCAGCGGTAGCAGTGGC
+BBa_J133561: $sgSsG, TCC AGC GGT AGT AGC GGC, TCCAGCGGTAGTAGCGGC
+BBa_J133562: $sGSsg, TCC AGC GGC AGT AGC GGT, TCCAGCGGCAGTAGCGGT
+BBa_J133563: $sGsSg, TCC AGC GGC AGC AGT GGT, TCCAGCGGCAGCAGTGGT
+BBa_J133564: $sgSsG, TCC AGC GGT AGT AGC GGC, TCCAGCGGTAGTAGCGGC
+BBa_J133565: $sgsSG, TCC AGC GGT AGC AGT GGC, TCCAGCGGTAGCAGTGGC
+BBa_J133566: s$gsSG, AGC TCC GGT AGC AGT GGC, AGCTCCGGTAGCAGTGGC
+BBa_J133567: s$gSsG, AGC TCC GGT AGT AGC GGC, AGCTCCGGTAGTAGCGGC
+BBa_J133568: s$GsSg, AGC TCC GGC AGC AGT GGT, AGCTCCGGCAGCAGTGGT
+BBa_J133569: s$GSsg, AGC TCC GGC AGT AGC GGT, AGCTCCGGCAGTAGCGGT
+BBa_J133570: sSg$sG, AGC AGT GGT TCC AGC GGC, AGCAGTGGTTCCAGCGGC
+BBa_J133571: sSgs$G, AGC AGT GGT AGC TCC GGC, AGCAGTGGTAGCTCCGGC
+BBa_J133572: sSG$sg, AGC AGT GGC TCC AGC GGT, AGCAGTGGCTCCAGCGGT
+BBa_J133573: sSGs$g, AGC AGT GGC AGC TCC GGT, AGCAGTGGCAGCTCCGGT
+BBa_J133574: Ssgs$G, AGT AGC GGT AGC TCC GGC, AGTAGCGGTAGCTCCGGC
+BBa_J133575: Ssg$sG, AGT AGC GGT TCC AGC GGC, AGTAGCGGTTCCAGCGGC
+BBa_J133576: SsGs$g, AGT AGC GGC AGC TCC GGT, AGTAGCGGCAGCTCCGGT
+BBa_J133577: SsG$sg, AGT AGC GGC TCC AGC GGT, AGTAGCGGCTCCAGCGGT
+BBa_J133578: Ssg$sG, AGT AGC GGT TCC AGC GGC, AGTAGCGGTTCCAGCGGC
+BBa_J133579: Ssgs$G, AGT AGC GGT AGC TCC GGC, AGTAGCGGTAGCTCCGGC
+BBa_J133580: SsG$sg, AGT AGC GGC TCC AGC GGT, AGTAGCGGCTCCAGCGGT
+BBa_J133581: SsGs$g, AGT AGC GGC AGC TCC GGT, AGTAGCGGCAGCTCCGGT</sbh:mutableDescription>
+    <igem:discontinued>false</igem:discontinued>
+    <igem:dominant>true</igem:dominant>
+    <igem:experience rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#experience/None"/>
+    <igem:group_u_list>_179_</igem:group_u_list>
+    <igem:m_user_id>0</igem:m_user_id>
+    <igem:owner_id>2680</igem:owner_id>
+    <igem:owning_group_id>9</igem:owning_group_id>
+    <igem:sampleStatus>Not in stock</igem:sampleStatus>
+    <igem:status rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#status/Unavailable"/>
+    <sbh:bookmark>false</sbh:bookmark>
+    <sbh:mutableNotes>This list is generated by making all letter permutations (of the 6 symbols) then filtering out incorrect sequences with regular expression: [sS\$][sS\$][gG][sS\$][sS\$][gG]</sbh:mutableNotes>
+    <sbh:star>false</sbh:star>
+    <dc:creator>Norman Wang</dc:creator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000324"/>
+    <sbol:role rdf:resource="http://wiki.synbiohub.org/wiki/Terms/igem#partType/Tag"/>
+    <sbol:sequence rdf:resource="https://synbiohub.org/public/igem/BBa_K125550_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://synbiohub.org/public/igem/BBa_K125550_sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/BBa_K125550_sequence"/>
+    <sbol:displayId>BBa_K125550_sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_K125550"/>
+    <prov:wasGeneratedBy rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/BBa_K125550_sequence/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <sbol:elements>agctccggtagcagtggc</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://synbiohub.org/public/igem/igem2sbol/1">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/public/igem/igem2sbol"/>
+    <sbol:displayId>igem2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>iGEM to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the iGEM parts registry to SBOL2.1</dcterms:description>
+    <sbh:topLevel rdf:resource="https://synbiohub.org/public/igem/igem2sbol/1"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/james"/>
+    <sbh:ownedBy rdf:resource="https://synbiohub.org/user/myers"/>
+    <dc:creator>Chris J. Myers</dc:creator>
+    <dc:creator>James Alastair McLaughlin</dc:creator>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T15:00:00.000Z</prov:endedAtTime>
+  </prov:Activity>
+</rdf:RDF>
