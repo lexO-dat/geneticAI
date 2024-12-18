@@ -1,0 +1,9 @@
+python version: 3.11
+venv creation: virtualenv <venv-name> --python=/usr/bin/python3.11
+
+folder structure:
+
+cello -> all the cello core files (it will be used as an API)
+llm -> all the configuration files of Ollama
+main.py (main script of the app)
+front -> frontend folder (i will use react or some python frontend framework)

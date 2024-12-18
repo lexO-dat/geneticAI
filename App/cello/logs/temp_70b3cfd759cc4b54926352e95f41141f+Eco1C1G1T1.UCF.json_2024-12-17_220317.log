@@ -1,0 +1,118 @@
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                       CELLO V2.1                                       
+              temp_70b3cfd759cc4b54926352e95f41141f + Eco1C1G1T1.UCF.json               
+////////////////////////////////////////////////////////////////////////////////////////
+
+new_out: /home/lexo/Desktop/Practica/App/temp_outputs/temp_70b3cfd759cc4b54926352e95f41141f
+verilog: temp_70b3cfd759cc4b54926352e95f41141f.v
+v_loc: /home/lexo/Desktop/Practica/App/library/verilogs/temp_70b3cfd759cc4b54926352e95f41141f.v
+new_in: /home/lexo/Desktop/Practica/App/library/verilogs
+new_out: /home/lexo/Desktop/Practica/App/temp_outputs/temp_70b3cfd759cc4b54926352e95f41141f
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of Logic Synthesis                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                            condition checks for valid input                            
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+NETLIST:
+isvalid: True
+
+INPUTS (including the communication devices): 
+num IN-SENSORS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-STRUCTURES in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-MODELS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-PARTS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-NODES in temp_70b3cfd759cc4b54926352e95f41141f netlist: 2
+['LacI_sensor', 'TetR_sensor', 'AraC_sensor', 'LuxR_sensor']
+Valid input match!
+
+OUTPUTS: 
+num OUT-SENSORS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-STRUCTURES in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-MODELS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-PARTS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-NODES in temp_70b3cfd759cc4b54926352e95f41141f netlist: 2
+['YFP_reporter', 'YFP_reporter_2', 'YFP_reporter_3']
+Valid output match!
+
+GATES: 
+num PARTS in Eco1C1G1T1.UCF.json UCF: 84
+num STRUCTURES in Eco1C1G1T1.UCF.json UCF: 20
+num MODELS in Eco1C1G1T1.UCF.json UCF: 20
+num GATES in Eco1C1G1T1.UCF.json UCF: 20
+num GATE USES: [12, True]
+num GATES in temp_70b3cfd759cc4b54926352e95f41141f netlist: 2
+['AmeR', 'AmtR', 'BM3R1', 'BetI', 'HlyIIR', 'IcaRA', 'LitR', 'LmrA', 'PhlF', 'PsrA', 'QacR', 'SrpR']
+['A1_AmtR', 'B1_BM3R1', 'B2_BM3R1', 'B3_BM3R1', 'E1_BetI', 'F1_AmeR', 'H1_HlyIIR', 'I1_IcaRA', 'L1_LitR', 'N1_LmrA', 'P1_PhlF', 'P2_PhlF', 'P3_PhlF', 'Q1_QacR', 'Q2_QacR', 'R1_PsrA', 'S1_SrpR', 'S2_SrpR', 'S3_SrpR', 'S4_SrpR']
+Valid intermediate match!
+
+#9,504 possible permutations for temp_70b3cfd759cc4b54926352e95f41141f.v+Eco1C1G1T1.UCF.json...
+(#9,504.0 permutations of UCF gate groups confirmed.)
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                End of condition checks                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Condition check passed? True
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                               Beginning GATE ASSIGNMENT                                
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Listing available assignments from UCF: 
+['LacI_sensor', 'TetR_sensor', 'AraC_sensor', 'LuxR_sensor']
+['YFP_reporter', 'YFP_reporter_2', 'YFP_reporter_3']
+['BM3R1', 'AmeR', 'LitR', 'LmrA', 'PhlF', 'HlyIIR', 'PsrA', 'IcaRA', 'SrpR', 'BetI', 'AmtR', 'QacR']
+
+Netlist de-construction: 
+[TETR, LACL]
+[81, 82]
+[YFP, GFP]
+
+Netlist requirements: 
+need 2 inputs
+need 2 outputs
+need 2 gates
+
+////////////////////////////////////////////////////////////////////////////////////////
+                Running SIMULATED ANNEALING gate-assignment algorithm...                
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+∫ *** DEBUG *** ∫ temp_70b3cfd759cc4b54926352e95f41141f has unsupported circuit configuration due to flip-flopping.
+'ValueError()_I/O' is not in list
+
++-----------------+-----------------+-------------+-------------+-----------+----------+-------+------+------------------+--------------------+
+| TetR_sensor_I/O | AraC_sensor_I/O | TetR_sensor | AraC_sensor | IcaRA_I/O | PhlF_I/O | IcaRA | PhlF | YFP_reporter_I/O | YFP_reporter_3_I/O |
++-----------------+-----------------+-------------+-------------+-----------+----------+-------+------+------------------+--------------------+
+| 0               | 0               | 0.0013      | 0.0082      | 1         | 0        | None  | None | 0                | None               |
+| 0               | 1               | None        | None        | None      | None     | None  | None | None             | None               |
+| 1               | 0               | None        | None        | None      | None     | None  | None | None             | None               |
+| 1               | 1               | None        | None        | None      | None     | None  | None | None             | None               |
++-----------------+-----------------+-------------+-------------+-----------+----------+-------+------+------------------+--------------------+
++--------------+----------------+
+| YFP_reporter | YFP_reporter_3 |
++--------------+----------------+
+| None         | None           |
+| None         | None           |
+| None         | None           |
+| None         | None           |
++--------------+----------------+
+Cello object deleted...
+
+Archivo Verilog temporal eliminado: temp_70b3cfd759cc4b54926352e95f41141f.v
+Archivo Verilog temporal creado: temp_efcbc055981e4ebe80d660c7502b6b98.v

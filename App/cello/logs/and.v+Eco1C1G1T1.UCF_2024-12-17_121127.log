@@ -1,0 +1,106 @@
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                       CELLO V2.1                                       
+                                 and.v + Eco1C1G1T1.UCF                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+new_out: /home/lexo/Desktop/practica-repos/Cello-v2-1-Core/temp_out/and.v
+verilog: and.v
+v_loc: /home/lexo/Desktop/practica-repos/Cello-v2-1-Core/library/verilogs/and.v
+new_in: /home/lexo/Desktop/practica-repos/Cello-v2-1-Core/library/verilogs
+new_out: /home/lexo/Desktop/practica-repos/Cello-v2-1-Core/temp_out/and.v
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of Logic Synthesis                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                            condition checks for valid input                            
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+NETLIST:
+isvalid: True
+
+INPUTS (including the communication devices): 
+num IN-SENSORS in Eco1C1G1T1.UCF in-UCF: 4
+num IN-STRUCTURES in Eco1C1G1T1.UCF in-UCF: 4
+num IN-MODELS in Eco1C1G1T1.UCF in-UCF: 4
+num IN-PARTS in Eco1C1G1T1.UCF in-UCF: 4
+num IN-NODES in and.v netlist: 2
+['LacI_sensor', 'TetR_sensor', 'AraC_sensor', 'LuxR_sensor']
+Valid input match!
+
+OUTPUTS: 
+num OUT-SENSORS in Eco1C1G1T1.UCF out-UCF: 3
+num OUT-STRUCTURES in Eco1C1G1T1.UCF out-UCF: 3
+num OUT-MODELS in Eco1C1G1T1.UCF out-UCF: 3
+num OUT-PARTS in Eco1C1G1T1.UCF out-UCF: 3
+num OUT-NODES in and.v netlist: 1
+['YFP_reporter', 'YFP_reporter_2', 'YFP_reporter_3']
+Valid output match!
+
+GATES: 
+num PARTS in Eco1C1G1T1.UCF UCF: 84
+num STRUCTURES in Eco1C1G1T1.UCF UCF: 20
+num MODELS in Eco1C1G1T1.UCF UCF: 20
+num GATES in Eco1C1G1T1.UCF UCF: 20
+num GATE USES: [12, True]
+num GATES in and.v netlist: 3
+['AmeR', 'AmtR', 'BM3R1', 'BetI', 'HlyIIR', 'IcaRA', 'LitR', 'LmrA', 'PhlF', 'PsrA', 'QacR', 'SrpR']
+['A1_AmtR', 'B1_BM3R1', 'B2_BM3R1', 'B3_BM3R1', 'E1_BetI', 'F1_AmeR', 'H1_HlyIIR', 'I1_IcaRA', 'L1_LitR', 'N1_LmrA', 'P1_PhlF', 'P2_PhlF', 'P3_PhlF', 'Q1_QacR', 'Q2_QacR', 'R1_PsrA', 'S1_SrpR', 'S2_SrpR', 'S3_SrpR', 'S4_SrpR']
+Valid intermediate match!
+
+#47,520 possible permutations for and.v.v+Eco1C1G1T1.UCF...
+(#47,520.0 permutations of UCF gate groups confirmed.)
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                End of condition checks                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Condition check passed? True
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                               Beginning GATE ASSIGNMENT                                
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Listing available assignments from UCF: 
+['LacI_sensor', 'TetR_sensor', 'AraC_sensor', 'LuxR_sensor']
+['YFP_reporter', 'YFP_reporter_2', 'YFP_reporter_3']
+['SrpR', 'AmeR', 'PsrA', 'HlyIIR', 'QacR', 'IcaRA', 'LmrA', 'AmtR', 'BM3R1', 'BetI', 'LitR', 'PhlF']
+
+Netlist de-construction: 
+[a, b]
+[81, 82, 83]
+[out]
+
+Netlist requirements: 
+need 2 inputs
+need 1 outputs
+need 3 gates
+
+////////////////////////////////////////////////////////////////////////////////////////
+                Running SIMULATED ANNEALING gate-assignment algorithm...                
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+∫ *** DEBUG *** ∫ ERROR calculating input score for input TetR_sensor 2 with ymax: 4.4 and ymin: 0.0013, with function STATE * (ymax - ymin) + ymin
+name 'ymax' is not defined
+
+
+
+∫ *** DEBUG *** ∫ ERROR calculating input score for input AraC_sensor 3 with ymax: 2.5 and ymin: 0.0082, with function STATE * (ymax - ymin) + ymin
+name 'ymax' is not defined
+
+Cello object deleted...
+
+Exiting Cello...

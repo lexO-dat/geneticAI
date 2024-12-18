@@ -1,0 +1,106 @@
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                       CELLO V2.1                                       
+                                 and.v + Eco1C2G2T2.UCF                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+new_out: /home/lexo/Desktop/practica-repos/Cello-v2-1-Core/temp_out/and.v
+verilog: and.v
+v_loc: /home/lexo/Desktop/practica-repos/Cello-v2-1-Core/library/verilogs/and.v
+new_in: /home/lexo/Desktop/practica-repos/Cello-v2-1-Core/library/verilogs
+new_out: /home/lexo/Desktop/practica-repos/Cello-v2-1-Core/temp_out/and.v
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of Logic Synthesis                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                            condition checks for valid input                            
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+NETLIST:
+isvalid: True
+
+INPUTS (including the communication devices): 
+num IN-SENSORS in Eco1C2G2T2.UCF in-UCF: 4
+num IN-STRUCTURES in Eco1C2G2T2.UCF in-UCF: 4
+num IN-MODELS in Eco1C2G2T2.UCF in-UCF: 4
+num IN-PARTS in Eco1C2G2T2.UCF in-UCF: 4
+num IN-NODES in and.v netlist: 2
+['LacI_sensor', 'TetR_sensor', 'LuxR_sensor', 'CinR_sensor']
+Valid input match!
+
+OUTPUTS: 
+num OUT-SENSORS in Eco1C2G2T2.UCF out-UCF: 2
+num OUT-STRUCTURES in Eco1C2G2T2.UCF out-UCF: 2
+num OUT-MODELS in Eco1C2G2T2.UCF out-UCF: 2
+num OUT-PARTS in Eco1C2G2T2.UCF out-UCF: 2
+num OUT-NODES in and.v netlist: 1
+['YFP_reporter', 'YFP_reporter_2']
+Valid output match!
+
+GATES: 
+num PARTS in Eco1C2G2T2.UCF UCF: 105
+num STRUCTURES in Eco1C2G2T2.UCF UCF: 18
+num MODELS in Eco1C2G2T2.UCF UCF: 18
+num GATES in Eco1C2G2T2.UCF UCF: 18
+num GATE USES: [9, True]
+num GATES in and.v netlist: 3
+['AmeR', 'AmtR', 'BM3R1', 'BetI', 'HlyIIR', 'LmrA', 'PhlF', 'SrpR', 'VanR']
+['A1_AmtR', 'B1_BM3R1', 'B2_BM3R1', 'B3_BM3R1', 'C1_CymR', 'E1_BetI', 'F1_AmeR', 'F2_AmeR', 'H1_HlyIIR', 'N1_LmrA', 'P1_PhlF', 'P2_PhlF', 'P3_PhlF', 'S1_SrpR', 'S2_SrpR', 'S3_SrpR', 'S4_SrpR', 'V1_VanR']
+Valid intermediate match!
+
+#12,096 possible permutations for and.v.v+Eco1C2G2T2.UCF...
+(#12,096.0 permutations of UCF gate groups confirmed.)
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                End of condition checks                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Condition check passed? True
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                               Beginning GATE ASSIGNMENT                                
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Listing available assignments from UCF: 
+['LacI_sensor', 'TetR_sensor', 'LuxR_sensor', 'CinR_sensor']
+['YFP_reporter', 'YFP_reporter_2']
+['LmrA', 'AmeR', 'HlyIIR', 'BetI', 'AmtR', 'BM3R1', 'VanR', 'PhlF', 'SrpR']
+
+Netlist de-construction: 
+[a, b]
+[81, 82, 83]
+[out]
+
+Netlist requirements: 
+need 2 inputs
+need 1 outputs
+need 3 gates
+
+////////////////////////////////////////////////////////////////////////////////////////
+                Running SIMULATED ANNEALING gate-assignment algorithm...                
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+∫ *** DEBUG *** ∫ ERROR calculating input score for input TetR_sensor 2 with ymax: 1.967 and ymin: 0.04, with function STATE * (ymax - ymin) + ymin
+name 'ymax' is not defined
+
+
+
+∫ *** DEBUG *** ∫ ERROR calculating input score for input LacI_sensor 3 with ymax: 1.686 and ymin: 0.008, with function STATE * (ymax - ymin) + ymin
+name 'ymax' is not defined
+
+Cello object deleted...
+
+Exiting Cello...

@@ -4,6 +4,8 @@ import json
 # TODO
 # - [ ] Arreglar el tema de response_functions y models
 # - [ ] Arreglar el tema de gate_name y name
+# - [ ] Agregar todo lo de gates a un archivo llamado gate_name_gate_ucfname.json
+# - [ ] Estandarizar el código para que pueda parsear de cualquiera de los ucf (EcoC1G1T0, EcoC1G1T1, EcoC1G1T2, EcoC1G1T3, etc)
 
 # Definición de rutas
 ucfPath = 'ucf/v2/ucf/Eco/Eco1C1G1T1.UCF.json'
@@ -32,31 +34,37 @@ for collection in ucf:
     collection_type = collection.get('collection')
 
     if collection_type == 'parts':
-        partsMap[collection['name']] = collection
+        partsMap[collection['name']] = collection # ver donde guardarlo
+
     elif collection_type == 'gate_parts':
-        gateArr.append(collection)
-    elif collection_type == 'response_functions': # esto en algunos se llama response_functions y en otros models
+        gateArr.append(collection) # ver donde guardarlo
+
+    elif collection_type == 'response_functions': # esto en algunos se llama response_functions y en otros models y tampoco lo estoy guardando
         responseMap[collection['gate_name']] = collection # esto en algunos se llama gate_name y en otros name 
+
     elif collection_type == 'gates' and collection['gate_name']:
         gatesMap[collection['gate_name']] = collection
+
     elif collection_type == 'gates' and collection['name']:
         gatesMap[collection['name']] = collection
 
     elif collection_type == 'gate_cytometry':
-        cytometryMap[collection['gate_name']] = collection['cytometry_data']
+        cytometryMap[collection['gate_name']] = collection['cytometry_data'] # ok -> sólo para el EcoC1G1T0
     elif collection_type == 'gate_toxicity':
-        toxixityMap[collection['gate_name']] = collection
-    elif collection_type == 'motif_library':
+        toxixityMap[collection['gate_name']] = collection # ok -> sólo para el EcoC1G1T0
+
+    elif collection_type == 'motif_library': # ok
         motifLib.append(collection)
-    elif collection_type == 'logic_constraints':
+    elif collection_type == 'logic_constraints': # ok
         logicConstraints = collection
-    elif collection_type == 'eugene_rules':
+
+    elif collection_type == 'eugene_rules': # ok
         eugeneRules = collection
-    elif collection_type == 'genetic_locations':
+    elif collection_type == 'genetic_locations': # ok
         geneticLocations = collection
-    elif collection_type == 'measurement_std':
+    elif collection_type == 'measurement_std': # ok
         measurememeasurementStandardsntstd = collection
-    elif collection_type == 'header':
+    elif collection_type == 'header': # ok
         header = collection
 
 # extraccion y creacion de los archivos de citometria
