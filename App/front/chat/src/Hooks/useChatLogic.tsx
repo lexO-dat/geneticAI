@@ -1,16 +1,18 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 interface Message {
   text: string;
   isUser: boolean;
 }
 
-const Chat: React.FC = () => {
+export const useChatLogic = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [currentChatId, setCurrentChatId] = useState<number | null>(null);  // Nuevo estado para almacenar el chat actual
   const chatContainerRef = useRef<HTMLDivElement>(null);
 
+  // Función para enviar un mensaje
   const sendMessage = async () => {
     if (inputMessage.trim() === '') return;
 
@@ -22,7 +24,6 @@ const Chat: React.FC = () => {
     let verilogCode = '';
 
     try {
-      // Enviar mensaje al generador de Verilog
       const generateResponse = await fetch('http://localhost:11434/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -31,7 +32,6 @@ const Chat: React.FC = () => {
 
       if (!generateResponse.ok) throw new Error('Error al obtener el código Verilog.');
 
-      // Leer respuesta en streaming
       const reader = generateResponse.body?.getReader();
       if (!reader) throw new Error('No se pudo leer la respuesta.');
 
@@ -63,52 +63,33 @@ const Chat: React.FC = () => {
 
       if (!verilogCode.trim()) throw new Error('No se obtuvo código Verilog.');
 
-      // Enviar código Verilog a /run_cello
       const celloResponse = await fetch('http://localhost:8000/run_cello', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          verilog_code: verilogCode,
-          ucf_index: 1,
-          options: {
-            verbose: true,
-            log_overwrite: false,
-            print_iters: false,
-            exhaustive: false,
-            test_configs: false,
-          },
-        }),
+        body: JSON.stringify({ verilog_code: verilogCode }),
       });
 
       if (!celloResponse.ok) throw new Error('Error al procesar el código con Cello.');
-
       const celloData = await celloResponse.json();
-      console.log('Respuesta de /run_cello:', celloData);
 
-      // Construir la URL del archivo PDF
       if (celloData.folder_name) {
-        // Ajustar el nombre del PDF según corresponda a tu entorno
         const pdfUrl = `http://localhost:8000/outputs/${celloData.folder_name}/${celloData.folder_name}_Eco1C1G1T1.UCF._dpl-sbol.pdf`;
-        console.log('Abriendo PDF en una nueva pestaña:', pdfUrl);
-        window.open(pdfUrl, '_blank'); // Abre el PDF en una pestaña nueva
+        window.open(pdfUrl, '_blank');
       }
 
-      // Convertir message y result a string si son objetos
-      const celloMessage =
-        typeof celloData.message === 'object'
-          ? JSON.stringify(celloData.message, null, 2)
-          : celloData.message || 'Proceso de Cello completado.';
-
-      const celloResult =
-        typeof celloData.result === 'object'
-          ? JSON.stringify(celloData.result, null, 2)
-          : celloData.result || 'Proceso completado sin detalles adicionales.';
+      const celloMessage = celloData.message || 'Proceso de Cello completado.';
+      const celloResult = celloData.result || 'Proceso completado sin detalles adicionales.';
 
       setMessages(prevMessages => [
         ...prevMessages,
         { text: celloMessage, isUser: false },
         { text: celloResult, isUser: false }
       ]);
+
+      // Actualizar el chat en localStorage si ya existe
+      if (currentChatId !== null) {
+        updateChatInLocalStorage(currentChatId);
+      }
 
     } catch (error: any) {
       console.error('Error:', error);
@@ -119,53 +100,77 @@ const Chat: React.FC = () => {
     }
   };
 
+  // Función para cargar un chat desde localStorage
+  const loadChat = (chatId: number) => {
+    const storedChat = localStorage.getItem(`chat-${chatId}`);
+    if (storedChat) {
+      const chat = JSON.parse(storedChat);
+      setMessages(chat.messages);
+      setCurrentChatId(chat.id); // Establecer el chat actual
+    }
+  };
+
+  // Función para crear un nuevo chat
+  const createNewChat = () => {
+    if (messages.length > 0) {
+      const chatId = new Date().getTime(); // Usar timestamp como ID único
+      const newChat = {
+        id: chatId,
+        messages,
+      };
+      localStorage.setItem(`chat-${chatId}`, JSON.stringify(newChat));
+      setCurrentChatId(chatId); // Establecer el chat actual
+    }
+  };
+
+  // Función para actualizar un chat en localStorage
+  const updateChatInLocalStorage = (chatId: number) => {
+    const updatedChat = {
+      id: chatId,
+      messages,
+    };
+    localStorage.setItem(`chat-${chatId}`, JSON.stringify(updatedChat));
+  };
+
+  // Función para eliminar un chat de localStorage
+  const deleteChat = (chatId: number) => {
+    localStorage.removeItem(`chat-${chatId}`);
+    setMessages([]); // Limpiar mensajes al eliminar el chat
+    setCurrentChatId(null); // Restablecer el chat actual
+  };
+
+  // Función para cargar todos los chats desde localStorage
+  const loadChats = () => {
+    const storedChats: any[] = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith('chat-')) {
+        const chat = JSON.parse(localStorage.getItem(key)!);
+        storedChats.push(chat);
+      }
+    }
+    return storedChats;
+  };
+
   useEffect(() => {
-    if (chatContainerRef.current) {
-      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    if (currentChatId === null && messages.length === 0) {
+      // Si no hay mensajes y no hay chat cargado, creamos un nuevo chat
+      createNewChat();
     }
   }, [messages]);
 
-  return (
-    <div className="flex flex-col h-screen bg-gray-100">
-      <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-4 space-y-4">
-        {messages.map((message, index) => (
-          <div key={index} className={`flex ${message.isUser ? 'justify-end' : 'justify-start'}`}>
-            <div
-              className={`max-w-xs p-3 rounded-lg ${
-                message.isUser ? 'bg-blue-500 text-white' : 'bg-gray-300 text-black'
-              }`}
-              style={{ whiteSpace: 'pre-wrap' }}
-            >
-              {message.text}
-            </div>
-          </div>
-        ))}
-        {isLoading && (
-          <div className="flex justify-start">
-            <div className="max-w-xs p-3 rounded-lg bg-gray-300 text-black animate-pulse">...</div>
-          </div>
-        )}
-      </div>
-      <div className="p-4 bg-white">
-        <div className="flex space-x-2">
-          <input
-            type="text"
-            value={inputMessage}
-            onChange={(e) => setInputMessage(e.target.value)}
-            onKeyPress={(e) => e.key === 'Enter' && sendMessage()}
-            className="flex-1 p-2 border border-gray-300 rounded"
-            placeholder="Escribe un mensaje..."
-          />
-          <button
-            onClick={sendMessage}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-          >
-            Enviar
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+  return {
+    messages,
+    setMessages,
+    inputMessage,
+    setInputMessage,
+    isLoading,
+    sendMessage,
+    loadChat,
+    deleteChat,
+    loadChats,
+    createNewChat,  // Asegúrate de exportar createNewChat aquí
+    chats: loadChats(), // Cargar los chats desde localStorage
+    chatContainerRef
+  };
 };
-
-export default Chat;
