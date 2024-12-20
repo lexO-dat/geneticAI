@@ -13,4 +13,4 @@ if __name__ == '__main__':
             print("Started Java Py4J gateway")
         except Exception:
             print("Failed to start Java Py4J gateway!")
-    subprocess.run(["uvicorn", "app.cli:app", "--reload"])
+    subprocess.run(["uvicorn", "app.api:app", "--reload"])

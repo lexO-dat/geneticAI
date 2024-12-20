@@ -1,61 +1,50 @@
-// Chat.tsx
-import React, { useState } from 'react';
+import React from 'react';
 import MessageList from '../Message/MessageList';
 import MessageInput from '../Message/MessageInput';
 import { useChatLogic } from '../../Hooks/useChatLogic';
-import History from '../History/History'; // Importa el componente History
-import { PlusIcon, TrashIcon } from 'lucide-react';
+import { File } from 'lucide-react';
 
 const Chat: React.FC = () => {
   const {
     messages,
-    setMessages,
     inputMessage,
     setInputMessage,
     isLoading,
     sendMessage,
-    loadChat,
-    deleteChat,
-    chats,  // Recibimos la lista de chats
     chatContainerRef,
-    createNewChat, // Llamamos a createNewChat desde el hook
+    outputFiles,
+    folderName,
   } = useChatLogic();
 
-  const handleCreateNewChat = () => {
-    if (messages.length === 0) {
-      // Si los mensajes están vacíos, creamos un nuevo chat
-      createNewChat();
-    } else {
-      // Si ya hay mensajes, actualizamos el chat existente
-      createNewChat();
-    }
-  };
-
-  const handleDeleteChat = (chatId: number) => {
-    deleteChat(chatId);
-    setMessages([]); // Limpiar los mensajes al eliminar un chat
+  const cleanFileName = (fileName: string) => {
+    return fileName.replace(/^temp_[a-f0-9]{32}_/, '');
   };
 
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
-      <div className="w-80 bg-gray-800 text-white p-4 flex flex-col">
-        <button
-          onClick={handleCreateNewChat} // Crear o actualizar el chat
-          className="flex items-center justify-center space-x-2 bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mb-4"
-        >
-          <PlusIcon className="w-5 h-5" />
-          <span>Nuevo chat</span>
-        </button>
-
-        {/* Chat History */}
+      <div className="w-96 bg-gray-800 text-white p-4 flex flex-col">
+        {/* Apartado de archivos generados */}
         <div className="flex-grow overflow-y-auto">
-          <h2 className="text-lg font-semibold mb-2">Historial de chats</h2>
-          <History
-            chats={chats} // Pasamos los chats cargados
-            onSelectChat={(chatId) => loadChat(chatId)}
-            onDeleteChat={handleDeleteChat}
-          />
+          <h2 className="text-lg font-semibold mb-2">Archivos</h2>
+          {/* Archivos generados dinámicamente */}
+          {outputFiles.length > 0 ? (
+            outputFiles.map((file) => (
+              <div key={file} className="flex items-center space-x-2 py-2 px-2 hover:bg-gray-700 rounded cursor-pointer">
+                <a
+                  href={`http://localhost:8000/outputs/${folderName}/${file}`}
+                  target="_blank"               
+                  rel="noopener noreferrer"  
+                  className="flex items-center space-x-2"
+                >
+                  <File className="w-7 h-7" />
+                  <span>{cleanFileName(file)}</span>
+                </a>
+              </div>
+            ))
+          ) : (
+            <div className="text-gray-400">No se han generado archivos aún.</div>
+          )}
         </div>
       </div>
 
