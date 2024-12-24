@@ -1,0 +1,36 @@
+digraph "top" {
+label="top";
+rankdir="LR";
+remincross=true;
+n8 [ shape=octagon, label="BFP", color="black", fontcolor="black"];
+n9 [ shape=octagon, label="YFP", color="black", fontcolor="black"];
+n10 [ shape=octagon, label="aTc", color="black", fontcolor="black"];
+n11 [ shape=octagon, label="lacI", color="black", fontcolor="black"];
+n12 [ shape=octagon, label="tetR", color="black", fontcolor="black"];
+c15 [ shape=record, label="{{<p13> A}|$91\n$_NOT_|{<p14> Y}}",  ];
+c16 [ shape=record, label="{{<p13> A}|$92\n$_NOT_|{<p14> Y}}",  ];
+c17 [ shape=record, label="{{<p13> A}|$93\n$_NOT_|{<p14> Y}}",  ];
+c19 [ shape=record, label="{{<p13> A|<p18> B}|$94\n$_NOR_|{<p14> Y}}",  ];
+c20 [ shape=record, label="{{<p13> A}|$95\n$_NOT_|{<p14> Y}}",  ];
+c21 [ shape=record, label="{{<p13> A|<p18> B}|$96\n$_NOR_|{<p14> Y}}",  ];
+c22 [ shape=record, label="{{<p13> A|<p18> B}|$97\n$_NOR_|{<p14> Y}}",  ];
+c23 [ shape=record, label="{{<p13> A}|$98\n$_NOT_|{<p14> Y}}",  ];
+c24 [ shape=record, label="{{<p13> A|<p18> B}|$99\n$_NOR_|{<p14> Y}}",  ];
+c20:p14:e -> c21:p18:w [color="black", fontcolor="black", label=""];
+n10:e -> c15:p13:w [color="black", fontcolor="black", label=""];
+n10:e -> c19:p13:w [color="black", fontcolor="black", label=""];
+n11:e -> c16:p13:w [color="black", fontcolor="black", label=""];
+n11:e -> c22:p18:w [color="black", fontcolor="black", label=""];
+n12:e -> c17:p13:w [color="black", fontcolor="black", label=""];
+c22:p14:e -> c23:p13:w [color="black", fontcolor="black", label=""];
+c23:p14:e -> c24:p18:w [color="black", fontcolor="black", label=""];
+c15:p14:e -> c22:p13:w [color="black", fontcolor="black", label=""];
+c16:p14:e -> c19:p18:w [color="black", fontcolor="black", label=""];
+n6 [ shape=point ];
+c17:p14:e -> n6:w [color="black", fontcolor="black", label=""];
+n6:e -> c21:p13:w [color="black", fontcolor="black", label=""];
+n6:e -> c24:p13:w [color="black", fontcolor="black", label=""];
+c19:p14:e -> c20:p13:w [color="black", fontcolor="black", label=""];
+c24:p14:e -> n8:w [color="black", fontcolor="black", label=""];
+c21:p14:e -> n9:w [color="black", fontcolor="black", label=""];
+}

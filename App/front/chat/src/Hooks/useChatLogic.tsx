@@ -82,7 +82,7 @@ export const useChatLogic = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           verilog_code: verilogCode,
-          ucf_index: 1,
+          ucf_index: 4,
           options: {
             verbose: true,
             log_overwrite: false,
@@ -149,3 +149,4 @@ export const useChatLogic = () => {
     folderName,
   };
 };
+

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MessageList from '../Message/MessageList';
 import MessageInput from '../Message/MessageInput';
 import { useChatLogic } from '../../Hooks/useChatLogic';
@@ -16,30 +16,41 @@ const Chat: React.FC = () => {
     folderName,
   } = useChatLogic();
 
+  // Estados para manejar la selección del archivo y la apertura/cierre del cajón
+  const [selectedFile, setSelectedFile] = useState<string | null>(null);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   const cleanFileName = (fileName: string) => {
     return fileName.replace(/^temp_[a-f0-9]{32}_/, '');
   };
 
+  // Función para abrir el cajón con un archivo específico
+  const handleFileClick = (file: string) => {
+    setSelectedFile(file);
+    setIsDrawerOpen(true);
+  };
+
+  // Función para cerrar el cajón
+  const closeDrawer = () => {
+    setIsDrawerOpen(false);
+    setSelectedFile(null);
+  };
+
   return (
     <div className="flex h-screen bg-gray-100">
-      {/* Sidebar */}
+      {/* Barra lateral de archivos */}
       <div className="w-96 bg-gray-800 text-white p-4 flex flex-col">
-        {/* Apartado de archivos generados */}
         <div className="flex-grow overflow-y-auto">
           <h2 className="text-lg font-semibold mb-2">Archivos</h2>
-          {/* Archivos generados dinámicamente */}
           {outputFiles.length > 0 ? (
             outputFiles.map((file) => (
-              <div key={file} className="flex items-center space-x-2 py-2 px-2 hover:bg-gray-700 rounded cursor-pointer">
-                <a
-                  href={`http://localhost:8000/outputs/${folderName}/${file}`}
-                  target="_blank"               
-                  rel="noopener noreferrer"  
-                  className="flex items-center space-x-2"
-                >
-                  <File className="w-7 h-7" />
-                  <span>{cleanFileName(file)}</span>
-                </a>
+              <div
+                key={file}
+                className="flex items-center space-x-2 py-2 px-2 hover:bg-gray-700 rounded cursor-pointer"
+                onClick={() => handleFileClick(file)}
+              >
+                <File className="w-7 h-7" />
+                <span>{cleanFileName(file)}</span>
               </div>
             ))
           ) : (
@@ -48,7 +59,6 @@ const Chat: React.FC = () => {
         </div>
       </div>
 
-      {/* Main content area */}
       <div className="flex flex-col w-full bg-gray-100">
         <MessageList ref={chatContainerRef} messages={messages} isLoading={isLoading} />
         <MessageInput
@@ -56,6 +66,69 @@ const Chat: React.FC = () => {
           onChange={(e) => setInputMessage(e.target.value)}
           onSend={sendMessage}
         />
+      </div>
+
+      {/* Cajón lateral (drawer) para previsualizar el archivo */}
+      <div
+        className={`
+          fixed top-0 right-0 h-screen w-full sm:w-3/4 md:w-2/3 lg:w-2/3 xl:w-2/3
+          bg-gray-800 text-white transform transition-transform duration-300
+          ${isDrawerOpen ? 'translate-x-0' : 'translate-x-full'}
+        `}
+        style={{ zIndex: 9999 }} // Sobre todo
+      >
+        {isDrawerOpen && (
+          <div
+            className="absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-40"
+            style={{ zIndex: -1 }}
+            onClick={closeDrawer}
+          />
+        )}
+
+        <div className="flex flex-col h-full">
+          {/* Botón de cierre */}
+          <div className="flex justify-end p-4 border-b">
+            <button
+              onClick={closeDrawer}
+              className="py-2 px-4 bg-red-500 hover:bg-red-600 text-white rounded"
+            >
+              Cerrar
+            </button>
+          </div>
+
+          <div className="flex-grow overflow-auto p-4">
+            <h2 className="text-xl font-bold mb-4">
+              Vista previa: {selectedFile && cleanFileName(selectedFile)}
+            </h2>
+
+            {selectedFile ? (
+              <div className="border border-gray-500 p-2 rounded">
+                <iframe
+                  src={`http://localhost:8000/outputs/${folderName}/${selectedFile}`}
+                  title="preview"
+                  className="w-full h-96"
+                />
+              </div>
+            ) : (
+              <p>No hay archivo seleccionado</p>
+            )}
+          </div>
+
+          {/* Botón para descargar el archivo */}
+          {selectedFile && (
+            <div className="p-4 border-t flex justify-end">
+              <a
+                href={`http://localhost:8000/outputs/${folderName}/${selectedFile}`}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded"
+              >
+                Descargar
+              </a>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

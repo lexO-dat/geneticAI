@@ -1,0 +1,27 @@
+digraph "priority_detector" {
+label="priority_detector";
+rankdir="LR";
+remincross=true;
+n5 [ shape=octagon, label="A\nPRIMARY_INPUT\nCuma_sensor", fontcolor="black"];
+n6 [ shape=octagon, label="B\nPRIMARY_INPUT\nAra_sensor", fontcolor="black"];
+n7 [ shape=octagon, label="C\nPRIMARY_INPUT\npC-HSL_in", fontcolor="black"];
+n8 [ shape=octagon, label="outX\nPRIMARY_OUTPUT\nDAPG_out", fontcolor="black"];
+n9 [ shape=octagon, label="outY\nPRIMARY_OUTPUT\npC-HSL_out", fontcolor="black"];
+c11 [ shape=record, label="{{<p5> A}|$118\nNOT\nR13_P2|{<p10> Y}}",  ];
+c12 [ shape=record, label="{{<p5> A}|$119\nNOT\nR4_TP901|{<p10> Y}}",  ];
+c13 [ shape=record, label="{{<p5> A|<p6> B}|$120\nNOR\nR17_Wphi|{<p10> Y}}",  ];
+c14 [ shape=record, label="{{<p5> A|<p6> B}|$121\nNOR\nR12_P2hd|{<p10> Y}}",  ];
+c15 [ shape=record, label="{{<p5> A}|$122\nNOT\nR9_933W|{<p10> Y}}",  ];
+c16 [ shape=record, label="{{<p5> A|<p6> B}|$123\nNOR\nR2_Lambda|{<p10> Y}}",  ];
+c15:p10:e -> c16:p6:w [color="black", fontcolor="black", label=""];
+c11:p10:e -> c13:p5:w [color="black", fontcolor="black", label=""];
+c12:p10:e -> c16:p5:w [color="black", fontcolor="black", label=""];
+c14:p10:e -> c15:p5:w [color="black", fontcolor="black", label=""];
+n5:e -> c11:p5:w [color="black", fontcolor="black", label=""];
+n5:e -> c14:p5:w [color="black", fontcolor="black", label=""];
+n6:e -> c13:p6:w [color="black", fontcolor="black", label=""];
+n6:e -> c14:p6:w [color="black", fontcolor="black", label=""];
+n7:e -> c12:p5:w [color="black", fontcolor="black", label=""];
+c13:p10:e -> n8:w [color="black", fontcolor="black", label=""];
+c16:p10:e -> n9:w [color="black", fontcolor="black", label=""];
+}
