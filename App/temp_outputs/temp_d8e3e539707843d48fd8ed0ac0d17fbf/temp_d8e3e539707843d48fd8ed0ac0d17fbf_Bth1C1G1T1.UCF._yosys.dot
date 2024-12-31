@@ -1,0 +1,22 @@
+digraph "top" {
+label="top";
+rankdir="LR";
+remincross=true;
+n3 [ shape=octagon, label="BFP", color="black", fontcolor="black"];
+n4 [ shape=octagon, label="YFP", color="black", fontcolor="black"];
+n5 [ shape=octagon, label="araN_Y_IPTG", color="black", fontcolor="black"];
+n6 [ shape=octagon, label="lacI", color="black", fontcolor="black"];
+n7 [ shape=octagon, label="tetR", color="black", fontcolor="black"];
+c10 [ shape=record, label="{{<p8> A}|$83\n$_NOT_|{<p9> Y}}",  ];
+c11 [ shape=record, label="{{<p8> A}|$84\n$_NOT_|{<p9> Y}}",  ];
+c13 [ shape=record, label="{{<p8> A|<p12> B}|$85\n$_NOR_|{<p9> Y}}",  ];
+v0 [ label="1'0" ];
+x1 [shape=point, ];
+c10:p9:e -> c13:p8:w [color="black", fontcolor="black", label=""];
+c11:p9:e -> c13:p12:w [color="black", fontcolor="black", label=""];
+c13:p9:e -> n3:w [color="black", fontcolor="black", label=""];
+x1:e -> n4:w [color="black", fontcolor="black", label=""];
+n6:e -> c11:p8:w [color="black", fontcolor="black", label=""];
+n7:e -> c10:p8:w [color="black", fontcolor="black", label=""];
+v0:e -> x1:w [color="black", fontcolor="black", label=""];
+}

@@ -1,0 +1,11 @@
+{
+  "verilog_code": "module Eco1C1G2T2 (\n    input wire TetR, \n    input wire LacI, \n    input wire ChemX, \n    output reg YFP, \n    output reg BFP\n);\n  always @(TetR or LacI or ChemX) begin\n    if (TetR & LacI & ~ChemX) begin\n      YFP = 1\'b1;\n      BFP = 1\'b0;\n    end else if (TetR & ChemX & LacI) begin\n      YFP = 1\'b0;\n      BFP = 1\'b1;\n    end else begin\n      YFP = 1\'b0;\n      BFP = 1\'b0;\n    end\n  end\nendmodule\n",
+  "ucf_index": 2,
+  "options": {
+    "verbose": true,
+    "log_overwrite": false,
+    "print_iters": false,
+    "exhaustive": false,
+    "test_configs": false
+  }
+}

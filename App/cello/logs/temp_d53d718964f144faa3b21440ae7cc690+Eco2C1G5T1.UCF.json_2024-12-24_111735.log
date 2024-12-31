@@ -1,0 +1,239 @@
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                       CELLO V2.1                                       
+              temp_d53d718964f144faa3b21440ae7cc690 + Eco2C1G5T1.UCF.json               
+////////////////////////////////////////////////////////////////////////////////////////
+
+new_out: /home/lexo/Desktop/Practica/App/temp_outputs/temp_d53d718964f144faa3b21440ae7cc690
+verilog: temp_d53d718964f144faa3b21440ae7cc690.v
+v_loc: /home/lexo/Desktop/Practica/App/library/verilogs/temp_d53d718964f144faa3b21440ae7cc690.v
+new_in: /home/lexo/Desktop/Practica/App/library/verilogs
+new_out: /home/lexo/Desktop/Practica/App/temp_outputs/temp_d53d718964f144faa3b21440ae7cc690
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of Logic Synthesis                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                            condition checks for valid input                            
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+NETLIST:
+isvalid: True
+
+INPUTS (including the communication devices): 
+num IN-SENSORS in Eco2C1G5T1.UCF.json in-UCF: 12
+num IN-STRUCTURES in Eco2C1G5T1.UCF.json in-UCF: 12
+num IN-MODELS in Eco2C1G5T1.UCF.json in-UCF: 12
+num IN-PARTS in Eco2C1G5T1.UCF.json in-UCF: 12
+num IN-NODES in temp_d53d718964f144faa3b21440ae7cc690 netlist: 3
+['Ara_sensor', 'IPTG_sensor', 'aTc_sensor', 'Cuma_sensor', 'Van_sensor', 'OHC14_sensor', 'Sal_sensor', 'RpaR-AM2_sensor', 'OC6_in', 'OHC12_in', 'pC-HSL_in', 'DAPG_in']
+Valid input match!
+
+OUTPUTS: 
+num OUT-SENSORS in Eco2C1G5T1.UCF.json out-UCF: 7
+num OUT-STRUCTURES in Eco2C1G5T1.UCF.json out-UCF: 7
+num OUT-MODELS in Eco2C1G5T1.UCF.json out-UCF: 7
+num OUT-PARTS in Eco2C1G5T1.UCF.json out-UCF: 7
+num OUT-NODES in temp_d53d718964f144faa3b21440ae7cc690 netlist: 2
+['BFP_reporter', 'RFP_reporter', 'YFP_reporter', 'OC6_out', 'OHC12_out', 'pC-HSL_out', 'DAPG_out']
+Valid output match!
+
+GATES: 
+num PARTS in Eco2C1G5T1.UCF.json UCF: 80
+num STRUCTURES in Eco2C1G5T1.UCF.json UCF: 12
+num MODELS in Eco2C1G5T1.UCF.json UCF: 12
+num GATES in Eco2C1G5T1.UCF.json UCF: 12
+num GATE USES: [12, True]
+num GATES in temp_d53d718964f144faa3b21440ae7cc690 netlist: 7
+['933W', 'Lambda', 'P2', 'P22', 'P2hd', 'R1t', 'TP901', 'Wphi']
+['R12_P2hd', 'R13_P2', 'R14_P2', 'R15_P2', 'R17_Wphi', 'R1_Lambda', 'R2_Lambda', 'R3_P22', 'R4_TP901', 'R5_R1t', 'R8_933W', 'R9_933W']
+Valid intermediate match!
+
+#2,235,340,800 possible permutations for temp_d53d718964f144faa3b21440ae7cc690.v+Eco2C1G5T1.UCF.json...
+(#2,235,340,800.0 permutations of UCF gate groups confirmed.)
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                End of condition checks                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Condition check passed? True
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                               Beginning GATE ASSIGNMENT                                
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Listing available assignments from UCF: 
+['Ara_sensor', 'IPTG_sensor', 'aTc_sensor', 'Cuma_sensor', 'Van_sensor', 'OHC14_sensor', 'Sal_sensor', 'RpaR-AM2_sensor', 'OC6_in', 'OHC12_in', 'pC-HSL_in', 'DAPG_in']
+['BFP_reporter', 'RFP_reporter', 'YFP_reporter', 'OC6_out', 'OHC12_out', 'pC-HSL_out', 'DAPG_out']
+['R1t', 'P2', 'P2hd', 'Wphi', 'TP901', 'Lambda', 'P22', '933W']
+
+Netlist de-construction: 
+[tetR, lacI, other_sensor]
+[89, 90, 91, 92, 93, 94, 95]
+[YFP, BFP]
+
+Netlist requirements: 
+need 3 inputs
+need 2 outputs
+need 7 gates
+
+////////////////////////////////////////////////////////////////////////////////////////
+                Running SIMULATED ANNEALING gate-assignment algorithm...                
+////////////////////////////////////////////////////////////////////////////////////////
+
+__________________________________________________ #1/1,000 | Best Score: 2.3944534753482376 | Current Score: 2.3944534753482376
+__________________________________________________ #3/1,000 | Best Score: 30.599069206440703 | Current Score: 30.599069206440703
+__________________________________________________ #14/1,000 | Best Score: 39.21480780068276 | Current Score: 39.21480780068276
+__________________________________________________ #23/1,000 | Best Score: 53.49124086123775 | Current Score: 53.49124086123775█
+__________________________________________________ #41/1,000 | Best Score: 73.51919381429313 | Current Score: 73.51919381429313██
+__________________________________________________ #85/1,000 | Best Score: 80.88126340681599 | Current Score: 80.88126340681599████
+__________________________________________________ #136/1,000 | Best Score: 87.3803233172556 | Current Score: 87.3803233172556███████
+__________________________________________________ #341/1,000 | Best Score: 99.06377198983974 | Current Score: 99.06377198983974█████████████████
+__________________________________________________ #470/1,000 | Best Score: 135.21423440116976 | Current Score: 135.21423440116976███████████████████████
+__________________________________________________ #471/1,000 | Best Score: 137.88237780752806 | Current Score: 137.88237780752806███████████████████████
+__________________________________________________ #514/1,000 | Best Score: 164.18276633397275 | Current Score: 164.18276633397275█████████████████████████
+__________________________________________________ #909/1,000 | Best Score: 166.8287988162534 | Current Score: 166.8287988162534█████████████████████████████████████████████
+
+
+DONE!
+Completed: 1,000/1,000 iterations (out of 2,235,340,800 possible iterations)
+Best Score: 166.8287988162534
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of GATE ASSIGNMENT                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+∫ *** DEBUG *** ∫ final result for temp_d53d718964f144faa3b21440ae7cc690.v+Eco2C1G5T1.UCF.json: 166.8287988162534
+
+
+
+∫ *** DEBUG *** ∫ Inputs: [Cuma_sensor, pC-HSL_in, OHC14_sensor], Gates: [R1t, TP901, P22, P2, 933W, Wphi, Lambda], Outputs: [pC-HSL_out, DAPG_out]
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                        RESULTS                                         
+              temp_d53d718964f144faa3b21440ae7cc690 + Eco2C1G5T1.UCF.json               
+////////////////////////////////////////////////////////////////////////////////////////
+
+CIRCUIT DESIGN:
+ - Best Design: Inputs: [Cuma_sensor, pC-HSL_in, OHC14_sensor], Gates: [R1t, TP901, P22, P2, 933W, Wphi, Lambda], Outputs: [pC-HSL_out, DAPG_out]
+ - Best Circuit Score: 166.8287988162534
+
+Inputs ( input response = STATE * (ymax - ymin) + ymin ):
+ - ('tetR', 2) input Cuma_sensor 2 with ymax: 3.14 and ymin: 0.0036 with max sensor output of [('high', 3.14), ('low', 0.0036)]
+ - ('lacI', 3) input pC-HSL_in 3 with ymax: 6 and ymin: 0.02 with max sensor output of [('high', 6.0), ('low', 0.02)]
+ - ('other_sensor', 4) input OHC14_sensor 4 with ymax: 3.13 and ymin: 0.0057 with max sensor output of [('high', 3.13), ('low', 0.0057)]
+
+Gates ( response function = ymin + (ymax - ymin) / (1.0 + (x / K)**n);   input composition = x1 + x2 ):
+ - 89 gate NOT R1t w/ inputs [4] and output 7, and best_gate = R5_R1t
+ - 90 gate NOT TP901 w/ inputs [2] and output 8, and best_gate = R4_TP901
+ - 91 gate NOT P22 w/ inputs [3] and output 9, and best_gate = R3_P22
+ - 92 gate NOR P2 w/ inputs [8, 9] and output 10, and best_gate = R13_P2
+ - 93 gate NOT 933W w/ inputs [10] and output 11, and best_gate = R9_933W
+ - 94 gate NOR Wphi w/ inputs [4, 11] and output 5, and best_gate = R17_Wphi
+ - 95 gate NOR Lambda w/ inputs [7, 11] and output 6, and best_gate = R2_Lambda
+
+Outputs ( unit conversion and/or hill response... ):
+ - ('YFP', 5) output pC-HSL_out 5 with ymin + (ymax - ymin) / (1.0 + (kd / (unit_conversion * x))**n): {'ymax': 0.114, 'ymin': 0.00038, 'kd': 0.2, 'n': 2, 'unit_conversion': 0.102}
+ - ('BFP', 6) output DAPG_out 6 with ymin + (ymax - ymin) / (1.0 + (kd / (unit_conversion * x))**n): {'ymax': 0.0646, 'ymin': 0.00038, 'kd': 0.15, 'n': 4, 'unit_conversion': 0.102}
+
+
+TRUTH TABLE/GATE SCORING:
++-----------------+---------------+------------------+-------------+-----------+--------------+---------+-----------+---------+--------+
+| Cuma_sensor_I/O | pC-HSL_in_I/O | OHC14_sensor_I/O | Cuma_sensor | pC-HSL_in | OHC14_sensor | R1t_I/O | TP901_I/O | P22_I/O | P2_I/O |
++-----------------+---------------+------------------+-------------+-----------+--------------+---------+-----------+---------+--------+
+| 0               | 0             | 0                | 0.0036      | 0.02      | 0.0057       | 1       | 1         | 1       | 0      |
+| 0               | 0             | 1                | 0.0036      | 0.02      | 3.13         | 0       | 1         | 1       | 0      |
+| 0               | 1             | 0                | 0.0036      | 6.0       | 0.0057       | 1       | 1         | 0       | 0      |
+| 0               | 1             | 1                | 0.0036      | 6.0       | 3.13         | 0       | 1         | 0       | 0      |
+| 1               | 0             | 0                | 3.14        | 0.02      | 0.0057       | 1       | 0         | 1       | 0      |
+| 1               | 0             | 1                | 3.14        | 0.02      | 3.13         | 0       | 0         | 1       | 0      |
+| 1               | 1             | 0                | 3.14        | 6.0       | 0.0057       | 1       | 0         | 0       | 1      |
+| 1               | 1             | 1                | 3.14        | 6.0       | 3.13         | 0       | 0         | 0       | 1      |
++-----------------+---------------+------------------+-------------+-----------+--------------+---------+-----------+---------+--------+
++----------+----------+------------+--------------------+---------------------+--------------------+----------------------+----------------------+----------------------+----------------------+
+| 933W_I/O | Wphi_I/O | Lambda_I/O | R1t                | TP901               | P22                | P2                   | 933W                 | Wphi                 | Lambda               |
++----------+----------+------------+--------------------+---------------------+--------------------+----------------------+----------------------+----------------------+----------------------+
+| 1        | 0        | 0          | 3.4853946350848917 | 3.161121933226706   | 2.384429831038579  | 0.03421696898551668  | 3.1855092843565536   | 0.020693773272217553 | 0.04808491932017394  |
+| 1        | 0        | 0          | 0.0609503085441014 | 3.161121933226706   | 2.384429831038579  | 0.03421696898551668  | 3.1855092843565536   | 0.01888214017043197  | 0.0557923832398991   |
+| 1        | 0        | 0          | 3.4853946350848917 | 3.161121933226706   | 0.1169862227544171 | 0.042726789507031515 | 2.9274851958600534   | 0.021145888751597074 | 0.048274109274736715 |
+| 1        | 0        | 0          | 0.0609503085441014 | 3.161121933226706   | 0.1169862227544171 | 0.042726789507031515 | 2.9274851958600534   | 0.0189353518571119   | 0.05766132158129038  |
+| 1        | 0        | 0          | 3.4853946350848917 | 0.03409729461871554 | 2.384429831038579  | 0.05662782845952002  | 2.4956081838064734   | 0.022243832315950517 | 0.04864909873438058  |
+| 1        | 0        | 0          | 0.0609503085441014 | 0.03409729461871554 | 2.384429831038579  | 0.05662782845952002  | 2.4956081838064734   | 0.019041589631927987 | 0.06219197689474465  |
+| 0        | 1        | 0          | 3.4853946350848917 | 0.03409729461871554 | 0.1169862227544171 | 1.8153055920549288   | 0.032555638160447695 | 2.3351158042261835   | 0.05426317094946905  |
+| 0        | 0        | 1          | 0.0609503085441014 | 0.03409729461871554 | 0.1169862227544171 | 1.8153055920549288   | 0.032555638160447695 | 0.020738515551049098 | 3.983745408030773    |
++----------+----------+------------+--------------------+---------------------+--------------------+----------------------+----------------------+----------------------+----------------------+
++----------------+--------------+------------------------+------------------------+
+| pC-HSL_out_I/O | DAPG_out_I/O | pC-HSL_out             | DAPG_out               |
++----------------+--------------+------------------------+------------------------+
+| 0              | 0            | 0.0003926539507471414  | 0.00038007340759949406 |
+| 0              | 0            | 0.00039053555210544184 | 0.00038013304688324176 |
+| 0              | 0            | 0.0003932128503537878  | 0.00038007456972208125 |
+| 0              | 0            | 0.0003905950106281151  | 0.00038015179004644484 |
+| 0              | 0            | 0.0003946203737358969  | 0.0003800769138636367  |
+| 0              | 0            | 0.00039071422061310777 | 0.0003802054196621664  |
+| 1              | 0            | 0.06701589003646208    | 0.00038011904901932674 |
+| 0              | 1            | 0.0003927087223199706  | 0.06342921346566875    |
++----------------+--------------+------------------------+------------------------+
+
+
+∫ *** DEBUG *** ∫ Truth Table (same as before, simpler format):
+
+['Cuma_sensor_I/O', 'pC-HSL_in_I/O', 'OHC14_sensor_I/O', 'Cuma_sensor', 'pC-HSL_in', 'OHC14_sensor', 'R1t_I/O', 'TP901_I/O', 'P22_I/O', 'P2_I/O', '933W_I/O', 'Wphi_I/O', 'Lambda_I/O', 'R1t', 'TP901', 'P22', 'P2', '933W', 'Wphi', 'Lambda', 'pC-HSL_out_I/O', 'DAPG_out_I/O', 'pC-HSL_out', 'DAPG_out']
+[0, 0, 0, 0.0036, 0.02, 0.0057, 1, 1, 1, 0, 1, 0, 0, 3.4853946350848917, 3.161121933226706, 2.384429831038579, 0.03421696898551668, 3.1855092843565536, 0.020693773272217553, 0.04808491932017394, 0, 0, 0.0003926539507471414, 0.00038007340759949406]
+[0, 0, 1, 0.0036, 0.02, 3.13, 0, 1, 1, 0, 1, 0, 0, 0.0609503085441014, 3.161121933226706, 2.384429831038579, 0.03421696898551668, 3.1855092843565536, 0.01888214017043197, 0.0557923832398991, 0, 0, 0.00039053555210544184, 0.00038013304688324176]
+[0, 1, 0, 0.0036, 6.0, 0.0057, 1, 1, 0, 0, 1, 0, 0, 3.4853946350848917, 3.161121933226706, 0.1169862227544171, 0.042726789507031515, 2.9274851958600534, 0.021145888751597074, 0.048274109274736715, 0, 0, 0.0003932128503537878, 0.00038007456972208125]
+[0, 1, 1, 0.0036, 6.0, 3.13, 0, 1, 0, 0, 1, 0, 0, 0.0609503085441014, 3.161121933226706, 0.1169862227544171, 0.042726789507031515, 2.9274851958600534, 0.0189353518571119, 0.05766132158129038, 0, 0, 0.0003905950106281151, 0.00038015179004644484]
+[1, 0, 0, 3.14, 0.02, 0.0057, 1, 0, 1, 0, 1, 0, 0, 3.4853946350848917, 0.03409729461871554, 2.384429831038579, 0.05662782845952002, 2.4956081838064734, 0.022243832315950517, 0.04864909873438058, 0, 0, 0.0003946203737358969, 0.0003800769138636367]
+[1, 0, 1, 3.14, 0.02, 3.13, 0, 0, 1, 0, 1, 0, 0, 0.0609503085441014, 0.03409729461871554, 2.384429831038579, 0.05662782845952002, 2.4956081838064734, 0.019041589631927987, 0.06219197689474465, 0, 0, 0.00039071422061310777, 0.0003802054196621664]
+[1, 1, 0, 3.14, 6.0, 0.0057, 1, 0, 0, 1, 0, 1, 0, 3.4853946350848917, 0.03409729461871554, 0.1169862227544171, 1.8153055920549288, 0.032555638160447695, 2.3351158042261835, 0.05426317094946905, 1, 0, 0.06701589003646208, 0.00038011904901932674]
+[1, 1, 1, 3.14, 6.0, 3.13, 0, 0, 0, 1, 0, 0, 1, 0.0609503085441014, 0.03409729461871554, 0.1169862227544171, 1.8153055920549288, 0.032555638160447695, 0.020738515551049098, 3.983745408030773, 0, 1, 0.0003927087223199706, 0.06342921346566875]
+
+
+EUGENE FILES:
+ - Eugene object and structs created...
+ - Eugene cassettes created...
+ - Eugene helpers created...
+ - Eugene script written to /home/lexo/Desktop/Practica/App/temp_outputs/temp_d53d718964f144faa3b21440ae7cc690/temp_d53d718964f144faa3b21440ae7cc690_Eco2C1G5T1.UCF._eugene.eug
+
+SBOL FILES:
+ - Circuit orders selected...
+   + ['attB2_NONCE_PAD', 'pP22', 'RiboJ64', 'R13', 'P2', 'DT86', 'PCymRC', 'RiboJ69', 'R4', 'TP901', 'RpoC', 'pRpa', 'RiboJ71', 'R3', 'P22', 'IlvGEDA', 'pP2', 'PlmJ', 'R9', '933W', 'DT36', 'p933W', 'SarJ', 'R17', 'Wphi', 'DT19', 'PCin', 'BydvJ', 'R5', 'R1t', 'ECK120029600', 'pTP901', 'RiboJ64', 'R13', 'P2', 'DT86', 'p933W', 'RiboJ54', 'R2', 'Lambda', 'Ret0', 'pR1t', 'RiboJ54', 'R2', 'Lambda', 'Ret0', 'PCin', 'SarJ', 'R17', 'Wphi', 'DT19', 'attB7_NONCE_PAD', 'attB5_NONCE_PAD', 'pLambda', 'sPhl_cassette', 'pWphi', 'sRpa_cassette']
+   + ['attB2_NONCE_PAD', 'pP22', 'RiboJ64', 'R13', 'P2', 'DT86', 'PCymRC', 'RiboJ69', 'R4', 'TP901', 'RpoC', 'pRpa', 'RiboJ71', 'R3', 'P22', 'IlvGEDA', 'pP2', 'PlmJ', 'R9', '933W', 'DT36', 'p933W', 'SarJ', 'R17', 'Wphi', 'DT19', 'PCin', 'BydvJ', 'R5', 'R1t', 'ECK120029600', 'pTP901', 'RiboJ64', 'R13', 'P2', 'DT86', 'p933W', 'RiboJ54', 'R2', 'Lambda', 'Ret0', 'attB7_NONCE_PAD', 'attB5_NONCE_PAD', 'pLambda', 'sPhl_cassette', 'pWphi', 'sRpa_cassette', 'pR1t', 'RiboJ54', 'R2', 'Lambda', 'Ret0', 'PCin', 'SarJ', 'R17', 'Wphi', 'DT19']
+   + ['attB2_NONCE_PAD', 'pP22', 'RiboJ64', 'R13', 'P2', 'DT86', 'PCymRC', 'RiboJ69', 'R4', 'TP901', 'RpoC', 'pRpa', 'RiboJ71', 'R3', 'P22', 'IlvGEDA', 'pP2', 'PlmJ', 'R9', '933W', 'DT36', 'p933W', 'SarJ', 'R17', 'Wphi', 'DT19', 'PCin', 'BydvJ', 'R5', 'R1t', 'ECK120029600', 'pTP901', 'RiboJ64', 'R13', 'P2', 'DT86', 'p933W', 'RiboJ54', 'R2', 'Lambda', 'Ret0', 'attB7_NONCE_PAD', 'attB5_NONCE_PAD', 'PCin', 'SarJ', 'R17', 'Wphi', 'DT19', 'pLambda', 'sPhl_cassette', 'pWphi', 'sRpa_cassette', 'pR1t', 'RiboJ54', 'R2', 'Lambda', 'Ret0']
+   + ['attB2_NONCE_PAD', 'pP22', 'RiboJ64', 'R13', 'P2', 'DT86', 'PCymRC', 'RiboJ69', 'R4', 'TP901', 'RpoC', 'pRpa', 'RiboJ71', 'R3', 'P22', 'IlvGEDA', 'pP2', 'PlmJ', 'R9', '933W', 'DT36', 'p933W', 'SarJ', 'R17', 'Wphi', 'DT19', 'PCin', 'BydvJ', 'R5', 'R1t', 'ECK120029600', 'pTP901', 'RiboJ64', 'R13', 'P2', 'DT86', 'PCin', 'SarJ', 'R17', 'Wphi', 'DT19', 'attB7_NONCE_PAD', 'pR1t', 'RiboJ54', 'R2', 'Lambda', 'Ret0', 'attB5_NONCE_PAD', 'p933W', 'RiboJ54', 'R2', 'Lambda', 'Ret0', 'pLambda', 'sPhl_cassette', 'pWphi', 'sRpa_cassette']
+   + ['attB2_NONCE_PAD', 'pP22', 'RiboJ64', 'R13', 'P2', 'DT86', 'PCymRC', 'RiboJ69', 'R4', 'TP901', 'RpoC', 'pRpa', 'RiboJ71', 'R3', 'P22', 'IlvGEDA', 'pP2', 'PlmJ', 'R9', '933W', 'DT36', 'p933W', 'SarJ', 'R17', 'Wphi', 'DT19', 'PCin', 'BydvJ', 'R5', 'R1t', 'ECK120029600', 'pTP901', 'RiboJ64', 'R13', 'P2', 'DT86', 'PCin', 'SarJ', 'R17', 'Wphi', 'DT19', 'attB7_NONCE_PAD', 'attB5_NONCE_PAD', 'pWphi', 'sRpa_cassette', 'p933W', 'RiboJ54', 'R2', 'Lambda', 'Ret0', 'pR1t', 'RiboJ54', 'R2', 'Lambda', 'Ret0', 'pLambda', 'sPhl_cassette']
+Cello object deleted...
+
+
+ - SBOL files being generated...
+Component.....................59
+Sequence......................55
+---
+Total: .........................114
+
+SBOL XML and related files generated
+ - Response plots generated
+
+
+
+Thread count: 1
+Completion Time: 5.8 seconds
+Cello object deleted...
+
+Archivo Verilog temporal eliminado: temp_d53d718964f144faa3b21440ae7cc690.v
+Archivo Verilog temporal creado: temp_efca7eb8784b4d258a6b41e3242d49d4.v

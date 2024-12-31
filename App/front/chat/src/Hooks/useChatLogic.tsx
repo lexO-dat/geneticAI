@@ -25,7 +25,7 @@ export const useChatLogic = () => {
 
     setMessages(prevMessages => [
       ...prevMessages,
-      { text: 'Generando código Verilog...', isUser: false }
+      { text: 'Generating verilog code...', isUser: false }
     ]);
 
     try {
@@ -36,7 +36,7 @@ export const useChatLogic = () => {
         body: JSON.stringify({ model: "custom-llama-v1", prompt: inputMessage }),
       });
 
-      if (!generateResponse.ok) throw new Error('Error al obtener el código Verilog.');
+      if (!generateResponse.ok) throw new Error('Error obtaining the verilog code, try sending again the message.');
 
       const reader = generateResponse.body?.getReader();
       if (!reader) throw new Error('No se pudo leer la respuesta.');
@@ -67,13 +67,29 @@ export const useChatLogic = () => {
         ({ value: chunk, done: readerDone } = await reader.read());
       }
 
-      if (!verilogCode.trim()) throw new Error('Error, intenta enviar el mensaje nuevamente.');
+      if (!verilogCode.trim()) throw new Error('Error, try sending again the message.');
+      
+      /* verilogCode = `
+      module top (
+    input E,                // Enable signal
+    input A, B, C, D,      // Individual data inputs
+    input S1,              // Select bit 1 
+    input S0,              // Select bit 0
+    output Y               // Single output
+);
+
+    assign Y = (S1 == 0 && S0 == 0) ? (A & E) :
+               (S1 == 0 && S0 == 1) ? (B & E) :
+               (S1 == 1 && S0 == 0) ? (C & E) :
+                                     (D & E);
+
+endmodule` */
 
       setMessages(prevMessages => [
         ...prevMessages,
-        { text: 'Código Verilog generado:', isUser: false },
+        { text: 'Generated verilog:', isUser: false },
         { text: verilogCode, isUser: false },
-        { text: 'Procesando código con Cello...', isUser: false }
+        { text: 'Processing the verilog with cello..', isUser: false }
       ]);
 
       // LLamada a la API de Cello para procesar el código Verilog y generar el circuito genético
@@ -82,7 +98,7 @@ export const useChatLogic = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           verilog_code: verilogCode,
-          ucf_index: 4,
+          ucf_index: 1,
           options: {
             verbose: true,
             log_overwrite: false,
@@ -93,9 +109,9 @@ export const useChatLogic = () => {
         }),
       });
 
-      if (!celloResponse.ok) throw new Error('Error al procesar el código con Cello.');
+      if (!celloResponse.ok) throw new Error('Error processing the verilog file.');
       const celloData = await celloResponse.json();
-      console.log('Respuesta de /run_cello:', celloData);
+      //console.log('Respuesta de /run_cello:', celloData);
 
       if (celloData.output_files) {
         setOutputFiles(celloData.output_files);
@@ -111,15 +127,15 @@ export const useChatLogic = () => {
           ? JSON.stringify(celloData.message, null, 2)
           : celloData.message || 'Proceso de Cello completado.';
 
-      const celloResult =
+      /* const celloResult =
         typeof celloData.result === 'object'
           ? JSON.stringify(celloData.result, null, 2)
-          : celloData.result || 'Proceso completado sin detalles adicionales.';
+          : celloData.result || 'Proceso completado sin detalles adicionales.'; */
 
       setMessages(prevMessages => [
         ...prevMessages,
         { text: celloMessage, isUser: false },
-        { text: celloResult, isUser: false }
+
       ]);
 
     } catch (error: any) {

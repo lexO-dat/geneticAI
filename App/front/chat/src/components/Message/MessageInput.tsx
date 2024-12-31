@@ -21,7 +21,7 @@ const MessageInput: React.FC<MessageInputProps> = ({ inputValue, onChange, onSen
         onClick={onSend}
         className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
       >
-        Enviar
+        Send
       </button>
     </div>
   </div>

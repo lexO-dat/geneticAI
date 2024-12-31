@@ -41,7 +41,7 @@ const Chat: React.FC = () => {
       {/* Barra lateral de archivos */}
       <div className="w-96 bg-gray-800 text-white p-4 flex flex-col">
         <div className="flex-grow overflow-y-auto">
-          <h2 className="text-lg font-semibold mb-2">Archivos</h2>
+          <h2 className="text-lg font-semibold mb-2">Files</h2>
           {outputFiles.length > 0 ? (
             outputFiles.map((file) => (
               <div
@@ -54,7 +54,7 @@ const Chat: React.FC = () => {
               </div>
             ))
           ) : (
-            <div className="text-gray-400">No se han generado archivos aún.</div>
+            <div className="text-gray-400">No files generated.</div>
           )}
         </div>
       </div>
@@ -72,14 +72,14 @@ const Chat: React.FC = () => {
       <div
         className={`
           fixed top-0 right-0 h-screen w-full sm:w-3/4 md:w-2/3 lg:w-2/3 xl:w-2/3
-          bg-gray-800 text-white transform transition-transform duration-300
+           text-white transform transition-transform duration-300
           ${isDrawerOpen ? 'translate-x-0' : 'translate-x-full'}
         `}
         style={{ zIndex: 9999 }} // Sobre todo
       >
         {isDrawerOpen && (
           <div
-            className="absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-40"
+            className="absolute top-0 left-0 w-screen h-screen text-white text bg-black bg-opacity-60"
             style={{ zIndex: -1 }}
             onClick={closeDrawer}
           />
@@ -92,31 +92,31 @@ const Chat: React.FC = () => {
               onClick={closeDrawer}
               className="py-2 px-4 bg-red-500 hover:bg-red-600 text-white rounded"
             >
-              Cerrar
+              Close
             </button>
           </div>
 
           <div className="flex-grow overflow-auto p-4">
             <h2 className="text-xl font-bold mb-4">
-              Vista previa: {selectedFile && cleanFileName(selectedFile)}
+              Preview: {selectedFile && cleanFileName(selectedFile)}
             </h2>
 
             {selectedFile ? (
-              <div className="border border-gray-500 p-2 rounded">
+              <div className="border text-white border-gray-500 p-2 rounded">
                 <iframe
                   src={`http://localhost:8000/outputs/${folderName}/${selectedFile}`}
                   title="preview"
-                  className="w-full h-96"
+                  className="w-full h-96 text-white"
                 />
               </div>
             ) : (
-              <p>No hay archivo seleccionado</p>
+              <p>There is no file selected</p>
             )}
           </div>
 
           {/* Botón para descargar el archivo */}
           {selectedFile && (
-            <div className="p-4 border-t flex justify-end">
+            <div className="p-4 text-white border-t flex justify-end">
               <a
                 href={`http://localhost:8000/outputs/${folderName}/${selectedFile}`}
                 download
@@ -124,7 +124,7 @@ const Chat: React.FC = () => {
                 rel="noopener noreferrer"
                 className="py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded"
               >
-                Descargar
+                Download
               </a>
             </div>
           )}

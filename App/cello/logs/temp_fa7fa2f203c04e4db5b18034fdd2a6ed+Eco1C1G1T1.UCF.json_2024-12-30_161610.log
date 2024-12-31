@@ -1,0 +1,214 @@
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                       CELLO V2.1                                       
+              temp_fa7fa2f203c04e4db5b18034fdd2a6ed + Eco1C1G1T1.UCF.json               
+////////////////////////////////////////////////////////////////////////////////////////
+
+new_out: /home/lexo/Desktop/Practica/App/temp_outputs/temp_fa7fa2f203c04e4db5b18034fdd2a6ed
+verilog: temp_fa7fa2f203c04e4db5b18034fdd2a6ed.v
+v_loc: /home/lexo/Desktop/Practica/App/library/verilogs/temp_fa7fa2f203c04e4db5b18034fdd2a6ed.v
+new_in: /home/lexo/Desktop/Practica/App/library/verilogs
+new_out: /home/lexo/Desktop/Practica/App/temp_outputs/temp_fa7fa2f203c04e4db5b18034fdd2a6ed
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of Logic Synthesis                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                            condition checks for valid input                            
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+NETLIST:
+isvalid: True
+
+INPUTS (including the communication devices): 
+num IN-SENSORS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-STRUCTURES in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-MODELS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-PARTS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-NODES in temp_fa7fa2f203c04e4db5b18034fdd2a6ed netlist: 3
+['LacI_sensor', 'TetR_sensor', 'AraC_sensor', 'LuxR_sensor']
+Valid input match!
+
+OUTPUTS: 
+num OUT-SENSORS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-STRUCTURES in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-MODELS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-PARTS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-NODES in temp_fa7fa2f203c04e4db5b18034fdd2a6ed netlist: 1
+['YFP_reporter', 'YFP_reporter_2', 'YFP_reporter_3']
+Valid output match!
+
+GATES: 
+num PARTS in Eco1C1G1T1.UCF.json UCF: 84
+num STRUCTURES in Eco1C1G1T1.UCF.json UCF: 20
+num MODELS in Eco1C1G1T1.UCF.json UCF: 20
+num GATES in Eco1C1G1T1.UCF.json UCF: 20
+num GATE USES: [12, True]
+num GATES in temp_fa7fa2f203c04e4db5b18034fdd2a6ed netlist: 6
+['AmeR', 'AmtR', 'BM3R1', 'BetI', 'HlyIIR', 'IcaRA', 'LitR', 'LmrA', 'PhlF', 'PsrA', 'QacR', 'SrpR']
+['A1_AmtR', 'B1_BM3R1', 'B2_BM3R1', 'B3_BM3R1', 'E1_BetI', 'F1_AmeR', 'H1_HlyIIR', 'I1_IcaRA', 'L1_LitR', 'N1_LmrA', 'P1_PhlF', 'P2_PhlF', 'P3_PhlF', 'Q1_QacR', 'Q2_QacR', 'R1_PsrA', 'S1_SrpR', 'S2_SrpR', 'S3_SrpR', 'S4_SrpR']
+Valid intermediate match!
+
+#47,900,160 possible permutations for temp_fa7fa2f203c04e4db5b18034fdd2a6ed.v+Eco1C1G1T1.UCF.json...
+(#47,900,160.0 permutations of UCF gate groups confirmed.)
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                End of condition checks                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Condition check passed? True
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                               Beginning GATE ASSIGNMENT                                
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Listing available assignments from UCF: 
+['LacI_sensor', 'TetR_sensor', 'AraC_sensor', 'LuxR_sensor']
+['YFP_reporter', 'YFP_reporter_2', 'YFP_reporter_3']
+['QacR', 'PsrA', 'AmeR', 'LmrA', 'HlyIIR', 'BM3R1', 'AmtR', 'SrpR', 'IcaRA', 'BetI', 'LitR', 'PhlF']
+
+Netlist de-construction: 
+[A, B, C]
+[100, 101, 102, 97, 98, 99]
+[Y]
+
+Netlist requirements: 
+need 3 inputs
+need 1 outputs
+need 6 gates
+
+////////////////////////////////////////////////////////////////////////////////////////
+                Running SIMULATED ANNEALING gate-assignment algorithm...                
+////////////////////////////////////////////////////////////////////////////////////////
+
+__________________________________________________ #1/1,000 | Best Score: 0.8331659449792121 | Current Score: 0.8331659449792121
+__________________________________________________ #2/1,000 | Best Score: 0.9374106878926108 | Current Score: 0.9374106878926108
+__________________________________________________ #3/1,000 | Best Score: 2.783343467812954 | Current Score: 2.783343467812954
+__________________________________________________ #7/1,000 | Best Score: 11.912260200247513 | Current Score: 11.912260200247513
+__________________________________________________ #25/1,000 | Best Score: 12.520693174573704 | Current Score: 12.520693174573704█
+__________________________________________________ #48/1,000 | Best Score: 15.960313553247857 | Current Score: 15.960313553247857██
+__________________________________________________ #57/1,000 | Best Score: 121.62495799707207 | Current Score: 121.62495799707207███
+__________________________________________________ #576/1,000 | Best Score: 195.06745646000994 | Current Score: 195.06745646000994████████████████████████████
+__________________________________________________ #707/1,000 | Best Score: 288.2419159268444 | Current Score: 288.2419159268444███████████████████████████████████
+
+
+DONE!
+Completed: 1,000/1,000 iterations (out of 47,900,160 possible iterations)
+Best Score: 288.2419159268444
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of GATE ASSIGNMENT                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+∫ *** DEBUG *** ∫ final result for temp_fa7fa2f203c04e4db5b18034fdd2a6ed.v+Eco1C1G1T1.UCF.json: 288.2419159268444
+
+
+
+∫ *** DEBUG *** ∫ Inputs: [AraC_sensor, TetR_sensor, LacI_sensor], Gates: [SrpR, BetI, PhlF, QacR, IcaRA, BM3R1], Outputs: [YFP_reporter]
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                        RESULTS                                         
+              temp_fa7fa2f203c04e4db5b18034fdd2a6ed + Eco1C1G1T1.UCF.json               
+////////////////////////////////////////////////////////////////////////////////////////
+
+CIRCUIT DESIGN:
+ - Best Design: Inputs: [AraC_sensor, TetR_sensor, LacI_sensor], Gates: [SrpR, BetI, PhlF, QacR, IcaRA, BM3R1], Outputs: [YFP_reporter]
+ - Best Circuit Score: 288.2419159268444
+
+Inputs ( input response = STATE * (ymax - ymin) + ymin ):
+ - ('A', 2) input AraC_sensor 2 with ymax: 2.5 and ymin: 0.0082 with max sensor output of [('high', 2.5), ('low', 0.0082)]
+ - ('B', 3) input TetR_sensor 3 with ymax: 4.4 and ymin: 0.0013 with max sensor output of [('high', 4.4), ('low', 0.0013)]
+ - ('C', 4) input LacI_sensor 4 with ymax: 2.8 and ymin: 0.0034 with max sensor output of [('high', 2.8), ('low', 0.0034)]
+
+Gates ( response function = ymin + (ymax - ymin) / (1.0 + (x / K)**n);   input composition = x2 + x1 ):
+ - 100 gate NOR SrpR w/ inputs [6, 7] and output 8, and best_gate = S4_SrpR
+ - 101 gate NOR BetI w/ inputs [4, 9] and output 10, and best_gate = E1_BetI
+ - 102 gate NOR PhlF w/ inputs [8, 10] and output 5, and best_gate = P3_PhlF
+ - 97 gate NOT QacR w/ inputs [4] and output 6, and best_gate = Q2_QacR
+ - 98 gate NOT IcaRA w/ inputs [3] and output 9, and best_gate = I1_IcaRA
+ - 99 gate NOR BM3R1 w/ inputs [2, 9] and output 7, and best_gate = B3_BM3R1
+
+Outputs ( unit conversion and/or hill response... ):
+ - ('Y', 5) output YFP_reporter 5 with c * x: c = 0.0076
+
+
+TRUTH TABLE/GATE SCORING:
++-----------------+-----------------+-----------------+-------------+-------------+-------------+----------+----------+----------+----------+
+| AraC_sensor_I/O | TetR_sensor_I/O | LacI_sensor_I/O | AraC_sensor | TetR_sensor | LacI_sensor | SrpR_I/O | BetI_I/O | PhlF_I/O | QacR_I/O |
++-----------------+-----------------+-----------------+-------------+-------------+-------------+----------+----------+----------+----------+
+| 0               | 0               | 0               | 0.0082      | 0.0013      | 0.0034      | 0        | 0        | 1        | 1        |
+| 0               | 0               | 1               | 0.0082      | 0.0013      | 2.8         | 1        | 0        | 0        | 0        |
+| 0               | 1               | 0               | 0.0082      | 4.4         | 0.0034      | 0        | 1        | 0        | 1        |
+| 0               | 1               | 1               | 0.0082      | 4.4         | 2.8         | 0        | 0        | 1        | 0        |
+| 1               | 0               | 0               | 2.5         | 0.0013      | 0.0034      | 0        | 0        | 1        | 1        |
+| 1               | 0               | 1               | 2.5         | 0.0013      | 2.8         | 1        | 0        | 0        | 0        |
+| 1               | 1               | 0               | 2.5         | 4.4         | 0.0034      | 0        | 1        | 0        | 1        |
+| 1               | 1               | 1               | 2.5         | 4.4         | 2.8         | 1        | 0        | 0        | 0        |
++-----------------+-----------------+-----------------+-------------+-------------+-------------+----------+----------+----------+----------+
++-----------+-----------+----------------------+---------------------+----------------------+--------------------+---------------------+----------------------+------------------+------------------------+
+| IcaRA_I/O | BM3R1_I/O | SrpR                 | BetI                | PhlF                 | QacR               | IcaRA               | BM3R1                | YFP_reporter_I/O | YFP_reporter           |
++-----------+-----------+----------------------+---------------------+----------------------+--------------------+---------------------+----------------------+------------------+------------------------+
+| 1         | 0         | 0.007183727867671171 | 0.13510449534442526 | 6.003787700969707    | 2.799860465697698  | 2.195159793664809   | 0.010551750353809584 | 1                | 0.04562878652736978    |
+| 1         | 0         | 1.885526013587097    | 0.07922139360468991 | 0.02082898230241644  | 0.0355177350188727 | 2.195159793664809   | 0.010551750353809584 | 0                | 0.00015830026549836494 |
+| 0         | 1         | 0.00709392019168575  | 3.6944317741801544  | 0.020057980727976016 | 2.799860465697698  | 0.09055200711832256 | 0.7716657821405639   | 0                | 0.00015244065353261772 |
+| 0         | 1         | 0.01302552288164812  | 0.10404505453507609 | 6.424419158715566    | 0.0355177350188727 | 0.09055200711832256 | 0.7716657821405639   | 1                | 0.04882558560623831    |
+| 1         | 0         | 0.007183821170672973 | 0.13510449534442526 | 6.0037857656548494   | 2.799860465697698  | 2.195159793664809   | 0.01004216013697132  | 1                | 0.04562877181897686    |
+| 1         | 0         | 1.8914473931273597   | 0.07922139360468991 | 0.020818572007367697 | 0.0355177350188727 | 2.195159793664809   | 0.01004216013697132  | 0                | 0.0001582211472559945  |
+| 0         | 0         | 0.007183770604307046 | 3.6944317741801544  | 0.02005797481724577  | 2.799860465697698  | 0.09055200711832256 | 0.010318293366737908 | 0                | 0.00015244060861106784 |
+| 0         | 0         | 1.888248844296698    | 0.10404505453507609 | 0.020781901806310264 | 0.0355177350188727 | 0.09055200711832256 | 0.010318293366737908 | 0                | 0.000157942453727958   |
++-----------+-----------+----------------------+---------------------+----------------------+--------------------+---------------------+----------------------+------------------+------------------------+
+
+
+∫ *** DEBUG *** ∫ Truth Table (same as before, simpler format):
+
+['AraC_sensor_I/O', 'TetR_sensor_I/O', 'LacI_sensor_I/O', 'AraC_sensor', 'TetR_sensor', 'LacI_sensor', 'SrpR_I/O', 'BetI_I/O', 'PhlF_I/O', 'QacR_I/O', 'IcaRA_I/O', 'BM3R1_I/O', 'SrpR', 'BetI', 'PhlF', 'QacR', 'IcaRA', 'BM3R1', 'YFP_reporter_I/O', 'YFP_reporter']
+[0, 0, 0, 0.0082, 0.0013, 0.0034, 0, 0, 1, 1, 1, 0, 0.007183727867671171, 0.13510449534442526, 6.003787700969707, 2.799860465697698, 2.195159793664809, 0.010551750353809584, 1, 0.04562878652736978]
+[0, 0, 1, 0.0082, 0.0013, 2.8, 1, 0, 0, 0, 1, 0, 1.885526013587097, 0.07922139360468991, 0.02082898230241644, 0.0355177350188727, 2.195159793664809, 0.010551750353809584, 0, 0.00015830026549836494]
+[0, 1, 0, 0.0082, 4.4, 0.0034, 0, 1, 0, 1, 0, 1, 0.00709392019168575, 3.6944317741801544, 0.020057980727976016, 2.799860465697698, 0.09055200711832256, 0.7716657821405639, 0, 0.00015244065353261772]
+[0, 1, 1, 0.0082, 4.4, 2.8, 0, 0, 1, 0, 0, 1, 0.01302552288164812, 0.10404505453507609, 6.424419158715566, 0.0355177350188727, 0.09055200711832256, 0.7716657821405639, 1, 0.04882558560623831]
+[1, 0, 0, 2.5, 0.0013, 0.0034, 0, 0, 1, 1, 1, 0, 0.007183821170672973, 0.13510449534442526, 6.0037857656548494, 2.799860465697698, 2.195159793664809, 0.01004216013697132, 1, 0.04562877181897686]
+[1, 0, 1, 2.5, 0.0013, 2.8, 1, 0, 0, 0, 1, 0, 1.8914473931273597, 0.07922139360468991, 0.020818572007367697, 0.0355177350188727, 2.195159793664809, 0.01004216013697132, 0, 0.0001582211472559945]
+[1, 1, 0, 2.5, 4.4, 0.0034, 0, 1, 0, 1, 0, 0, 0.007183770604307046, 3.6944317741801544, 0.02005797481724577, 2.799860465697698, 0.09055200711832256, 0.010318293366737908, 0, 0.00015244060861106784]
+[1, 1, 1, 2.5, 4.4, 2.8, 1, 0, 0, 0, 0, 0, 1.888248844296698, 0.10404505453507609, 0.020781901806310264, 0.0355177350188727, 0.09055200711832256, 0.010318293366737908, 0, 0.000157942453727958]
+
+
+EUGENE FILES:
+ - Eugene object and structs created...
+ - Eugene cassettes created...
+ - Eugene helpers created...
+ - Eugene script written to /home/lexo/Desktop/Practica/App/temp_outputs/temp_fa7fa2f203c04e4db5b18034fdd2a6ed/temp_fa7fa2f203c04e4db5b18034fdd2a6ed_Eco1C1G1T1.UCF._eugene.eug
+
+SBOL FILES:
+ - Circuit orders selected...
+   + ['Loc1_NONCE_PAD', 'Loc2_NONCE_PAD', 'pSrpR', 'pBetI', 'RiboJ53', 'P3', 'PhlF', 'ECK120033737', 'pQacR', 'pBM3R1', 'RiboJ10', 'S4', 'SrpR', 'ECK120029600', 'pBAD', 'pIcaRA', 'SarJ', 'B3', 'BM3R1', 'L3S2P11', 'pTac', 'pIcaRA', 'RiboJ57', 'E1', 'BetI', 'L3S3P11', 'pTet', 'ElvJ', 'I1', 'IcaRA', 'ECK120016170', 'pTac', 'RiboJ60', 'Q2', 'QacR', 'ECK120010818', 'Loc3_NONCE_PAD', 'pPhlF', 'YFP_cassette']
+
+ - SBOL files being generated...
+Component.....................53
+Sequence......................49
+---
+Total: .........................102
+
+SBOL XML and related files generated
+ - Response plots generated
+
+
+
+Thread count: 1
+Completion Time: 10.9 seconds
+Archivo Verilog temporal eliminado: temp_fa7fa2f203c04e4db5b18034fdd2a6ed.v
+Archivo Verilog temporal creado: temp_136ffa44eab0403ca777b0aa87596ea8.v

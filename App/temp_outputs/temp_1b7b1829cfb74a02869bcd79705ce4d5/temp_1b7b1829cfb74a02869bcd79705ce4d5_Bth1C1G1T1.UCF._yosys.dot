@@ -1,0 +1,15 @@
+digraph "dna_detector" {
+label="dna_detector";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="outX", color="black", fontcolor="black"];
+n2 [ shape=octagon, label="outY", color="black", fontcolor="black"];
+n3 [ shape=octagon, label="seq_in", color="black", fontcolor="black"];
+x0 [shape=point, ];
+v1 [ label="1'0" ];
+x2 [shape=point, ];
+x2:e -> n1:w [color="black", fontcolor="black", label=""];
+x0:e -> n2:w [color="black", fontcolor="black", label=""];
+n3:e -> x0:w [color="black", fontcolor="black", label=""];
+v1:e -> x2:w [color="black", fontcolor="black", label=""];
+}

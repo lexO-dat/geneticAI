@@ -1,0 +1,233 @@
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                       CELLO V2.1                                       
+              temp_ca8bde96230f4ae8ae41e3e8af092763 + Eco1C1G1T1.UCF.json               
+////////////////////////////////////////////////////////////////////////////////////////
+
+new_out: /home/lexo/Desktop/Practica/App/temp_outputs/temp_ca8bde96230f4ae8ae41e3e8af092763
+verilog: temp_ca8bde96230f4ae8ae41e3e8af092763.v
+v_loc: /home/lexo/Desktop/Practica/App/library/verilogs/temp_ca8bde96230f4ae8ae41e3e8af092763.v
+new_in: /home/lexo/Desktop/Practica/App/library/verilogs
+new_out: /home/lexo/Desktop/Practica/App/temp_outputs/temp_ca8bde96230f4ae8ae41e3e8af092763
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of Logic Synthesis                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                            condition checks for valid input                            
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+NETLIST:
+isvalid: True
+
+INPUTS (including the communication devices): 
+num IN-SENSORS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-STRUCTURES in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-MODELS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-PARTS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-NODES in temp_ca8bde96230f4ae8ae41e3e8af092763 netlist: 3
+['LacI_sensor', 'TetR_sensor', 'AraC_sensor', 'LuxR_sensor']
+Valid input match!
+
+OUTPUTS: 
+num OUT-SENSORS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-STRUCTURES in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-MODELS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-PARTS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-NODES in temp_ca8bde96230f4ae8ae41e3e8af092763 netlist: 3
+['YFP_reporter', 'YFP_reporter_2', 'YFP_reporter_3']
+Valid output match!
+
+GATES: 
+num PARTS in Eco1C1G1T1.UCF.json UCF: 84
+num STRUCTURES in Eco1C1G1T1.UCF.json UCF: 20
+num MODELS in Eco1C1G1T1.UCF.json UCF: 20
+num GATES in Eco1C1G1T1.UCF.json UCF: 20
+num GATE USES: [12, True]
+num GATES in temp_ca8bde96230f4ae8ae41e3e8af092763 netlist: 6
+['AmeR', 'AmtR', 'BM3R1', 'BetI', 'HlyIIR', 'IcaRA', 'LitR', 'LmrA', 'PhlF', 'PsrA', 'QacR', 'SrpR']
+['A1_AmtR', 'B1_BM3R1', 'B2_BM3R1', 'B3_BM3R1', 'E1_BetI', 'F1_AmeR', 'H1_HlyIIR', 'I1_IcaRA', 'L1_LitR', 'N1_LmrA', 'P1_PhlF', 'P2_PhlF', 'P3_PhlF', 'Q1_QacR', 'Q2_QacR', 'R1_PsrA', 'S1_SrpR', 'S2_SrpR', 'S3_SrpR', 'S4_SrpR']
+Valid intermediate match!
+
+#95,800,320 possible permutations for temp_ca8bde96230f4ae8ae41e3e8af092763.v+Eco1C1G1T1.UCF.json...
+(#95,800,320.0 permutations of UCF gate groups confirmed.)
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                End of condition checks                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Condition check passed? True
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                               Beginning GATE ASSIGNMENT                                
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Listing available assignments from UCF: 
+['LacI_sensor', 'TetR_sensor', 'AraC_sensor', 'LuxR_sensor']
+['YFP_reporter', 'YFP_reporter_2', 'YFP_reporter_3']
+['BetI', 'IcaRA', 'QacR', 'BM3R1', 'LitR', 'PhlF', 'PsrA', 'LmrA', 'SrpR', 'HlyIIR', 'AmeR', 'AmtR']
+
+Netlist de-construction: 
+[seq_in[0], seq_in[1], seq_in[2]]
+[89, 90, 91, 92, 93, 94]
+[outX, outY, outZ]
+
+Netlist requirements: 
+need 3 inputs
+need 3 outputs
+need 6 gates
+
+////////////////////////////////////////////////////////////////////////////////////////
+                Running SIMULATED ANNEALING gate-assignment algorithm...                
+////////////////////////////////////////////////////////////////////////////////////////
+
+__________________________________________________ #1/1,000 | Best Score: 1.0200080848606545 | Current Score: 1.0200080848606545
+__________________________________________________ #3/1,000 | Best Score: 2.7420112787906366 | Current Score: 2.7420112787906366
+__________________________________________________ #15/1,000 | Best Score: 3.208145272565004 | Current Score: 3.208145272565004
+__________________________________________________ #22/1,000 | Best Score: 4.05520416829179 | Current Score: 4.05520416829179█
+__________________________________________________ #38/1,000 | Best Score: 5.057923161920398 | Current Score: 5.057923161920398██
+__________________________________________________ #40/1,000 | Best Score: 12.243185781218521 | Current Score: 12.243185781218521██
+__________________________________________________ #65/1,000 | Best Score: 20.410833242059205 | Current Score: 20.410833242059205███
+__________________________________________________ #94/1,000 | Best Score: 21.425458039474158 | Current Score: 21.425458039474158████
+__________________________________________________ #113/1,000 | Best Score: 36.29360683535071 | Current Score: 36.29360683535071█████
+__________________________________________________ #181/1,000 | Best Score: 67.7499683277612 | Current Score: 67.7499683277612█████████
+
+
+DONE!
+Completed: 1,000/1,000 iterations (out of 95,800,320 possible iterations)
+Best Score: 67.7499683277612
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of GATE ASSIGNMENT                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+∫ *** DEBUG *** ∫ final result for temp_ca8bde96230f4ae8ae41e3e8af092763.v+Eco1C1G1T1.UCF.json: 67.7499683277612
+
+
+
+∫ *** DEBUG *** ∫ Inputs: [AraC_sensor, TetR_sensor, LacI_sensor], Gates: [AmeR, HlyIIR, PhlF, SrpR, LitR, BM3R1], Outputs: [YFP_reporter_3, YFP_reporter, YFP_reporter_2]
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                        RESULTS                                         
+              temp_ca8bde96230f4ae8ae41e3e8af092763 + Eco1C1G1T1.UCF.json               
+////////////////////////////////////////////////////////////////////////////////////////
+
+CIRCUIT DESIGN:
+ - Best Design: Inputs: [AraC_sensor, TetR_sensor, LacI_sensor], Gates: [AmeR, HlyIIR, PhlF, SrpR, LitR, BM3R1], Outputs: [YFP_reporter_3, YFP_reporter, YFP_reporter_2]
+ - Best Circuit Score: 67.7499683277612
+
+Inputs ( input response = STATE * (ymax - ymin) + ymin ):
+ - ('seq_in[0]', 5) input AraC_sensor 5 with ymax: 2.5 and ymin: 0.0082 with max sensor output of [('high', 2.5), ('low', 0.0082)]
+ - ('seq_in[1]', 6) input TetR_sensor 6 with ymax: 4.4 and ymin: 0.0013 with max sensor output of [('high', 4.4), ('low', 0.0013)]
+ - ('seq_in[2]', 7) input LacI_sensor 7 with ymax: 2.8 and ymin: 0.0034 with max sensor output of [('high', 2.8), ('low', 0.0034)]
+
+Gates ( response function = ymin + (ymax - ymin) / (1.0 + (x / K)**n);   input composition = x2 + x1 ):
+ - 89 gate NOT AmeR w/ inputs [7] and output 8, and best_gate = F1_AmeR
+ - 90 gate NOT HlyIIR w/ inputs [5] and output 9, and best_gate = H1_HlyIIR
+ - 91 gate NOR PhlF w/ inputs [6, 8] and output 3, and best_gate = P3_PhlF
+ - 92 gate NOT SrpR w/ inputs [3] and output 4, and best_gate = S4_SrpR
+ - 93 gate NOR LitR w/ inputs [6, 7] and output 10, and best_gate = L1_LitR
+ - 94 gate NOR BM3R1 w/ inputs [9, 10] and output 2, and best_gate = B3_BM3R1
+
+Outputs ( unit conversion and/or hill response... ):
+ - ('outX', 2) output YFP_reporter_3 2 with c * x: c = 0.0076
+ - ('outY', 3) output YFP_reporter 3 with c * x: c = 0.0076
+ - ('outZ', 4) output YFP_reporter_2 4 with c * x: c = 0.0076
+
+
+TRUTH TABLE/GATE SCORING:
++-----------------+-----------------+-----------------+-------------+-------------+-------------+----------+------------+----------+----------+
+| AraC_sensor_I/O | TetR_sensor_I/O | LacI_sensor_I/O | AraC_sensor | TetR_sensor | LacI_sensor | AmeR_I/O | HlyIIR_I/O | PhlF_I/O | SrpR_I/O |
++-----------------+-----------------+-----------------+-------------+-------------+-------------+----------+------------+----------+----------+
+| 0               | 0               | 0               | 0.0082      | 0.0013      | 0.0034      | 1        | 1          | 0        | 1        |
+| 0               | 0               | 1               | 0.0082      | 0.0013      | 2.8         | 0        | 1          | 1        | 0        |
+| 0               | 1               | 0               | 0.0082      | 4.4         | 0.0034      | 1        | 1          | 0        | 1        |
+| 0               | 1               | 1               | 0.0082      | 4.4         | 2.8         | 0        | 1          | 0        | 1        |
+| 1               | 0               | 0               | 2.5         | 0.0013      | 0.0034      | 1        | 0          | 0        | 1        |
+| 1               | 0               | 1               | 2.5         | 0.0013      | 2.8         | 0        | 0          | 1        | 0        |
+| 1               | 1               | 0               | 2.5         | 4.4         | 0.0034      | 1        | 0          | 0        | 1        |
+| 1               | 1               | 1               | 2.5         | 4.4         | 2.8         | 0        | 0          | 0        | 1        |
++-----------------+-----------------+-----------------+-------------+-------------+-------------+----------+------------+----------+----------+
++----------+-----------+---------------------+---------------------+----------------------+----------------------+---------------------+----------------------+--------------------+------------------+
+| LitR_I/O | BM3R1_I/O | AmeR                | HlyIIR              | PhlF                 | SrpR                 | LitR                | BM3R1                | YFP_reporter_3_I/O | YFP_reporter_I/O |
++----------+-----------+---------------------+---------------------+----------------------+----------------------+---------------------+----------------------+--------------------+------------------+
+| 1        | 0         | 3.763689615965023   | 2.499313500512401   | 0.020053985267742054 | 2.076978806495768    | 4.22536770253836    | 0.010012429276790972 | 0                  | 0                |
+| 0        | 0         | 0.22902054876211977 | 2.499313500512401   | 3.400085254695287    | 0.007107789238211897 | 0.07450417575007955 | 0.01032538169194018  | 0                  | 1                |
+| 0        | 0         | 3.763689615965023   | 2.499313500512401   | 0.020002092007496447 | 2.0771434010344243   | 0.07208898350585781 | 0.010326421525009349 | 0                  | 0                |
+| 0        | 0         | 0.22902054876211977 | 2.499313500512401   | 0.020022668923488637 | 2.077078224081335    | 0.07090579751010727 | 0.010326932501215354 | 0                  | 0                |
+| 1        | 0         | 3.763689615965023   | 0.07298667179901841 | 0.020053985267742054 | 2.076978806495768    | 4.22536770253836    | 0.010056921671027595 | 0                  | 0                |
+| 0        | 1         | 0.22902054876211977 | 0.07298667179901841 | 3.400085254695287    | 0.007107789238211897 | 0.07450417575007955 | 0.6996493498802681   | 1                  | 1                |
+| 0        | 1         | 3.763689615965023   | 0.07298667179901841 | 0.020002092007496447 | 2.0771434010344243   | 0.07208898350585781 | 0.7044650172109392   | 1                  | 0                |
+| 0        | 1         | 0.22902054876211977 | 0.07298667179901841 | 0.020022668923488637 | 2.077078224081335    | 0.07090579751010727 | 0.7067787471955094   | 1                  | 0                |
++----------+-----------+---------------------+---------------------+----------------------+----------------------+---------------------+----------------------+--------------------+------------------+
++--------------------+-----------------------+------------------------+-----------------------+
+| YFP_reporter_2_I/O | YFP_reporter_3        | YFP_reporter           | YFP_reporter_2        |
++--------------------+-----------------------+------------------------+-----------------------+
+| 1                  | 7.609446250361138e-05 | 0.00015241028803483962 | 0.015785038929367837  |
+| 0                  | 7.847290085874537e-05 | 0.02584064793568418    | 5.401919821041042e-05 |
+| 1                  | 7.848080359007105e-05 | 0.000152015899256973   | 0.015786289847861623  |
+| 1                  | 7.848468700923669e-05 | 0.00015217228381851365 | 0.015785794503018147  |
+| 1                  | 7.643260469980972e-05 | 0.00015241028803483962 | 0.015785038929367837  |
+| 0                  | 0.005317335059090037  | 0.02584064793568418    | 5.401919821041042e-05 |
+| 1                  | 0.005353934130803139  | 0.000152015899256973   | 0.015786289847861623  |
+| 1                  | 0.005371518478685871  | 0.00015217228381851365 | 0.015785794503018147  |
++--------------------+-----------------------+------------------------+-----------------------+
+
+
+∫ *** DEBUG *** ∫ Truth Table (same as before, simpler format):
+
+['AraC_sensor_I/O', 'TetR_sensor_I/O', 'LacI_sensor_I/O', 'AraC_sensor', 'TetR_sensor', 'LacI_sensor', 'AmeR_I/O', 'HlyIIR_I/O', 'PhlF_I/O', 'SrpR_I/O', 'LitR_I/O', 'BM3R1_I/O', 'AmeR', 'HlyIIR', 'PhlF', 'SrpR', 'LitR', 'BM3R1', 'YFP_reporter_3_I/O', 'YFP_reporter_I/O', 'YFP_reporter_2_I/O', 'YFP_reporter_3', 'YFP_reporter', 'YFP_reporter_2']
+[0, 0, 0, 0.0082, 0.0013, 0.0034, 1, 1, 0, 1, 1, 0, 3.763689615965023, 2.499313500512401, 0.020053985267742054, 2.076978806495768, 4.22536770253836, 0.010012429276790972, 0, 0, 1, 7.609446250361138e-05, 0.00015241028803483962, 0.015785038929367837]
+[0, 0, 1, 0.0082, 0.0013, 2.8, 0, 1, 1, 0, 0, 0, 0.22902054876211977, 2.499313500512401, 3.400085254695287, 0.007107789238211897, 0.07450417575007955, 0.01032538169194018, 0, 1, 0, 7.847290085874537e-05, 0.02584064793568418, 5.401919821041042e-05]
+[0, 1, 0, 0.0082, 4.4, 0.0034, 1, 1, 0, 1, 0, 0, 3.763689615965023, 2.499313500512401, 0.020002092007496447, 2.0771434010344243, 0.07208898350585781, 0.010326421525009349, 0, 0, 1, 7.848080359007105e-05, 0.000152015899256973, 0.015786289847861623]
+[0, 1, 1, 0.0082, 4.4, 2.8, 0, 1, 0, 1, 0, 0, 0.22902054876211977, 2.499313500512401, 0.020022668923488637, 2.077078224081335, 0.07090579751010727, 0.010326932501215354, 0, 0, 1, 7.848468700923669e-05, 0.00015217228381851365, 0.015785794503018147]
+[1, 0, 0, 2.5, 0.0013, 0.0034, 1, 0, 0, 1, 1, 0, 3.763689615965023, 0.07298667179901841, 0.020053985267742054, 2.076978806495768, 4.22536770253836, 0.010056921671027595, 0, 0, 1, 7.643260469980972e-05, 0.00015241028803483962, 0.015785038929367837]
+[1, 0, 1, 2.5, 0.0013, 2.8, 0, 0, 1, 0, 0, 1, 0.22902054876211977, 0.07298667179901841, 3.400085254695287, 0.007107789238211897, 0.07450417575007955, 0.6996493498802681, 1, 1, 0, 0.005317335059090037, 0.02584064793568418, 5.401919821041042e-05]
+[1, 1, 0, 2.5, 4.4, 0.0034, 1, 0, 0, 1, 0, 1, 3.763689615965023, 0.07298667179901841, 0.020002092007496447, 2.0771434010344243, 0.07208898350585781, 0.7044650172109392, 1, 0, 1, 0.005353934130803139, 0.000152015899256973, 0.015786289847861623]
+[1, 1, 1, 2.5, 4.4, 2.8, 0, 0, 0, 1, 0, 1, 0.22902054876211977, 0.07298667179901841, 0.020022668923488637, 2.077078224081335, 0.07090579751010727, 0.7067787471955094, 1, 0, 1, 0.005371518478685871, 0.00015217228381851365, 0.015785794503018147]
+
+
+EUGENE FILES:
+ - Eugene object and structs created...
+ - Eugene cassettes created...
+ - Eugene helpers created...
+ - Eugene script written to /home/lexo/Desktop/Practica/App/temp_outputs/temp_ca8bde96230f4ae8ae41e3e8af092763/temp_ca8bde96230f4ae8ae41e3e8af092763_Eco1C1G1T1.UCF._eugene.eug
+
+SBOL FILES:
+ - Circuit orders selected...
+   + ['Loc1_NONCE_PAD', 'Loc2_NONCE_PAD', 'pTet', 'pAmeR', 'RiboJ53', 'P3', 'PhlF', 'ECK120033737', 'pPhlF', 'RiboJ10', 'S4', 'SrpR', 'ECK120029600', 'pHlyIIR', 'pLitR', 'SarJ', 'B3', 'BM3R1', 'L3S2P11', 'pTac', 'RiboJ54', 'F1', 'AmeR', 'L3S3P31', 'pSrpR', 'YFP_cassette', 'pBM3R1', 'YFP_cassette', 'pTet', 'pTac', 'PlmJ', 'L1', 'LitR', 'L3S2P24', 'pBAD', 'RiboJ51', 'H1', 'HlyIIR', 'ECK120033736', 'Loc3_NONCE_PAD', 'pPhlF', 'YFP_cassette']
+   + ['Loc1_NONCE_PAD', 'Loc2_NONCE_PAD', 'pTet', 'pAmeR', 'RiboJ53', 'P3', 'PhlF', 'ECK120033737', 'pPhlF', 'RiboJ10', 'S4', 'SrpR', 'ECK120029600', 'pHlyIIR', 'pLitR', 'SarJ', 'B3', 'BM3R1', 'L3S2P11', 'pTac', 'RiboJ54', 'F1', 'AmeR', 'L3S3P31', 'pTet', 'pTac', 'PlmJ', 'L1', 'LitR', 'L3S2P24', 'pBAD', 'RiboJ51', 'H1', 'HlyIIR', 'ECK120033736', 'pSrpR', 'YFP_cassette', 'Loc3_NONCE_PAD', 'pPhlF', 'YFP_cassette', 'pBM3R1', 'YFP_cassette']
+   + ['Loc1_NONCE_PAD', 'Loc2_NONCE_PAD', 'pTet', 'pAmeR', 'RiboJ53', 'P3', 'PhlF', 'ECK120033737', 'pPhlF', 'RiboJ10', 'S4', 'SrpR', 'ECK120029600', 'pHlyIIR', 'pLitR', 'SarJ', 'B3', 'BM3R1', 'L3S2P11', 'pBM3R1', 'YFP_cassette', 'pTac', 'RiboJ54', 'F1', 'AmeR', 'L3S3P31', 'pTet', 'pTac', 'PlmJ', 'L1', 'LitR', 'L3S2P24', 'pBAD', 'RiboJ51', 'H1', 'HlyIIR', 'ECK120033736', 'Loc3_NONCE_PAD', 'pPhlF', 'YFP_cassette', 'pSrpR', 'YFP_cassette']
+   + ['Loc1_NONCE_PAD', 'Loc2_NONCE_PAD', 'pTet', 'pAmeR', 'RiboJ53', 'P3', 'PhlF', 'ECK120033737', 'pSrpR', 'YFP_cassette', 'pPhlF', 'RiboJ10', 'S4', 'SrpR', 'ECK120029600', 'pHlyIIR', 'pLitR', 'SarJ', 'B3', 'BM3R1', 'L3S2P11', 'pBM3R1', 'YFP_cassette', 'pTac', 'RiboJ54', 'F1', 'AmeR', 'L3S3P31', 'pTet', 'pTac', 'PlmJ', 'L1', 'LitR', 'L3S2P24', 'pBAD', 'RiboJ51', 'H1', 'HlyIIR', 'ECK120033736', 'Loc3_NONCE_PAD', 'pPhlF', 'YFP_cassette']
+   + ['Loc1_NONCE_PAD', 'Loc2_NONCE_PAD', 'pSrpR', 'YFP_cassette', 'pTet', 'pAmeR', 'RiboJ53', 'P3', 'PhlF', 'ECK120033737', 'pPhlF', 'RiboJ10', 'S4', 'SrpR', 'ECK120029600', 'pHlyIIR', 'pLitR', 'SarJ', 'B3', 'BM3R1', 'L3S2P11', 'pTac', 'RiboJ54', 'F1', 'AmeR', 'L3S3P31', 'pTet', 'pTac', 'PlmJ', 'L1', 'LitR', 'L3S2P24', 'pBAD', 'RiboJ51', 'H1', 'HlyIIR', 'ECK120033736', 'pBM3R1', 'YFP_cassette', 'Loc3_NONCE_PAD', 'pPhlF', 'YFP_cassette']
+
+ - SBOL files being generated...
+Component.....................53
+Sequence......................49
+---
+Total: .........................102
+
+SBOL XML and related files generated
+ - Response plots generated
+
+
+
+Thread count: 1
+Completion Time: 14.9 seconds
+Archivo Verilog temporal eliminado: temp_ca8bde96230f4ae8ae41e3e8af092763.v
+Archivo Verilog temporal creado: temp_2582ea9f36074aa6ad00423a92b4aa75.v

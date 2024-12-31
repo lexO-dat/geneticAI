@@ -1,0 +1,294 @@
+PartType spacer;
+PartType scar;
+PartType promoter;
+PartType cds;
+PartType rbs;
+PartType ribozyme;
+PartType terminator;
+PartType cassette;
+
+promoter PTac(.SEQUENCE("tgttgacaattaatcatcggctcgtataatgtgtggaattgtgagcgctcacaatt"));
+promoter PTet(.SEQUENCE("ttttttccctatcagtgatagagattgacatccctatcagtgatagagataatgagcac"));
+promoter pLuxB(.SEQUENCE("ACCTGTAGGATCGTACAGGTTTACGCAAGAAAATGGTTTGTTACAGTCGAATAAAAGCTGTCACCGGATGTGCTTTCCGGTCTGATGAGTCCGTGAGGACGAAACAGCCTCTACAAATAATTTTGTTTAATACTAGAG"));
+promoter pRpa(.SEQUENCE("CGTAAGCTGTCACCGGATGTGCTTTCCGGTCTGATGAGTCCGTGAGGACGAAACAGCCTCTACAAATAATTTTGTTTAATACTAGAG"));
+promoter pLambda(.SEQUENCE("TTCTTTCAGGCCGGGtaacaccgtgcgtgttgactattttacctctggcggtgataat"));
+cds Lambda(.SEQUENCE("atgagcacaaaaaagaaaccattaacacaagagcagcttgaggacgcacgtcgccttaaagcaatttatgaaaaaaagaaaaatgaacttggcttatcccaggaatctgtcgcagacaagatggggatggggcagtcaggcgttggtgctttatttaatggcatcaatgcattaaatgcttataacgccgcattgcttgcaaaaattctcaaagttagcgttgaagaatttagcccttcaatcgccagagaaatctacgagatgtatgaagcggttagtatgcagccgtcacttagaagtgagtatgagtaccctgttttttctcatgttcaggcagggatgttctcacctgagcttagaacctttaccaaaggtgatgcggagagatgggtaagcacaaccaaaaaagccagtgattctgcattctggcttgaggttgaaggtaattccatgaccgcaccaacaggctccaagccaagctttcctgacggaatgttaattctcgttgaccctgagcaggctgttgagccaggtgatttctgcatagccagacttgggggtgatgagtttaccttcaagaaactgatcagggatagcggtcaggtgtttttacaaccactaaacccacagtacccaatgatcccatgcaatgagagttgttccgttgtggggaaagttatcgctagtcagtggcctgaagagacgtttggcTGA"));
+rbs R2(.SEQUENCE("AACATCCCTCGTTAGCCTCTTC"));
+ribozyme RiboJ54(.SEQUENCE("aggggtcagttgatgtgctttcaactctgatgagtcagtgatgacgaaaccccctctacaaataattttgtttaa"));
+terminator Ret0(.SEQUENCE("GCAGACAAAAAAAATGGCGCACAATGTGCGCCATTTTTCACTTCACAGGTACTATTGTTTTGAATTGAAAAGGGCGCTTCGGCGCCCTTTTTGCATTTGTTGACGGCATATATTTGTATATCGAAGCGCCCTGATGGGCGCTTTTTTTATTTAATCGATAACCAGA"));
+promoter pP22(.SEQUENCE("GATGAGGCGGTCAGGaataaacttgactaaagattcctttagtagataatttaagtgttctttaatttc"));
+cds P22(.SEQUENCE("ATGGGAGAGCGTATCCGTGCGCGCCGTAAAAAATTAAAAATCCGCCAGGCAGCGTTAGGCAAGATGGTCGGTGTTTCGAATGTAGCGATCTCTCAGTGGGAGCGTAGCGAAACTGAACCGAATGGAGAAAATTTATTGGCTTTATCTAAGGCACTGCAGTGTAGTCCGGACTACTTGTTGAAAGGTGATCTGAGTCAAACAAACGTCGCGTACCATTCTCGCCATGAACCACGTGGCTCTTATCCTCTGATTAGCTGGGTGTCTGCGGGGCAGTGGATGGAGGCGGTCGAACCGTATCACAAGCGTGCAATCGAGAATTGGCATGATACGACTGTAGACTGTAGCGAGGATTCGTTCTGGTTGGATGTTCAAGGGGATAGCATGACCGCACCCGCCGGATTAAGCATCCCCGAAGGCATGATTATTTTGGTCGATCCGGAAGTGGAGCCTCGCAACGGCAAACTTGTCGTGGCTAAGTTGGAAGGCGAGAATGAGGCGACGTTTAAGAAACTTGTCATGGATGCCGGACGTAAGTTTTTGAAACCCTTAAATCCGCAATATCCGATGATCGAGATCAATGGAAACTGCAAAATTATCGGTGTAGTAGTTGATGCCAAGCTGGCTAACTTACCGTAG"));
+rbs R3(.SEQUENCE("ACTTTTAGCTAAAGGAATGATTG"));
+ribozyme RiboJ71(.SEQUENCE("AGTTGTCAGCCACTGTGCTTGTGGCTCTGATGAGACGGTGACGTCGAAACAACCTCTACAAATAATTTTGTTTAA"));
+terminator IlvGEDA(.SEQUENCE("TAGAGATCAAGCCTTAACGAACTAAGACCCCCGCACCGAAAGGTCCGGGGGTTTTTTTTGACCTTAAAAACATAACCGAGGAGCAGACA"));
+promoter pTP901(.SEQUENCE("GCCACAAGCTCGAAAagttcatgaaacgtgaacttgacagctagctcagtcctaggtataaagttcatgaaacgtgaact"));
+cds TP901(.SEQUENCE("ATGAAGACTGACACATCAAATCGCTTAAAGCAGATCATGGCTGAGCGCAACCTTAAACAAGTGGATATCCTGAATCTTAGCATCCCTTTTCAAAAAAAATTCGGGATCAAATTGAGCAAGTCCACCCTTTCGCAATACGTCAACTCGGTACAATCCCCAGACCAGAACCGTATTTACCTGTTAGCCAAGACCTTGGGGGTAAGTGAAGCATGGTTGATGGGATTCGACGTTCCAATGGTGGAATCCTCGAAGATTGAGAATGATTCAGAGAACATTGAGGAGACGATCACCGTCATGAAGAAGCTGGAAGAGCCGCGTCAGAAAGTGGTCTTGGATACAGCAAAAATTCAGTTAAAGGAGCAGGATGAACAGAATAAGGTAAAGCAGATCGAGGACTATCGCTTATCCGACGAATATTTGGAGGAGCAGATCAGCAAGGCGTCGGCTTACGGAGGGGGGCAACTTAACGATAATGATAAGGAATTTTTCAAACGTCTGCTGAAAAACACCCTTAAGGAGAAAATTGACAAAGGCGATCTTTGA"));
+rbs R4(.SEQUENCE("GCTGGTACTGCTCGAGTATCTT"));
+ribozyme RiboJ69(.SEQUENCE("AGCTGTCAAGGCGTGTGCTTCGCCTTCTGATGAGCCCGTGAGGGCGAAACAGCCTCTACAAATAATTTTGTTTAA"));
+terminator RpoC(.SEQUENCE("GTAATCGTTAATCCGCAAATAACGTAAAAACCCGCTTCGGCGGGTTTTTTTATGGGGGGAGTTTAGGGAAAGAGCATTTGTCA"));
+ribozyme SarJ(.SEQUENCE("gactgtcgccggatgtgtatccgacctgacgatggcccaaaagggccgaaacagtcctctacaaataattttgtttaa"));
+terminator DT19(.SEQUENCE("TTCAGCCAAAAAACTTAAGACCGCCGGTCTTGTCCACTACCTTGCAGTAATGCGGTGGACAGGATCGGCGGTTTTCTTTTCTCTTCTCAACTCGGTACCAAAGACGAACAATAAGACGCTGAAAAGCGTCTTTTTTCGTTTTGGTCC"));
+promoter p933W(.SEQUENCE("ATTGTCAGAAATGGCacttgcaaaaactttcagttcaaccataatacgtactgaaagtacgaaaaagg"));
+cds 933W(.SEQUENCE("atggttcagaatgaaaaagtgcgcaaagaattcgcccagcggctagcgcaagcctgtaaagaagctggtcttgatgaacatggtaggggaatggctatagcccgtgccctttctctttcgtccaaaggcgttagcaaatggtttaatgctgagtctttaccgcgtcaggaaaaaatgaatgcgcttgcgaaatttctaaacgttgatgttgtttggcttcagcacggcacttcgttaaatggagcgaatgatgaagatactctttcatttgttggcaaattaaaaaaagggttagtgcgcgtggttggtgaggcaattcttggtgttgatggtgccatcgagatgaccgaagaacgcgatgggtggctcaaaatttatagcgatgatccagatgcctttggtctgcgtgtgaaaggagacagcatgtggcccagaataaaatcaggagaatatgtactcattgagcctaacaccaaagtattcccgggtgatgaggtgtttgtcagaaccgttgaaggacacaacatgattaaggttcttggctatgacagagatggagaataccaatttacaagcattaaccaggatcacaggcctataacgttgccttatcatcaagtagcaaaggtggagtatgtagctggtattctgaagcaatctcgccatctggatgacatcgaggcaagggagtggctgaaaagttcgtga"));
+rbs R9(.SEQUENCE("GCACTACGGCATTAAGCGCTCAA"));
+ribozyme PlmJ(.SEQUENCE("agtcataagtctgggctaagcccactgatgagtcgctgaaatgcgacgaaacttatgacctctacaaataattttgtttaa"));
+terminator DT36(.SEQUENCE("GATCTAACTAAAAAGGCCGCTCTGCGGCCTTTTTTCTTTTCACTGTAACAACGGAAACCGGCCATTGCGCCGGTTTTTTTTGGCCT"));
+ribozyme RiboJ60(.SEQUENCE("ctgaagtcgtcaagtgctgtgcttgcacttctgatgaggcagtgatgccgaaacgacctctacaaataattttgtttaa"));
+promoter pP2hd(.SEQUENCE("AACTACTACGCAAAAttcaacttctccgaaacgtctattgacataattactccgattgcgtaatttcttg"));
+promoter pP2(.SEQUENCE("ATGATTGGCGACTCGgtttagatctcattgacatggtgtttagatctcaagtactgttagtttagatgtacaattttgttagtttagat"));
+promoter pWphi(.SEQUENCE("TCCTATAAGGACACGcatttgacagtaacctattggtgacttatattcccgtcaaaaggttgtgtattggtgacctt"));
+cds P2hd(.SEQUENCE("atgtcaatagacgtttcggagaagttgaagctaatccgtgaatctgaaaggttaaaccgtaaagaattcagtgaattaactggtgtagcctacagctcactttcgagctatgagagccggtcaaaaaacgctggagttgaagccataatgaaggtcttacaacatcctagatttactaaatatactttgtggttcatgactgatcaggtagctccagaagccgggcaaattgcgcccgctctcgcacactttgggcaaaacgaaacaacgtcgccccactccggtcaaaagactggttaa"));
+cds P2(.SEQUENCE("atgtcaaacacgataagcgagaagatagtcttaatgcgaaaatcagagtatttgagcagacaacaacttgctgatttaacaggggttccgtatggcacgctgagttactatgaaagtggtcgttcaacacctccaacagatgtcatgatgaacatcctgcagaccccacaattcaccaaatacactttatggttcatgaccaatcagatcgctcctgagtccgggcaaattgcgcccgctctcgcacactttgggcaaaacgaaacaacgtcgccccactccggtcaaaagactggttaa"));
+cds Wphi(.SEQUENCE("atgcagacattcgaaaaactgaaagcgattaggaaagcagaaggcttaacacaggcgaaattcagcgaaattagcgggatagctctaggaacagtcaaaaattacgaaagtgggcataaagaccctggtctgagcatcgttatgcgagtcacaaatacgcctttatttaaaaaatatacgctctggttaatgactggtgatacgtcaccacaagctggtcagatcgcgccggctctcgcacacattgggcaaaaaccaacagaatcagaccactccgaaaaacagactggttaa"));
+rbs R12(.SEQUENCE("TTATCTTAGGTACAGGGCACATAA"));
+rbs R13(.SEQUENCE("CAGGTTATAAGGCCTGCAGCGT"));
+rbs R17(.SEQUENCE("TGCCACTTACATTAGCGTTTTTGA"));
+ribozyme RiboJ64(.SEQUENCE("aggagtcaattaatgtgcttttaattctgatgagacggtgacgtcgaaactccctctacaaataattttgtttaa"));
+terminator DT56(.SEQUENCE("TACCACCGTCAAAAAAAACGGCGCTTTTTAGCGCCGTTTTTATTTTTCAACCTTCCAGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTC"));
+terminator DT86(.SEQUENCE("TAATCATTCTTAGCGTGACCGGGAAGTCGGTCACGCTACCTCTTCTGAAGAAACAGCAAACAATCCAAAACGCCGCGTTCAGCGGCGTTTTTTCTGCTTTTCT"));
+scar F_scar(.SEQUENCE("CGCT"));
+scar E_scar(.SEQUENCE("GCTT"));
+scar D_scar(.SEQUENCE("AGGT"));
+scar C_scar(.SEQUENCE("AATG"));
+scar B_scar(.SEQUENCE("TACG"));
+scar A_scar(.SEQUENCE("GGAG"));
+scar Y_scar(.SEQUENCE("ATTG"));
+scar X_scar(.SEQUENCE("TGTC"));
+scar V_scar(.SEQUENCE("TCTG"));
+scar U_scar(.SEQUENCE("GGGC"));
+scar R_scar(.SEQUENCE("GTAA"));
+scar Q_scar(.SEQUENCE("GAGT"));
+scar P_scar(.SEQUENCE("CCTA"));
+scar O_scar(.SEQUENCE("ATGC"));
+scar G_scar(.SEQUENCE("ATAG"));
+cassette sCin_cassette(.SEQUENCE("gctgtcaccggatgtgctttccggtctgatgagtccgtgaggacgaaacagcctctacaaataattttgtttaatggttccaaagccagatactaaggaggtcccAATGttcgttatcatccaggctcacgaataccagaaatacgctgctgttctggaccagatgttccgtctgcgtaaaaaagttttcgctgacaccctgtgctgggacgttccggttatcggtccgtacgaacgtgactcctacgactccctggctccggcttacctggtttggtgcaacgactcccgtacccgtctgtacggtggtatgcgtctgatgccgaccaccggtccgaccctgctgtacgacgttttccgtgaaaccttcccggacgctgctgacctgatcgctccgggtatctgggaaggtacccgtatgtgcatcgacgaagaagctatcgctaaagacttcccggaaatcgacgctggtcgtgctttctccatgatgctgctggctctgtgcgaatgcgctctggaccacggtatccacaccatgatctccaactacgaaccgtacctgaaacgtgtttacaaacgtgctggtgctgaagttgaagaactgggtcgtgctgacggttacggtaaatacccggtttgctgcggtgctttcgaagtttccgaccgtgttctgcgtaaaatgcgtgctgctctgggtctgaccctgccgctgtacgttcgtcacgttccggctcgttccgttgttacccagttcctggaaatggctgcttaatagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata"));
+
+PartType fencepost;
+fencepost attB2();
+fencepost attB7();
+fencepost attB5();
+
+cassette R4_TP901_a_cassette();
+Device R4_TP901_a(
+    PTet,
+    R4_TP901_a_cassette
+);
+
+cassette R3_P22_a_cassette();
+Device R3_P22_a(
+    p933W,
+    R3_P22_a_cassette
+);
+
+cassette R3_P22_b_cassette();
+Device R3_P22_b(
+    pTP901,
+    R3_P22_b_cassette
+);
+
+cassette R9_933W_a_cassette();
+Device R9_933W_a(
+    pLuxB,
+    R9_933W_a_cassette
+);
+
+cassette R17_Wphi_a_cassette();
+Device R17_Wphi_a(
+    pP22,
+    R17_Wphi_a_cassette
+);
+
+cassette R13_P2_a_cassette();
+Device R13_P2_a(
+    pRpa,
+    R13_P2_a_cassette
+);
+
+cassette R13_P2_b_cassette();
+Device R13_P2_b(
+    PTac,
+    R13_P2_b_cassette
+);
+
+cassette R12_P2hd_a_cassette();
+Device R12_P2hd_a(
+    pP2,
+    R12_P2hd_a_cassette
+);
+
+cassette R2_Lambda_a_cassette();
+Device R2_Lambda_a(
+    pWphi,
+    R2_Lambda_a_cassette
+);
+
+cassette R2_Lambda_b_cassette();
+Device R2_Lambda_b(
+    pP2hd,
+    R2_Lambda_b_cassette
+);
+
+Device OHC12_out_a(
+    pLambda,
+    sCin_cassette
+);
+
+
+Rule R4_TP901_aRule0( ON R4_TP901_a:
+    ALL_FORWARD
+);
+
+Rule R3_P22_aRule0( ON R3_P22_a:
+    ALL_FORWARD
+);
+
+Rule R3_P22_bRule0( ON R3_P22_b:
+    ALL_FORWARD
+);
+
+Rule R9_933W_aRule0( ON R9_933W_a:
+    ALL_FORWARD
+);
+
+Rule R17_Wphi_aRule0( ON R17_Wphi_a:
+    ALL_FORWARD
+);
+
+Rule R13_P2_aRule0( ON R13_P2_a:
+    ALL_FORWARD
+);
+
+Rule R13_P2_bRule0( ON R13_P2_b:
+    ALL_FORWARD
+);
+
+Rule R12_P2hd_aRule0( ON R12_P2hd_a:
+    ALL_FORWARD
+);
+
+Rule R2_Lambda_aRule0( ON R2_Lambda_a:
+    ALL_FORWARD
+);
+
+Rule R2_Lambda_bRule0( ON R2_Lambda_b:
+    ALL_FORWARD
+);
+
+Rule OHC12_out_aRule0( ON OHC12_out_a:
+    ALL_FORWARD
+);
+
+
+R4_TP901_a_devices = product(R4_TP901_a);
+R3_P22_a_devices = product(R3_P22_a);
+R3_P22_b_devices = product(R3_P22_b);
+R9_933W_a_devices = product(R9_933W_a);
+R17_Wphi_a_devices = product(R17_Wphi_a);
+R13_P2_a_devices = product(R13_P2_a);
+R13_P2_b_devices = product(R13_P2_b);
+R12_P2hd_a_devices = product(R12_P2hd_a);
+R2_Lambda_a_devices = product(R2_Lambda_a);
+R2_Lambda_b_devices = product(R2_Lambda_b);
+OHC12_out_a_devices = product(OHC12_out_a);
+
+Device R4_TP901_aDevice();
+Device R3_P22_aDevice();
+Device R3_P22_bDevice();
+Device R9_933W_aDevice();
+Device R17_Wphi_aDevice();
+Device R13_P2_aDevice();
+Device R13_P2_bDevice();
+Device R12_P2hd_aDevice();
+Device R2_Lambda_aDevice();
+Device R2_Lambda_bDevice();
+Device OHC12_out_aDevice();
+
+Device circuit();
+
+Rule CircuitRule0( ON circuit:
+    CONTAINS R4_TP901_a AND
+    CONTAINS R3_P22_a AND
+    CONTAINS R3_P22_b AND
+    CONTAINS R9_933W_a AND
+    CONTAINS R17_Wphi_a AND
+    CONTAINS R13_P2_a AND
+    CONTAINS R13_P2_b AND
+    CONTAINS R12_P2hd_a AND
+    CONTAINS R2_Lambda_a AND
+    CONTAINS R2_Lambda_b AND
+    CONTAINS OHC12_out_a AND
+    OHC12_out_a AFTER attB5 AND
+    ALL_FORWARD AND
+    STARTSWITH attB2 AND
+    attB7 BEFORE attB5 AND
+    CONTAINS R4_TP901_a AND
+    CONTAINS R3_P22_a AND
+    CONTAINS R3_P22_b AND
+    CONTAINS R9_933W_a AND
+    CONTAINS R17_Wphi_a AND
+    CONTAINS R13_P2_a AND
+    CONTAINS R13_P2_b AND
+    CONTAINS R12_P2hd_a AND
+    CONTAINS R2_Lambda_a AND
+    CONTAINS R2_Lambda_b AND
+    CONTAINS OHC12_out_a
+);
+Array allResults;
+
+for(num i1 = 0; i1 < sizeof(R4_TP901_a_devices); i1 = i1 + 1) {} 
+for(num i2 = 0; i2 < sizeof(R3_P22_a_devices); i2 = i2 + 1) {} 
+for(num i3 = 0; i3 < sizeof(R3_P22_b_devices); i3 = i3 + 1) {} 
+for(num i4 = 0; i4 < sizeof(R9_933W_a_devices); i4 = i4 + 1) {} 
+for(num i5 = 0; i5 < sizeof(R17_Wphi_a_devices); i5 = i5 + 1) {} 
+for(num i6 = 0; i6 < sizeof(R13_P2_a_devices); i6 = i6 + 1) {} 
+for(num i7 = 0; i7 < sizeof(R13_P2_b_devices); i7 = i7 + 1) {} 
+for(num i8 = 0; i8 < sizeof(R12_P2hd_a_devices); i8 = i8 + 1) {} 
+for(num i9 = 0; i9 < sizeof(R2_Lambda_a_devices); i9 = i9 + 1) {} 
+for(num i10 = 0; i10 < sizeof(R2_Lambda_b_devices); i10 = i10 + 1) {} 
+for(num i11 = 0; i11 < sizeof(OHC12_out_a_devices); i11 = i11 + 1) {} 
+
+R4_TP901_aDevice = R4_TP901_a_devices[i1];
+R3_P22_aDevice = R3_P22_a_devices[i2];
+R3_P22_bDevice = R3_P22_b_devices[i3];
+R9_933W_aDevice = R9_933W_a_devices[i4];
+R17_Wphi_aDevice = R17_Wphi_a_devices[i5];
+R13_P2_aDevice = R13_P2_a_devices[i6];
+R13_P2_bDevice = R13_P2_b_devices[i7];
+R12_P2hd_aDevice = R12_P2hd_a_devices[i8];
+R2_Lambda_aDevice = R2_Lambda_a_devices[i9];
+R2_Lambda_bDevice = R2_Lambda_b_devices[i10];
+OHC12_out_aDevice = OHC12_out_a_devices[i11];
+
+Device circuit(
+    R4_TP901_aDevice,
+    R3_P22_aDevice,
+    R3_P22_bDevice,
+    R9_933W_aDevice,
+    R17_Wphi_aDevice,
+    R13_P2_aDevice,
+    R13_P2_bDevice,
+    R12_P2hd_aDevice,
+    R2_Lambda_aDevice,
+    R2_Lambda_bDevice,
+    OHC12_out_aDevice,
+    attB2,
+    attB7,
+    attB5
+);
+
+
+result = permute(circuit);
+
+allResults = allResults + result;
+
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}

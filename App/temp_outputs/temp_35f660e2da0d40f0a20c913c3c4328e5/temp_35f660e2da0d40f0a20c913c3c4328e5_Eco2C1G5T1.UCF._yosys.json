@@ -1,0 +1,232 @@
+{
+  "creator": "Yosys 0.47 (git sha1 647d61dd9, g++-11 11.4.0-1ubuntu1~22.04 -fPIC -O3)",
+  "modules": {
+    "top": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "/home/lexo/Desktop/Practica/App/library/verilogs/temp_35f660e2da0d40f0a20c913c3c4328e5.v:1.2-6.12"
+      },
+      "ports": {
+        "in[0]": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "in[1]": {
+          "direction": "input",
+          "offset": 1,
+          "bits": [ 3 ]
+        },
+        "in[2]": {
+          "direction": "input",
+          "offset": 2,
+          "bits": [ 4 ]
+        },
+        "in[3]": {
+          "direction": "input",
+          "offset": 3,
+          "bits": [ 5 ]
+        },
+        "out": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$abc$98$auto$blifparse.cc:396:parse_blif$100": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$abc$98$auto$blifparse.cc:396:parse_blif$101": {
+          "hide_name": 1,
+          "type": "$_NOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 7 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$abc$98$auto$blifparse.cc:396:parse_blif$102": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$abc$98$auto$blifparse.cc:396:parse_blif$103": {
+          "hide_name": 1,
+          "type": "$_NOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 5 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$abc$98$auto$blifparse.cc:396:parse_blif$104": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$abc$98$auto$blifparse.cc:396:parse_blif$105": {
+          "hide_name": 1,
+          "type": "$_NOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 12 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$abc$98$auto$blifparse.cc:396:parse_blif$99": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$98$new_n10": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+          }
+        },
+        "$abc$98$new_n11": {
+          "hide_name": 1,
+          "bits": [ 12 ],
+          "attributes": {
+          }
+        },
+        "$abc$98$new_n6": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "$abc$98$new_n7": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "$abc$98$new_n8": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+          }
+        },
+        "$abc$98$new_n9": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+          }
+        },
+        "in[0]": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/lexo/Desktop/Practica/App/library/verilogs/temp_35f660e2da0d40f0a20c913c3c4328e5.v:2.19-2.21"
+          }
+        },
+        "in[1]": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "offset": 1,
+          "attributes": {
+            "src": "/home/lexo/Desktop/Practica/App/library/verilogs/temp_35f660e2da0d40f0a20c913c3c4328e5.v:2.19-2.21"
+          }
+        },
+        "in[2]": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "offset": 2,
+          "attributes": {
+            "src": "/home/lexo/Desktop/Practica/App/library/verilogs/temp_35f660e2da0d40f0a20c913c3c4328e5.v:2.19-2.21"
+          }
+        },
+        "in[3]": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "offset": 3,
+          "attributes": {
+            "src": "/home/lexo/Desktop/Practica/App/library/verilogs/temp_35f660e2da0d40f0a20c913c3c4328e5.v:2.19-2.21"
+          }
+        },
+        "out": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/home/lexo/Desktop/Practica/App/library/verilogs/temp_35f660e2da0d40f0a20c913c3c4328e5.v:3.19-3.22"
+          }
+        }
+      }
+    }
+  }
+}
