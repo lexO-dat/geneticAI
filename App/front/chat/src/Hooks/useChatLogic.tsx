@@ -33,7 +33,7 @@ export const useChatLogic = () => {
       const generateResponse = await fetch('http://localhost:11434/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model: "custom-llama-v1", prompt: inputMessage }),
+        body: JSON.stringify({ model: "custom-llama-v3", prompt: inputMessage }),
       });
 
       if (!generateResponse.ok) throw new Error('Error obtaining the verilog code, try sending again the message.');
