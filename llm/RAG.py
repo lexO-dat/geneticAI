@@ -7,8 +7,8 @@ from supabase import create_client, Client
 # -------------------------------
 # Supabase Configuration
 # -------------------------------
-SUPABASE_URL = "URL"
-SUPABASE_KEY = "KEY"
+SUPABASE_URL = "https://awbxwqrmkrkszfczkzzd.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF3Ynh3cXJta3Jrc3pmY3prenpkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNjAxOTY1MywiZXhwIjoyMDUxNTk1NjUzfQ._COKim9jB0onGC9wvV9R8v74PFtQJVaepOFeW-AxPF4"
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # -------------------------------
