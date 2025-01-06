@@ -10,18 +10,20 @@ from config import LIBRARY_DIR, VERILOGS_DIR, CONSTRAINTS_DIR, TEMP_OUTPUTS_DIR
 from core_algorithm.utils import log
 
 """
-HECHO:
-- Convertir CELLO en una api donde tengo los endpoints:
-    - /run_cello -> ejecuta CELLO y retorna un json con el nombre de la carpeta donde se guardaron los archivos y una lista con los archivos que se generaron
-    - /outputs/{folder_name}/{file_name} -> retorna un archivo que se encuentra en la carpeta de outputs (lo usaré para previsualizaciones o descargas en el front) 
+DONE:
+    Convert CELLO into an API with the following endpoints:
+        /v1/run → Executes CELLO and returns a JSON containing the folder name where the files were saved and a list of the generated files.
+        /v1/outputs/{folder_name}/{file_name} → Returns a file located in the outputs folder (this will be used for previews or downloads on the front end).
 """
 app = FastAPI(
     title="Cello API",
-    description="API para generar diseños de circuitos genéticos usando Cello 2.1",
+    description="API to generate genetic circuit designs using Cello 2.1",
     version="1.0.0"
 )
 
-# Configuración de CORS
+# -------------------
+# Middleware
+# -------------------
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  
@@ -32,114 +34,105 @@ app.add_middleware(
 
 app.mount("/outputs", StaticFiles(directory=TEMP_OUTPUTS_DIR), name="outputs")
 
-# Lista de UCF
+# Ucf list
 UCF_LIST = [
     'Bth1C1G1T1', 'Eco1C1G1T1', 'Eco1C2G2T2', 'Eco2C1G3T1',
     'Eco2C1G5T1', 'Eco2C1G6T1', 'SC1C1G1T1'
 ]
 
-@app.post("/run_cello", summary="Ejecutar Cello para generar diseño de circuito genético")
-async def run_cello(request: CelloRequest):
-    temp_verilog_filename = None
+@app.post("/v1/run", summary="Execute CELLO")
+async def run(request: CelloRequest):
+    tempVerilogName = None
 
     try:
-        # El verilog recibido en el post lo guardo en un temp file para asi poder pasarle la ruta a cello_initializer
-        if request.verilog_code:
-            temp_verilog_filename = f"temp_{uuid.uuid4().hex}.v"
-            verilog_path = os.path.join(VERILOGS_DIR, temp_verilog_filename)
-            with open(verilog_path, 'w') as f:
-                f.write(request.verilog_code)
-            log.cf.info(f"Archivo Verilog temporal creado: {temp_verilog_filename}")
+        """
+        - The received verilog code is saved in a temporary file with the name temp_{uuid}.v
+        - If the verilogFile is provided, the file is searched in the VERILOGS_DIR
+        """
+        if request.verilogCode:
+            tempVerilogName = f"temp_{uuid.uuid4().hex}.v"
+            verilogPath = os.path.join(VERILOGS_DIR, tempVerilogName)
+            with open(verilogPath, 'w') as f:
+                f.write(request.verilogCode)
+            log.cf.info(f"Temp file created: {tempVerilogName}")
         elif request.verilog_file:
-            verilog_path = os.path.join(VERILOGS_DIR, f"{request.verilog_file}.v")
-            if not os.path.isfile(verilog_path):
-                raise HTTPException(status_code=404, detail="Archivo Verilog no encontrado.")
+            verilogPath = os.path.join(VERILOGS_DIR, f"{request.verilog_file}.v")
+            if not os.path.isfile(verilogPath):
+                raise HTTPException(status_code=404, detail="Verilog file not found.")
         else:
-            raise HTTPException(status_code=400, detail="Debe proporcionar 'verilog_file' o 'verilog_code'.")
+            raise HTTPException(status_code=400, detail="You must provide a verilogFile or verilogCode.")
 
-        # Manejo del UCF a usar (TODO: Hacer que el modelo igualmente vea que UCF sirve más para lo que quiere el usuario)
-        if request.ucf_index is not None:
+        # Ucf selection and verification
+        if request.ucfIndex is not None:
             try:
-                selected_ucf = UCF_LIST[request.ucf_index] + '.UCF.json'
-                input_file = UCF_LIST[request.ucf_index] + '.input.json'
-                output_file = UCF_LIST[request.ucf_index] + '.output.json'
+                selectedUcf = UCF_LIST[request.ucfIndex] + '.UCF.json'
+                inputFile = UCF_LIST[request.ucfIndex] + '.input.json'
+                outputFile = UCF_LIST[request.ucfIndex] + '.output.json'
             except IndexError:
-                raise HTTPException(status_code=400, detail="Índice UCF inválido.")
+                raise HTTPException(status_code=400, detail="Ucf index not valid.")
         else:
-            if not all([request.custom_ucf, request.custom_input, request.custom_output]):
-                raise HTTPException(status_code=400, detail="Se deben proporcionar archivos UCF, input y output personalizados.")
-            selected_ucf = request.custom_ucf
-            input_file = request.custom_input
-            output_file = request.custom_output
+            # Custom UCF, Input and Output files (is not implemented yet, but it is a good idea to have it in mind)
+            if not all([request.customUcf, request.customInput, request.customOutput]):
+                raise HTTPException(status_code=400, detail="You must ptevide the custom input / output / ucf json files.")
+            selectedUcf = request.customUcf
+            inputFile = request.customInput
+            outputFile = request.customOutput
 
-        ucf_path = os.path.join(CONSTRAINTS_DIR, selected_ucf)
-        input_path = os.path.join(CONSTRAINTS_DIR, input_file)
-        output_path = os.path.join(CONSTRAINTS_DIR, output_file)
+        ucfPath = os.path.join(CONSTRAINTS_DIR, selectedUcf)
+        inputPath = os.path.join(CONSTRAINTS_DIR, inputFile)
+        outputPath = os.path.join(CONSTRAINTS_DIR, outputFile)
 
-        # Verificación de la existencia de los UCF
-        for path, desc in zip([ucf_path, input_path, output_path], ["UCF", "Input", "Output"]):
+        # Verification of the existence of the ucf files
+        for path, desc in zip([ucfPath, inputPath, outputPath], ["UCF", "Input", "Output"]):
             if not os.path.isfile(path):
                 raise HTTPException(status_code=404, detail=f"Archivo {desc} no encontrado.")
 
         options = request.options.dict()
-        in_path_ = LIBRARY_DIR
-        out_path_ = TEMP_OUTPUTS_DIR
-        v_name_ = os.path.splitext(os.path.basename(verilog_path))[0].replace('.v', '')
-        ucf_name_ = selected_ucf
-        in_name_ = input_file
-        out_name_ = output_file
+        inPath = LIBRARY_DIR
+        outPath_ = TEMP_OUTPUTS_DIR
+        vName_ = os.path.splitext(os.path.basename(verilogPath))[0].replace('.v', '')
+        ucfName_ = selectedUcf
+        inName_ = inputFile
+        outName_ = outputFile
 
         try:
             result = cello_initializer(
-                v_name_, ucf_name_, in_name_, out_name_,
-                in_path_, out_path_,
+                vName_, ucfName_, inName_, outName_,
+                inPath, outPath_,
                 options=options
             )
         except Exception as e:
-            log.cf.error("Error ejecutando cello_initializer", exc_info=True)
+            log.cf.error("Error executing cello", exc_info=True)
             raise HTTPException(status_code=500, detail=str(e))
 
-        # listado de archivos para enviarlos en el json y asi renderizarlos en el front
-        output_files = os.listdir(os.path.join(TEMP_OUTPUTS_DIR, v_name_))
+        output_files = os.listdir(os.path.join(TEMP_OUTPUTS_DIR, vName_))
 
         return JSONResponse(content={
-            "message": "Proceso de Cello completado exitosamente.",
+            "message": "Cello process completed.",
             "result": result,
-            "folder_name": v_name_,
-            "output_files": output_files  # Lista de archivos en TEMP_OUTPUTS_DIR
+            "folder_name": vName_,
+            "output_files": output_files  # List of the generated files
         })
 
     finally:
-        if temp_verilog_filename:
-            temp_verilog_path = os.path.join(VERILOGS_DIR, temp_verilog_filename)
+        if tempVerilogName:
+            temp_verilog_path = os.path.join(VERILOGS_DIR, tempVerilogName)
             if os.path.isfile(temp_verilog_path):
                 try:
                     os.remove(temp_verilog_path)
-                    log.cf.info(f"Archivo Verilog temporal eliminado: {temp_verilog_filename}")
+                    log.cf.info(f"Temporal verilog file deleted: {tempVerilogName}")
                 except Exception as e:
-                    log.cf.warning(f"No se pudo eliminar el archivo temporal {temp_verilog_filename}: {e}")
+                    log.cf.warning(f"Error deleting the temporal verilog file {tempVerilogName}: {e}")
 
-# Endpoint que devuelve un archivo x (si es que existe), esto lo usaré para poder hacer previsualizaciones o permitir que se descarguen los archivos
-@app.get("/outputs/{folder_name}/{file_name}", summary="Retornar Archivo")
-async def serve_output_file(folder_name: str, file_name: str):
-    output_path = os.path.join(TEMP_OUTPUTS_DIR, folder_name, file_name)
+# Endpoint that returns a file x (if it exists), I will use this to be able to make previews or allow the files to be downloaded
+@app.get("/v1/outputs/{folder_name}/{file_name}", summary="Return File")
+async def output(folder_name: str, file_name: str):
+    outputPath = os.path.join(TEMP_OUTPUTS_DIR, folder_name, file_name)
     
-    if not os.path.isfile(output_path):
-        raise HTTPException(status_code=404, detail="Archivo no encontrado")
+    if not os.path.isfile(outputPath):
+        raise HTTPException(status_code=404, detail="File not found")
     
-    return FileResponse(output_path)
-
-#Enpoint para eliminar los archivos de una carpeta x
-@app.delete("/outputs/delete/{folder_name}", summary="Eliminar Archivos")
-async def delete_output_files(folder_name: str):
-    folder_path = os.path.join(TEMP_OUTPUTS_DIR, folder_name)
-    if not os.path.isdir(folder_path):
-        raise HTTPException(status_code=404, detail="Carpeta no encontrada")
-    for file in os.listdir(folder_path):
-        os.remove(os.path.join(folder_path, file))
-    os.rmdir(folder_path)
-    
-    return JSONResponse(content={"message": "Archivos eliminados"})
+    return FileResponse(outputPath)
 
 
 

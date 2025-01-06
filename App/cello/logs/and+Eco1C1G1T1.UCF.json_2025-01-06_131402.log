@@ -1,0 +1,199 @@
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                       CELLO V2.1                                       
+                               and + Eco1C1G1T1.UCF.json                                
+////////////////////////////////////////////////////////////////////////////////////////
+
+new_out: /home/lexo/Desktop/Practica/App/temp_outputs/and
+verilog: and.v
+v_loc: /home/lexo/Desktop/Practica/App/library/verilogs/and.v
+new_in: /home/lexo/Desktop/Practica/App/library/verilogs
+new_out: /home/lexo/Desktop/Practica/App/temp_outputs/and
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of Logic Synthesis                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                            condition checks for valid input                            
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+NETLIST:
+isvalid: True
+
+INPUTS (including the communication devices): 
+num IN-SENSORS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-STRUCTURES in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-MODELS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-PARTS in Eco1C1G1T1.UCF.json in-UCF: 4
+num IN-NODES in and netlist: 2
+['LacI_sensor', 'TetR_sensor', 'AraC_sensor', 'LuxR_sensor']
+Valid input match!
+
+OUTPUTS: 
+num OUT-SENSORS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-STRUCTURES in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-MODELS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-PARTS in Eco1C1G1T1.UCF.json out-UCF: 3
+num OUT-NODES in and netlist: 1
+['YFP_reporter', 'YFP_reporter_2', 'YFP_reporter_3']
+Valid output match!
+
+GATES: 
+num PARTS in Eco1C1G1T1.UCF.json UCF: 84
+num STRUCTURES in Eco1C1G1T1.UCF.json UCF: 20
+num MODELS in Eco1C1G1T1.UCF.json UCF: 20
+num GATES in Eco1C1G1T1.UCF.json UCF: 20
+num GATE USES: [12, True]
+num GATES in and netlist: 3
+['AmeR', 'AmtR', 'BM3R1', 'BetI', 'HlyIIR', 'IcaRA', 'LitR', 'LmrA', 'PhlF', 'PsrA', 'QacR', 'SrpR']
+['A1_AmtR', 'B1_BM3R1', 'B2_BM3R1', 'B3_BM3R1', 'E1_BetI', 'F1_AmeR', 'H1_HlyIIR', 'I1_IcaRA', 'L1_LitR', 'N1_LmrA', 'P1_PhlF', 'P2_PhlF', 'P3_PhlF', 'Q1_QacR', 'Q2_QacR', 'R1_PsrA', 'S1_SrpR', 'S2_SrpR', 'S3_SrpR', 'S4_SrpR']
+Valid intermediate match!
+
+#47,520 possible permutations for and.v+Eco1C1G1T1.UCF.json...
+(#47,520.0 permutations of UCF gate groups confirmed.)
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                End of condition checks                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Condition check passed? True
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                               Beginning GATE ASSIGNMENT                                
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+Listing available assignments from UCF: 
+['LacI_sensor', 'TetR_sensor', 'AraC_sensor', 'LuxR_sensor']
+['YFP_reporter', 'YFP_reporter_2', 'YFP_reporter_3']
+['BM3R1', 'PhlF', 'BetI', 'IcaRA', 'QacR', 'PsrA', 'HlyIIR', 'LmrA', 'SrpR', 'LitR', 'AmeR', 'AmtR']
+
+Netlist de-construction: 
+[a, b]
+[81, 82, 83]
+[out]
+
+Netlist requirements: 
+need 2 inputs
+need 1 outputs
+need 3 gates
+
+////////////////////////////////////////////////////////////////////////////////////////
+                Running SIMULATED ANNEALING gate-assignment algorithm...                
+////////////////////////////////////////////////////////////////////////////////////////
+
+__________________________________________________ #1/1,000 | Best Score: 8.225728899551346 | Current Score: 8.225728899551346
+__________________________________________________ #3/1,000 | Best Score: 15.164091097163805 | Current Score: 15.164091097163805
+__________________________________________________ #14/1,000 | Best Score: 25.27620808913467 | Current Score: 25.27620808913467
+__________________________________________________ #24/1,000 | Best Score: 155.0284676375647 | Current Score: 155.0284676375647█
+__________________________________________________ #64/1,000 | Best Score: 327.0717888917121 | Current Score: 327.0717888917121███
+__________________________________________________ #210/1,000 | Best Score: 330.0569715205688 | Current Score: 330.0569715205688██████████
+
+
+DONE!
+Completed: 1,000/1,000 iterations (out of 47,520 possible iterations)
+Best Score: 330.0569715205688
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of GATE ASSIGNMENT                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+∫ *** DEBUG *** ∫ final result for and.v+Eco1C1G1T1.UCF.json: 330.0569715205688
+
+
+
+∫ *** DEBUG *** ∫ Inputs: [TetR_sensor, AraC_sensor], Gates: [SrpR, QacR, PhlF], Outputs: [YFP_reporter_3]
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                        RESULTS                                         
+                               and + Eco1C1G1T1.UCF.json                                
+////////////////////////////////////////////////////////////////////////////////////////
+
+CIRCUIT DESIGN:
+ - Best Design: Inputs: [TetR_sensor, AraC_sensor], Gates: [SrpR, QacR, PhlF], Outputs: [YFP_reporter_3]
+ - Best Circuit Score: 330.0569715205688
+
+Inputs ( input response = STATE * (ymax - ymin) + ymin ):
+ - ('a', 2) input TetR_sensor 2 with ymax: 4.4 and ymin: 0.0013 with max sensor output of [('high', 4.4), ('low', 0.0013)]
+ - ('b', 3) input AraC_sensor 3 with ymax: 2.5 and ymin: 0.0082 with max sensor output of [('high', 2.5), ('low', 0.0082)]
+
+Gates ( response function = ymin + (ymax - ymin) / (1.0 + (x / K)**n);   input composition = x2 + x1 ):
+ - 81 gate NOT SrpR w/ inputs [2] and output 5, and best_gate = S4_SrpR
+ - 82 gate NOT QacR w/ inputs [3] and output 6, and best_gate = Q2_QacR
+ - 83 gate NOR PhlF w/ inputs [5, 6] and output 4, and best_gate = P3_PhlF
+
+Outputs ( unit conversion and/or hill response... ):
+ - ('out', 4) output YFP_reporter_3 4 with c * x: c = 0.0076
+
+
+TRUTH TABLE/GATE SCORING:
++-----------------+-----------------+-------------+-------------+----------+----------+----------+----------------------+----------------------+----------------------+
+| TetR_sensor_I/O | AraC_sensor_I/O | TetR_sensor | AraC_sensor | SrpR_I/O | QacR_I/O | PhlF_I/O | SrpR                 | QacR                 | PhlF                 |
++-----------------+-----------------+-------------+-------------+----------+----------+----------+----------------------+----------------------+----------------------+
+| 0               | 0               | 0.0013      | 0.0082      | 1        | 1        | 0        | 2.099989040055861    | 2.798846212649772    | 0.02001786880691329  |
+| 0               | 1               | 0.0013      | 2.5         | 1        | 0        | 0        | 2.099989040055861    | 0.037237919908157474 | 0.020582205904644452 |
+| 1               | 0               | 4.4         | 0.0082      | 0        | 1        | 0        | 0.007052371000060497 | 2.798846212649772    | 0.020185597637250346 |
+| 1               | 1               | 4.4         | 2.5         | 0        | 0        | 1        | 0.007052371000060497 | 0.037237919908157474 | 6.793300548099717    |
++-----------------+-----------------+-------------+-------------+----------+----------+----------+----------------------+----------------------+----------------------+
++--------------------+------------------------+
+| YFP_reporter_3_I/O | YFP_reporter_3         |
++--------------------+------------------------+
+| 0                  | 0.000152135802932541   |
+| 0                  | 0.00015642476487529784 |
+| 0                  | 0.00015341054204310263 |
+| 1                  | 0.05162908416555785    |
++--------------------+------------------------+
+
+
+∫ *** DEBUG *** ∫ Truth Table (same as before, simpler format):
+
+['TetR_sensor_I/O', 'AraC_sensor_I/O', 'TetR_sensor', 'AraC_sensor', 'SrpR_I/O', 'QacR_I/O', 'PhlF_I/O', 'SrpR', 'QacR', 'PhlF', 'YFP_reporter_3_I/O', 'YFP_reporter_3']
+[0, 0, 0.0013, 0.0082, 1, 1, 0, 2.099989040055861, 2.798846212649772, 0.02001786880691329, 0, 0.000152135802932541]
+[0, 1, 0.0013, 2.5, 1, 0, 0, 2.099989040055861, 0.037237919908157474, 0.020582205904644452, 0, 0.00015642476487529784]
+[1, 0, 4.4, 0.0082, 0, 1, 0, 0.007052371000060497, 2.798846212649772, 0.020185597637250346, 0, 0.00015341054204310263]
+[1, 1, 4.4, 2.5, 0, 0, 1, 0.007052371000060497, 0.037237919908157474, 6.793300548099717, 1, 0.05162908416555785]
+
+
+EUGENE FILES:
+ - Eugene object and structs created...
+ - Eugene cassettes created...
+ - Eugene helpers created...
+ - Eugene script written to /home/lexo/Desktop/Practica/App/temp_outputs/and/and_Eco1C1G1T1.UCF._eugene.eug
+
+SBOL FILES:
+ - Circuit orders selected...
+   + ['Loc1_NONCE_PAD', 'Loc2_NONCE_PAD', 'pSrpR', 'pQacR', 'RiboJ53', 'P3', 'PhlF', 'ECK120033737', 'pTet', 'RiboJ10', 'S4', 'SrpR', 'ECK120029600', 'pPhlF', 'YFP_cassette', 'pBAD', 'RiboJ60', 'Q2', 'QacR', 'ECK120010818', 'Loc3_NONCE_PAD']
+   + ['Loc1_NONCE_PAD', 'Loc2_NONCE_PAD', 'pSrpR', 'pQacR', 'RiboJ53', 'P3', 'PhlF', 'ECK120033737', 'pTet', 'RiboJ10', 'S4', 'SrpR', 'ECK120029600', 'pBAD', 'RiboJ60', 'Q2', 'QacR', 'ECK120010818', 'Loc3_NONCE_PAD', 'pPhlF', 'YFP_cassette']
+   + ['Loc1_NONCE_PAD', 'Loc2_NONCE_PAD', 'pSrpR', 'pQacR', 'RiboJ53', 'P3', 'PhlF', 'ECK120033737', 'pTet', 'RiboJ10', 'S4', 'SrpR', 'ECK120029600', 'pBAD', 'RiboJ60', 'Q2', 'QacR', 'ECK120010818', 'pPhlF', 'YFP_cassette', 'Loc3_NONCE_PAD']
+   + ['Loc1_NONCE_PAD', 'Loc2_NONCE_PAD', 'pSrpR', 'pQacR', 'RiboJ53', 'P3', 'PhlF', 'ECK120033737', 'pPhlF', 'YFP_cassette', 'pTet', 'RiboJ10', 'S4', 'SrpR', 'ECK120029600', 'pBAD', 'RiboJ60', 'Q2', 'QacR', 'ECK120010818', 'Loc3_NONCE_PAD']
+   + ['Loc1_NONCE_PAD', 'Loc2_NONCE_PAD', 'pPhlF', 'YFP_cassette', 'pSrpR', 'pQacR', 'RiboJ53', 'P3', 'PhlF', 'ECK120033737', 'pTet', 'RiboJ10', 'S4', 'SrpR', 'ECK120029600', 'pBAD', 'RiboJ60', 'Q2', 'QacR', 'ECK120010818', 'Loc3_NONCE_PAD']
+
+ - SBOL files being generated...
+Component.....................37
+Sequence......................33
+---
+Total: .........................70
+
+SBOL XML and related files generated
+ - Response plots generated
+
+
+
+Thread count: 1
+Completion Time: 2.7 seconds
+Cello object deleted...
+
