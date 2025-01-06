@@ -33,7 +33,7 @@ export const useChatLogic = () => {
       const generateResponse = await fetch('http://localhost:11434/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model: "custom-llama-v3", prompt: inputMessage }),
+        body: JSON.stringify({ model: "custom-llama-v1", prompt: inputMessage }),
       });
 
       if (!generateResponse.ok) throw new Error('Error obtaining the verilog code, try sending again the message.');
@@ -71,19 +71,74 @@ export const useChatLogic = () => {
       
       /* verilogCode = `
       module top (
-    input E,                // Enable signal
-    input A, B, C, D,      // Individual data inputs
-    input S1,              // Select bit 1 
-    input S0,              // Select bit 0
-    output Y               // Single output
-);
+      input A,
+      input B,
+      output reg [3:0] AtC_out,
+      output reg Xyle_out, 
+      output reg RFP_out,
+      output reg YFP_out
+    );
+    
+    wire Xor;
+    assign Xor = (~A & ~B);
+    
+    wire XYLE_in = Xor;
+    assign XYLE_in = Xor;
+    module and_gate (
+        input Xyle_in,
+        input xylose_in,
+        output AND_output
+      );
+       always @(Xyle_in, xylose_in)
+          begin
+            if(Xyle_in == 1 && xylose_in == 1) 
+              AND_output = 1'b1;
+            else 
+              AND_output = 1'b0;
+           end
+      endmodule;
+    
+    module AtC (
+       input Xor,
+       output reg [3:0] AtC_out
+     );
+       always @(Xor)
+         begin
+          if(Xor == 1) AtC_out <= 4'd2;
+          else AtC_out <= 4'd0;
+        end
+      endmodule;
+    
+    module RFP (
+        input Xor,
+        output reg RFP_out
+      );
+      always @(Xor)
+       begin
+           if(Xor == 1) RFP_out <= 4'd1; 
+          else RFP_out <= 4'd0;
+       end1. Executing Verilog-2005 frontend: /home/lexo/Desktop/Practica/App/library/verilogs/temp_34f66ec566d444f2bbe34683ddf5e902.v
+Parsing Verilog input from `/home/lexo/Desktop/Practica/App/library/verilogs/temp_34f66ec566d444f2bbe34683ddf5e902.v' to AST representation.
+/home/lexo/Desktop/Practica/App/library/verilogs/temp_34f66ec566d444f2bbe34683ddf5e902.v:7: ERROR: Illegal integer constant size of zero (IEEE 1800-2012, 5.7).
+    endmodule;
+    
+    module YFP (
+        input Xor,
+        output reg YFP_out
+      );
+      always @(Xor)
+       begin
+           if(Xor == 1) YFP_out <= 4'd3; 
+          else YFP_out <= 4'd0;
+       end
+    endmodule;
+    
+    assign AtC_out = AtC.Xor;
+    assign Xyle_out = AND_output;
+    assign RFP_out = RFP.Xor;
+    assign YFP_out = YFP.Xor;
 
-    assign Y = (S1 == 0 && S0 == 0) ? (A & E) :
-               (S1 == 0 && S0 == 1) ? (B & E) :
-               (S1 == 1 && S0 == 0) ? (C & E) :
-                                     (D & E);
-
-endmodule` */
+  endmodule` */
 
       setMessages(prevMessages => [
         ...prevMessages,

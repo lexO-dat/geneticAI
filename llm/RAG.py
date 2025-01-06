@@ -24,7 +24,7 @@ llm = ChatOllama(
 # -------------------------------
 embeddings = OllamaEmbeddings(
     base_url="http://localhost:11434",
-    model="nomic-embed-text:latest"
+    model="mxbai-embed-large:latest"
 )
 
 # -------------------------------
@@ -54,8 +54,8 @@ retrieval_chain = ConversationalRetrievalChain.from_llm(
 # Chat Response Function
 # -------------------------------
 def chat_response(query):
-    response = retrieval_chain.run(query)
-    return response
+    response = retrieval_chain.invoke({"question": query})
+    return response["answer"]
 
 # Example query
 query = input("Query: ")

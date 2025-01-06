@@ -1,0 +1,1 @@
+ module top (input atc_sensor, iptg_sensor, xylose_sensor, output yfp_output, output rfp_output);     assign yfp_output = ^((~atc_sensor + ~iptg_sensor));     assign rfp_output = (yfp_output) & (xylose_sensor); endmodule
