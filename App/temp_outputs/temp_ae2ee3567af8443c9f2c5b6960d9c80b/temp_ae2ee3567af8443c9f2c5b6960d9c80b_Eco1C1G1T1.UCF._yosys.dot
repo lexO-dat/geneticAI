@@ -1,0 +1,17 @@
+digraph "gene_expression_module" {
+label="gene_expression_module";
+rankdir="LR";
+remincross=true;
+n3 [ shape=octagon, label="LacI", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="TetR", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="YFP", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="enable", color="black", fontcolor="black" ];
+c9 [ shape=record, label="{{<p7> A}|$81\n$_NOT_|{<p8> Y}}",  ];
+c10 [ shape=record, label="{{<p7> A}|$82\n$_NOT_|{<p8> Y}}",  ];
+c12 [ shape=record, label="{{<p7> A|<p11> B}|$83\n$_NOR_|{<p8> Y}}",  ];
+c9:p8:e -> c12:p7:w [color="black", fontcolor="black", label=""];
+c10:p8:e -> c12:p11:w [color="black", fontcolor="black", label=""];
+n3:e -> c10:p7:w [color="black", fontcolor="black", label=""];
+n4:e -> c9:p7:w [color="black", fontcolor="black", label=""];
+c12:p8:e -> n6:w [color="black", fontcolor="black", label=""];
+}

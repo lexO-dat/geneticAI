@@ -14,9 +14,11 @@ const Chat: React.FC = () => {
     chatContainerRef,
     outputFiles,
     folderName,
+    selectedUcf,
+    setSelectedUcf,
+    ucfOptions,
   } = useChatLogic();
 
-  // Estados para manejar la selección del archivo y la apertura/cierre del cajón
   const [selectedFile, setSelectedFile] = useState<string | null>(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -24,13 +26,11 @@ const Chat: React.FC = () => {
     return fileName.replace(/^temp_[a-f0-9]{32}_/, '');
   };
 
-  // Función para abrir el cajón con un archivo específico
   const handleFileClick = (file: string) => {
     setSelectedFile(file);
     setIsDrawerOpen(true);
   };
 
-  // Función para cerrar el cajón
   const closeDrawer = () => {
     setIsDrawerOpen(false);
     setSelectedFile(null);
@@ -38,8 +38,21 @@ const Chat: React.FC = () => {
 
   return (
     <div className="flex h-screen bg-gray-100">
-      {/* Barra lateral de archivos */}
       <div className="w-96 bg-gray-800 text-white p-4 flex flex-col">
+        <div className="mb-4">
+          <h2 className="text-lg font-semibold mb-2">UCF Selection</h2>
+          <select 
+            value={selectedUcf}
+            onChange={(e) => setSelectedUcf(Number(e.target.value))}
+            className="w-full p-2 rounded bg-gray-700 text-white border border-gray-600"
+          >
+            {ucfOptions.map(ucf => (
+              <option key={ucf.id} value={ucf.id}>
+                {ucf.name}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="flex-grow overflow-y-auto">
           <h2 className="text-lg font-semibold mb-2">Files</h2>
           {outputFiles.length > 0 ? (
@@ -68,14 +81,13 @@ const Chat: React.FC = () => {
         />
       </div>
 
-      {/* Cajón lateral (drawer) para previsualizar el archivo */}
       <div
         className={`
           fixed top-0 right-0 h-screen w-full sm:w-3/4 md:w-2/3 lg:w-2/3 xl:w-2/3
            text-white transform transition-transform duration-300
           ${isDrawerOpen ? 'translate-x-0' : 'translate-x-full'}
         `}
-        style={{ zIndex: 9999 }} // Sobre todo
+        style={{ zIndex: 9999 }}
       >
         {isDrawerOpen && (
           <div
@@ -86,7 +98,6 @@ const Chat: React.FC = () => {
         )}
 
         <div className="flex flex-col h-full">
-          {/* Botón de cierre */}
           <div className="flex justify-end p-4 border-b">
             <button
               onClick={closeDrawer}
@@ -104,7 +115,7 @@ const Chat: React.FC = () => {
             {selectedFile ? (
               <div className="border text-white border-gray-500 p-2 rounded">
                 <iframe
-                  src={`http://localhost:8000/outputs/${folderName}/${selectedFile}`}
+                  src={`http://localhost:8000/v1/outputs/${folderName}/${selectedFile}`}
                   title="preview"
                   className="w-full h-96 text-white"
                 />
@@ -114,11 +125,10 @@ const Chat: React.FC = () => {
             )}
           </div>
 
-          {/* Botón para descargar el archivo */}
           {selectedFile && (
             <div className="p-4 text-white border-t flex justify-end">
               <a
-                href={`http://localhost:8000/outputs/${folderName}/${selectedFile}`}
+                href={`http://localhost:8000/v1/outputs/${folderName}/${selectedFile}`}
                 download
                 target="_blank"
                 rel="noopener noreferrer"
