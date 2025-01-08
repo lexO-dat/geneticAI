@@ -45,7 +45,7 @@ llm = ChatOllama(
            - SC1C1G1T1
 
         3. Response Protocol:
-           - Always provide ONLY ONE UCF recommendation return the name of that ucf file
+           - Always provide ONLY THE NAME OF THE UCF recommendation
 
         4. Data Verification:
            - Cross-reference all specifications against your stored UCF data
@@ -56,9 +56,9 @@ llm = ChatOllama(
            - Request specific clarification about missing parameters
            - Focus questions on critical specifications needed for selection
 
-        Example structured response:
+        Example structured response: 
         ```
-        Selected UCF: [UCF name]
+        [UCF name]
         ```
     """
 )
