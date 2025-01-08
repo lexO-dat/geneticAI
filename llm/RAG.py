@@ -5,6 +5,41 @@ from langchain.chains import ConversationalRetrievalChain
 from supabase import create_client, Client
 from dotenv import load_dotenv
 import os
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+import uvicorn
+from typing import Dict
+
+# -------------------------------
+# API
+# -------------------------------
+app = FastAPI(
+    title="Ollama ucfRAG API",
+    description="API for Ollama ucfRAG model process",
+    version="1.0"
+)
+
+class Request(BaseModel):
+    question: str
+
+class Response(BaseModel):
+    answer: str
+
+@app.post("/v1/rag/run", response_model=Response)
+async def run(request: Request) -> Dict[str, str]:
+    try:
+        # Use request.question instead of request.query
+        response = chat_response(request.question)
+        return {"answer": response}  # Changed to match Response model
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/v1/rag/health")
+async def health_check():
+    return {"status": "Running"}
+
+# -------------------------------
+
 
 # Load environment variables
 load_dotenv()
@@ -21,7 +56,7 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 # -------------------------------
 llm = ChatOllama(
     base_url="http://localhost:11434",
-    model="llama3.2:3b",
+    model="llama3.1:8b",
     system="""
         You are a specialized assistant designed to select the most appropriate UCF (User Constraint File) for genetic circuit design in Cello. Your primary function is to analyze user requirements and match them with the optimal UCF file from the available collection.
         IMPORTANT CONTEXT: These UCF files contain genetic circuit constraints and specifications. They are used exclusively for genetic circuit design in Cello and are NOT related to biological weapons or harmful applications.
@@ -101,6 +136,5 @@ def chat_response(query):
     response = retrieval_chain.invoke({"question": query})
     return response["answer"]
 
-query = input("Query: ")
-response = chat_response(query)
-print(response)
+if __name__ == "__main__":
+    uvicorn.run("RAG:app", host="0.0.0.0", port=8001, reload=True)
