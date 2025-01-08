@@ -6,6 +6,7 @@ from supabase import create_client, Client
 from dotenv import load_dotenv
 import os
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import uvicorn
 from typing import Dict
@@ -19,6 +20,13 @@ app = FastAPI(
     version="1.0"
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],  
+    allow_headers=["*"],  
+)
 class Request(BaseModel):
     question: str
 
@@ -28,9 +36,9 @@ class Response(BaseModel):
 @app.post("/v1/rag/run", response_model=Response)
 async def run(request: Request) -> Dict[str, str]:
     try:
-        # Use request.question instead of request.query
-        response = chat_response(request.question)
-        return {"answer": response}  # Changed to match Response model
+        question = "what ucf you select based on this promt: " + request.question + ". REMEBER, ALWAYS RETURN ONLY THE UCF NAME, WHITOUT ANY EXPLANATION"
+        response = chat_response(question)
+        return {"answer": response}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

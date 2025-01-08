@@ -35,7 +35,7 @@ export const useChatLogic = () => {
 
     setMessages(prevMessages => [
       ...prevMessages,
-      { text: 'Selected UCF: ' + ucfOptions.find(u => u.id === selectedUcf)?.name, isUser: false },
+      /* { text: 'Selected UCF: ' + ucfOptions.find(u => u.id === selectedUcf)?.name, isUser: false }, */
       { text: 'Generating verilog code...', isUser: false }
     ]);
 
@@ -43,7 +43,7 @@ export const useChatLogic = () => {
       const generateResponse = await fetch('http://localhost:11434/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model: "custom-llama-v3", prompt: inputMessage }),
+        body: JSON.stringify({ model: "custom-llama-v1", prompt: inputMessage }),
       });
 
       if (!generateResponse.ok) throw new Error('Error obtaining the verilog code.');
@@ -83,7 +83,37 @@ export const useChatLogic = () => {
         ...prevMessages,
         { text: 'Generated verilog:', isUser: false },
         { text: verilogCode, isUser: false },
-        { text: 'Processing with cello...', isUser: false }
+        { text: 'Selecting a ucf file...', isUser: false }
+      ]);
+
+      while (!verilogCode) {}
+
+      const ucfResponse = await fetch('http://localhost:8001/v1/rag/run', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ question: inputMessage })
+      });
+
+      if (!ucfResponse.ok) {
+        throw new Error(`HTTP error! status: ${ucfResponse.status}`);
+      }
+
+      const responseData = await ucfResponse.json();
+
+      const ucfName = responseData.answer.trim();
+    
+      const selectedUcf = ucfOptions.find(ucf => ucf.name === ucfName);
+    
+      if (!selectedUcf) {
+        throw new Error(`UCF "${ucfName}" not found in options`);
+      }
+
+      setMessages(prevMessages => [
+        ...prevMessages,
+        {text: 'Selected ucf: ', isUser: false},
+        {text: selectedUcf.name, isUser: false}
       ]);
 
       const celloResponse = await fetch('http://localhost:8000/v1/run', {
@@ -91,7 +121,7 @@ export const useChatLogic = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           verilogCode: verilogCode,
-          ucfIndex: selectedUcf,
+          ucfIndex: selectedUcf.id,
           options: {
             verbose: true,
             log_overwrite: false,

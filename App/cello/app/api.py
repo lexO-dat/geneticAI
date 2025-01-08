@@ -111,7 +111,7 @@ async def run(request: CelloRequest):
             "message": "Cello process completed.",
             "result": result,
             "folder_name": vName_,
-            "output_files": output_files  # List of the generated files
+            "output_files": output_files 
         })
 
     finally:
