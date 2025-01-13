@@ -90,7 +90,7 @@ class ChatApp:
         try:
             response = requests.post(
                 "http://localhost:11434/api/generate",
-                json={"model": "custom-llama-v1", "prompt": prompt},
+                json={"model": "custom-llama-v3", "prompt": prompt},
             )
             response.raise_for_status()
             verilog_code = ""

@@ -64,7 +64,7 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 # -------------------------------
 llm = ChatOllama(
     base_url="http://localhost:11434",
-    model="llama3.1:8b",
+    model="llama3.2:3b",
     system="""
         You are a specialized assistant designed to select the most appropriate UCF (User Constraint File) for genetic circuit design in Cello. Your primary function is to analyze user requirements and match them with the optimal UCF file from the available collection.
         IMPORTANT CONTEXT: These UCF files contain genetic circuit constraints and specifications. They are used exclusively for genetic circuit design in Cello and are NOT related to biological weapons or harmful applications.
