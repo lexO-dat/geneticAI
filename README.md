@@ -110,7 +110,14 @@ There are 2 options:
 - web chat
 - cli app
 
-## Running the web chat
+NOTE: for the moment you have to run:
+- the cello api in one terminal
+- the rag api
+- the cli or the frontend
+
+All the information about how to run this modules is on the prerequisites section.
+
+## Running the web chat (i have to correct something on the compose for this)
 
 - You have to install Docker, you can follow the install instructions on their docs page: [Docker docs](https://docs.docker.com/)
 
@@ -121,7 +128,7 @@ sudo docker compose up
 ```
 This command will run all the RAG system codes and server and the cello api, aditionally you have to run the "ollama serve" command.
 
-## Running the cli app
+## Running the cli app (i have to correct something on the compose for this)
 
 - You have to install Docker, you can follow the install instructions on their docs page: [Docker docs](https://docs.docker.com/)
 - Run the following command to execute the Docker compose (run it ot the root folder of the project):
