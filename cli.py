@@ -3,6 +3,9 @@ import json
 import os
 import time
 from llm import RAG
+from langchain_ollama import ChatOllama
+from langchain_core.messages import HumanMessage
+import re
 
 ucf_options = [
     {"id": 0, "name": "Bth1C1G1T1"},
@@ -12,7 +15,6 @@ ucf_options = [
     {"id": 4, "name": "Eco2C1G5T1"},
     {"id": 5, "name": "SC1C1G1T1"},
 ]
-
 
 class ChatApp:
     def __init__(self):
@@ -32,14 +34,14 @@ class ChatApp:
         """Set the selected UCF manually."""
         if 0 <= ucf_id < len(ucf_options):
             self.selected_ucf = ucf_id
-            self.manual_ucf = True  # Disable automatic UCF detection
+            self.manual_ucf = True
             print(f"Selected UCF (Manual): {ucf_options[ucf_id]['name']}\n")
         else:
             print("Invalid UCF ID. Please try again.")
 
     def auto_select_ucf(self, input_message):
         """Automatically select UCF based on input, if manual mode is off."""
-        if self.manual_ucf:  # Skip automatic selection if manual mode is active
+        if self.manual_ucf:
             return
 
         print("Bot: Automatically selecting UCF based on input...")
@@ -51,7 +53,7 @@ class ChatApp:
             response = RAG.chat_response("what ucf you select based on this promot: " + input_message + ". REMEMBER, ONLY RETURN THE UCF NAME, WHITOUT ANY EXPLANATION")
             selected_ucf_name = response
             
-            # Match the detected UCF name with available options
+            # Match UCF name to ID
             for ucf in ucf_options:
                 if ucf['name'] == selected_ucf_name:
                     self.selected_ucf = ucf['id']
@@ -59,6 +61,7 @@ class ChatApp:
                     return
 
             print("Bot: Failed to detect UCF. Using default UCF.")
+            self.selected_ucf = 1
         except Exception as e:
             print(f"Error selecting UCF: {e}")
 
@@ -68,42 +71,119 @@ class ChatApp:
             print("Message cannot be empty.")
             return
 
-        # Add user message to history
         self.messages.append({"text": input_message, "isUser": True})
         print(f"\nYou: {input_message}")
 
-        # Automatically select UCF unless manually set
         self.auto_select_ucf(input_message)
 
-        # Generate Verilog Code
+        # Generate The verilog code with the ollama model
         print("Bot: Generating Verilog code...")
         verilog_code = self.generate_verilog(input_message)
         if not verilog_code:
             print("Bot: Failed to generate Verilog code.")
             return
 
-        # Process with Cello
         print("Bot: Processing with Cello...")
         self.process_with_cello(verilog_code)
 
     def generate_verilog(self, prompt):
-        """Generate Verilog code via API."""
+        """Generate Verilog code via API and extract module definition."""
         try:
-            response = requests.post(
-                "http://localhost:11434/api/generate",
-                json={"model": "custom-llama-v1", "prompt": prompt},
+            llm = ChatOllama(
+                base_url="http://localhost:11434",
+                model="custom-llama-8b",
+                system="""
+                You are an AI assistant that generates CELLO-compatible Verilog code for genetic circuits. Generate only the Verilog code without explanations unless specifically requested. For logic function requests, return a single `module top (...) endmodule` block containing inputs, outputs, and assign statements.
+
+                Key requirements:
+                - Output only Verilog code without commentary
+                - Do not use bit arrays [x:y] in modules - use individual wires
+                - Use & and | operators instead of && and ||
+                - Follow standard Verilog module structure with proper indentation
+
+                3. Response Protocol:
+                - Always provide ONLY THE VERILOG CODE CREATED BY YOU
+
+                Example format:
+                module top(
+                  input wire A,
+                  input wire B,
+                  output wire Y
+                );
+                  assign Y = A & B;
+                endmodule
+
+                Valid operators and constructs:
+                - Basic logic: &, |, ~
+                - Module declaration: module, endmodule
+                - Port types: input wire, output wire
+                - Internal signals: wire
+                - Assignments: assign
+
+                Example implementations:
+                1. AND gate:
+                module top(
+                  input wire A,
+                  input wire B, 
+                  output wire Y
+                );
+                  assign Y = A & B;
+                endmodule
+
+                2. Combinational circuit:
+                module m0xA6(output out, input in1, in2, in3);
+                    always @(in1, in2, in3)
+                        begin
+                            case({in1, in2, in3})
+                                3'b000: {out} = 1'b1;
+                                3'b001: {out} = 1'b0;
+                                3'b010: {out} = 1'b1;
+                                3'b011: {out} = 1'b0;
+                                3'b100: {out} = 1'b0;
+                                3'b101: {out} = 1'b1;
+                                3'b110: {out} = 1'b1;
+                                3'b111: {out} = 1'b0;
+                            endcase
+                        end
+                endmodule
+
+                3. Priority Detector:
+                module priority_detector(output outX, outY, input A, B, C);
+                    wire outZ;
+                        always@(C, B, A)
+                            begin
+                                case({C, B, A})
+                                    3'b000: {outZ, outY, outX} = 3'b000;
+                                    3'b001: {outZ, outY, outX} = 3'b001;
+                                    3'b010: {outZ, outY, outX} = 3'b100;
+                                    3'b011: {outZ, outY, outX} = 3'b100;
+                                    3'b100: {outZ, outY, outX} = 3'b010;
+                                    3'b101: {outZ, outY, outX} = 3'b001;
+                                    3'b110: {outZ, outY, outX} = 3'b100;
+                                    3'b111: {outZ, outY, outX} = 3'b100;
+                                endcase
+                            end
+                endmodule
+                """
             )
-            response.raise_for_status()
-            verilog_code = ""
 
-            for line in response.iter_lines():
-                if line:
-                    parsed_line = json.loads(line)
-                    verilog_code += parsed_line.get("response", "")
-
-            print(f"Bot: Generated Verilog Code:\n{verilog_code}")
-            return verilog_code
-
+            response = llm.invoke([HumanMessage(content=prompt)])
+            
+            # Extract content from the response
+            responseText = response.content
+            """ print(f"Bot: Generated Response:\n{responseText}")
+ """
+            module_pattern = r'module\s+.*?endmodule'
+            matches = re.findall(module_pattern, responseText, re.DOTALL)
+            
+            if matches:
+                extracted_code = matches[0]
+                print(f"Bot: Generated Verilog Code:\n{extracted_code}")
+                return extracted_code
+            else:
+                print("No Verilog module found in the generated code.")
+                return ""
+                
         except Exception as e:
             print(f"Error generating Verilog: {e}")
             return ""
@@ -128,22 +208,27 @@ class ChatApp:
             cello_response.raise_for_status()
             cello_data = cello_response.json()
 
-            # Update output details
             self.folder_name = cello_data.get("folder_name", "")
             self.output_files = cello_data.get("output_files", [])
             print("Bot: Cello Processing Completed!")
+            print("--------------------------------------------------------------------------------")
             print(f"Bot: Folder Name - {self.folder_name}")
             print("Bot: Generated Files:")
             for file in self.output_files:
                 print(f"- {file}")
 
-            # Offer download
+            # TODO: ask for the email and send the generated files via email
             for file in self.output_files:
                 self.download_file(self.folder_name, file)
+            
+            print("--------------------------------------------------------------------------------")
+
+
 
         except Exception as e:
             print(f"Error processing with Cello: {e}")
 
+    # TODO: make this work
     def download_file(self, folder_name, file):
         """Download a file from the server."""
         url = f"http://localhost:8000/v1/outputs/{folder_name}/{file}"
@@ -163,6 +248,7 @@ class ChatApp:
         except Exception as e:
             print(f"Failed to download {file}: {e}")
 
+    # Main loop
     def chat_loop(self):
         """Interactive chat loop."""
         print("Welcome to the Chat CLI! Type 'exit' to quit.")

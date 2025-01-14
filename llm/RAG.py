@@ -37,10 +37,15 @@ class Response(BaseModel):
 @app.post("/v1/rag/run", response_model=Response)
 async def run(request: Request) -> Dict[str, str]:
     try:
-        question = "what ucf you select based on this promt: " + request.question + ". REMEBER, ALWAYS RETURN ONLY THE UCF NAME, WHITOUT ANY EXPLANATION"
+        question = (
+            "what ucf you select based on this promt: " + request.question + ". REMEMBER, ALWAYS RETURN ONLY THE UCF NAME, WITHOUT ANY EXPLANATION"
+        )
+        print(f"Received question: {question}")
         response = chat_response(question)
+        print(f"Chat response: {response}")
         return {"answer": response}
     except Exception as e:
+        print(f"Error occurred: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/v1/rag/health")
@@ -56,8 +61,8 @@ load_dotenv()
 # -------------------------------
 # Supabase Configuration
 # -------------------------------
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+SUPABASE_URL = "https://awbxwqrmkrkszfczkzzd.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF3Ynh3cXJta3Jrc3pmY3prenpkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNjAxOTY1MywiZXhwIjoyMDUxNTk1NjUzfQ._COKim9jB0onGC9wvV9R8v74PFtQJVaepOFeW-AxPF4"
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # -------------------------------
@@ -142,24 +147,30 @@ retrieval_chain = ConversationalRetrievalChain.from_llm(
 # Chat Response Function
 # -------------------------------
 def chat_response(query):
-    response = retrieval_chain.invoke({"question": query})
-    answer = response["answer"]
+    try:
+        print(f"Invoking retrieval chain with query: {query}")
+        response = retrieval_chain.invoke({"question": query})
+        print(f"Retrieval chain response: {response}")
 
-    # Define the list of options to match
-    options = [
-        "Eco1C1G1T1",
-        "Eco1C2G2T2",
-        "Eco2C1G3T1",
-        "Eco2C1G5T1",   
-        "Bth1C1G1T1",
-        "SC1C1G1T1"
-    ]
+        answer = response["answer"]
+        print(f"Extracted answer: {answer}")
 
-    # Use regex to find any of the options in the answer
-    matches = [option for option in options if re.search(rf"\b{re.escape(option)}\b", answer)]
-    
-    # Return matches joined by newline or a default message if no matches found
-    return matches[0] if matches else "No valid options found."
+        options = [
+            "Eco1C1G1T1",
+            "Eco1C2G2T2",
+            "Eco2C1G3T1",
+            "Eco2C1G5T1",
+            "Bth1C1G1T1",
+            "SC1C1G1T1",
+        ]
+
+        matches = [option for option in options if re.search(rf"\b{re.escape(option)}\b", answer)]
+        print(f"Matching UCF options: {matches}")
+
+        return matches[0] if matches else "No valid options found."
+    except Exception as e:
+        print(f"Error in chat_response: {e}")
+        raise e
 
 if __name__ == "__main__":
     uvicorn.run("RAG:app", host="0.0.0.0", port=8001, reload=True)
