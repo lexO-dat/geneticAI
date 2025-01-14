@@ -9,12 +9,12 @@ from core_algorithm.celloAlgo import cello_initializer
 from config import LIBRARY_DIR, VERILOGS_DIR, CONSTRAINTS_DIR, TEMP_OUTPUTS_DIR
 from core_algorithm.utils import log
 
-"""
-DONE:
-    Convert CELLO into an API with the following endpoints:
-        /v1/run → Executes CELLO and returns a JSON containing the folder name where the files were saved and a list of the generated files.
-        /v1/outputs/{folder_name}/{file_name} → Returns a file located in the outputs folder (this will be used for previews or downloads on the front end).
-"""
+# ---------------------------------------------------
+# DONE:
+#   Convert CELLO into an API with the following endpoints:
+#       - /v1/run → Executes CELLO and returns a JSON containing the folder name where the files were saved and a list of the generated files.
+#       - /v1/outputs/{folder_name}/{file_name} → Returns a file located in the outputs folder (this will be used for previews or downloads on the front end).
+# ---------------------------------------------------
 app = FastAPI(
     title="Cello API",
     description="API to generate genetic circuit designs using Cello 2.1",
@@ -34,7 +34,6 @@ app.add_middleware(
 
 app.mount("/outputs", StaticFiles(directory=TEMP_OUTPUTS_DIR), name="outputs")
 
-# Ucf list
 UCF_LIST = [
     'Bth1C1G1T1', 'Eco1C1G1T1', 'Eco1C2G2T2', 'Eco2C1G3T1',
     'Eco2C1G5T1', 'Eco2C1G6T1', 'SC1C1G1T1'
@@ -45,10 +44,10 @@ async def run(request: CelloRequest):
     tempVerilogName = None
 
     try:
-        """
-        - The received verilog code is saved in a temporary file with the name temp_{uuid}.v
-        - If the verilogFile is provided, the file is searched in the VERILOGS_DIR
-        """
+        # ---------------------------------------------------------
+        # The received verilog code is saved in a temporary file with the name temp_{uuid}.v
+        # If the verilogFile is provided, the file is searched in the VERILOGS_DIR
+        # ---------------------------------------------------------
         if request.verilogCode:
             tempVerilogName = f"temp_{uuid.uuid4().hex}.v"
             verilogPath = os.path.join(VERILOGS_DIR, tempVerilogName)
@@ -62,7 +61,9 @@ async def run(request: CelloRequest):
         else:
             raise HTTPException(status_code=400, detail="You must provide a verilogFile or verilogCode.")
 
-        # Ucf selection and verification
+        # ---------------------------------------------------------
+        # UCF selection and verification
+        # ---------------------------------------------------------
         if request.ucfIndex is not None:
             try:
                 selectedUcf = UCF_LIST[request.ucfIndex] + '.UCF.json'
@@ -71,6 +72,7 @@ async def run(request: CelloRequest):
             except IndexError:
                 raise HTTPException(status_code=400, detail="Ucf index not valid.")
         else:
+            #TODO: implement this
             # Custom UCF, Input and Output files (is not implemented yet, but it is a good idea to have it in mind)
             if not all([request.customUcf, request.customInput, request.customOutput]):
                 raise HTTPException(status_code=400, detail="You must ptevide the custom input / output / ucf json files.")
@@ -82,7 +84,9 @@ async def run(request: CelloRequest):
         inputPath = os.path.join(CONSTRAINTS_DIR, inputFile)
         outputPath = os.path.join(CONSTRAINTS_DIR, outputFile)
 
-        # Verification of the existence of the ucf files
+        # ---------------------------------------------------------
+        # Check if the files exist
+        # ---------------------------------------------------------
         for path, desc in zip([ucfPath, inputPath, outputPath], ["UCF", "Input", "Output"]):
             if not os.path.isfile(path):
                 raise HTTPException(status_code=404, detail=f"Archivo {desc} no encontrado.")
@@ -96,6 +100,9 @@ async def run(request: CelloRequest):
         outName_ = outputFile
 
         try:
+            # ---------------------------------------------------------
+            # Execute Cello passing the necessary parameters
+            # ---------------------------------------------------------
             result = cello_initializer(
                 vName_, ucfName_, inName_, outName_,
                 inPath, outPath_,
@@ -124,7 +131,9 @@ async def run(request: CelloRequest):
                 except Exception as e:
                     log.cf.warning(f"Error deleting the temporal verilog file {tempVerilogName}: {e}")
 
+# ---------------------------------------------------
 # Endpoint that returns a file x (if it exists), I will use this to be able to make previews or allow the files to be downloaded
+# ---------------------------------------------------
 @app.get("/v1/outputs/{folder_name}/{file_name}", summary="Return File")
 async def output(folder_name: str, file_name: str):
     outputPath = os.path.join(TEMP_OUTPUTS_DIR, folder_name, file_name)

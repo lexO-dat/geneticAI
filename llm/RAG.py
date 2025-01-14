@@ -34,7 +34,7 @@ class Request(BaseModel):
 class Response(BaseModel):
     answer: str
 
-@app.post("/v1/rag/run", response_model=Response)
+@app.post("/v1/rag/ucf/run", response_model=Response)
 async def run(request: Request) -> Dict[str, str]:
     try:
         question = (
@@ -42,6 +42,20 @@ async def run(request: Request) -> Dict[str, str]:
         )
         print(f"Received question: {question}")
         response = chat_response(question)
+        print(f"Chat response: {response}")
+        return {"answer": response}
+    except Exception as e:
+        print(f"Error occurred: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/v1/verilog/run", response_model=Response)
+async def run(request: Request) -> Dict[str, str]:
+    try:
+        question = (
+            "create a verilog file based on this promt: " + request.question + ". REMEMBER, ALWAYS RETURN ONLY VERILOG, WITHOUT ANY EXPLANATION"
+        )
+        print(f"Received question: {question}")
+        response = verilog_generation(question)
         print(f"Chat response: {response}")
         return {"answer": response}
     except Exception as e:
@@ -60,8 +74,9 @@ load_dotenv()
 # -------------------------------
 # Supabase Configuration
 # -------------------------------
-SUPABASE_URL = "https://awbxwqrmkrkszfczkzzd.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF3Ynh3cXJta3Jrc3pmY3prenpkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNjAxOTY1MywiZXhwIjoyMDUxNTk1NjUzfQ._COKim9jB0onGC9wvV9R8v74PFtQJVaepOFeW-AxPF4"
+
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # -------------------------------
@@ -110,6 +125,88 @@ llm = ChatOllama(
         ```
     """
 )
+
+# -------------------------------
+# Verilog Ollama model configuration
+# -------------------------------
+verilogllm = ChatOllama(
+                base_url="http://localhost:11434",
+                model="custom-llama-8b",
+                system="""
+                You are an AI assistant that generates CELLO-compatible Verilog code for genetic circuits. Generate only the Verilog code without explanations unless specifically requested. For logic function requests, return a single `module top (...) endmodule` block containing inputs, outputs, and assign statements.
+
+                Key requirements:
+                - Output only Verilog code without commentary
+                - Do not use bit arrays [x:y] in modules - use individual wires
+                - Do not use clk or anything like that
+                - Use & and | operators instead of && and ||
+                - Follow standard Verilog module structure with proper indentation
+
+                3. Response Protocol:
+                - Always provide ONLY THE VERILOG CODE CREATED BY YOU
+
+                Example format:
+                module top(
+                  input wire A,
+                  input wire B,
+                  output wire Y
+                );
+                  assign Y = A & B;
+                endmodule
+
+                Valid operators and constructs:
+                - Basic logic: &, |, ~
+                - Module declaration: module, endmodule
+                - Port types: input wire, output wire
+                - Internal signals: wire
+                - Assignments: assign
+
+                Example implementations:
+                1. AND gate:
+                module top(
+                  input wire A,
+                  input wire B, 
+                  output wire Y
+                );
+                  assign Y = A & B;
+                endmodule
+
+                2. Combinational circuit:
+                module m0xA6(output out, input in1, in2, in3);
+                    always @(in1, in2, in3)
+                        begin
+                            case({in1, in2, in3})
+                                3'b000: {out} = 1'b1;
+                                3'b001: {out} = 1'b0;
+                                3'b010: {out} = 1'b1;
+                                3'b011: {out} = 1'b0;
+                                3'b100: {out} = 1'b0;
+                                3'b101: {out} = 1'b1;
+                                3'b110: {out} = 1'b1;
+                                3'b111: {out} = 1'b0;
+                            endcase
+                        end
+                endmodule
+
+                3. Priority Detector:
+                module priority_detector(output outX, outY, input A, B, C);
+                    wire outZ;
+                        always@(C, B, A)
+                            begin
+                                case({C, B, A})
+                                    3'b000: {outZ, outY, outX} = 3'b000;
+                                    3'b001: {outZ, outY, outX} = 3'b001;
+                                    3'b010: {outZ, outY, outX} = 3'b100;
+                                    3'b011: {outZ, outY, outX} = 3'b100;
+                                    3'b100: {outZ, outY, outX} = 3'b010;
+                                    3'b101: {outZ, outY, outX} = 3'b001;
+                                    3'b110: {outZ, outY, outX} = 3'b100;
+                                    3'b111: {outZ, outY, outX} = 3'b100;
+                                endcase
+                            end
+                endmodule
+                """
+            )
 
 # -------------------------------
 # Ollama Embedding Model Configuration
@@ -167,6 +264,23 @@ def chat_response(query):
         print(f"Matching UCF options: {matches}")
 
         return matches[0] if matches else "No valid options found."
+    except Exception as e:
+        print(f"Error in chat_response: {e}")
+        raise e
+
+# -------------------------------
+# Verilog Generation Function
+# -------------------------------
+def verilog_generation(query):
+    try:
+        print(f"Invoking retrieval chain with query: {query}")
+        response = verilogllm.invoke({"question": query})
+        print(f"Retrieval chain response: {response}")
+
+        answer = response["answer"]
+        print(f"Extracted answer: {answer}")
+
+        return answer
     except Exception as e:
         print(f"Error in chat_response: {e}")
         raise e

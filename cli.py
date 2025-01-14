@@ -39,18 +39,16 @@ class ChatApp:
         else:
             print("Invalid UCF ID. Please try again.")
 
+    # ---------------------------------------------------
+    # Automated UCF Selection if there is no manual UCF selected
+    # ---------------------------------------------------
     def auto_select_ucf(self, input_message):
-        """Automatically select UCF based on input, if manual mode is off."""
         if self.manual_ucf:
             return
 
         print("Bot: Automatically selecting UCF based on input...")
         try:
-            """ response = requests.post(
-                "http://localhost:8001/v1/rag/run",
-                json={"question": "what ucf you select based on this prompt: " + input_message + ". REMEMBER, ONLY RETURN THE UCF NAME, WHITOUT ANY EXPLANATION"},
-            ) """
-            response = RAG.chat_response("what ucf you select based on this promot: " + input_message + ". REMEMBER, ONLY RETURN THE UCF NAME, WHITOUT ANY EXPLANATION")
+            response = RAG.chat_response(str(input_message))
             selected_ucf_name = response
             
             # Match UCF name to ID
@@ -65,8 +63,10 @@ class ChatApp:
         except Exception as e:
             print(f"Error selecting UCF: {e}")
 
+    # ---------------------------------------------------
+    # Sending message method
+    # ---------------------------------------------------
     def send_message(self, input_message):
-        """Send a message and handle responses."""
         if not input_message.strip():
             print("Message cannot be empty.")
             return
@@ -86,94 +86,17 @@ class ChatApp:
         print("Bot: Processing with Cello...")
         self.process_with_cello(verilog_code)
 
+    # ---------------------------------------------------
+    # Generate Verilog method, it calls the api gateway of ollama
+    # ---------------------------------------------------
     def generate_verilog(self, prompt):
         """Generate Verilog code via API and extract module definition."""
         try:
-            llm = ChatOllama(
-                base_url="http://localhost:11434",
-                model="custom-llama-8b",
-                system="""
-                You are an AI assistant that generates CELLO-compatible Verilog code for genetic circuits. Generate only the Verilog code without explanations unless specifically requested. For logic function requests, return a single `module top (...) endmodule` block containing inputs, outputs, and assign statements.
-
-                Key requirements:
-                - Output only Verilog code without commentary
-                - Do not use bit arrays [x:y] in modules - use individual wires
-                - Do not use clk or anything like that
-                - Use & and | operators instead of && and ||
-                - Follow standard Verilog module structure with proper indentation
-
-                3. Response Protocol:
-                - Always provide ONLY THE VERILOG CODE CREATED BY YOU
-
-                Example format:
-                module top(
-                  input wire A,
-                  input wire B,
-                  output wire Y
-                );
-                  assign Y = A & B;
-                endmodule
-
-                Valid operators and constructs:
-                - Basic logic: &, |, ~
-                - Module declaration: module, endmodule
-                - Port types: input wire, output wire
-                - Internal signals: wire
-                - Assignments: assign
-
-                Example implementations:
-                1. AND gate:
-                module top(
-                  input wire A,
-                  input wire B, 
-                  output wire Y
-                );
-                  assign Y = A & B;
-                endmodule
-
-                2. Combinational circuit:
-                module m0xA6(output out, input in1, in2, in3);
-                    always @(in1, in2, in3)
-                        begin
-                            case({in1, in2, in3})
-                                3'b000: {out} = 1'b1;
-                                3'b001: {out} = 1'b0;
-                                3'b010: {out} = 1'b1;
-                                3'b011: {out} = 1'b0;
-                                3'b100: {out} = 1'b0;
-                                3'b101: {out} = 1'b1;
-                                3'b110: {out} = 1'b1;
-                                3'b111: {out} = 1'b0;
-                            endcase
-                        end
-                endmodule
-
-                3. Priority Detector:
-                module priority_detector(output outX, outY, input A, B, C);
-                    wire outZ;
-                        always@(C, B, A)
-                            begin
-                                case({C, B, A})
-                                    3'b000: {outZ, outY, outX} = 3'b000;
-                                    3'b001: {outZ, outY, outX} = 3'b001;
-                                    3'b010: {outZ, outY, outX} = 3'b100;
-                                    3'b011: {outZ, outY, outX} = 3'b100;
-                                    3'b100: {outZ, outY, outX} = 3'b010;
-                                    3'b101: {outZ, outY, outX} = 3'b001;
-                                    3'b110: {outZ, outY, outX} = 3'b100;
-                                    3'b111: {outZ, outY, outX} = 3'b100;
-                                endcase
-                            end
-                endmodule
-                """
-            )
-
-            response = llm.invoke([HumanMessage(content=prompt)])
-            
-            # Extract content from the response
+            response = RAG.verilog_generation(str(prompt))
             responseText = response.content
-            """ print(f"Bot: Generated Response:\n{responseText}")
- """
+            """ print(f"Bot: Generated Response:\n{responseText}")"""
+
+            # regex to extract the verilog code 
             module_pattern = r'module\s+.*?endmodule'
             matches = re.findall(module_pattern, responseText, re.DOTALL)
             
@@ -189,6 +112,9 @@ class ChatApp:
             print(f"Error generating Verilog: {e}")
             return ""
 
+    # ---------------------------------------------------
+    # Process with Cello method, it process the generated verilog code
+    # ---------------------------------------------------
     def process_with_cello(self, verilog_code):
         """Process Verilog code with Cello API."""
         try:
@@ -212,8 +138,9 @@ class ChatApp:
             self.folder_name = cello_data.get("folder_name", "")
             self.output_files = cello_data.get("output_files", [])
             print("Bot: Cello Processing Completed!")
-            print("--------------------------------------------------------------------------------")
             print(f"Bot: Folder Name - {self.folder_name}")
+
+            print("--------------------------------------------------------------------------------")
             print("Bot: Generated Files:")
             for file in self.output_files:
                 print(f"- {file}")
@@ -229,7 +156,7 @@ class ChatApp:
         except Exception as e:
             print(f"Error processing with Cello: {e}")
 
-    # TODO: make this work
+    # TODO: achieve this functionality with the email api (not created yet)
     def download_file(self, folder_name, file):
         """Download a file from the server."""
         url = f"http://localhost:8000/v1/outputs/{folder_name}/{file}"
@@ -249,9 +176,10 @@ class ChatApp:
         except Exception as e:
             print(f"Failed to download {file}: {e}")
 
+    # ---------------------------------------------------
     # Main loop
+    # ---------------------------------------------------
     def chat_loop(self):
-        """Interactive chat loop."""
         print("Welcome to the Chat CLI! Type 'exit' to quit.")
         print("Type 'ucf' to see UCF options or 'setucf [id]' to select a UCF.\n")
 
