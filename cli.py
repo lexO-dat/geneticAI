@@ -98,6 +98,7 @@ class ChatApp:
                 Key requirements:
                 - Output only Verilog code without commentary
                 - Do not use bit arrays [x:y] in modules - use individual wires
+                - Do not use clk or anything like that
                 - Use & and | operators instead of && and ||
                 - Follow standard Verilog module structure with proper indentation
 

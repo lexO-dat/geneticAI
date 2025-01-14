@@ -54,7 +54,6 @@ async def health_check():
 
 # -------------------------------
 
-
 # Load environment variables
 load_dotenv()
 
