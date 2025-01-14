@@ -79,10 +79,25 @@ export const useChatLogic = () => {
 
       if (!verilogCode.trim()) throw new Error('No verilog code generated.');
 
+      verilogCode = verilogCode.replace(/&&|\|\|/g, match => (match === '&&' ? '&' : '|'));
+
+      const regex = /module\s+top[\s\S]*?endmodule/;
+      let match = verilogCode.match(regex);
+
+      console.log(match)
+
+      if (match) {
+        console.log(match[0]); // This will print the matched code block
+      } else {
+        console.log('No match found.');
+      }
+
+      if (!match) throw new Error('No module top found in the verilog code.');
+
       setMessages(prevMessages => [
         ...prevMessages,
         { text: 'Generated verilog:', isUser: false },
-        { text: verilogCode, isUser: false },
+        { text: match[0], isUser: false },
         { text: 'Selecting a ucf file...', isUser: false }
       ]);
 

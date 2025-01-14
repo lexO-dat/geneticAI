@@ -2,9 +2,7 @@ import requests
 import json
 import os
 import time
-import llm.RAG as RAG
-import App.cello as cli
-import threading
+from llm import RAG
 
 ucf_options = [
     {"id": 0, "name": "Bth1C1G1T1"},
@@ -93,8 +91,9 @@ class ChatApp:
         try:
             response = requests.post(
                 "http://localhost:11434/api/generate",
-                json={"model": "custom-llama-v3", "prompt": prompt},
+                json={"model": "custom-llama-v1", "prompt": prompt},
             )
+            response.raise_for_status()
             verilog_code = ""
 
             for line in response.iter_lines():
@@ -110,23 +109,28 @@ class ChatApp:
             return ""
 
     def process_with_cello(self, verilog_code):
-        """Process Verilog code with Cello."""
+        """Process Verilog code with Cello API."""
         try:
-            response = cli.execute_cello(
-                verilog_code=verilog_code,
-                ucf_index=self.selected_ucf,
-                options={
-                    "verbose": True,
-                    "log_overwrite": False,
-                    "print_iters": False,
-                    "exhaustive": False,
-                    "test_configs": False,
+            cello_response = requests.post(
+                "http://localhost:8000/v1/run",
+                json={
+                    "verilogCode": verilog_code,
+                    "ucfIndex": self.selected_ucf,
+                    "options": {
+                        "verbose": True,
+                        "log_overwrite": False,
+                        "print_iters": False,
+                        "exhaustive": False,
+                        "test_configs": False,
+                    },
                 },
             )
+            cello_response.raise_for_status()
+            cello_data = cello_response.json()
 
             # Update output details
-            self.folder_name = response.get("folder_name", "")
-            self.output_files = response.get("output_files", [])
+            self.folder_name = cello_data.get("folder_name", "")
+            self.output_files = cello_data.get("output_files", [])
             print("Bot: Cello Processing Completed!")
             print(f"Bot: Folder Name - {self.folder_name}")
             print("Bot: Generated Files:")
@@ -139,6 +143,25 @@ class ChatApp:
 
         except Exception as e:
             print(f"Error processing with Cello: {e}")
+
+    def download_file(self, folder_name, file):
+        """Download a file from the server."""
+        url = f"http://localhost:8000/v1/outputs/{folder_name}/{file}"
+        try:
+            response = requests.get(url)
+            response.raise_for_status()
+
+            save_path = os.path.join("Downloads", folder_name)
+            os.makedirs(save_path, exist_ok=True)
+            file_path = os.path.join(save_path, file)
+
+            with open(file_path, "wb") as f:
+                f.write(response.content)
+
+            print(f"Bot: Downloaded - {file_path}")
+
+        except Exception as e:
+            print(f"Failed to download {file}: {e}")
 
     def chat_loop(self):
         """Interactive chat loop."""

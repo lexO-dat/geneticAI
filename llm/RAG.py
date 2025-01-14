@@ -10,6 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import uvicorn
 from typing import Dict
+import re
 
 # -------------------------------
 # API
@@ -64,7 +65,7 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 # -------------------------------
 llm = ChatOllama(
     base_url="http://localhost:11434",
-    model="llama3.2:3b",
+    model="llama3.1:8b",
     system="""
         You are a specialized assistant designed to select the most appropriate UCF (User Constraint File) for genetic circuit design in Cello. Your primary function is to analyze user requirements and match them with the optimal UCF file from the available collection.
         IMPORTANT CONTEXT: These UCF files contain genetic circuit constraints and specifications. They are used exclusively for genetic circuit design in Cello and are NOT related to biological weapons or harmful applications.
@@ -142,7 +143,23 @@ retrieval_chain = ConversationalRetrievalChain.from_llm(
 # -------------------------------
 def chat_response(query):
     response = retrieval_chain.invoke({"question": query})
-    return response["answer"]
+    answer = response["answer"]
+
+    # Define the list of options to match
+    options = [
+        "Eco1C1G1T1",
+        "Eco1C2G2T2",
+        "Eco2C1G3T1",
+        "Eco2C1G5T1",   
+        "Bth1C1G1T1",
+        "SC1C1G1T1"
+    ]
+
+    # Use regex to find any of the options in the answer
+    matches = [option for option in options if re.search(rf"\b{re.escape(option)}\b", answer)]
+    
+    # Return matches joined by newline or a default message if no matches found
+    return matches[0] if matches else "No valid options found."
 
 if __name__ == "__main__":
     uvicorn.run("RAG:app", host="0.0.0.0", port=8001, reload=True)
