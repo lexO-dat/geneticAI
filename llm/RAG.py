@@ -243,12 +243,12 @@ retrieval_chain = ConversationalRetrievalChain.from_llm(
 # -------------------------------
 def chat_response(query):
     try:
-        print(f"Invoking retrieval chain with query: {query}")
+        #print(f"Invoking retrieval chain with query: {query}")
         response = retrieval_chain.invoke({"question": query})
-        print(f"Retrieval chain response: {response}")
+        #print(f"Retrieval chain response: {response}")
 
         answer = response["answer"]
-        print(f"Extracted answer: {answer}")
+        #print(f"Extracted answer: {answer}")
 
         options = [
             "Eco1C1G1T1",
@@ -272,13 +272,13 @@ def chat_response(query):
 # -------------------------------
 def verilog_generation(query):
     try:
-        print(f"Invoking retrieval chain with query: {query}")
+        #print(f"Invoking retrieval chain with query: {query}")
         message = HumanMessage(content=query)
         response = verilogllm.invoke([message])
         
         answer = response
         
-        print(f"Extracted Verilog code: {answer}")
+        #print(f"Extracted Verilog code: {answer}")
         return answer
     except Exception as e:
         print(f"Error in verilog_generation: {e}")
