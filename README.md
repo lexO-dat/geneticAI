@@ -103,9 +103,19 @@ Logic constraints:
 Posible Use:
 - It can be used in genetic circuits as a logical switch where dCas9 blocks a promoter until it receives a signal (e.g., chemical induction), enabling combinational control in biological systems.
 ```
+# Upload files to supabase vector database
+- First, you must obtain all the supabase keys listed in the RAG System section.
+- Then, you have to move your txt file to the llm folder.
+- In the upload code change the txt name on the "loader" variable.
+- you have to start ollama with the "ollama serve" command.
+- Finally, run the next command:
+  ``` bash
+  python upload.py
+  ```
 
+  NOTE: if it's your first time running the app upload all the .txt file inside the App/cello/library/constraints folder, this txt files are all the ucf information for the ucf recognition system, if you want to upload a custom ucf follow the structure of the txt file showed above.
+  
 # Running the app
-
 There are 2 options:
 - web chat
 - cli app
