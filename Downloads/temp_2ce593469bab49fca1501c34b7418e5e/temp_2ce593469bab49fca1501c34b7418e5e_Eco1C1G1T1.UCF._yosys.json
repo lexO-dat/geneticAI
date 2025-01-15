@@ -1,0 +1,112 @@
+{
+  "creator": "Yosys 0.8 (git sha1 5706e90)",
+  "modules": {
+    "top": {
+      "attributes": {
+        "top": 1,
+        "src": "/app/library/verilogs/temp_2ce593469bab49fca1501c34b7418e5e.v:1"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "$abc$47$auto$blifparse.cc:371:parse_blif$48": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$abc$47$auto$blifparse.cc:371:parse_blif$49": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$abc$47$auto$blifparse.cc:371:parse_blif$50": {
+          "hide_name": 1,
+          "type": "$_NOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 6 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$47$n4": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "$abc$47$n5": {
+          "hide_name": 1,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        },
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/app/library/verilogs/temp_2ce593469bab49fca1501c34b7418e5e.v:2"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/app/library/verilogs/temp_2ce593469bab49fca1501c34b7418e5e.v:3"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/app/library/verilogs/temp_2ce593469bab49fca1501c34b7418e5e.v:4"
+          }
+        }
+      }
+    }
+  }
+}

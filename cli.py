@@ -5,6 +5,8 @@ import time
 from llm import RAG
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage
+import subprocess
+import signal
 import re
 
 ucf_options = [
@@ -23,6 +25,10 @@ class ChatApp:
         self.folder_name = ""
         self.output_files = []
         self.manual_ucf = False
+        self.go_server_process = None
+
+        self.start_go_server()
+
 
     def display_ucf_options(self):
         """Display UCF options."""
@@ -76,7 +82,6 @@ class ChatApp:
 
         self.auto_select_ucf(input_message)
 
-        # Generate The verilog code with the ollama model
         print("Bot: Generating Verilog code...")
         verilog_code = self.generate_verilog(input_message)
         if not verilog_code:
@@ -85,6 +90,8 @@ class ChatApp:
 
         print("Bot: Processing with Cello...")
         self.process_with_cello(verilog_code)
+
+        self.ask_email_confirmation()
 
     # ---------------------------------------------------
     # Generate Verilog method, it calls the api gateway of ollama
@@ -96,7 +103,6 @@ class ChatApp:
             responseText = response.content
             """ print(f"Bot: Generated Response:\n{responseText}")"""
 
-            # regex to extract the verilog code 
             module_pattern = r'module\s+.*?endmodule'
             matches = re.findall(module_pattern, responseText, re.DOTALL)
             
@@ -151,8 +157,6 @@ class ChatApp:
             
             print("--------------------------------------------------------------------------------")
 
-
-
         except Exception as e:
             print(f"Error processing with Cello: {e}")
 
@@ -176,6 +180,82 @@ class ChatApp:
         except Exception as e:
             print(f"Failed to download {file}: {e}")
 
+    def ask_email_confirmation(self):
+        """Ask user for email confirmation to send files."""
+        while True:
+            user_input = input("Bot: Do you want to send the files via email? (y/n): ").strip().lower()
+            if user_input == 'y':
+                email = input("Bot: Please enter the email address: ").strip()
+                if self.send_email(email):
+                    print("Bot: Files sent successfully!")
+                else:
+                    print("Bot: Failed to send files. Please try again later.")
+                break
+            elif user_input == 'n':
+                print("Bot: Okay, you can ask something else!")
+                break
+            else:
+                print("Bot: Please answer with 'y' or 'n'.")
+
+    def send_email(self, email):
+        """Send files via email using the API."""
+        try:
+            # Absolute path to the `Downloads` folder
+            absolute_attachment_path = os.path.abspath(os.path.join("Downloads", self.folder_name))
+            print(absolute_attachment_path)
+
+            response = requests.post(
+                "http://localhost:8002/v1/mail/send",
+                json={
+                    "destinatario": email,
+                    "subject": "Sending all the generated files by geneticAI app",
+                    "attachmentPath": absolute_attachment_path,
+                },
+                headers={"Content-Type": "application/json"},
+            )
+            response.raise_for_status()
+            return True
+        except Exception as e:
+            print(f"Error sending email: {e}")
+            return False
+
+    
+    def start_go_server(self):
+        """Start the Go server as a subprocess."""
+        try:
+            mailserver_path = os.path.abspath("mailserver")
+        
+            if not os.path.isdir(mailserver_path):
+                raise FileNotFoundError(f"Mailserver folder not found at {mailserver_path}")
+        
+            # Lanza el proceso. No llamamos a communicate ni establecemos timeout
+            self.go_server_process = subprocess.Popen(
+                ["go", "run", "main.go"],
+                cwd=mailserver_path,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+            )
+        
+            print(f"Go server is running in the background with PID {self.go_server_process.pid}")
+        except Exception as e:
+            print(f"Failed to start Go server: {e}")
+            self.go_server_process = None
+        
+    def stop_go_server(self):
+        """Stop the Go server subprocess."""
+        if self.go_server_process:
+            try:
+                # Send a termination signal
+                self.go_server_process.terminate()
+                self.go_server_process.wait()
+                print("Go server has been terminated.")
+            except Exception as e:
+                print(f"Failed to stop Go server: {e}")
+
+    def __del__(self):
+        """Ensure the Go server is stopped when the app exits."""
+        self.stop_go_server()
+
     # ---------------------------------------------------
     # Main loop
     # ---------------------------------------------------
@@ -183,23 +263,25 @@ class ChatApp:
         print("Welcome to the Chat CLI! Type 'exit' to quit.")
         print("Type 'ucf' to see UCF options or 'setucf [id]' to select a UCF.\n")
 
-        while True:
-            user_input = input("You: ")
+        try:
+            while True:
+                user_input = input("You: ")
 
-            if user_input.lower() == "exit":
-                print("Goodbye!")
-                break
-            elif user_input.lower() == "ucf":
-                self.display_ucf_options()
-            elif user_input.lower().startswith("setucf"):
-                try:
-                    _, ucf_id = user_input.split()
-                    self.set_ucf(int(ucf_id))
-                except ValueError:
-                    print("Invalid command. Usage: setucf [id]")
-            else:
-                self.send_message(user_input)
-
+                if user_input.lower() == "exit":
+                    print("Goodbye!")
+                    break
+                elif user_input.lower() == "ucf":
+                    self.display_ucf_options()
+                elif user_input.lower().startswith("setucf"):
+                    try:
+                        _, ucf_id = user_input.split()
+                        self.set_ucf(int(ucf_id))
+                    except ValueError:
+                        print("Invalid command. Usage: setucf [id]")
+                else:
+                    self.send_message(user_input)
+        finally:
+            self.stop_go_server()
 
 if __name__ == "__main__":
     app = ChatApp()
