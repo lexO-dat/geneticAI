@@ -3,6 +3,7 @@ from langchain_community.vectorstores import SupabaseVectorStore
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from supabase import create_client, Client
+from langchain_core.messages import HumanMessage
 from dotenv import load_dotenv
 import os
 from fastapi import FastAPI, HTTPException
@@ -51,9 +52,7 @@ async def run(request: Request) -> Dict[str, str]:
 @app.post("/v1/verilog/run", response_model=Response)
 async def run(request: Request) -> Dict[str, str]:
     try:
-        question = (
-            "create a verilog file based on this promt: " + request.question + ". REMEMBER, ALWAYS RETURN ONLY VERILOG, WITHOUT ANY EXPLANATION"
-        )
+        question = f"create a verilog file based on this prompt: {request.question}"
         print(f"Received question: {question}")
         response = verilog_generation(question)
         print(f"Chat response: {response}")
@@ -274,16 +273,17 @@ def chat_response(query):
 def verilog_generation(query):
     try:
         print(f"Invoking retrieval chain with query: {query}")
-        response = verilogllm.invoke({"question": query})
-        print(f"Retrieval chain response: {response}")
-
-        answer = response["answer"]
-        print(f"Extracted answer: {answer}")
-
+        message = HumanMessage(content=query)
+        response = verilogllm.invoke([message])
+        
+        answer = response
+        
+        print(f"Extracted Verilog code: {answer}")
         return answer
     except Exception as e:
-        print(f"Error in chat_response: {e}")
+        print(f"Error in verilog_generation: {e}")
         raise e
+
 
 if __name__ == "__main__":
     uvicorn.run("RAG:app", host="0.0.0.0", port=8001, reload=True)
