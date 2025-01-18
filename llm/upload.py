@@ -15,7 +15,9 @@ SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
-# Load all the text from a file
+# --------------------------------------------
+# import the text
+# --------------------------------------------
 loader = TextLoader("my_text_file.txt")
 documents = loader.load()
 
