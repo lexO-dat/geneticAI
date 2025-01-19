@@ -1,12 +1,7 @@
 import requests
-import json
 import os
-import time
 from llm import RAG
-from langchain_ollama import ChatOllama
-from langchain_core.messages import HumanMessage
 import subprocess
-import signal
 import re
 
 ucf_options = [

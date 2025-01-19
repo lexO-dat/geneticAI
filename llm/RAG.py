@@ -55,11 +55,17 @@ async def run(request: Request) -> Dict[str, str]:
         question = f"create a verilog file based on this prompt: {request.question}"
         print(f"Received question: {question}")
         response = verilog_generation(question)
-        print(f"Chat response: {response}")
+        
+        # Validate the response is a non-empty string
+        if not response or not isinstance(response, str):
+            raise HTTPException(status_code=500, detail="Invalid Verilog code generated")
+        
         return {"answer": response}
     except Exception as e:
         print(f"Error occurred: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+
 
 @app.get("/v1/rag/health")
 async def health_check():
@@ -136,10 +142,10 @@ verilogllm = ChatOllama(
 
                 Key requirements:
                 - Output only Verilog code without commentary
+                - AGAIN, DONT ADD ANY COMMENTS OR EXPLANATIONS or ANALYSIS
                 - Do not use bit arrays [x:y] in modules - use individual wires
                 - Do not use clk or anything like that
                 - Use & and | operators instead of && and ||
-                - Follow standard Verilog module structure with proper indentation
 
                 3. Response Protocol:
                 - Always provide ONLY THE VERILOG CODE CREATED BY YOU
@@ -272,17 +278,20 @@ def chat_response(query):
 # -------------------------------
 def verilog_generation(query):
     try:
-        #print(f"Invoking retrieval chain with query: {query}")
         message = HumanMessage(content=query)
         response = verilogllm.invoke([message])
         
-        answer = response
+        answer = response.content.strip()
         
-        #print(f"Extracted Verilog code: {answer}")
+        if not answer:
+            raise ValueError("Generated response is empty or invalid")
+        
         return answer
     except Exception as e:
         print(f"Error in verilog_generation: {e}")
         raise e
+
+
 
 
 if __name__ == "__main__":

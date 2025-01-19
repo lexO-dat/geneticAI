@@ -6,4 +6,3 @@
 - cello -> all the cello core files (it will be used as an API)
 - llm -> all the configuration files of Ollama and the rag system code
 - main.py (main script of the app)
-- front -> frontend folder (i will use react or some python frontend framework)
